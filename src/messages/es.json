@@ -675,10 +675,17 @@
       },
       "h1": "Precios",
       "intro": "Empieza pequeño y amplía después. Los planes pueden variar según la región.",
+      "billing": {
+        "perMonth": "/mes"
+      },
+      "badges": {
+        "mostPopular": "Más popular"
+      },
       "tiers": [
         {
           "name": "Basic",
           "tag": "Para empezar",
+          "price": "29",
           "items": [
             "Pedidos chat-first",
             "Carta (3 diseños)",
@@ -690,6 +697,7 @@
         {
           "name": "Pro",
           "tag": "Para operación",
+          "price": "89",
           "items": [
             "KDS cocina y barra",
             "Bandeja de servicio",
@@ -701,6 +709,7 @@
         {
           "name": "Premium",
           "tag": "Para crecer",
+          "price": "149",
           "items": [
             "POS Lite (mesas, caja, split)",
             "Modo kiosco (opcional)",

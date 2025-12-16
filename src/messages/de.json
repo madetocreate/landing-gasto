@@ -804,10 +804,17 @@
       },
       "h1": "Preise",
       "intro": "Starten Sie klein – und erweitern Sie später. Alle Pakete sind monatlich kündbar (nach Vereinbarung).",
+      "billing": {
+        "perMonth": "/Monat"
+      },
+      "badges": {
+        "mostPopular": "Am beliebtesten"
+      },
       "tiers": [
         {
           "name": "Basic",
           "tag": "Für den Start",
+          "price": "29",
           "items": [
             "Chat-first Bestellen",
             "Menü (3 Designs)",
@@ -819,6 +826,7 @@
         {
           "name": "Pro",
           "tag": "Für den Betrieb",
+          "price": "89",
           "items": [
             "KDS: Küche & Bar (Stations)",
             "Service Inbox (Kellner/Rechnung/Problem)",
@@ -830,6 +838,7 @@
         {
           "name": "Premium",
           "tag": "Für Wachstum",
+          "price": "149",
           "items": [
             "POS-Lite (Floor, Cashier, Split)",
             "Kiosk-Modus (optional)",

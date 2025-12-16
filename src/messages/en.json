@@ -675,10 +675,17 @@
       },
       "h1": "Pricing",
       "intro": "Start small — expand later. Plans and integrations can vary by region.",
+      "billing": {
+        "perMonth": "/month"
+      },
+      "badges": {
+        "mostPopular": "Most popular"
+      },
       "tiers": [
         {
           "name": "Basic",
           "tag": "Start here",
+          "price": "29",
           "items": [
             "Chat-first ordering",
             "Menu (3 designs)",
@@ -690,6 +697,7 @@
         {
           "name": "Pro",
           "tag": "For operations",
+          "price": "89",
           "items": [
             "KDS: kitchen & bar stations",
             "Service inbox",
@@ -701,6 +709,7 @@
         {
           "name": "Premium",
           "tag": "For growth",
+          "price": "149",
           "items": [
             "POS Lite (floor, cashier, split)",
             "Kiosk mode (optional)",
