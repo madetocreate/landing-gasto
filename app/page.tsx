@@ -111,7 +111,7 @@ export default async function Home() {
                <div className="absolute -top-20 -right-20 w-[600px] h-[600px] bg-accent/5 rounded-full blur-[100px] -z-10" />
                
                {/* The "Floating Tablet" */}
-               <div className="relative transform rotate-y-[-10deg] rotate-x-[5deg] hover:rotate-y-[-5deg] hover:rotate-x-[2deg] transition-transform duration-700 ease-out">
+               <div className="relative transform rotate-y-neg-10 rotate-x-5 hover-rotate-y-neg-5 hover-rotate-x-2 transition-transform duration-700 ease-out">
                   <SpotlightCard className="aspect-[4/3] w-full rounded-3xl shadow-2xl border-4 border-surface bg-surface overflow-hidden" withBorderBeam>
                     <div className="absolute inset-0 bg-background flex flex-col">
                        {/* Mock UI Header */}
