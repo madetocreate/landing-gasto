@@ -1,0 +1,29 @@
+[
+  {
+    "id": "kb-pos-1",
+    "title": "POS öffnet nicht",
+    "content": "Prüfe: Hast du ein Premium-Paket? POS-Lite ist nur im Premium-Paket verfügbar. Prüfe dein Paket im Admin → Einstellungen → Abonnement.",
+    "category": "pos",
+    "keywords": ["pos", "öffnet nicht", "premium", "paket"],
+    "links": [
+      { "label": "Preise ansehen", "href": "/preise" }
+    ]
+  },
+  {
+    "id": "kb-pos-2",
+    "title": "Rechnung erstellen",
+    "content": "Gehe zu POS → Tisch auswählen → Artikel hinzufügen → 'Rechnung' klicken. Du kannst die Rechnung splitten oder als Ganzes markieren.",
+    "category": "pos",
+    "keywords": ["rechnung", "erstellen", "split", "bezahlen"],
+    "links": []
+  },
+  {
+    "id": "kb-pos-3",
+    "title": "Reports ansehen",
+    "content": "Gehe zu POS → Reports. Hier siehst du Umsatz, Bestellungen und Topseller. Du kannst nach Datum filtern und exportieren.",
+    "category": "pos",
+    "keywords": ["reports", "umsatz", "bestellungen", "topseller"],
+    "links": []
+  }
+]
+

@@ -1,0 +1,27 @@
+[
+  {
+    "id": "kb-admin-1",
+    "title": "Menü importieren",
+    "content": "Gehe zu Admin → Menü → Import. Du kannst eine Website-URL, PDF oder Fotos hochladen. Das System erkennt automatisch Artikel, Preise und Kategorien. Prüfe das Ergebnis und veröffentliche.",
+    "category": "admin_import",
+    "keywords": ["import", "menü", "pdf", "foto", "website"],
+    "links": []
+  },
+  {
+    "id": "kb-admin-2",
+    "title": "Import funktioniert nicht",
+    "content": "Prüfe: Ist die Datei im richtigen Format? PDF oder Bilder (JPG/PNG) werden unterstützt. Bei Website-URL: Ist die Seite erreichbar? Falls weiterhin Probleme: Kontaktiere den Support.",
+    "category": "admin_import",
+    "keywords": ["import", "fehler", "nicht funktioniert", "format"],
+    "links": []
+  },
+  {
+    "id": "kb-admin-3",
+    "title": "Tische anlegen",
+    "content": "Gehe zu Admin → Tische. Klicke auf 'Neuer Tisch'. Gib einen Namen ein (z.B. 'Tisch 1') und speichere. QR-Code wird automatisch generiert.",
+    "category": "admin_import",
+    "keywords": ["tisch", "anlegen", "qr-code", "erstellen"],
+    "links": []
+  }
+]
+

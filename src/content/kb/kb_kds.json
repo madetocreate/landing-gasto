@@ -1,0 +1,27 @@
+[
+  {
+    "id": "kb-kds-1",
+    "title": "KDS zeigt keine Bestellungen",
+    "content": "Prüfe: Ist das KDS auf dem richtigen Gerät geöffnet? Ist die Station korrekt eingestellt (Küche oder Bar)? Prüfe die Internetverbindung. Aktualisiere die Seite.",
+    "category": "kds",
+    "keywords": ["kds", "bestellungen", "nicht sichtbar", "küche", "bar"],
+    "links": []
+  },
+  {
+    "id": "kb-kds-2",
+    "title": "Status ändern funktioniert nicht",
+    "content": "Prüfe: Bist du eingeloggt? Hast du die richtigen Berechtigungen? Aktualisiere die Seite. Falls weiterhin Probleme: Kontaktiere den Support.",
+    "category": "kds",
+    "keywords": ["status", "ändern", "nicht funktioniert", "berechtigung"],
+    "links": []
+  },
+  {
+    "id": "kb-kds-3",
+    "title": "Küche und Bar getrennt anzeigen",
+    "content": "Im KDS kannst du zwischen 'Küche' und 'Bar' filtern. Klicke auf die Station-Filter oben. Gemischte Bestellungen werden automatisch gruppiert.",
+    "category": "kds",
+    "keywords": ["küche", "bar", "getrennt", "filter", "station"],
+    "links": []
+  }
+]
+

@@ -1,0 +1,635 @@
+{
+  "brand": {
+    "name": "Gastro Landingpage",
+    "tagline": "Order like ChatGPT — right in the restaurant."
+  },
+
+  "nav": {
+    "top": {
+      "home": "Home",
+      "features": "Features",
+      "pricing": "Pricing"
+    },
+    "cta": "Book a demo",
+    "drawer": {
+      "title": "Menu",
+      "groups": {
+        "product": "Product",
+        "features": "Features",
+        "knowledge": "Knowledge",
+        "company": "Company",
+        "legal": "Legal"
+      },
+      "links": {
+        "home": "Home",
+        "features": "Features",
+        "pricing": "Pricing",
+        "demo": "Book a demo",
+        "demo_view": "View demo",
+        "contact": "Contact",
+
+        "feat_ordering": "Ordering (Chat & Kiosk)",
+        "feat_kds": "Kitchen & Bar (KDS)",
+        "feat_poslite": "POS Lite",
+        "feat_service": "Service (Inbox)",
+
+        "kb_home": "Knowledge base",
+        "kb_getting_started": "Getting started",
+        "kb_faq": "FAQ",
+        "blog": "Blog",
+
+        "about": "About",
+        "partners": "Partners",
+        "jobs": "Jobs",
+
+        "imprint": "Imprint",
+        "privacy": "Privacy"
+      }
+    }
+  },
+
+  "footer": {
+    "columns": {
+      "product": "Product",
+      "features": "Features",
+      "company": "Company",
+      "knowledge": "Knowledge"
+    },
+    "links": {
+      "home": "Home",
+      "features": "Features",
+      "pricing": "Pricing",
+      "demo": "Book a demo",
+
+      "feat_ordering": "Ordering (Chat & Kiosk)",
+      "feat_kds": "Kitchen & Bar (KDS)",
+      "feat_poslite": "POS Lite",
+      "feat_service": "Service",
+
+      "about": "About",
+      "contact": "Contact",
+      "partners": "Partners",
+      "jobs": "Jobs",
+
+      "kb_home": "Knowledge base",
+      "kb_getting_started": "Getting started",
+      "kb_faq": "FAQ",
+      "blog": "Blog"
+    },
+    "legalTitle": "Legal",
+    "legalLinks": {
+      "imprint": "Imprint",
+      "privacy": "Privacy",
+      "cookies": "Cookies",
+      "status": "Status / Updates"
+    },
+    "fineprint": "© {year} {company}. All rights reserved."
+  },
+
+  "common": {
+    "cta_demo": "Book a demo",
+    "cta_contact": "Contact",
+    "cta_pricing": "View pricing",
+    "cta_features": "View features",
+    "cta_back": "Back",
+    "cta_read_more": "Learn more",
+    "cta_open": "Open",
+    "cta_close": "Close",
+    "cta_save": "Save",
+    "cta_submit": "Submit",
+    "cta_try": "Try it",
+    "yes": "Yes",
+    "no": "No"
+  },
+
+  "pages": {
+    "home": {
+      "meta": {
+        "title": "Order like ChatGPT — Gastro Landingpage",
+        "description": "Guests scan a QR code, ask questions and order with a tap. Kitchen and bar get clear tickets. No app."
+      },
+      "hero": {
+        "h1": "Order like ChatGPT — right in the restaurant.",
+        "sub": "Guests scan the QR code at the table, ask questions, and order with a tap. No app. No stress.",
+        "ctaPrimary": "Book a demo",
+        "ctaSecondary": "Quick overview (2 min)",
+        "bullets": [
+          "Multilingual",
+          "Kitchen & bar tickets (tablet)",
+          "Optional POS Lite / Kiosk mode"
+        ]
+      },
+      "featureShowcase": {
+        "items": [
+          "Chat-first Ordering (Buttons instead of typing)",
+          "Multilingual (DE/EN/ES)",
+          "Kitchen & Bar separated (Stations KDS)",
+          "POS-Lite (Floor, Cashier, Split)",
+          "Service Inbox (Waiter / Bill / Issues)",
+          "Menu Import (Website/PDF/Photos)"
+        ],
+        "cta": "View Demo"
+      },
+      "problemSolution": {
+        "problem": {
+          "h2": "The daily problem",
+          "p": "The same questions keep coming up: ingredients, allergens, recommendations, the bill. Staff get interrupted and guests wait."
+        },
+        "solution": {
+          "h2": "The solution",
+          "p": "An intelligent menu that works like ChatGPT: questions → recommendations → ordering. With cards and buttons instead of typing."
+        },
+        "guest": {
+          "h2": "What guests really want",
+          "p": "No waiting times, no misunderstandings. Guests order when they want – and get exactly what they ordered."
+        },
+        "team": {
+          "h2": "What relieves the team",
+          "p": "Fewer trips, fewer 'Can I pay?'. Service can focus on true hospitality and advice."
+        }
+      },
+      "problem": {
+        "h2": "The daily problem",
+        "p": "The same questions keep coming up: ingredients, allergens, recommendations, the bill. Staff get interrupted and guests wait."
+      },
+      "solution": {
+        "h2": "The solution",
+        "p": "An intelligent menu that works like ChatGPT: questions → recommendations → ordering. With cards and buttons instead of typing."
+      },
+      "how": {
+        "h2": "How it works",
+        "steps": [
+          { "title": "1) Scan the QR", "text": "Guests land directly in the chat." },
+          { "title": "2) Ask or tap", "text": "Menu, drinks, recommendations, service — as cards/buttons." },
+          { "title": "3) The order arrives", "text": "Kitchen and bar receive clear tickets (stations mode)." }
+        ]
+      },
+      "timeline": {
+        "h2": "Daily Workflow",
+        "p": "Less stress, more time for hospitality. A seamless process.",
+        "steps": [
+          { "title": "1. Scan & Start", "desc": "Guest scans QR. No app download." },
+          { "title": "2. Chat & Click", "desc": "Bot asks, guest answers via buttons." },
+          { "title": "3. Kitchen & Bar", "desc": "Tickets appear sorted instantly." },
+          { "title": "4. Done", "desc": "Payment & Service completed." }
+        ]
+      },
+      "modules": {
+        "h2": "Modules",
+        "items": [
+          { "title": "For guests", "text": "Chat-first ordering, recommendations, reordering with one tap." },
+          { "title": "For kitchen & bar", "text": "Stations KDS: New → In progress → Ready. A tablet is enough." },
+          { "title": "For owners", "text": "Onboarding via website/PDF/photos, settings, reports." }
+        ]
+      },
+      "themes": {
+        "h2": "Three menu designs",
+        "p": "Not every restaurant looks the same. Choose the style that fits your concept.",
+        "items": [
+          { "title": "Photo", "text": "Image-first, modern, fast." },
+          { "title": "Classic", "text": "Typography-first, elegant, fine dining." },
+          { "title": "Modern", "text": "Clean, calm, Apple-like." }
+        ]
+      },
+      "trust": {
+        "h2": "Start without risk",
+        "items": [
+          { "title": "No app required", "text": "Scanning the QR is enough." },
+          { "title": "Keep your current POS if you want", "text": "Start with ordering + kitchen. Integrations are optional later." },
+          { "title": "Built for weak Wi-Fi", "text": "Robust flows and clear states." }
+        ]
+      },
+      "pricingTeaser": {
+        "h2": "Plans",
+        "p": "Start small — expand later.",
+        "cta": "View pricing"
+      },
+      "faqTeaser": {
+        "h2": "Common questions",
+        "items": [
+          { "q": "Do guests need an app?", "a": "No. Scanning the QR is enough." },
+          { "q": "Do we have to replace our POS?", "a": "No. Start with ordering + kitchen. Integration later is optional." },
+          { "q": "How fast can we go live?", "a": "Usually within minutes: import → review → QR." }
+        ],
+        "cta": "View FAQ"
+      },
+      "socialProof": {
+        "h2": "What businesses say (pilot phase)",
+        "p": "Short voices from practice – real relief in daily operations.",
+        "testimonials": [
+          { "name": "Bar in Palma", "text": "Multilingual support was crucial for us. Guests now order independently.", "tag": "Multilingual" },
+          { "name": "Tapas Restaurant", "text": "Kitchen and bar see immediately what to do. No more chaos.", "tag": "Kitchen & Bar" },
+          { "name": "Café", "text": "Faster service, less waiting. Guests are more satisfied.", "tag": "Fast Service" },
+          { "name": "Restaurant", "text": "Simple setup, clear overview. Exactly what we needed.", "tag": "Simple" },
+          { "name": "Bistro", "text": "Additional orders arrive automatically. Perfect for our operation.", "tag": "Reorders" },
+          { "name": "Tavern", "text": "No app needed – scanning QR is enough. That convinces our guests.", "tag": "QR-based" },
+          { "name": "Steakhouse", "text": "Kitchen display shows everything clearly. Less shouting, more overview.", "tag": "KDS" },
+          { "name": "Pizzeria", "text": "Multilingual from the start. Guests feel welcome.", "tag": "Multilingual" }
+        ]
+      },
+      "partners": {
+        "h2": "Partners & Integrations",
+        "p": "Optional – depending on setup. We start pragmatically.",
+        "items": [
+          { "name": "POS Systems", "icon": "💳" },
+          { "name": "Payment", "icon": "💵" },
+          { "name": "Reservations", "icon": "📅" },
+          { "name": "Delivery", "icon": "🚚" },
+          { "name": "Google", "icon": "🔍" },
+          { "name": "WhatsApp", "icon": "💬" },
+          { "name": "Printers", "icon": "🖨️" },
+          { "name": "Analytics", "icon": "📊" },
+          { "name": "API", "icon": "🔌" },
+          { "name": "Webhook", "icon": "🔗" },
+          { "name": "Export", "icon": "📤" },
+          { "name": "Import", "icon": "📥" }
+        ]
+      },
+      "proof": {
+        "h2": "How it looks in the real world",
+        "p": "Three views that mirror daily operations — calm, clear, and instantly understandable.",
+        "items": [
+          { "title": "Guest chat view", "subtitle": "Questions → buttons → order. No app." },
+          { "title": "KDS tickets", "subtitle": "Kitchen/bar separated, clear states, less shouting." },
+          { "title": "Admin preview", "subtitle": "Menu, reports, settings — clean and calm." }
+        ]
+      },
+      "finalCta": {
+        "h2": "Want a 10-minute demo?",
+        "p": "We show the guest flow, kitchen/bar, and admin setup — end to end.",
+        "ctaPrimary": "Book a demo",
+        "ctaSecondary": "Contact"
+      },
+      "roi": {
+        "h2": "ROI Calculator",
+        "p": "Estimate the potential additional revenue for your restaurant.",
+        "inputs": {
+          "tables": "Tables",
+          "guestsPerDay": "Guests per day",
+          "avgBill": "Average bill (€)",
+          "internationalGuests": "International guests (%)"
+        },
+        "outputs": {
+          "additionalOrders": "Additional orders/day",
+          "monthlyRevenue": "Estimated additional revenue/month",
+          "timeSaved": "Time saved per day"
+        },
+        "disclaimer": "Estimate based on conservative assumptions. Actual values depend on the operation.",
+        "cta": "View demo"
+      },
+      "miniChat": {
+        "welcome": "Welcome! I'm your intelligent menu.",
+        "actions": {
+          "menu": "Menu",
+          "drinks": "Drinks",
+          "recommendation": "Recommendation",
+          "waiter": "Call waiter"
+        },
+        "recommendation": {
+          "title": "Based on your preferences:",
+          "items": [
+            { "name": "Homemade Pasta", "price": "€14.90", "add": "Add" },
+            { "name": "Fresh Salad", "price": "€9.50", "add": "Add" },
+            { "name": "Daily Special", "price": "€12.00", "add": "Add" }
+          ]
+        },
+        "upsell": {
+          "question": "Another beer?",
+          "options": ["1 Beer", "2 Beers", "No"]
+        },
+        "confirmation": {
+          "text": "Perfect! Your order has been received.",
+          "viewOrders": "View orders"
+        },
+        "bill": {
+          "text": "Bill will be sent to the service inbox."
+        }
+      }
+    },
+
+    "features": {
+      "meta": {
+        "title": "Features — Gastro Landingpage",
+        "description": "All features: ordering, kitchen & bar, POS Lite, service."
+      },
+      "h1": "Features",
+      "intro": "Here's an overview of all modules. Details are on the subpages.",
+      "sections": {
+        "ordering": {
+          "h2": "Ordering (Chat & Kiosk)",
+          "p": "Chat-first, cards/buttons, multilingual, optional kiosk mode."
+        },
+        "kds": {
+          "h2": "Kitchen & Bar (KDS)",
+          "p": "Stations board for kitchen/bar, clear tickets, status workflow."
+        },
+        "poslite": {
+          "h2": "POS Lite",
+          "p": "Floor, order taking, cashier (split), reports. Tablet-first."
+        },
+        "service": {
+          "h2": "Service",
+          "p": "Service inbox: call waiter, bill, problems — visible and trackable."
+        }
+      },
+      "cta": {
+        "title": "Want details?",
+        "p": "Choose a module:",
+        "buttons": {
+          "ordering": "View ordering",
+          "kds": "View kitchen & bar",
+          "poslite": "View POS Lite"
+        }
+      },
+      "analytics": {
+        "kicker": "Analytics dashboard",
+        "h2": "Data that makes decisions easier.",
+        "p": "Understand your business better: trends, top sellers, and team load at a glance. Calm, clear, and without spreadsheet chaos.",
+        "stats": [
+          { "label": "Revenue growth", "value": "+24%" },
+          { "label": "Active guests", "value": "1.2k" }
+        ],
+        "days": ["MO", "TU", "WE", "TH", "FR", "SA", "SU"],
+        "floating": { "label": "Daily goal", "value": "Reached" }
+      },
+      "ecosystem": {
+        "h2": "The ecosystem",
+        "p": "Everything connects. One core system for every workflow.",
+        "core": "Core",
+        "nodes": ["Data", "Sync", "Stack", "Realtime"]
+      },
+      "roles": {
+        "h2": "One platform, four perspectives",
+        "p": "Everyone benefits — from guests to owners.",
+        "items": {
+          "guest": {
+            "title": "Guest",
+            "desc": "Scans, orders, pays. No waiting around.",
+            "features": ["QR scan", "Digital menu", "Apple Pay / Google Pay"]
+          },
+          "kitchen": {
+            "title": "Kitchen",
+            "desc": "Sees tickets by station. No chaos.",
+            "features": ["Station KDS", "Ticket groups", "Status updates"]
+          },
+          "service": {
+            "title": "Service",
+            "desc": "Gets called when needed. More time for hospitality.",
+            "features": ["Service calls", "Table assignment", "Handheld mode"]
+          },
+          "admin": {
+            "title": "Admin",
+            "desc": "Keeps an eye on revenue and staffing.",
+            "features": ["Live dashboard", "Staff planning", "Exports"]
+          }
+        }
+      },
+      "detailBlocks": {
+        "items": [
+          {
+            "h2": "Ordering",
+            "p": "Modern ordering for your guests. Chat-first, fast and intuitive — no app. Guests scan and start instantly."
+          },
+          {
+            "h2": "Kitchen & Bar",
+            "p": "Optimized workflows for kitchen and bar. Tickets land on the right station automatically — with clear status updates."
+          },
+          {
+            "h2": "POS Lite",
+            "p": "A lightweight POS for operations: floor plan, splits, payments and reports — all in one calm surface."
+          }
+        ]
+      },
+      "deepDive": {
+        "h2": "Deep dive",
+        "p": "All features, in detail"
+      }
+    },
+
+    "feature_ordering": {
+      "meta": {
+        "title": "Ordering (Chat & Kiosk) — Features",
+        "description": "Chat-first ordering with cards/chips, optional kiosk mode."
+      },
+      "h1": "Ordering (Chat & Kiosk)",
+      "sections": [
+        { "h2": "Chat-first", "p": "Chat is the home screen. The assistant stays brief and delivers clickable cards/chips." },
+        { "h2": "Menu as a sheet", "p": "Menu and drinks open as a sheet. Chat stays in focus." },
+        { "h2": "Kiosk mode (optional)", "p": "Large tiles and a guided flow — great for tablets at the table or counter." },
+        { "h2": "Multilingual", "p": "Choose a language instantly. Translations are managed centrally." }
+      ],
+      "cta": { "title": "See a demo?", "button": "Book a demo" }
+    },
+
+    "feature_kds": {
+      "meta": {
+        "title": "Kitchen & Bar (KDS) — Features",
+        "description": "Stations KDS: separate kitchen/bar, clear tickets, status workflow."
+      },
+      "h1": "Kitchen & Bar (KDS)",
+      "sections": [
+        { "h2": "Stations mode", "p": "Filter kitchen and bar separately. Mixed orders are grouped intelligently." },
+        { "h2": "Status workflow", "p": "New → In progress → Ready. Clear and fast." },
+        { "h2": "Tablet-ready", "p": "Runs in the browser. A normal tablet is enough." },
+        { "h2": "Less shouting, more clarity", "p": "Kitchen and bar see what to do immediately — without chaos." }
+      ],
+      "cta": { "title": "See it live?", "button": "Book a demo" }
+    },
+
+    "feature_poslite": {
+      "meta": {
+        "title": "POS Lite — Features",
+        "description": "POS Lite: floor, cashier, split, reports. Standalone or hybrid later."
+      },
+      "h1": "POS Lite",
+      "sections": [
+        { "h2": "Fast to operate", "p": "Floor → table → items → cashier. Optimized for tablet and desktop." },
+        { "h2": "Checks & split", "p": "Create checks, split evenly, mark paid. Payment provider optional later." },
+        { "h2": "Reports", "p": "Revenue, orders, top sellers — at a glance." },
+        { "h2": "Hybrid possible later", "p": "Our UI in front, existing POS in the background — optional." }
+      ],
+      "cta": { "title": "See POS Lite?", "button": "Book a demo" }
+    },
+
+    "pricing": {
+      "meta": {
+        "title": "Pricing — Gastro Landingpage",
+        "description": "Three plans: Basic, Pro, Premium."
+      },
+      "h1": "Pricing",
+      "intro": "Start small — expand later. Plans and integrations can vary by region.",
+      "tiers": [
+        {
+          "name": "Basic",
+          "tag": "Start here",
+          "items": [
+            "Chat-first ordering",
+            "Menu (3 designs)",
+            "Orders & rounds",
+            "Multilingual (DE/EN/ES)"
+          ],
+          "cta": "Book a demo"
+        },
+        {
+          "name": "Pro",
+          "tag": "For operations",
+          "items": [
+            "KDS: kitchen & bar stations",
+            "Service inbox",
+            "Reports (KPIs)",
+            "Menu import (website/PDF/photos)"
+          ],
+          "cta": "Book a demo"
+        },
+        {
+          "name": "Premium",
+          "tag": "For growth",
+          "items": [
+            "POS Lite (floor, cashier, split)",
+            "Kiosk mode (optional)",
+            "Hybrid bridge (optional later)",
+            "Advanced settings & workflows"
+          ],
+          "cta": "Book a demo"
+        }
+      ],
+      "note": "Note: We start pragmatically and build out cleanly over time.",
+      "faqLink": "View FAQ"
+    },
+
+    "demo": {
+      "meta": {
+        "title": "Interactive Demo — Gastro Landingpage",
+        "description": "Experience the guest flow and admin dashboard live."
+      },
+      "h1": "Interactive Demo",
+      "intro": "Choose a view:",
+      "tabs": {
+        "guest": "Guest View",
+        "admin": "Admin View"
+      },
+      "guest": {
+        "title": "Guest View",
+        "subtitle": "How your guests experience ordering"
+      },
+      "admin": {
+        "title": "Admin Dashboard",
+        "subtitle": "Management and overview",
+        "sections": {
+          "onboarding": "Onboarding",
+          "settings": "Settings",
+          "pos": "POS Lite",
+          "kds": "Kitchen & Bar"
+        },
+        "importStatus": "Import running..."
+      },
+      "form": {
+        "title": "Book a demo",
+        "intro": "In 10 minutes you'll see the complete flow: guest → order → kitchen/bar → admin.",
+        "name": "Name",
+        "restaurant": "Restaurant",
+        "city": "City",
+        "email": "Email",
+        "phone": "Phone (optional)",
+        "message": "What should we focus on? (optional)",
+        "submit": "Request a demo",
+        "privacyHint": "By submitting, you agree to the processing of your data as described in our privacy policy."
+      },
+      "cta": {
+        "primary": "Book a demo",
+        "secondary": "View pricing"
+      }
+    },
+
+    "contact": {
+      "meta": {
+        "title": "Contact — Gastro Landingpage",
+        "description": "Contact us for a demo or pilot."
+      },
+      "h1": "Contact",
+      "intro": "Tell us what you need — we'll get back to you quickly.",
+      "methods": {
+        "whatsapp": "WhatsApp",
+        "email": "Email",
+        "phone": "Phone"
+      },
+      "cta": { "title": "Fastest: a demo", "button": "Book a demo" }
+    },
+
+    "knowledge": {
+      "meta": {
+        "title": "Knowledge base — Gastro Landingpage",
+        "description": "Short guides and answers."
+      },
+      "h1": "Knowledge base",
+      "intro": "Short, practical guides — no jargon.",
+      "cards": [
+        { "title": "Getting started", "text": "Go live in minutes: import → review → QR." },
+        { "title": "FAQ", "text": "Answers to the most common questions." },
+        { "title": "Blog", "text": "Updates, tips, examples." }
+      ]
+    },
+
+    "getting_started": {
+      "meta": {
+        "title": "Getting started — Knowledge base",
+        "description": "How to go live quickly."
+      },
+      "h1": "Getting started",
+      "sections": [
+        { "h2": "1) Create your restaurant", "p": "Set the basics: name, languages, currency." },
+        { "h2": "2) Import your menu", "p": "Use a website link or upload PDF/photos. Then review & publish." },
+        { "h2": "3) Create tables & QR", "p": "Generate table QR codes and print them." },
+        { "h2": "4) Kitchen/bar (optional)", "p": "Open the KDS on a tablet and start operating." }
+      ]
+    },
+
+    "faq": {
+      "meta": {
+        "title": "FAQ — Knowledge base",
+        "description": "Clear answers to common questions."
+      },
+      "h1": "FAQ",
+      "items": [
+        { "q": "Do guests need an app?", "a": "No. Scanning the QR is enough." },
+        { "q": "Can the assistant guarantee allergens?", "a": "Only if the data is confirmed. If uncertain, we recommend asking staff." },
+        { "q": "What if Wi-Fi is weak?", "a": "The flow is built to be robust. Menu can be cached and orders are sent reliably." },
+        { "q": "Do we have to replace our POS?", "a": "No. POS Lite is optional. Integrations are possible later." }
+      ]
+    },
+
+    "blog": {
+      "meta": {
+        "title": "Blog — Gastro Landingpage",
+        "description": "Updates, tips, and examples."
+      },
+      "h1": "Blog",
+      "intro": "Short posts from the field: setup, operations, examples.",
+      "empty": "No posts published yet."
+    },
+
+    "blog_post": {
+      "meta": {
+        "title": "Blog — Article",
+        "description": "A blog article."
+      },
+      "notFound": {
+        "h1": "Article not found",
+        "p": "The requested post is not available.",
+        "cta": "Back to blog"
+      }
+    },
+
+    "imprint": {
+      "meta": { "title": "Imprint — Gastro Landingpage", "description": "Legal provider information." },
+      "h1": "Imprint",
+      "p": "This page contains the legally required provider information."
+    },
+
+    "privacy": {
+      "meta": { "title": "Privacy — Gastro Landingpage", "description": "Information about data processing." },
+      "h1": "Privacy",
+      "p": "This page explains how personal data is processed."
+    }
+  }
+}

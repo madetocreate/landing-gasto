@@ -1,0 +1,32 @@
+[
+  {
+    "id": "kb-overview-1",
+    "title": "Was ist Gastro?",
+    "content": "Gastro ist eine intelligente Speisekarte, die wie ChatGPT funktioniert. Gäste scannen den QR-Code am Tisch, stellen Fragen und bestellen per Klick. Küche und Bar bekommen klare Tickets auf Tablets.",
+    "category": "overview",
+    "keywords": ["was ist", "überblick", "einführung", "start"],
+    "links": [
+      { "label": "Features ansehen", "href": "/features" },
+      { "label": "Demo ansehen", "href": "/demo" }
+    ]
+  },
+  {
+    "id": "kb-overview-2",
+    "title": "Wie schnell bin ich live?",
+    "content": "In der Regel sind Sie in wenigen Minuten live: Menü importieren (Website/PDF/Fotos) → kurz prüfen → Tische anlegen → QR-Codes ausdrucken. Keine komplizierte Einrichtung.",
+    "category": "overview",
+    "keywords": ["schnell", "live", "setup", "einrichtung", "zeit"],
+    "links": [
+      { "label": "Erste Schritte", "href": "/wissen/erste-schritte" }
+    ]
+  },
+  {
+    "id": "kb-overview-3",
+    "title": "Brauchen Gäste eine App?",
+    "content": "Nein. Gäste scannen einfach den QR-Code am Tisch und landen direkt im Chat. Keine App-Downloads, keine Registrierung.",
+    "category": "overview",
+    "keywords": ["app", "qr", "gast", "download"],
+    "links": []
+  }
+]
+

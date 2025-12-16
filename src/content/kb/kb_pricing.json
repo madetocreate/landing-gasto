@@ -1,0 +1,34 @@
+[
+  {
+    "id": "kb-pricing-1",
+    "title": "Welches Paket passt zu mir?",
+    "content": "Basic: Für den Start (Chat-Bestellen, Menü, Mehrsprachig). Pro: Für den Betrieb (KDS, Service Inbox, Reports). Premium: Für Wachstum (POS-Lite, Kiosk, erweiterte Settings).",
+    "category": "pricing",
+    "keywords": ["paket", "welches", "basic", "pro", "premium"],
+    "links": [
+      { "label": "Preise ansehen", "href": "/preise" }
+    ]
+  },
+  {
+    "id": "kb-pricing-2",
+    "title": "Kann ich später upgraden?",
+    "content": "Ja, jederzeit. Du kannst dein Paket monatlich wechseln. Alle Pakete sind monatlich kündbar.",
+    "category": "pricing",
+    "keywords": ["upgrade", "wechseln", "kündbar", "monatlich"],
+    "links": [
+      { "label": "Preise ansehen", "href": "/preise" }
+    ]
+  },
+  {
+    "id": "kb-pricing-3",
+    "title": "Was kostet es?",
+    "content": "Die Preise variieren je nach Paket und Region. Sieh dir die aktuelle Preisübersicht an oder buche eine Demo für ein individuelles Angebot.",
+    "category": "pricing",
+    "keywords": ["kosten", "preis", "preise", "geld"],
+    "links": [
+      { "label": "Preise ansehen", "href": "/preise" },
+      { "label": "Demo buchen", "href": "/demo#form" }
+    ]
+  }
+]
+

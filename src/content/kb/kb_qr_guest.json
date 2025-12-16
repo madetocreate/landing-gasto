@@ -1,0 +1,29 @@
+[
+  {
+    "id": "kb-qr-1",
+    "title": "QR-Code wird nicht gescannt",
+    "content": "Prüfe: Ist der QR-Code gut sichtbar? Ist der Link korrekt? Teste den Link direkt im Browser. Falls nicht: Erstelle einen neuen QR-Code im Admin.",
+    "category": "qr_guest",
+    "keywords": ["qr", "scannen", "link", "nicht funktioniert"],
+    "links": [
+      { "label": "Admin öffnen", "href": "/admin" }
+    ]
+  },
+  {
+    "id": "kb-qr-2",
+    "title": "Gast sieht keine Speisekarte",
+    "content": "Prüfe: Ist das Menü veröffentlicht? Gehe im Admin zu Menü → Status. Stelle sicher, dass 'Veröffentlicht' aktiviert ist.",
+    "category": "qr_guest",
+    "keywords": ["menü", "speisekarte", "nicht sichtbar", "veröffentlicht"],
+    "links": []
+  },
+  {
+    "id": "kb-qr-3",
+    "title": "Bestellung kommt nicht an",
+    "content": "Prüfe: Ist die Küche/Bar online? Öffne das KDS auf einem Tablet. Prüfe die Internetverbindung. Falls weiterhin Probleme: Kontaktiere den Support.",
+    "category": "qr_guest",
+    "keywords": ["bestellung", "kommt nicht an", "küche", "kds"],
+    "links": []
+  }
+]
+
