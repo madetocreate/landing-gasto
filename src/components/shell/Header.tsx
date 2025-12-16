@@ -1,80 +1,70 @@
 "use client"
 
-import { useState, useEffect } from "react"
+import { useState } from "react"
 import Link from "next/link"
 import { motion, useScroll, useMotionValueEvent, AnimatePresence } from "framer-motion"
 import { Menu } from "lucide-react"
 import { NavigationDrawer } from "@/components/nav/NavigationDrawer"
 import { LanguageSwitcher } from "@/components/ui/LanguageSwitcher"
+import { Button } from "@/components/ui/Button"
 import { useLocale } from "@/hooks/useLocale"
 import { t } from "@/lib/i18n"
 import { classNames } from "@/lib/classNames"
-import { motion as motionPolicy } from "@/lib/motion"
 
 export function Header() {
   const locale = useLocale()
   const [isDrawerOpen, setIsDrawerOpen] = useState(false)
-  const [isVisible, setIsVisible] = useState(true)
+  const [isScrolled, setIsScrolled] = useState(false)
   const { scrollY } = useScroll()
-  const [lastScrollY, setLastScrollY] = useState(0)
 
   useMotionValueEvent(scrollY, "change", (latest) => {
-    const diff = latest - lastScrollY
-    const isScrollingDown = diff > 0
-    const isScrollingUp = diff < 0
-
-    // Show header at the very top always
-    if (latest < 100) {
-      setIsVisible(true)
-    } else if (isScrollingDown && latest > 300) {
-      // Hide when scrolling down past 300px
-      setIsVisible(false)
-    } else if (isScrollingUp) {
-      // Show when scrolling up
-      setIsVisible(true)
-    }
-
-    setLastScrollY(latest)
+    setIsScrolled(latest > 20)
   })
 
   return (
     <>
-      <AnimatePresence>
-        {isVisible && (
-          <motion.header
-            initial={{ y: -100, opacity: 0 }}
-            animate={{ y: 0, opacity: 1 }}
-            exit={{ y: -100, opacity: 0 }}
-            transition={{ duration: motionPolicy.drawer.duration, ease: motionPolicy.drawer.ease }}
-            className="fixed top-0 left-0 right-0 z-30 pt-4 px-4 sm:px-6 lg:px-8 pointer-events-none"
-          >
-            <div className="max-w-7xl mx-auto">
-              <div className="bg-glass/80 backdrop-blur-[var(--blur-glass)] border border-glass-border shadow-glass rounded-2xl px-6 h-16 flex items-center justify-between pointer-events-auto">
-                {/* Logo */}
-                <Link
-                  href="/"
-                  className="text-xl font-bold tracking-tight text-foreground hover:text-accent transition-colors"
-                >
-                  {t(locale, "brand.name")}
-                </Link>
-
-                {/* Right Side: Lang + Menu */}
-                <div className="flex items-center gap-4">
-                  <LanguageSwitcher />
-                  
-                  <button
-                    onClick={() => setIsDrawerOpen(true)}
-                    className="p-2 -mr-2 rounded-full hover:bg-background-muted/60 transition-colors text-foreground"
-                    aria-label="Menü öffnen"
-                  >
-                    <Menu className="w-6 h-6" />
-                  </button>
-                </div>
-              </div>
-            </div>
-          </motion.header>
+      <header
+        className={classNames(
+          "fixed top-0 left-0 right-0 z-40 transition-all duration-300 border-b",
+          isScrolled 
+            ? "bg-glass/90 backdrop-blur-md border-glass-border shadow-sm py-3" 
+            : "bg-transparent border-transparent py-5"
         )}
-      </AnimatePresence>
+      >
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex items-center justify-between">
+          {/* Logo */}
+          <Link
+            href="/"
+            className="text-2xl font-bold tracking-tight text-foreground hover:text-accent transition-colors flex items-center gap-2"
+          >
+            <div className="w-8 h-8 rounded-lg bg-accent flex items-center justify-center">
+              <span className="text-white font-bold text-lg">G</span>
+            </div>
+            <span>{t(locale, "brand.name")}</span>
+          </Link>
+
+          {/* Right Side: Lang + Demo + Menu */}
+          <div className="flex items-center gap-3 sm:gap-6">
+            <div className="hidden md:block">
+               <LanguageSwitcher />
+            </div>
+            
+            <div className="hidden sm:block">
+              <Button variant="primary" size="sm" asChild href="/demo" className="rounded-full px-6">
+                {t(locale, "nav.cta")}
+              </Button>
+            </div>
+            
+            <button
+              onClick={() => setIsDrawerOpen(true)}
+              className="p-2 -mr-2 rounded-full hover:bg-muted transition-colors text-foreground"
+              aria-label="Menü öffnen"
+            >
+              <Menu className="w-7 h-7 stroke-[1.5]" />
+            </button>
+          </div>
+        </div>
+      </header>
 
       <NavigationDrawer 
         isOpen={isDrawerOpen} 

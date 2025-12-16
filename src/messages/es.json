@@ -3,7 +3,6 @@
     "name": "Gastro Landingpage",
     "tagline": "Pedir como con ChatGPT — directamente en el restaurante."
   },
-
   "nav": {
     "top": {
       "home": "Inicio",
@@ -27,27 +26,22 @@
         "demo": "Reservar demo",
         "demo_view": "Ver demo",
         "contact": "Contacto",
-
         "feat_ordering": "Pedidos (Chat y Kiosco)",
         "feat_kds": "Cocina y Barra (KDS)",
         "feat_poslite": "POS Lite",
         "feat_service": "Servicio (Bandeja)",
-
         "kb_home": "Base de conocimiento",
         "kb_getting_started": "Primeros pasos",
         "kb_faq": "Preguntas frecuentes",
         "blog": "Blog",
-
         "about": "Sobre nosotros",
         "partners": "Socios",
         "jobs": "Empleo",
-
         "imprint": "Aviso legal",
         "privacy": "Privacidad"
       }
     }
   },
-
   "footer": {
     "columns": {
       "product": "Producto",
@@ -60,17 +54,14 @@
       "features": "Funciones",
       "pricing": "Precios",
       "demo": "Reservar demo",
-
       "feat_ordering": "Pedidos (Chat y Kiosco)",
       "feat_kds": "Cocina y Barra (KDS)",
       "feat_poslite": "POS Lite",
       "feat_service": "Servicio",
-
       "about": "Sobre nosotros",
       "contact": "Contacto",
       "partners": "Socios",
       "jobs": "Empleo",
-
       "kb_home": "Base de conocimiento",
       "kb_getting_started": "Primeros pasos",
       "kb_faq": "Preguntas frecuentes",
@@ -85,7 +76,6 @@
     },
     "fineprint": "© {year} {company}. Todos los derechos reservados."
   },
-
   "common": {
     "cta_demo": "Reservar demo",
     "cta_contact": "Contacto",
@@ -101,7 +91,6 @@
     "yes": "Sí",
     "no": "No"
   },
-
   "pages": {
     "home": {
       "meta": {
@@ -159,44 +148,92 @@
       "how": {
         "h2": "Cómo funciona",
         "steps": [
-          { "title": "1) Escanear el QR", "text": "El cliente entra directamente en el chat." },
-          { "title": "2) Preguntar o tocar", "text": "Carta, bebidas, recomendaciones, servicio — todo con tarjetas/botones." },
-          { "title": "3) El pedido llega", "text": "Cocina y barra reciben tickets claros (modo estaciones)." }
+          {
+            "title": "1) Escanear el QR",
+            "text": "El cliente entra directamente en el chat."
+          },
+          {
+            "title": "2) Preguntar o tocar",
+            "text": "Carta, bebidas, recomendaciones, servicio — todo con tarjetas/botones."
+          },
+          {
+            "title": "3) El pedido llega",
+            "text": "Cocina y barra reciben tickets claros (modo estaciones)."
+          }
         ]
       },
       "timeline": {
         "h2": "Flujo Diario",
         "p": "Menos estrés, más tiempo para la hospitalidad. Un proceso fluido.",
         "steps": [
-          { "title": "1. Escanear", "desc": "Cliente escanea QR. Sin descargar app." },
-          { "title": "2. Chat y Clic", "desc": "Bot pregunta, cliente responde con botones." },
-          { "title": "3. Cocina y Barra", "desc": "Tickets aparecen ordenados al instante." },
-          { "title": "4. Listo", "desc": "Pago y servicio completados." }
+          {
+            "title": "1. Escanear",
+            "desc": "Cliente escanea QR. Sin descargar app."
+          },
+          {
+            "title": "2. Chat y Clic",
+            "desc": "Bot pregunta, cliente responde con botones."
+          },
+          {
+            "title": "3. Cocina y Barra",
+            "desc": "Tickets aparecen ordenados al instante."
+          },
+          {
+            "title": "4. Listo",
+            "desc": "Pago y servicio completados."
+          }
         ]
       },
       "modules": {
         "h2": "Módulos",
         "items": [
-          { "title": "Para clientes", "text": "Pedidos con chat, recomendaciones, reordenar con un toque." },
-          { "title": "Para cocina y barra", "text": "KDS por estaciones: Nuevo → En preparación → Listo. Basta una tablet." },
-          { "title": "Para el dueño", "text": "Onboarding por web/PDF/fotos, ajustes, informes." }
+          {
+            "title": "Para clientes",
+            "text": "Pedidos con chat, recomendaciones, reordenar con un toque."
+          },
+          {
+            "title": "Para cocina y barra",
+            "text": "KDS por estaciones: Nuevo → En preparación → Listo. Basta una tablet."
+          },
+          {
+            "title": "Para el dueño",
+            "text": "Onboarding por web/PDF/fotos, ajustes, informes."
+          }
         ]
       },
       "themes": {
         "h2": "Tres diseños de carta",
         "p": "No todos los restaurantes son iguales. Elige el estilo que encaje con tu concepto.",
         "items": [
-          { "title": "Photo", "text": "Visual, moderno y rápido." },
-          { "title": "Classic", "text": "Tipográfico, elegante, fine dining." },
-          { "title": "Modern", "text": "Limpio, tranquilo, estilo Apple." }
+          {
+            "title": "Photo",
+            "text": "Visual, moderno y rápido."
+          },
+          {
+            "title": "Classic",
+            "text": "Tipográfico, elegante, fine dining."
+          },
+          {
+            "title": "Modern",
+            "text": "Limpio, tranquilo, estilo Apple."
+          }
         ]
       },
       "trust": {
         "h2": "Empieza sin riesgo",
         "items": [
-          { "title": "Sin app", "text": "Basta con escanear el QR." },
-          { "title": "Mantén tu caja si quieres", "text": "Empieza con pedidos y cocina. Integraciones opcionales más adelante." },
-          { "title": "Preparado para Wi-Fi débil", "text": "Flujos robustos y estados claros." }
+          {
+            "title": "Sin app",
+            "text": "Basta con escanear el QR."
+          },
+          {
+            "title": "Mantén tu caja si quieres",
+            "text": "Empieza con pedidos y cocina. Integraciones opcionales más adelante."
+          },
+          {
+            "title": "Preparado para Wi-Fi débil",
+            "text": "Flujos robustos y estados claros."
+          }
         ]
       },
       "pricingTeaser": {
@@ -207,9 +244,18 @@
       "faqTeaser": {
         "h2": "Preguntas habituales",
         "items": [
-          { "q": "¿Los clientes necesitan una app?", "a": "No. Escanear el QR es suficiente." },
-          { "q": "¿Hay que cambiar la caja?", "a": "No. Puedes empezar con pedidos y cocina. Integración opcional después." },
-          { "q": "¿Cuánto tardamos en estar listos?", "a": "Normalmente minutos: importar → revisar → QR." }
+          {
+            "q": "¿Los clientes necesitan una app?",
+            "a": "No. Escanear el QR es suficiente."
+          },
+          {
+            "q": "¿Hay que cambiar la caja?",
+            "a": "No. Puedes empezar con pedidos y cocina. Integración opcional después."
+          },
+          {
+            "q": "¿Cuánto tardamos en estar listos?",
+            "a": "Normalmente minutos: importar → revisar → QR."
+          }
         ],
         "cta": "Ver FAQ"
       },
@@ -217,41 +263,118 @@
         "h2": "Lo que dicen los negocios (fase piloto)",
         "p": "Voces breves de la práctica – alivio real en el día a día.",
         "testimonials": [
-          { "name": "Bar en Palma", "text": "El multilingüe fue crucial para nosotros. Los clientes ahora piden solos.", "tag": "Multilingüe" },
-          { "name": "Restaurante Tapas", "text": "Cocina y barra ven de inmediato qué hacer. Sin caos.", "tag": "Cocina y Barra" },
-          { "name": "Café", "text": "Servicio más rápido, menos espera. Clientes más satisfechos.", "tag": "Servicio Rápido" },
-          { "name": "Restaurante", "text": "Setup simple, vista clara. Exactamente lo que necesitábamos.", "tag": "Simple" },
-          { "name": "Bistro", "text": "Pedidos adicionales llegan automáticamente. Perfecto para nuestro negocio.", "tag": "Repedidos" },
-          { "name": "Taberna", "text": "Sin app – escanear QR basta. Eso convence a nuestros clientes.", "tag": "Basado en QR" },
-          { "name": "Steakhouse", "text": "Pantalla de cocina muestra todo claro. Menos gritos, más vista.", "tag": "KDS" },
-          { "name": "Pizzería", "text": "Multilingüe desde el inicio. Clientes se sienten bienvenidos.", "tag": "Multilingüe" }
+          {
+            "name": "Bar en Palma",
+            "text": "El multilingüe fue crucial para nosotros. Los clientes ahora piden solos.",
+            "tag": "Multilingüe"
+          },
+          {
+            "name": "Restaurante Tapas",
+            "text": "Cocina y barra ven de inmediato qué hacer. Sin caos.",
+            "tag": "Cocina y Barra"
+          },
+          {
+            "name": "Café",
+            "text": "Servicio más rápido, menos espera. Clientes más satisfechos.",
+            "tag": "Servicio Rápido"
+          },
+          {
+            "name": "Restaurante",
+            "text": "Setup simple, vista clara. Exactamente lo que necesitábamos.",
+            "tag": "Simple"
+          },
+          {
+            "name": "Bistro",
+            "text": "Pedidos adicionales llegan automáticamente. Perfecto para nuestro negocio.",
+            "tag": "Repedidos"
+          },
+          {
+            "name": "Taberna",
+            "text": "Sin app – escanear QR basta. Eso convence a nuestros clientes.",
+            "tag": "Basado en QR"
+          },
+          {
+            "name": "Steakhouse",
+            "text": "Pantalla de cocina muestra todo claro. Menos gritos, más vista.",
+            "tag": "KDS"
+          },
+          {
+            "name": "Pizzería",
+            "text": "Multilingüe desde el inicio. Clientes se sienten bienvenidos.",
+            "tag": "Multilingüe"
+          }
         ]
       },
       "partners": {
         "h2": "Socios e Integraciones",
         "p": "Opcional – según el setup. Empezamos de forma pragmática.",
         "items": [
-          { "name": "Sistemas POS", "icon": "💳" },
-          { "name": "Pago", "icon": "💵" },
-          { "name": "Reservas", "icon": "📅" },
-          { "name": "Delivery", "icon": "🚚" },
-          { "name": "Google", "icon": "🔍" },
-          { "name": "WhatsApp", "icon": "💬" },
-          { "name": "Impresoras", "icon": "🖨️" },
-          { "name": "Analytics", "icon": "📊" },
-          { "name": "API", "icon": "🔌" },
-          { "name": "Webhook", "icon": "🔗" },
-          { "name": "Exportar", "icon": "📤" },
-          { "name": "Importar", "icon": "📥" }
+          {
+            "name": "Sistemas POS",
+            "icon": "💳"
+          },
+          {
+            "name": "Pago",
+            "icon": "💵"
+          },
+          {
+            "name": "Reservas",
+            "icon": "📅"
+          },
+          {
+            "name": "Delivery",
+            "icon": "🚚"
+          },
+          {
+            "name": "Google",
+            "icon": "🔍"
+          },
+          {
+            "name": "WhatsApp",
+            "icon": "💬"
+          },
+          {
+            "name": "Impresoras",
+            "icon": "🖨️"
+          },
+          {
+            "name": "Analytics",
+            "icon": "📊"
+          },
+          {
+            "name": "API",
+            "icon": "🔌"
+          },
+          {
+            "name": "Webhook",
+            "icon": "🔗"
+          },
+          {
+            "name": "Exportar",
+            "icon": "📤"
+          },
+          {
+            "name": "Importar",
+            "icon": "📥"
+          }
         ]
       },
       "proof": {
         "h2": "Así se ve en la práctica",
         "p": "Tres vistas que reflejan el día a día — tranquilo, claro y fácil de entender.",
         "items": [
-          { "title": "Vista chat cliente", "subtitle": "Preguntas → botones → pedido. Sin app." },
-          { "title": "Tickets KDS", "subtitle": "Cocina/barra separadas, estados claros, menos gritos." },
-          { "title": "Vista admin", "subtitle": "Carta, informes y ajustes — limpio y calmado." }
+          {
+            "title": "Vista chat cliente",
+            "subtitle": "Preguntas → botones → pedido. Sin app."
+          },
+          {
+            "title": "Tickets KDS",
+            "subtitle": "Cocina/barra separadas, estados claros, menos gritos."
+          },
+          {
+            "title": "Vista admin",
+            "subtitle": "Carta, informes y ajustes — limpio y calmado."
+          }
         ]
       },
       "finalCta": {
@@ -288,14 +411,30 @@
         "recommendation": {
           "title": "Basado en tus preferencias:",
           "items": [
-            { "name": "Pasta Casera", "price": "€14.90", "add": "Añadir" },
-            { "name": "Ensalada Fresca", "price": "€9.50", "add": "Añadir" },
-            { "name": "Plato del Día", "price": "€12.00", "add": "Añadir" }
+            {
+              "name": "Pasta Casera",
+              "price": "€14.90",
+              "add": "Añadir"
+            },
+            {
+              "name": "Ensalada Fresca",
+              "price": "€9.50",
+              "add": "Añadir"
+            },
+            {
+              "name": "Plato del Día",
+              "price": "€12.00",
+              "add": "Añadir"
+            }
           ]
         },
         "upsell": {
           "question": "¿Otra cerveza?",
-          "options": ["1 Cerveza", "2 Cervezas", "No"]
+          "options": [
+            "1 Cerveza",
+            "2 Cervezas",
+            "No"
+          ]
         },
         "confirmation": {
           "text": "¡Perfecto! Tu pedido ha sido recibido.",
@@ -306,7 +445,6 @@
         }
       }
     },
-
     "features": {
       "meta": {
         "title": "Funciones — Gastro Landingpage",
@@ -346,17 +484,39 @@
         "h2": "Datos que facilitan decisiones.",
         "p": "Entiende mejor tu negocio: tendencias, top ventas y carga del equipo de un vistazo. Claro, tranquilo y sin caos de tablas.",
         "stats": [
-          { "label": "Crecimiento de ingresos", "value": "+24%" },
-          { "label": "Clientes activos", "value": "1,2k" }
+          {
+            "label": "Crecimiento de ingresos",
+            "value": "+24%"
+          },
+          {
+            "label": "Clientes activos",
+            "value": "1,2k"
+          }
         ],
-        "days": ["LU", "MA", "MI", "JU", "VI", "SA", "DO"],
-        "floating": { "label": "Objetivo diario", "value": "Logrado" }
+        "days": [
+          "LU",
+          "MA",
+          "MI",
+          "JU",
+          "VI",
+          "SA",
+          "DO"
+        ],
+        "floating": {
+          "label": "Objetivo diario",
+          "value": "Logrado"
+        }
       },
       "ecosystem": {
         "h2": "El ecosistema",
         "p": "Todo encaja. Un sistema central para cada proceso.",
         "core": "Core",
-        "nodes": ["Datos", "Sync", "Stack", "Tiempo real"]
+        "nodes": [
+          "Datos",
+          "Sync",
+          "Stack",
+          "Tiempo real"
+        ]
       },
       "roles": {
         "h2": "Una plataforma, cuatro perspectivas",
@@ -365,22 +525,38 @@
           "guest": {
             "title": "Cliente",
             "desc": "Escanea, pide y paga. Sin esperas.",
-            "features": ["Escaneo QR", "Carta digital", "Apple Pay / Google Pay"]
+            "features": [
+              "Escaneo QR",
+              "Carta digital",
+              "Apple Pay / Google Pay"
+            ]
           },
           "kitchen": {
             "title": "Cocina",
             "desc": "Ve tickets por estación. Sin caos.",
-            "features": ["KDS por estaciones", "Grupos de tickets", "Actualizaciones de estado"]
+            "features": [
+              "KDS por estaciones",
+              "Grupos de tickets",
+              "Actualizaciones de estado"
+            ]
           },
           "service": {
             "title": "Servicio",
             "desc": "Se le llama cuando hace falta. Más tiempo para atender.",
-            "features": ["Llamadas de servicio", "Asignación de mesa", "Modo handheld"]
+            "features": [
+              "Llamadas de servicio",
+              "Asignación de mesa",
+              "Modo handheld"
+            ]
           },
           "admin": {
             "title": "Admin",
             "desc": "Controla ingresos y personal.",
-            "features": ["Panel en vivo", "Planificación", "Exportación"]
+            "features": [
+              "Panel en vivo",
+              "Planificación",
+              "Exportación"
+            ]
           }
         }
       },
@@ -405,7 +581,6 @@
         "p": "Todas las funciones, en detalle"
       }
     },
-
     "feature_ordering": {
       "meta": {
         "title": "Pedidos (Chat y Kiosco) — Funciones",
@@ -413,14 +588,28 @@
       },
       "h1": "Pedidos (Chat y Kiosco)",
       "sections": [
-        { "h2": "Chat-first", "p": "El chat es la pantalla principal. Respuestas cortas y acciones con tarjetas/chips." },
-        { "h2": "Carta como sheet", "p": "La carta y bebidas se abren como un panel. El chat sigue en primer plano." },
-        { "h2": "Modo kiosco (opcional)", "p": "Azulejos grandes y flujo guiado. Ideal para tablets." },
-        { "h2": "Multilingüe", "p": "Elige idioma al instante. Traducciones gestionadas de forma central." }
+        {
+          "h2": "Chat-first",
+          "p": "El chat es la pantalla principal. Respuestas cortas y acciones con tarjetas/chips."
+        },
+        {
+          "h2": "Carta como sheet",
+          "p": "La carta y bebidas se abren como un panel. El chat sigue en primer plano."
+        },
+        {
+          "h2": "Modo kiosco (opcional)",
+          "p": "Azulejos grandes y flujo guiado. Ideal para tablets."
+        },
+        {
+          "h2": "Multilingüe",
+          "p": "Elige idioma al instante. Traducciones gestionadas de forma central."
+        }
       ],
-      "cta": { "title": "¿Ver una demo?", "button": "Reservar demo" }
+      "cta": {
+        "title": "¿Ver una demo?",
+        "button": "Reservar demo"
+      }
     },
-
     "feature_kds": {
       "meta": {
         "title": "Cocina y Barra (KDS) — Funciones",
@@ -428,14 +617,28 @@
       },
       "h1": "Cocina y Barra (KDS)",
       "sections": [
-        { "h2": "Modo estaciones", "p": "Filtra cocina y barra. Los pedidos mixtos se agrupan correctamente." },
-        { "h2": "Estados", "p": "Nuevo → En preparación → Listo. Claro y rápido." },
-        { "h2": "Listo para tablet", "p": "Funciona en el navegador. Una tablet normal es suficiente." },
-        { "h2": "Menos caos", "p": "Cocina y barra saben qué hacer, sin gritos ni papel." }
+        {
+          "h2": "Modo estaciones",
+          "p": "Filtra cocina y barra. Los pedidos mixtos se agrupan correctamente."
+        },
+        {
+          "h2": "Estados",
+          "p": "Nuevo → En preparación → Listo. Claro y rápido."
+        },
+        {
+          "h2": "Listo para tablet",
+          "p": "Funciona en el navegador. Una tablet normal es suficiente."
+        },
+        {
+          "h2": "Menos caos",
+          "p": "Cocina y barra saben qué hacer, sin gritos ni papel."
+        }
       ],
-      "cta": { "title": "¿Verlo en acción?", "button": "Reservar demo" }
+      "cta": {
+        "title": "¿Verlo en acción?",
+        "button": "Reservar demo"
+      }
     },
-
     "feature_poslite": {
       "meta": {
         "title": "POS Lite — Funciones",
@@ -443,14 +646,28 @@
       },
       "h1": "POS Lite",
       "sections": [
-        { "h2": "Operación rápida", "p": "Mesas → pedido → caja. Optimizado para tablet y escritorio." },
-        { "h2": "Cuenta y split", "p": "Crear cuenta, dividir por partes iguales, marcar pagado. Proveedor de pago opcional más adelante." },
-        { "h2": "Informes", "p": "Ingresos, pedidos, top ventas — de un vistazo." },
-        { "h2": "Híbrido más adelante", "p": "Nuestra UI delante, tu caja existente detrás — opcional." }
+        {
+          "h2": "Operación rápida",
+          "p": "Mesas → pedido → caja. Optimizado para tablet y escritorio."
+        },
+        {
+          "h2": "Cuenta y split",
+          "p": "Crear cuenta, dividir por partes iguales, marcar pagado. Proveedor de pago opcional más adelante."
+        },
+        {
+          "h2": "Informes",
+          "p": "Ingresos, pedidos, top ventas — de un vistazo."
+        },
+        {
+          "h2": "Híbrido más adelante",
+          "p": "Nuestra UI delante, tu caja existente detrás — opcional."
+        }
       ],
-      "cta": { "title": "¿Ver POS Lite?", "button": "Reservar demo" }
+      "cta": {
+        "title": "¿Ver POS Lite?",
+        "button": "Reservar demo"
+      }
     },
-
     "pricing": {
       "meta": {
         "title": "Precios — Gastro Landingpage",
@@ -496,7 +713,6 @@
       "note": "Nota: empezamos de forma pragmática y ampliamos de manera limpia.",
       "faqLink": "Ver FAQ"
     },
-
     "demo": {
       "meta": {
         "title": "Demo Interactiva — Gastro Landingpage",
@@ -516,12 +732,103 @@
         "title": "Panel de Administración",
         "subtitle": "Gestión y resumen",
         "sections": {
-          "onboarding": "Onboarding",
+          "setup": "Setup",
+          "operations": "Operación",
+          "pos": "Caja (POS)",
+          "waiter": "Vista Camarero",
           "settings": "Ajustes",
-          "pos": "POS Lite",
           "kds": "Cocina y Barra"
         },
-        "importStatus": "Importación en curso..."
+        "importStatus": "Importación en curso...",
+        "setup": {
+          "h4": "Crear restaurante",
+          "p": "Configura lo básico: datos, importación del menú, revisión y publicación.",
+          "progress": "Importando menú… 65%"
+        },
+        "operations": {
+          "h4": "Operación",
+          "p": "Lo importante del día a día: pedidos, estado y siguientes pasos — de un vistazo.",
+          "cards": {
+            "open": {
+              "label": "Abierto",
+              "hint": "Pedidos / acciones"
+            },
+            "inKitchen": {
+              "label": "Cocina/Barra",
+              "hint": "En curso / estaciones"
+            },
+            "paid": {
+              "label": "Pagado",
+              "hint": "Completado / resumen"
+            }
+          }
+        },
+        "settings": {
+          "h4": "Ajustes",
+          "rows": {
+            "languages": "Idiomas",
+            "currency": "Moneda",
+            "timezone": "Zona horaria"
+          }
+        },
+        "kds": {
+          "h4": "Cocina y Barra",
+          "p": "Vista por estaciones (KDS): tranquila, filtrable y por estado.",
+          "stations": {
+            "kitchen": "Cocina",
+            "bar": "Barra"
+          },
+          "statusActive": "Activo"
+        },
+        "pos": {
+          "badge": "Demo",
+          "floor": {
+            "h4": "Sala",
+            "p": "Mesas, estados y selección rápida — calmado y rápido.",
+            "tapHint": "Tocar"
+          },
+          "cashier": {
+            "h4": "Caja",
+            "p": "Dividir, pagar, cerrar — sin ruido.",
+            "activeTable": "Mesa activa",
+            "total": "Total",
+            "actions": {
+              "split": "Dividir",
+              "pay": "Pagar"
+            }
+          },
+          "status": {
+            "free": "libre",
+            "open": "abierto",
+            "paying": "pagando"
+          }
+        },
+        "waiter": {
+          "badge": "Demo",
+          "h4": "Vista Camarero",
+          "p": "UI de servicio: tickets, pendientes y acciones rápidas.",
+          "tableLabel": "Mesa",
+          "tapHint": "Abrir",
+          "status": {
+            "open": "abierto",
+            "in_progress": "en curso",
+            "done": "hecho"
+          },
+          "actions": {
+            "h4": "Acciones rápidas",
+            "p": "Pasos típicos del servicio — como demo de UI.",
+            "buttons": {
+              "newOrder": "Nuevo pedido",
+              "callWaiter": "Llamar camarero",
+              "requestBill": "Cuenta",
+              "takePayment": "Cobrar"
+            }
+          },
+          "comingSoon": {
+            "title": "Nota",
+            "p": "Se pueden añadir más vistas (ticket, split, etc.)."
+          }
+        }
       },
       "form": {
         "title": "Reservar demo",
@@ -540,7 +847,6 @@
         "secondary": "Ver precios"
       }
     },
-
     "contact": {
       "meta": {
         "title": "Contacto — Gastro Landingpage",
@@ -553,9 +859,11 @@
         "email": "Correo",
         "phone": "Teléfono"
       },
-      "cta": { "title": "Lo más rápido: demo", "button": "Reservar demo" }
+      "cta": {
+        "title": "Lo más rápido: demo",
+        "button": "Reservar demo"
+      }
     },
-
     "knowledge": {
       "meta": {
         "title": "Base de conocimiento — Gastro Landingpage",
@@ -564,12 +872,20 @@
       "h1": "Base de conocimiento",
       "intro": "Guías cortas y prácticas, sin complicaciones.",
       "cards": [
-        { "title": "Primeros pasos", "text": "En minutos: importar → revisar → QR." },
-        { "title": "FAQ", "text": "Respuestas a las preguntas habituales." },
-        { "title": "Blog", "text": "Actualizaciones, consejos, ejemplos." }
+        {
+          "title": "Primeros pasos",
+          "text": "En minutos: importar → revisar → QR."
+        },
+        {
+          "title": "FAQ",
+          "text": "Respuestas a las preguntas habituales."
+        },
+        {
+          "title": "Blog",
+          "text": "Actualizaciones, consejos, ejemplos."
+        }
       ]
     },
-
     "getting_started": {
       "meta": {
         "title": "Primeros pasos — Guía",
@@ -577,13 +893,24 @@
       },
       "h1": "Primeros pasos",
       "sections": [
-        { "h2": "1) Crear restaurante", "p": "Define lo básico: nombre, idiomas, moneda." },
-        { "h2": "2) Importar carta", "p": "Enlace web o subir PDF/fotos. Después revisa y publica." },
-        { "h2": "3) Mesas y QR", "p": "Genera QR por mesa y listo." },
-        { "h2": "4) Cocina/barra (opcional)", "p": "Abre el KDS en una tablet y empieza a operar." }
+        {
+          "h2": "1) Crear restaurante",
+          "p": "Define lo básico: nombre, idiomas, moneda."
+        },
+        {
+          "h2": "2) Importar carta",
+          "p": "Enlace web o subir PDF/fotos. Después revisa y publica."
+        },
+        {
+          "h2": "3) Mesas y QR",
+          "p": "Genera QR por mesa y listo."
+        },
+        {
+          "h2": "4) Cocina/barra (opcional)",
+          "p": "Abre el KDS en una tablet y empieza a operar."
+        }
       ]
     },
-
     "faq": {
       "meta": {
         "title": "FAQ — Guía",
@@ -591,13 +918,24 @@
       },
       "h1": "Preguntas frecuentes",
       "items": [
-        { "q": "¿Los clientes necesitan una app?", "a": "No. Con escanear el QR es suficiente." },
-        { "q": "¿El asistente garantiza alérgenos?", "a": "Solo si los datos están confirmados. Si hay duda, recomendamos preguntar al personal." },
-        { "q": "¿Y si el Wi-Fi es débil?", "a": "El flujo es robusto. El menú puede estar cacheado y los pedidos se envían de forma fiable." },
-        { "q": "¿Hay que cambiar la caja?", "a": "No. POS Lite es opcional. Integraciones posibles más adelante." }
+        {
+          "q": "¿Los clientes necesitan una app?",
+          "a": "No. Con escanear el QR es suficiente."
+        },
+        {
+          "q": "¿El asistente garantiza alérgenos?",
+          "a": "Solo si los datos están confirmados. Si hay duda, recomendamos preguntar al personal."
+        },
+        {
+          "q": "¿Y si el Wi-Fi es débil?",
+          "a": "El flujo es robusto. El menú puede estar cacheado y los pedidos se envían de forma fiable."
+        },
+        {
+          "q": "¿Hay que cambiar la caja?",
+          "a": "No. POS Lite es opcional. Integraciones posibles más adelante."
+        }
       ]
     },
-
     "blog": {
       "meta": {
         "title": "Blog — Gastro Landingpage",
@@ -607,7 +945,6 @@
       "intro": "Artículos cortos sobre setup, operación y ejemplos.",
       "empty": "Aún no hay entradas publicadas."
     },
-
     "blog_post": {
       "meta": {
         "title": "Blog — Artículo",
@@ -619,15 +956,19 @@
         "cta": "Volver al blog"
       }
     },
-
     "imprint": {
-      "meta": { "title": "Aviso legal — Gastro Landingpage", "description": "Información legal del proveedor." },
+      "meta": {
+        "title": "Aviso legal — Gastro Landingpage",
+        "description": "Información legal del proveedor."
+      },
       "h1": "Aviso legal",
       "p": "Esta página contiene la información legal requerida del proveedor."
     },
-
     "privacy": {
-      "meta": { "title": "Privacidad — Gastro Landingpage", "description": "Información sobre el tratamiento de datos." },
+      "meta": {
+        "title": "Privacidad — Gastro Landingpage",
+        "description": "Información sobre el tratamiento de datos."
+      },
       "h1": "Privacidad",
       "p": "Esta página explica cómo se tratan los datos personales."
     }

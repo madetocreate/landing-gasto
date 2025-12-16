@@ -3,7 +3,6 @@
     "name": "Gastro Landingpage",
     "tagline": "Bestellen wie mit ChatGPT – direkt im Restaurant."
   },
-
   "nav": {
     "top": {
       "home": "Home",
@@ -27,27 +26,22 @@
         "demo": "Demo buchen",
         "demo_view": "Demo ansehen",
         "contact": "Kontakt",
-
         "feat_ordering": "Bestellen (Chat & Kiosk)",
         "feat_kds": "Küche & Bar (KDS)",
         "feat_poslite": "POS-Lite",
         "feat_service": "Service (Warteschlange)",
-
         "kb_home": "Wissensbasis",
         "kb_getting_started": "Erste Schritte",
         "kb_faq": "FAQ",
         "blog": "Blog",
-
         "about": "Über uns",
         "partners": "Partner",
         "jobs": "Jobs",
-
         "imprint": "Impressum",
         "privacy": "Datenschutz"
       }
     }
   },
-
   "footer": {
     "columns": {
       "product": "Produkt",
@@ -60,17 +54,14 @@
       "features": "Features",
       "pricing": "Preise",
       "demo": "Demo buchen",
-
       "feat_ordering": "Bestellen (Chat & Kiosk)",
       "feat_kds": "Küche & Bar (KDS)",
       "feat_poslite": "POS-Lite",
       "feat_service": "Service",
-
       "about": "Über uns",
       "contact": "Kontakt",
       "partners": "Partner",
       "jobs": "Jobs",
-
       "kb_home": "Wissensbasis",
       "kb_getting_started": "Erste Schritte",
       "kb_faq": "FAQ",
@@ -85,7 +76,6 @@
     },
     "fineprint": "© {year} {company}. Alle Rechte vorbehalten."
   },
-
   "common": {
     "cta_demo": "Demo buchen",
     "cta_contact": "Kontakt",
@@ -101,7 +91,6 @@
     "yes": "Ja",
     "no": "Nein"
   },
-
   "pages": {
     "home": {
       "meta": {
@@ -161,44 +150,92 @@
       "how": {
         "h2": "So funktioniert's",
         "steps": [
-          { "title": "1) QR scannen", "text": "Der Gast landet sofort im Chat." },
-          { "title": "2) Fragen oder klicken", "text": "Speisekarte, Getränke, Empfehlung, Service – als Karten/Buttons." },
-          { "title": "3) Bestellung kommt an", "text": "Küche und Bar bekommen klare Tickets (Stations-Modus)." }
+          {
+            "title": "1) QR scannen",
+            "text": "Der Gast landet sofort im Chat."
+          },
+          {
+            "title": "2) Fragen oder klicken",
+            "text": "Speisekarte, Getränke, Empfehlung, Service – als Karten/Buttons."
+          },
+          {
+            "title": "3) Bestellung kommt an",
+            "text": "Küche und Bar bekommen klare Tickets (Stations-Modus)."
+          }
         ]
       },
       "timeline": {
         "h2": "So läuft es im Alltag",
         "p": "Weniger Hektik, mehr Zeit für Gastfreundschaft. Ein fließender Prozess.",
         "steps": [
-          { "title": "1. Scan & Start", "desc": "Gast scannt QR. Kein App-Download." },
-          { "title": "2. Chat & Klick", "desc": "Bot fragt, Gast antwortet per Button." },
-          { "title": "3. Küche & Bar", "desc": "Tickets erscheinen sofort sortiert." },
-          { "title": "4. Fertig", "desc": "Zahlung & Service erledigt." }
+          {
+            "title": "1. Scan & Start",
+            "desc": "Gast scannt QR. Kein App-Download."
+          },
+          {
+            "title": "2. Chat & Klick",
+            "desc": "Bot fragt, Gast antwortet per Button."
+          },
+          {
+            "title": "3. Küche & Bar",
+            "desc": "Tickets erscheinen sofort sortiert."
+          },
+          {
+            "title": "4. Fertig",
+            "desc": "Zahlung & Service erledigt."
+          }
         ]
       },
       "modules": {
         "h2": "Module",
         "items": [
-          { "title": "Für Gäste", "text": "Chat-first Bestellen, Empfehlungen, Nachbestellen per Klick." },
-          { "title": "Für Küche & Bar", "text": "Stations-KDS: Neu → In Arbeit → Ready. Tablet reicht." },
-          { "title": "Für Betreiber", "text": "Onboarding per Website/PDF/Fotos, Einstellungen, Reports." }
+          {
+            "title": "Für Gäste",
+            "text": "Chat-first Bestellen, Empfehlungen, Nachbestellen per Klick."
+          },
+          {
+            "title": "Für Küche & Bar",
+            "text": "Stations-KDS: Neu → In Arbeit → Ready. Tablet reicht."
+          },
+          {
+            "title": "Für Betreiber",
+            "text": "Onboarding per Website/PDF/Fotos, Einstellungen, Reports."
+          }
         ]
       },
       "themes": {
         "h2": "Drei Menü-Designs",
         "p": "Nicht jedes Restaurant ist gleich. Wählen Sie den Stil, der zu Ihrem Konzept passt.",
         "items": [
-          { "title": "Photo", "text": "Bildstark, modern, schnell." },
-          { "title": "Classic", "text": "Typografisch, elegant, Fine Dining." },
-          { "title": "Modern", "text": "Clean, ruhig, Apple-like." }
+          {
+            "title": "Photo",
+            "text": "Bildstark, modern, schnell."
+          },
+          {
+            "title": "Classic",
+            "text": "Typografisch, elegant, Fine Dining."
+          },
+          {
+            "title": "Modern",
+            "text": "Clean, ruhig, Apple-like."
+          }
         ]
       },
       "trust": {
         "h2": "Ohne Risiko starten",
         "items": [
-          { "title": "Keine App nötig", "text": "QR scannen reicht." },
-          { "title": "Kasse bleibt, wenn Sie wollen", "text": "Start als Bestell- und Küchen-System. Integration optional." },
-          { "title": "Für schwaches WLAN gebaut", "text": "Stabiler Flow, klare Zustände." }
+          {
+            "title": "Keine App nötig",
+            "text": "QR scannen reicht."
+          },
+          {
+            "title": "Kasse bleibt, wenn Sie wollen",
+            "text": "Start als Bestell- und Küchen-System. Integration optional."
+          },
+          {
+            "title": "Für schwaches WLAN gebaut",
+            "text": "Stabiler Flow, klare Zustände."
+          }
         ]
       },
       "pricingTeaser": {
@@ -209,9 +246,18 @@
       "faqTeaser": {
         "h2": "Häufige Fragen",
         "items": [
-          { "q": "Brauchen Gäste eine App?", "a": "Nein. QR scannen reicht." },
-          { "q": "Müssen wir unsere Kasse ersetzen?", "a": "Nein. Wir starten als Bestell- und Küchen-System. Integration später optional." },
-          { "q": "Wie schnell sind wir live?", "a": "In der Regel in Minuten: Import → Review → QR." }
+          {
+            "q": "Brauchen Gäste eine App?",
+            "a": "Nein. QR scannen reicht."
+          },
+          {
+            "q": "Müssen wir unsere Kasse ersetzen?",
+            "a": "Nein. Wir starten als Bestell- und Küchen-System. Integration später optional."
+          },
+          {
+            "q": "Wie schnell sind wir live?",
+            "a": "In der Regel in Minuten: Import → Review → QR."
+          }
         ],
         "cta": "FAQ ansehen"
       },
@@ -220,22 +266,70 @@
         "p": "Kurze Stimmen aus der Praxis – weniger Rückfragen, schnellere Bestellungen, mehr Ruhe im Betrieb.",
         "disclaimer": "Pilotphase – Ergebnisse können je nach Betrieb variieren.",
         "testimonials": [
-          { "name": "Tapas-Bar in Palma", "text": "Gäste bestellen schneller, und wir werden deutlich seltener wegen Zutaten und Empfehlungen unterbrochen." },
-          { "name": "Café (Innenstadt)", "text": "Die One-Tap-Nachbestellungen sind überraschend stark. Gerade Getränke laufen deutlich flüssiger." },
-          { "name": "Bistro am Strand", "text": "Mehrsprachigkeit ist bei uns der größte Hebel. Weniger Missverständnisse, weniger Wartezeit." },
-          { "name": "Kleines Restaurant (Terrasse)", "text": "Küche und Bar getrennt auf dem Tablet war sofort spürbar. Weniger Zuruf, mehr Überblick." },
-          { "name": "Bar mit viel Durchsatz", "text": "Der schnelle Bestellflow ist Gold. Tap-Tap-Tap statt lange tippen." },
-          { "name": "Familienrestaurant", "text": "Die Gäste verstehen es ohne Erklärung. Das ist selten." },
-          { "name": "Weinbar", "text": "Empfehlungen als Karten funktionieren besser als lange Texte. Die Leute klicken einfach." },
-          { "name": "Café & Frühstück", "text": "Wenn das WLAN schwächelt, bleibt der Flow trotzdem stabil. Das ist im Alltag entscheidend." },
-          { "name": "Restaurant (mittags voll)", "text": "Service-Rufe sauber im System zu sehen reduziert Stress." },
-          { "name": "Tapas & Cocktails", "text": "Bar-Tickets separat zu sehen spart uns Zeit in der Rush-Hour." },
-          { "name": "Kleines Hotel-Restaurant", "text": "Menü-Import spart enorm Arbeit. Karte rein, kurz prüfen, fertig." },
-          { "name": "Snack Bar", "text": "Neue Mitarbeiter kommen schneller klar, weil alles über Buttons funktioniert." },
-          { "name": "Gastro mit Take-away", "text": "Ein Gerät am Tresen reicht, um den Überblick zu halten." },
-          { "name": "Bistro (Tourismus)", "text": "Sprache wählen und sofort bestellen – Gäste sind entspannter." },
-          { "name": "Café mit wechselnden Karten", "text": "Updates sind endlich nicht mehr nervig. Man hat wieder Kontrolle." },
-          { "name": "Restaurant (Abendgeschäft)", "text": "Bestellungen kommen sauber an und sind nachvollziehbar. Das gibt Vertrauen." }
+          {
+            "name": "Tapas-Bar in Palma",
+            "text": "Gäste bestellen schneller, und wir werden deutlich seltener wegen Zutaten und Empfehlungen unterbrochen."
+          },
+          {
+            "name": "Café (Innenstadt)",
+            "text": "Die One-Tap-Nachbestellungen sind überraschend stark. Gerade Getränke laufen deutlich flüssiger."
+          },
+          {
+            "name": "Bistro am Strand",
+            "text": "Mehrsprachigkeit ist bei uns der größte Hebel. Weniger Missverständnisse, weniger Wartezeit."
+          },
+          {
+            "name": "Kleines Restaurant (Terrasse)",
+            "text": "Küche und Bar getrennt auf dem Tablet war sofort spürbar. Weniger Zuruf, mehr Überblick."
+          },
+          {
+            "name": "Bar mit viel Durchsatz",
+            "text": "Der schnelle Bestellflow ist Gold. Tap-Tap-Tap statt lange tippen."
+          },
+          {
+            "name": "Familienrestaurant",
+            "text": "Die Gäste verstehen es ohne Erklärung. Das ist selten."
+          },
+          {
+            "name": "Weinbar",
+            "text": "Empfehlungen als Karten funktionieren besser als lange Texte. Die Leute klicken einfach."
+          },
+          {
+            "name": "Café & Frühstück",
+            "text": "Wenn das WLAN schwächelt, bleibt der Flow trotzdem stabil. Das ist im Alltag entscheidend."
+          },
+          {
+            "name": "Restaurant (mittags voll)",
+            "text": "Service-Rufe sauber im System zu sehen reduziert Stress."
+          },
+          {
+            "name": "Tapas & Cocktails",
+            "text": "Bar-Tickets separat zu sehen spart uns Zeit in der Rush-Hour."
+          },
+          {
+            "name": "Kleines Hotel-Restaurant",
+            "text": "Menü-Import spart enorm Arbeit. Karte rein, kurz prüfen, fertig."
+          },
+          {
+            "name": "Snack Bar",
+            "text": "Neue Mitarbeiter kommen schneller klar, weil alles über Buttons funktioniert."
+          },
+          {
+            "name": "Gastro mit Take-away",
+            "text": "Ein Gerät am Tresen reicht, um den Überblick zu halten."
+          },
+          {
+            "name": "Bistro (Tourismus)",
+            "text": "Sprache wählen und sofort bestellen – Gäste sind entspannter."
+          },
+          {
+            "name": "Café mit wechselnden Karten",
+            "text": "Updates sind endlich nicht mehr nervig. Man hat wieder Kontrolle."
+          },
+          {
+            "name": "Restaurant (Abendgeschäft)",
+            "text": "Bestellungen kommen sauber an und sind nachvollziehbar. Das gibt Vertrauen."
+          }
         ]
       },
       "partners": {
@@ -243,23 +337,56 @@
         "p": "Optional – je nach Setup. Wir starten pragmatisch und bauen die passenden Verbindungen aus.",
         "disclaimer": "Logos sind Platzhalter.",
         "items": [
-          { "name": "Kassensysteme", "icon": "💳" },
-          { "name": "Zahlung", "icon": "💵" },
-          { "name": "Drucker", "icon": "🖨️" },
-          { "name": "Reservierung", "icon": "📅" },
-          { "name": "Lieferdienste", "icon": "🚚" },
-          { "name": "Analytics", "icon": "📊" },
-          { "name": "WhatsApp / Messaging", "icon": "💬" },
-          { "name": "Google", "icon": "🔍" }
+          {
+            "name": "Kassensysteme",
+            "icon": "💳"
+          },
+          {
+            "name": "Zahlung",
+            "icon": "💵"
+          },
+          {
+            "name": "Drucker",
+            "icon": "🖨️"
+          },
+          {
+            "name": "Reservierung",
+            "icon": "📅"
+          },
+          {
+            "name": "Lieferdienste",
+            "icon": "🚚"
+          },
+          {
+            "name": "Analytics",
+            "icon": "📊"
+          },
+          {
+            "name": "WhatsApp / Messaging",
+            "icon": "💬"
+          },
+          {
+            "name": "Google",
+            "icon": "🔍"
+          }
         ]
       },
       "proof": {
         "h2": "So wirkt es in echt",
         "p": "Drei Ansichten, die den Alltag abbilden — ruhig, klar und sofort verständlich.",
         "items": [
-          { "title": "Guest Chat View", "subtitle": "Fragen → Buttons → Bestellung. Ohne App." },
-          { "title": "KDS Tickets", "subtitle": "Küche/Bar getrennt, klare States, weniger Zuruf." },
-          { "title": "Admin Preview", "subtitle": "Menüpflege, Reports, Einstellungen — aufgeräumt." }
+          {
+            "title": "Guest Chat View",
+            "subtitle": "Fragen → Buttons → Bestellung. Ohne App."
+          },
+          {
+            "title": "KDS Tickets",
+            "subtitle": "Küche/Bar getrennt, klare States, weniger Zuruf."
+          },
+          {
+            "title": "Admin Preview",
+            "subtitle": "Menüpflege, Reports, Einstellungen — aufgeräumt."
+          }
         ]
       },
       "finalCta": {
@@ -296,14 +423,30 @@
         "recommendation": {
           "title": "Basierend auf deinen Vorlieben:",
           "items": [
-            { "name": "Hausgemachte Pasta", "price": "€14.90", "add": "Hinzufügen" },
-            { "name": "Frischer Salat", "price": "€9.50", "add": "Hinzufügen" },
-            { "name": "Tagesgericht", "price": "€12.00", "add": "Hinzufügen" }
+            {
+              "name": "Hausgemachte Pasta",
+              "price": "€14.90",
+              "add": "Hinzufügen"
+            },
+            {
+              "name": "Frischer Salat",
+              "price": "€9.50",
+              "add": "Hinzufügen"
+            },
+            {
+              "name": "Tagesgericht",
+              "price": "€12.00",
+              "add": "Hinzufügen"
+            }
           ]
         },
         "upsell": {
           "question": "Noch ein Bier?",
-          "options": ["1 Bier", "2 Bier", "Nein"]
+          "options": [
+            "1 Bier",
+            "2 Bier",
+            "Nein"
+          ]
         },
         "confirmation": {
           "text": "Perfekt! Deine Bestellung ist angekommen.",
@@ -314,7 +457,6 @@
         }
       }
     },
-
     "features": {
       "meta": {
         "title": "Features – Gastro Landingpage",
@@ -354,17 +496,39 @@
         "h2": "Daten, die Entscheidungen vereinfachen.",
         "p": "Verstehen Sie Ihr Geschäft besser: Trends, Topseller und Team-Auslastung auf einen Blick. Klar, ruhig, ohne Tabellen-Chaos.",
         "stats": [
-          { "label": "Umsatzwachstum", "value": "+24%" },
-          { "label": "Aktive Gäste", "value": "1,2k" }
+          {
+            "label": "Umsatzwachstum",
+            "value": "+24%"
+          },
+          {
+            "label": "Aktive Gäste",
+            "value": "1,2k"
+          }
         ],
-        "days": ["MO", "DI", "MI", "DO", "FR", "SA", "SO"],
-        "floating": { "label": "Tagesziel", "value": "Erreicht" }
+        "days": [
+          "MO",
+          "DI",
+          "MI",
+          "DO",
+          "FR",
+          "SA",
+          "SO"
+        ],
+        "floating": {
+          "label": "Tagesziel",
+          "value": "Erreicht"
+        }
       },
       "ecosystem": {
         "h2": "Das Ökosystem",
         "p": "Alles greift ineinander. Ein zentrales System für alle Prozesse.",
         "core": "Core",
-        "nodes": ["Daten", "Sync", "Stack", "Realtime"]
+        "nodes": [
+          "Daten",
+          "Sync",
+          "Stack",
+          "Realtime"
+        ]
       },
       "roles": {
         "h2": "Eine Plattform, vier Perspektiven",
@@ -373,22 +537,38 @@
           "guest": {
             "title": "Gast",
             "desc": "Scannt, bestellt, zahlt. Alles ohne Wartezeit.",
-            "features": ["QR-Scan", "Digitales Menü", "Apple Pay / Google Pay"]
+            "features": [
+              "QR-Scan",
+              "Digitales Menü",
+              "Apple Pay / Google Pay"
+            ]
           },
           "kitchen": {
             "title": "Küche",
             "desc": "Sieht Tickets sortiert nach Stationen. Kein Chaos.",
-            "features": ["KDS-Stationen", "Bongruppen", "Status-Updates"]
+            "features": [
+              "KDS-Stationen",
+              "Bongruppen",
+              "Status-Updates"
+            ]
           },
           "service": {
             "title": "Service",
             "desc": "Wird gerufen, wenn nötig. Mehr Zeit für Beratung.",
-            "features": ["Service-Ruf", "Tischzuweisung", "Handheld Mode"]
+            "features": [
+              "Service-Ruf",
+              "Tischzuweisung",
+              "Handheld Mode"
+            ]
           },
           "admin": {
             "title": "Admin",
             "desc": "Behält den Überblick über Umsatz und Personal.",
-            "features": ["Live Dashboard", "Personalplanung", "Export"]
+            "features": [
+              "Live Dashboard",
+              "Personalplanung",
+              "Export"
+            ]
           }
         }
       },
@@ -413,7 +593,6 @@
         "p": "Alle Funktionen im Detail"
       }
     },
-
     "feature_ordering": {
       "meta": {
         "title": "Bestellen (Chat & Kiosk) – Features",
@@ -422,8 +601,8 @@
       "h1": "Bestellen (Chat & Kiosk)",
       "intro": "Eine intelligente Speisekarte, die wie ChatGPT funktioniert: Fragen → Empfehlungen → Bestellung. Mit Karten und Buttons statt Tippen.",
       "sections": [
-        { 
-          "h2": "Chat-first – der Bot führt", 
+        {
+          "h2": "Chat-first – der Bot führt",
           "p": "Der Chat ist der Hauptscreen. Der Bot spricht kurz und freundlich – und liefert sofort Karten/Chips zum Klicken. Keine langen Texte, keine komplizierten Menüs. Gäste fragen einfach, was sie wissen wollen: Zutaten, Allergene, Empfehlungen.",
           "bullets": [
             "Natürliche Fragen statt Menü-Navigation",
@@ -431,8 +610,8 @@
             "Weniger Tippen, mehr Klicken"
           ]
         },
-        { 
-          "h2": "Karten und Chips statt Tippen", 
+        {
+          "h2": "Karten und Chips statt Tippen",
           "p": "Jede Antwort kommt als klickbare Karte oder Chip. Gäste wählen per Tap – schnell, klar, ohne Fehler. Empfehlungen, Nachbestellungen, Service-Anfragen: alles als Buttons.",
           "bullets": [
             "Empfehlungen als große Karten mit Bild",
@@ -440,8 +619,8 @@
             "Service-Anfragen als Chips"
           ]
         },
-        { 
-          "h2": "Menü als Sheet – der Chat bleibt im Fokus", 
+        {
+          "h2": "Menü als Sheet – der Chat bleibt im Fokus",
           "p": "Speisekarte und Getränke öffnen sich als elegantes Sheet. Der Chat bleibt sichtbar im Hintergrund. Gäste können jederzeit zurückkehren und weiterfragen.",
           "bullets": [
             "Sheet-Overlay statt neue Seite",
@@ -449,8 +628,8 @@
             "Schnelles Wechseln zwischen Chat und Menü"
           ]
         },
-        { 
-          "h2": "Kiosk-Modus (optional)", 
+        {
+          "h2": "Kiosk-Modus (optional)",
           "p": "Für Tablets am Tisch oder am Tresen: Große Kacheln, schnelle Auswahl, ideal für schnelle Bestellungen. Perfekt für Cafés, Bars oder Take-away.",
           "bullets": [
             "Große Touch-Targets",
@@ -458,8 +637,8 @@
             "Ideal für Tablets"
           ]
         },
-        { 
-          "h2": "Mehrsprachigkeit – Sprache wählen und loslegen", 
+        {
+          "h2": "Mehrsprachigkeit – Sprache wählen und loslegen",
           "p": "Gäste wählen ihre Sprache – sofort verständlich. Übersetzungen sind zentral gepflegt und können jederzeit aktualisiert werden. Keine App-Updates nötig.",
           "bullets": [
             "Sprache per Klick wechseln",
@@ -467,8 +646,8 @@
             "Sofortige Updates ohne App"
           ]
         },
-        { 
-          "h2": "Stabil auch bei schwachem WLAN", 
+        {
+          "h2": "Stabil auch bei schwachem WLAN",
           "p": "Der Flow ist robust. Menü kann gecached sein, und Bestellungen werden zuverlässig gesendet. Auch bei instabiler Verbindung bleibt die Erfahrung flüssig.",
           "bullets": [
             "Offline-fähige Menü-Anzeige",
@@ -477,9 +656,11 @@
           ]
         }
       ],
-      "cta": { "title": "Demo sehen?", "button": "Demo buchen" }
+      "cta": {
+        "title": "Demo sehen?",
+        "button": "Demo buchen"
+      }
     },
-
     "feature_kds": {
       "meta": {
         "title": "Küche & Bar (KDS) – Features",
@@ -488,8 +669,8 @@
       "h1": "Küche & Bar (KDS)",
       "intro": "Stations-Board für Küche und Bar: Klare Tickets, klarer Status-Workflow. Weniger Zuruf, mehr Übersicht.",
       "sections": [
-        { 
-          "h2": "Stations-Modus – Küche und Bar getrennt", 
+        {
+          "h2": "Stations-Modus – Küche und Bar getrennt",
           "p": "Küche und Bar sehen nur ihre Tickets. Gemischte Bestellungen werden automatisch sinnvoll gruppiert. Keine Verwirrung, keine doppelten Zuordnungen.",
           "bullets": [
             "Separate Ansichten für Küche und Bar",
@@ -497,8 +678,8 @@
             "Klare Zuordnung pro Station"
           ]
         },
-        { 
-          "h2": "Status-Workflow – Neu → In Arbeit → Ready", 
+        {
+          "h2": "Status-Workflow – Neu → In Arbeit → Ready",
           "p": "Drei klare Zustände: Neu, In Arbeit, Ready. Küche und Bar sehen sofort, was zu tun ist. Keine Ablenkung, keine Verwirrung.",
           "bullets": [
             "Drei einfache Status",
@@ -506,8 +687,8 @@
             "Keine komplexen Workflows"
           ]
         },
-        { 
-          "h2": "Tablet-ready – ein normales Tablet reicht", 
+        {
+          "h2": "Tablet-ready – ein normales Tablet reicht",
           "p": "Läuft im Browser. Keine spezielle Hardware nötig. Ein normales Tablet reicht völlig aus. Einfach aufstellen und loslegen.",
           "bullets": [
             "Browser-basiert, keine Installation",
@@ -515,8 +696,8 @@
             "Schnelles Setup"
           ]
         },
-        { 
-          "h2": "Weniger Zuruf, mehr Übersicht", 
+        {
+          "h2": "Weniger Zuruf, mehr Übersicht",
           "p": "Küche und Bar sehen sofort, was zu tun ist – ohne Chaos, ohne ständige Rückfragen. Alle Informationen sind klar sichtbar.",
           "bullets": [
             "Alle Bestellungen auf einen Blick",
@@ -524,8 +705,8 @@
             "Weniger Stress im Betrieb"
           ]
         },
-        { 
-          "h2": "Klare Tickets – alle Infos auf einen Blick", 
+        {
+          "h2": "Klare Tickets – alle Infos auf einen Blick",
           "p": "Jedes Ticket zeigt Tisch, Zeit, Artikel und Sonderwünsche. Alles übersichtlich, nichts wird übersehen.",
           "bullets": [
             "Tischnummer und Zeit sichtbar",
@@ -533,8 +714,8 @@
             "Vollständige Bestellübersicht"
           ]
         },
-        { 
-          "h2": "Für schwaches WLAN gebaut", 
+        {
+          "h2": "Für schwaches WLAN gebaut",
           "p": "Stabiler Flow, klare Zustände. Auch bei instabiler Verbindung funktioniert das System zuverlässig.",
           "bullets": [
             "Robuste Verbindung",
@@ -543,9 +724,11 @@
           ]
         }
       ],
-      "cta": { "title": "Küche live sehen?", "button": "Demo buchen" }
+      "cta": {
+        "title": "Küche live sehen?",
+        "button": "Demo buchen"
+      }
     },
-
     "feature_poslite": {
       "meta": {
         "title": "POS-Lite – Features",
@@ -554,8 +737,8 @@
       "h1": "POS-Lite",
       "intro": "Floor View, schneller Staff Flow, Checks/Split/Paid markieren, Reports. Tablet-first, für den täglichen Betrieb optimiert.",
       "sections": [
-        { 
-          "h2": "Floor View – Übersicht über alle Tische", 
+        {
+          "h2": "Floor View – Übersicht über alle Tische",
           "p": "Alle Tische auf einen Blick. Status, Bestellungen, Rechnungen – alles sichtbar. Schnelle Navigation, klare Übersicht.",
           "bullets": [
             "Alle Tische in einer Ansicht",
@@ -563,8 +746,8 @@
             "Schnelle Navigation"
           ]
         },
-        { 
-          "h2": "Schnell bedienen – Floor → Tisch → Artikel → Kasse", 
+        {
+          "h2": "Schnell bedienen – Floor → Tisch → Artikel → Kasse",
           "p": "Für Tablet und Desktop optimiert. Intuitive Bedienung, schneller Flow. Keine komplizierten Menüs, keine langen Wege.",
           "bullets": [
             "Optimiert für Touch und Maus",
@@ -572,8 +755,8 @@
             "Schneller Bestellflow"
           ]
         },
-        { 
-          "h2": "Checks & Split – Rechnung erstellen und splitten", 
+        {
+          "h2": "Checks & Split – Rechnung erstellen und splitten",
           "p": "Rechnung erstellen, gleichmäßig splitten, bezahlt markieren. Payment-Provider optional später. Alles klar und übersichtlich.",
           "bullets": [
             "Rechnung schnell erstellen",
@@ -581,8 +764,8 @@
             "Bezahlt-Status klar markieren"
           ]
         },
-        { 
-          "h2": "Reports – Umsatz, Bestellungen, Topseller", 
+        {
+          "h2": "Reports – Umsatz, Bestellungen, Topseller",
           "p": "Umsatz, Bestellungen, Topseller – auf einen Blick. Einfache Auswertungen, klare Kennzahlen. Keine komplizierten Dashboards.",
           "bullets": [
             "Umsatz auf einen Blick",
@@ -590,8 +773,8 @@
             "Einfache Auswertungen"
           ]
         },
-        { 
-          "h2": "Hybrid später möglich – bestehende Kasse bleibt", 
+        {
+          "h2": "Hybrid später möglich – bestehende Kasse bleibt",
           "p": "Unsere UI vorn, bestehende Kasse im Hintergrund – optional. Sie können später integrieren, wenn Sie möchten. Kein Zwang.",
           "bullets": [
             "Standalone nutzbar",
@@ -599,8 +782,8 @@
             "Keine Zwangsumstellung"
           ]
         },
-        { 
-          "h2": "Tablet-first – für den mobilen Betrieb", 
+        {
+          "h2": "Tablet-first – für den mobilen Betrieb",
           "p": "Optimiert für Tablets. Perfekt für Kellner, die am Tisch bestellen. Schnell, intuitiv, zuverlässig.",
           "bullets": [
             "Touch-optimiert",
@@ -609,9 +792,11 @@
           ]
         }
       ],
-      "cta": { "title": "POS-Lite in Aktion?", "button": "Demo buchen" }
+      "cta": {
+        "title": "POS-Lite in Aktion?",
+        "button": "Demo buchen"
+      }
     },
-
     "pricing": {
       "meta": {
         "title": "Preise – Gastro Landingpage",
@@ -657,7 +842,6 @@
       "note": "Hinweis: Inhalte und Integrationen können je nach Region variieren. Wir starten pragmatisch und bauen sauber aus.",
       "faqLink": "FAQ ansehen"
     },
-
     "demo": {
       "meta": {
         "title": "Interaktive Demo – Gastro Landingpage",
@@ -677,12 +861,103 @@
         "title": "Admin-Dashboard",
         "subtitle": "Verwaltung und Übersicht",
         "sections": {
-          "onboarding": "Onboarding",
+          "setup": "Setup",
+          "operations": "Betrieb",
+          "pos": "Kasse (POS)",
+          "waiter": "Kellner-Sicht",
           "settings": "Einstellungen",
-          "pos": "POS-Lite",
           "kds": "Küche & Bar"
         },
-        "importStatus": "Import läuft..."
+        "importStatus": "Import läuft...",
+        "setup": {
+          "h4": "Restaurant erstellen",
+          "p": "Einmal sauber einrichten: Basisdaten, Menü-Import, Review und Veröffentlichung.",
+          "progress": "Menü wird importiert… 65%"
+        },
+        "operations": {
+          "h4": "Betrieb",
+          "p": "Was im Alltag zählt: offene Bestellungen, Status und nächste Schritte – auf einen Blick.",
+          "cards": {
+            "open": {
+              "label": "Offen",
+              "hint": "Neue Bestellungen / Aktionen"
+            },
+            "inKitchen": {
+              "label": "In Küche/Bar",
+              "hint": "In Bearbeitung / Stationen"
+            },
+            "paid": {
+              "label": "Bezahlt",
+              "hint": "Abgeschlossen / Tagesübersicht"
+            }
+          }
+        },
+        "settings": {
+          "h4": "Einstellungen",
+          "rows": {
+            "languages": "Sprachen",
+            "currency": "Währung",
+            "timezone": "Zeitzone"
+          }
+        },
+        "kds": {
+          "h4": "Küche & Bar",
+          "p": "Stationen-Ansicht für Küche und Bar (KDS): klar, filterbar, statusbasiert.",
+          "stations": {
+            "kitchen": "Küche",
+            "bar": "Bar"
+          },
+          "statusActive": "Aktiv"
+        },
+        "pos": {
+          "badge": "Demo",
+          "floor": {
+            "h4": "Floor",
+            "p": "Tische, Status und schnelle Auswahl – ruhig und schnell.",
+            "tapHint": "Tippen"
+          },
+          "cashier": {
+            "h4": "Kasse",
+            "p": "Split, Zahlung, Abschluss – ohne Overload.",
+            "activeTable": "Aktiver Tisch",
+            "total": "Summe",
+            "actions": {
+              "split": "Split",
+              "pay": "Zahlung"
+            }
+          },
+          "status": {
+            "free": "frei",
+            "open": "offen",
+            "paying": "zahlen"
+          }
+        },
+        "waiter": {
+          "badge": "Demo",
+          "h4": "Kellner-Sicht",
+          "p": "Bedienoberfläche: Tickets, offene Themen, schnelle Aktionen.",
+          "tableLabel": "Tisch",
+          "tapHint": "Öffnen",
+          "status": {
+            "open": "offen",
+            "in_progress": "in Arbeit",
+            "done": "erledigt"
+          },
+          "actions": {
+            "h4": "Schnellaktionen",
+            "p": "Typische Schritte im Service – als UI-Demo.",
+            "buttons": {
+              "newOrder": "Neue Bestellung",
+              "callWaiter": "Kellner rufen",
+              "requestBill": "Rechnung",
+              "takePayment": "Zahlung"
+            }
+          },
+          "comingSoon": {
+            "title": "Hinweis",
+            "p": "Weitere Subviews (z.B. Bon, Split-Flows) können hier ergänzt werden."
+          }
+        }
       },
       "form": {
         "title": "Demo buchen",
@@ -701,7 +976,6 @@
         "secondary": "Preise ansehen"
       }
     },
-
     "contact": {
       "meta": {
         "title": "Kontakt – Gastro Landingpage",
@@ -714,9 +988,11 @@
         "email": "E-Mail",
         "phone": "Telefon"
       },
-      "cta": { "title": "Am schnellsten: Demo", "button": "Demo buchen" }
+      "cta": {
+        "title": "Am schnellsten: Demo",
+        "button": "Demo buchen"
+      }
     },
-
     "knowledge": {
       "meta": {
         "title": "Wissensbasis – Gastro Landingpage",
@@ -725,12 +1001,20 @@
       "h1": "Wissensbasis",
       "intro": "Kurze, praktische Anleitungen – ohne Fachchinesisch.",
       "cards": [
-        { "title": "Erste Schritte", "text": "In wenigen Minuten live: Import → Review → QR." },
-        { "title": "FAQ", "text": "Antworten auf die häufigsten Fragen." },
-        { "title": "Blog", "text": "Updates, Tipps, Beispiele." }
+        {
+          "title": "Erste Schritte",
+          "text": "In wenigen Minuten live: Import → Review → QR."
+        },
+        {
+          "title": "FAQ",
+          "text": "Antworten auf die häufigsten Fragen."
+        },
+        {
+          "title": "Blog",
+          "text": "Updates, Tipps, Beispiele."
+        }
       ]
     },
-
     "getting_started": {
       "meta": {
         "title": "Erste Schritte – Wissensbasis",
@@ -738,13 +1022,24 @@
       },
       "h1": "Erste Schritte",
       "sections": [
-        { "h2": "1) Restaurant anlegen", "p": "Grunddaten setzen: Name, Sprachen, Währung." },
-        { "h2": "2) Menü importieren", "p": "Website-Link oder PDF/Fotos hochladen. Danach Review & Publish." },
-        { "h2": "3) Tische & QR", "p": "Tische erzeugen, QR-Codes ausdrucken, fertig." },
-        { "h2": "4) Küche/Bar", "p": "Optional KDS auf einem Tablet öffnen und loslegen." }
+        {
+          "h2": "1) Restaurant anlegen",
+          "p": "Grunddaten setzen: Name, Sprachen, Währung."
+        },
+        {
+          "h2": "2) Menü importieren",
+          "p": "Website-Link oder PDF/Fotos hochladen. Danach Review & Publish."
+        },
+        {
+          "h2": "3) Tische & QR",
+          "p": "Tische erzeugen, QR-Codes ausdrucken, fertig."
+        },
+        {
+          "h2": "4) Küche/Bar",
+          "p": "Optional KDS auf einem Tablet öffnen und loslegen."
+        }
       ]
     },
-
     "faq": {
       "meta": {
         "title": "FAQ – Wissensbasis",
@@ -752,13 +1047,24 @@
       },
       "h1": "FAQ",
       "items": [
-        { "q": "Brauchen Gäste eine App?", "a": "Nein. QR scannen reicht." },
-        { "q": "Kann der Bot Allergene garantieren?", "a": "Nur, wenn die Daten im Menü bestätigt sind. Bei Unsicherheit wird der Service empfohlen." },
-        { "q": "Was, wenn das WLAN schlecht ist?", "a": "Der Flow ist robust. Menü kann gecached sein, und Bestellungen werden zuverlässig gesendet." },
-        { "q": "Muss ich meine Kasse ersetzen?", "a": "Nein. POS-Lite ist optional. Später sind Integrationen möglich." }
+        {
+          "q": "Brauchen Gäste eine App?",
+          "a": "Nein. QR scannen reicht."
+        },
+        {
+          "q": "Kann der Bot Allergene garantieren?",
+          "a": "Nur, wenn die Daten im Menü bestätigt sind. Bei Unsicherheit wird der Service empfohlen."
+        },
+        {
+          "q": "Was, wenn das WLAN schlecht ist?",
+          "a": "Der Flow ist robust. Menü kann gecached sein, und Bestellungen werden zuverlässig gesendet."
+        },
+        {
+          "q": "Muss ich meine Kasse ersetzen?",
+          "a": "Nein. POS-Lite ist optional. Später sind Integrationen möglich."
+        }
       ]
     },
-
     "blog": {
       "meta": {
         "title": "Blog – Gastro Landingpage",
@@ -768,7 +1074,6 @@
       "intro": "Kurze Beiträge aus der Praxis: Setup, Betrieb, Beispiele.",
       "empty": "Aktuell sind noch keine Beiträge veröffentlicht."
     },
-
     "blog_post": {
       "meta": {
         "title": "Blog – Artikel",
@@ -780,7 +1085,6 @@
         "cta": "Zum Blog"
       }
     },
-
     "imprint": {
       "meta": {
         "title": "Impressum – Gastro Landingpage",
@@ -789,7 +1093,6 @@
       "h1": "Impressum",
       "p": "Hier finden Sie die gesetzlich erforderlichen Angaben zum Anbieter dieser Website."
     },
-
     "privacy": {
       "meta": {
         "title": "Datenschutz – Gastro Landingpage",

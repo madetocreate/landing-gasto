@@ -33,6 +33,19 @@
   /* Typography */
   --font-family-sans: var(--font-sans);
   --font-family-mono: var(--font-mono);
+  
+  /* Animations */
+  --animate-float-slow: float 6s ease-in-out infinite;
+  --animate-border-beam: border-beam calc(var(--duration)*1s) infinite linear;
+
+  @keyframes float {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-20px); }
+  }
+
+  @keyframes border-beam {
+    100% { offset-distance: 100%; }
+  }
 }
 
 /* Typography Base */
@@ -45,7 +58,7 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
-/* Ambient layer (ultra subtle; CLS-safe; token-only via CSS vars) */
+/* Ambient layer */
 body::before {
   content: "";
   position: fixed;
@@ -58,14 +71,14 @@ body::before {
   opacity: 1;
 }
 
-/* Noise Texture (The "Tactile" Feel) - Keep but ensure it works with warm bg */
+/* Noise Texture */
 body::after {
   content: "";
   position: fixed;
   inset: 0;
   pointer-events: none;
-  z-index: 50; /* Top of stack but click-through */
-  opacity: 0.02; /* Even more subtle for the cleaner look */
+  z-index: 50; 
+  opacity: 0.02; 
   background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.65' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)'/%3E%3C/svg%3E");
   mix-blend-mode: overlay;
 }
@@ -76,7 +89,6 @@ h1 {
   line-height: var(--leading-tight);
   font-weight: 650;
   letter-spacing: -0.02em;
-  /* Updated Gradient for Warmth: Charcoal to slightly lighter charcoal, not transparent */
   background: linear-gradient(to bottom right, var(--color-fg) 20%, var(--color-fg-muted));
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -103,11 +115,24 @@ h4 {
   font-weight: 600;
 }
 
-/* Reading Width - Max 65-75 characters */
-.prose {
-  max-width: 65ch;
-}
+.prose { max-width: 65ch; }
+.prose-wide { max-width: 75ch; }
 
-.prose-wide {
-  max-width: 75ch;
+/* Utilities - Properly nested or as direct classes if valid CSS */
+@layer utilities {
+  .perspective-1000 {
+    perspective: 1000px;
+  }
+  .rotate-y-[-10deg] {
+    transform: rotateY(-10deg);
+  }
+  .rotate-x-[5deg] {
+    transform: rotateX(5deg);
+  }
+  .hover\:rotate-y-[-5deg]:hover {
+    transform: rotateY(-5deg);
+  }
+  .hover\:rotate-x-[2deg]:hover {
+    transform: rotateX(2deg);
+  }
 }

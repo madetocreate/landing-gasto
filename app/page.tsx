@@ -17,6 +17,7 @@ import {
 import { FloatingThemeToggle } from '@/components/ui/FloatingThemeToggle';
 import { FlowTimeline } from '@/components/home/FlowTimeline';
 import { ProofSection } from '@/components/home/ProofSection';
+import { SpotlightCard } from '@/components/ui/SpotlightCard';
 
 export async function generateMetadata(): Promise<Metadata> {
   const locale = await getLocale();
@@ -57,46 +58,109 @@ export default async function Home() {
     <>
       <FloatingThemeToggle />
       
-      {/* Hero */}
-      <Section variant="hero">
-        <Container size="lg">
-          <div className="grid md:grid-cols-2 gap-12 items-center">
-            {/* Left: Text */}
-            <div>
-              <h1 className="mb-6 tracking-tight text-balance bg-gradient-to-br from-foreground to-foreground-muted bg-clip-text text-transparent">
-                {t(locale, 'pages.home.hero.h1')}
+      {/* Hero - Split Screen Layout (So'Use Style) */}
+      <section className="relative min-h-[90vh] flex items-center pt-24 overflow-hidden bg-background">
+        <Container size="xl" className="relative z-10">
+          <div className="grid lg:grid-cols-2 gap-16 lg:gap-24 items-center">
+            
+            {/* Left: Content */}
+            <div className="max-w-2xl">
+              <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-accent/10 text-accent text-sm font-medium mb-6">
+                <span className="relative flex h-2 w-2">
+                  <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-accent opacity-75"></span>
+                  <span className="relative inline-flex rounded-full h-2 w-2 bg-accent"></span>
+                </span>
+                New: AI-Support 2.0
+              </div>
+              
+              <h1 className="mb-8 font-bold tracking-tight text-5xl sm:text-6xl md:text-7xl leading-[1.1]">
+                <span className="block text-foreground">{t(locale, 'pages.home.hero.h1').split('–')[0]}</span>
+                <span className="block text-foreground-muted mt-2 text-4xl sm:text-5xl md:text-6xl">
+                  {t(locale, 'pages.home.hero.h1').split('–')[1] || 'Directly at the table.'}
+                </span>
               </h1>
-              <p className="text-xl text-foreground-muted mb-10 prose-wide leading-relaxed">
+              
+              <p className="text-xl md:text-2xl text-foreground-muted mb-10 leading-relaxed max-w-lg">
                 {t(locale, 'pages.home.hero.sub')}
               </p>
-              <div className="flex flex-wrap gap-4 mb-10">
-                <Button variant="primary" size="lg" asChild href="/demo" className="shadow-lg shadow-accent/25">
+              
+              <div className="flex flex-col sm:flex-row gap-4 mb-12">
+                <Button variant="primary" size="xl" asChild href="/demo" className="shadow-xl shadow-accent/20 text-lg px-8 h-14">
                   {t(locale, 'pages.home.hero.ctaPrimary')}
                 </Button>
-                <Button variant="secondary" size="lg" asChild href="/demo">
+                <Button variant="secondary" size="xl" asChild href="/features" className="text-lg px-8 h-14 bg-surface border-border hover:bg-muted">
                   {t(locale, 'pages.home.hero.ctaSecondary')}
                 </Button>
               </div>
-              <ul className="flex flex-wrap gap-8 text-sm text-foreground-muted font-medium">
-                {(t(locale, 'pages.home.hero.bullets') as string[]).map((bullet, i) => (
-                  <li key={i} className="flex items-center gap-2">
-                    <span className="w-1.5 h-1.5 rounded-full bg-accent" />
-                    {bullet}
-                  </li>
-                ))}
-              </ul>
+
+              {/* Trust/Social Proof Small */}
+              <div className="pt-8 border-t border-border/50">
+                 <p className="text-sm text-foreground-muted mb-4 font-medium">Trusted by innovative gastronomy</p>
+                 <div className="flex gap-6 opacity-60 grayscale hover:grayscale-0 transition-all duration-500">
+                    {/* Placeholder Logos */}
+                    <div className="h-6 w-20 bg-foreground/20 rounded" />
+                    <div className="h-6 w-20 bg-foreground/20 rounded" />
+                    <div className="h-6 w-20 bg-foreground/20 rounded" />
+                 </div>
+              </div>
             </div>
 
-            {/* Right: Mini Chat Demo */}
-            <div className="hidden md:block">
-              <MiniChatDemo />
+            {/* Right: Huge Visual (The "Hero Shot") */}
+            <div className="relative hidden lg:block perspective-1000">
+               {/* Abstract Background Blobs */}
+               <div className="absolute -top-20 -right-20 w-[600px] h-[600px] bg-accent/5 rounded-full blur-[100px] -z-10" />
+               
+               {/* The "Floating Tablet" */}
+               <div className="relative transform rotate-y-[-10deg] rotate-x-[5deg] hover:rotate-y-[-5deg] hover:rotate-x-[2deg] transition-transform duration-700 ease-out">
+                  <SpotlightCard className="aspect-[4/3] w-full rounded-3xl shadow-2xl border-4 border-surface bg-surface overflow-hidden" withBorderBeam>
+                    <div className="absolute inset-0 bg-background flex flex-col">
+                       {/* Mock UI Header */}
+                       <div className="h-16 border-b flex items-center justify-between px-6 bg-surface">
+                          <div className="w-24 h-4 bg-muted rounded-full" />
+                          <div className="flex gap-2">
+                             <div className="w-8 h-8 rounded-full bg-accent/10" />
+                          </div>
+                       </div>
+                       {/* Mock UI Body (Split) */}
+                       <div className="flex-1 flex">
+                          <div className="w-1/3 border-r bg-muted/30 p-4 space-y-3">
+                             <div className="h-20 bg-surface rounded-xl shadow-sm" />
+                             <div className="h-20 bg-surface rounded-xl shadow-sm border border-accent/20" />
+                             <div className="h-20 bg-surface rounded-xl shadow-sm" />
+                          </div>
+                          <div className="flex-1 p-6 grid grid-cols-2 gap-4">
+                             <div className="aspect-square bg-muted/50 rounded-2xl" />
+                             <div className="aspect-square bg-muted/50 rounded-2xl" />
+                             <div className="aspect-square bg-muted/50 rounded-2xl" />
+                             <div className="aspect-square bg-muted/50 rounded-2xl" />
+                          </div>
+                       </div>
+                    </div>
+                    {/* Overlay Gradient */}
+                    <div className="absolute inset-0 bg-gradient-to-t from-background/20 to-transparent pointer-events-none" />
+                  </SpotlightCard>
+                  
+                  {/* Floating Elements (Parallax feel) */}
+                  <div className="absolute -left-12 bottom-20 p-4 bg-surface rounded-2xl shadow-xl border border-border/50 animate-float-slow">
+                     <div className="flex items-center gap-3">
+                        <div className="w-10 h-10 rounded-full bg-green-100 text-green-700 flex items-center justify-center">€</div>
+                        <div>
+                           <div className="text-sm font-bold text-foreground">+24% Revenue</div>
+                           <div className="text-xs text-foreground-muted">vs. last month</div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
             </div>
           </div>
         </Container>
-      </Section>
+      </section>
 
       {/* NEW: Flow Timeline instead of Parallax on Home */}
       <FlowTimeline />
+
+      {/* Partners (moved up for trust) */}
+      <PartnersSection />
 
       {/* Problem & Solution (4 Blocks Alternating) */}
       <AnimatedAlternatingSection blocks={problemSolutionBlocks} />
@@ -115,9 +179,6 @@ export default async function Home() {
         title={t(locale, 'pages.home.modules.h2')}
         items={t(locale, 'pages.home.modules.items') as Array<{ title: string; text: string }>}
       />
-
-      {/* Partners */}
-      <PartnersSection />
 
       {/* Visual Proof */}
       <ProofSection />
