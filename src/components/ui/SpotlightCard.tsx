@@ -1,19 +1,23 @@
 "use client"
 
-import React, { useRef, useState, MouseEvent } from "react"
-import { motion, useMotionTemplate, useMotionValue } from "framer-motion"
+import React, { useRef, useState, MouseEvent, useEffect } from "react"
+import { motion, useMotionTemplate, useMotionValue, useSpring, animate } from "framer-motion"
 import { classNames } from "@/lib/classNames"
 
 interface SpotlightCardProps extends React.HTMLAttributes<HTMLDivElement> {
   children: React.ReactNode
   className?: string
   spotlightColor?: string
+  withBorderBeam?: boolean
+  beamDuration?: number
 }
 
 export function SpotlightCard({ 
   children, 
   className, 
-  spotlightColor = "var(--spotlight-color)", // token-based; theme-aware
+  spotlightColor = "var(--spotlight-color)", 
+  withBorderBeam = false,
+  beamDuration = 8,
   ...props 
 }: SpotlightCardProps) {
   const mouseX = useMotionValue(0)
@@ -56,10 +60,33 @@ export function SpotlightCard({
         }}
       />
       
+      {/* Optional Border Beam */}
+      {withBorderBeam && <BorderBeam duration={beamDuration} />}
+
       {/* Content */}
       <div className="relative h-full">
         {children}
       </div>
+    </div>
+  )
+}
+
+function BorderBeam({ duration = 8 }: { duration?: number }) {
+  return (
+    <div className="absolute inset-0 pointer-events-none overflow-hidden rounded-[inherit]">
+      <div 
+        className="absolute -inset-[100%] opacity-40 animate-border-beam"
+        style={{
+            background: `conic-gradient(from 0deg at 50% 50%, transparent 0deg, transparent 340deg, var(--color-accent) 360deg)`,
+            animation: `spin ${duration}s linear infinite`
+        }}
+      />
+      <style jsx>{`
+        @keyframes spin {
+          from { transform: rotate(0deg); }
+          to { transform: rotate(360deg); }
+        }
+      `}</style>
     </div>
   )
 }

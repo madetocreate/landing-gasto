@@ -23,37 +23,43 @@ export function ProofSection() {
           </p>
         </div>
 
-        <div className="grid lg:grid-cols-3 gap-6">
-          {items.map((it, idx) => (
-            <motion.div
-              key={idx}
-              initial={shouldReduceMotion ? { opacity: 1 } : { opacity: 0, y: 10 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true, margin: "-80px" }}
-              transition={shouldReduceMotion ? { duration: 0 } : { duration: motionPolicy.reveal.duration, ease: motionPolicy.reveal.ease, delay: idx * 0.05 }}
-            >
-              <SpotlightCard className="p-6 h-full">
-                <div className="flex items-start justify-between gap-4 mb-6">
-                  <div>
-                    <h3 className="text-lg font-semibold text-foreground mb-1">{it.title}</h3>
-                    <p className="text-sm text-foreground-muted leading-relaxed">{it.subtitle}</p>
+        <div className="grid lg:grid-cols-3 gap-6 grid-rows-[auto_auto] lg:grid-rows-2">
+          {items.map((it, idx) => {
+             const isHero = idx === 0
+             return (
+              <motion.div
+                key={idx}
+                initial={shouldReduceMotion ? { opacity: 1 } : { opacity: 0, y: 10 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true, margin: "-80px" }}
+                transition={shouldReduceMotion ? { duration: 0 } : { duration: motionPolicy.reveal.duration, ease: motionPolicy.reveal.ease, delay: idx * 0.05 }}
+                className={isHero ? "lg:col-span-2 lg:row-span-2" : "col-span-1"}
+              >
+                <SpotlightCard className="p-6 h-full flex flex-col" withBorderBeam={isHero}>
+                  <div className="flex items-start justify-between gap-4 mb-6">
+                    <div>
+                      <h3 className={`font-semibold text-foreground mb-1 ${isHero ? "text-2xl" : "text-lg"}`}>{it.title}</h3>
+                      <p className="text-sm text-foreground-muted leading-relaxed">{it.subtitle}</p>
+                    </div>
+                    <div className="w-8 h-8 rounded-full bg-accent/10 ring-1 ring-accent/20 flex items-center justify-center shrink-0">
+                       <div className="w-2 h-2 rounded-full bg-accent" />
+                    </div>
                   </div>
-                  <div className="w-8 h-8 rounded-full bg-accent/10 ring-1 ring-accent/20 flex items-center justify-center">
-                     <div className="w-2 h-2 rounded-full bg-accent" />
-                  </div>
-                </div>
 
-                <DeviceFrame seed={idx} />
-              </SpotlightCard>
-            </motion.div>
-          ))}
+                  <div className="mt-auto pt-4">
+                     <DeviceFrame seed={idx} isHero={isHero} />
+                  </div>
+                </SpotlightCard>
+              </motion.div>
+             )
+          })}
         </div>
       </Container>
     </Section>
   )
 }
 
-function DeviceFrame({ seed = 0 }: { seed?: number }) {
+function DeviceFrame({ seed = 0, isHero = false }: { seed?: number, isHero?: boolean }) {
   // Use CSS vars for inverse tokens
   const bg = "var(--color-inverse-bg)"
   const surface = "var(--color-inverse-surface)"

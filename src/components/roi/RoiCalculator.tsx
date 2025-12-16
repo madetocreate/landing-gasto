@@ -39,7 +39,7 @@ export function RoiCalculator() {
         </div>
 
         <div className="max-w-4xl mx-auto">
-          <SpotlightCard className="p-8 md:p-12">
+          <SpotlightCard className="p-8 md:p-12" withBorderBeam>
             <div className="grid md:grid-cols-2 gap-12">
               {/* Inputs */}
               <div className="space-y-8">
