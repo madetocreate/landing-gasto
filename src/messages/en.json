@@ -1,29 +1,31 @@
 {
   "brand": {
-    "name": "Gastro Landingpage",
-    "tagline": "Order like ChatGPT — right in the restaurant."
+    "name": "AKLOW",
+    "tagline": "AI modernization for SMBs"
   },
   "nav": {
     "top": {
-      "home": "Home",
-      "features": "Features",
-      "pricing": "Pricing"
+      "home": "AI Modernization",
+      "applications": "Applications",
+      "fundament": "Foundation",
+      "pricing": "Pricing",
+      "contact": "Contact"
     },
-    "cta": "Book a demo",
+    "cta": "10-minute check",
     "drawer": {
       "title": "Menu",
       "groups": {
-        "product": "Product",
-        "features": "Features",
+        "product": "Solutions",
+        "features": "Gastro Starter",
         "knowledge": "Knowledge",
         "company": "Company",
         "legal": "Legal"
       },
       "links": {
         "home": "Home",
-        "features": "Features",
+        "features": "Gastro Starter",
         "pricing": "Pricing",
-        "demo": "Book a demo",
+        "demo": "10-minute check",
         "demo_view": "View demo",
         "contact": "Contact",
         "feat_ordering": "Ordering (Chat & Kiosk)",
@@ -44,28 +46,35 @@
   },
   "footer": {
     "columns": {
-      "product": "Product",
-      "features": "Features",
+      "menu": "Menu",
+      "applications": "Applications",
       "company": "Company",
-      "knowledge": "Knowledge"
+      "knowledge": "Knowledge Hub"
     },
     "links": {
-      "home": "Home",
-      "features": "Features",
+      "home": "AI Modernization",
+      "applications": "Applications",
+      "fundament": "Foundation",
       "pricing": "Pricing",
-      "demo": "Book a demo",
-      "feat_ordering": "Ordering (Chat & Kiosk)",
-      "feat_kds": "Kitchen & Bar (KDS)",
-      "feat_poslite": "POS Lite",
-      "feat_service": "Service",
-      "about": "About",
       "contact": "Contact",
-      "partners": "Partners",
+      "app_inbox": "Smart Inbox",
+      "app_website": "Website & Phone Assistant",
+      "app_documents": "Documents & Organization",
+      "app_reviews": "Reviews",
+      "app_customers": "Customers & Processes",
+      "app_placeholder": "",
+      "about": "About",
+      "blog": "Blog",
       "jobs": "Jobs",
-      "kb_home": "Knowledge base",
-      "kb_getting_started": "Getting started",
-      "kb_faq": "FAQ",
-      "blog": "Blog"
+      "partners": "Partners",
+      "status": "Status & Updates",
+      "values": "Values & Responsibility",
+      "knowledge_hub": "Knowledge Hub",
+      "getting_started": "Getting Started",
+      "system": "How the System Works",
+      "ki_alltag": "AI in Everyday Life",
+      "security": "Security",
+      "faq": "FAQ"
     },
     "legalTitle": "Legal",
     "legalLinks": {
@@ -94,18 +103,22 @@
   "pages": {
     "home": {
       "meta": {
-        "title": "Order like ChatGPT — Gastro Landingpage",
-        "description": "Guests scan a QR code, ask questions and order with a tap. Kitchen and bar get clear tickets. No app."
+        "title": "AI modernization — without tool chaos. | AKLOW",
+        "description": "We modernize SMBs with AI: starter kits, integration, and ongoing operations. Live fast, measurable impact — without forcing your team into new software."
       },
       "hero": {
-        "h1": "Order like ChatGPT — right in the restaurant.",
-        "sub": "Guests scan the QR code at the table, ask questions, and order with a tap. No app. No stress.",
-        "ctaPrimary": "Book a demo",
-        "ctaSecondary": "Quick overview (2 min)",
+        "badge": "New: AI modernization",
+        "trustLine": "Trusted by innovative SMBs",
+        "kpiTitle": "+24% efficiency",
+        "kpiSub": "vs. last month",
+        "h1": "AI modernization — without tool chaos.",
+        "sub": "We modernize SMBs with AI: starter kits, integration, and ongoing operations. Live fast, measurable impact — without forcing your team into new software.",
+        "ctaPrimary": "10-minute check",
+        "ctaSecondary": "See Gastro Starter",
         "bullets": [
-          "Multilingual",
-          "Kitchen & bar tickets (tablet)",
-          "Optional POS Lite / Kiosk mode"
+          "Live in 14 days",
+          "No forced software switch",
+          "Safe & controllable"
         ]
       },
       "featureShowcase": {
@@ -122,19 +135,19 @@
       "problemSolution": {
         "problem": {
           "h2": "The daily problem",
-          "p": "The same questions keep coming up: ingredients, allergens, recommendations, the bill. Staff get interrupted and guests wait."
+          "p": "Too many requests, too little time: email, WhatsApp, calls, bookings, invoices. Knowledge lives in heads, processes aren’t automated — and it costs money every day."
         },
         "solution": {
           "h2": "The solution",
-          "p": "An intelligent menu that works like ChatGPT: questions → recommendations → ordering. With cards and buttons instead of typing."
+          "p": "An AI layer integrated into your real workflow: qualify inbox items, draft replies, automate processes — with clear rules and control."
         },
         "guest": {
-          "h2": "What guests really want",
-          "p": "No waiting times, no misunderstandings. Guests order when they want – and get exactly what they ordered."
+          "h2": "What customers really want",
+          "p": "Fast replies, clear information, smooth processes — no waiting loops."
         },
         "team": {
-          "h2": "What relieves the team",
-          "p": "Fewer trips, fewer 'Can I pay?'. Service can focus on true hospitality and advice."
+          "h2": "What helps your team",
+          "p": "Fewer interruptions, less typing, fewer mistakes. Focus on service, sales, and real work."
         }
       },
       "problem": {
@@ -146,19 +159,19 @@
         "p": "An intelligent menu that works like ChatGPT: questions → recommendations → ordering. With cards and buttons instead of typing."
       },
       "how": {
-        "h2": "How it works",
+        "h2": "How modernization works",
         "steps": [
           {
-            "title": "1) Scan the QR",
-            "text": "Guests land directly in the chat."
+            "title": "1) Quick check",
+            "text": "In 10 minutes we understand goals, tools, and bottlenecks."
           },
           {
-            "title": "2) Ask or tap",
-            "text": "Menu, drinks, recommendations, service — as cards/buttons."
+            "title": "2) Starter live",
+            "text": "We ship a starter kit into production — fast and measurable."
           },
           {
-            "title": "3) The order arrives",
-            "text": "Kitchen and bar receive clear tickets (stations mode)."
+            "title": "3) Integration & scale",
+            "text": "We connect systems and automate workflows — safe and controllable."
           }
         ]
       },
@@ -185,19 +198,31 @@
         ]
       },
       "modules": {
-        "h2": "Modules",
+        "h2": "Modernization building blocks",
         "items": [
           {
-            "title": "For guests",
-            "text": "Chat-first ordering, recommendations, reordering with one tap."
+            "title": "Smart inbox & replies",
+            "text": "Requests get qualified, replies drafted — you approve."
           },
           {
-            "title": "For kitchen & bar",
-            "text": "Stations KDS: New → In progress → Ready. A tablet is enough."
+            "title": "Orders & bookings",
+            "text": "Less phone stress, fewer errors, more revenue."
           },
           {
-            "title": "For owners",
-            "text": "Onboarding via website/PDF/photos, settings, reports."
+            "title": "Workflows & automation",
+            "text": "Repeatable work gets automated — clearly documented."
+          },
+          {
+            "title": "Integrate, don’t replace",
+            "text": "Google, email, calendar, CRM, POS — we connect what you already use."
+          },
+          {
+            "title": "Knowledge & memory",
+            "text": "Recurring questions, data, and customer info become usable."
+          },
+          {
+            "title": "Security & control",
+            "text": "Guardrails, roles, auditability — no “AI goes wild”."
           }
         ]
       },
@@ -360,45 +385,45 @@
         ]
       },
       "proof": {
-        "h2": "How it looks in the real world",
-        "p": "Three views that mirror daily operations — calm, clear, and instantly understandable.",
+        "h2": "AI — with a seatbelt.",
+        "p": "So AI helps in daily work without risks: clear rules, control, and auditability.",
         "items": [
           {
-            "title": "Guest chat view",
-            "subtitle": "Questions → buttons → order. No app."
+            "title": "No secrets in the browser",
+            "subtitle": "Access and tokens stay server-side — controlled and traceable."
           },
           {
-            "title": "KDS tickets",
-            "subtitle": "Kitchen/bar separated, clear states, less shouting."
+            "title": "Clear roles & permissions",
+            "subtitle": "Who can do what? Permissions are defined and enforceable."
           },
           {
-            "title": "Admin preview",
-            "subtitle": "Menu, reports, settings — clean and calm."
+            "title": "Auditable workflows",
+            "subtitle": "Automations are documented and reviewable — no “AI just does stuff”."
           }
         ]
       },
       "finalCta": {
         "h2": "Want a 10-minute demo?",
-        "p": "We show the guest flow, kitchen/bar, and admin setup — end to end.",
-        "ctaPrimary": "Book a demo",
+        "p": "We’ll quickly show what’s realistic for you — and what isn’t.",
+        "ctaPrimary": "10-minute check",
         "ctaSecondary": "Contact"
       },
       "roi": {
-        "h2": "ROI Calculator",
-        "p": "Estimate the potential additional revenue for your restaurant.",
+        "h2": "What does chaos cost you per week?",
+        "p": "Calculate lost time, mistakes, and missed requests — and see when modernization pays off.",
         "inputs": {
-          "tables": "Tables",
-          "guestsPerDay": "Guests per day",
-          "avgBill": "Average bill (€)",
-          "internationalGuests": "International guests (%)"
+          "tables": "Team size",
+          "guestsPerDay": "Requests per day",
+          "avgBill": "Avg. value per request (€)",
+          "internationalGuests": "Recurring requests (%)"
         },
         "outputs": {
-          "additionalOrders": "Additional orders/day",
-          "monthlyRevenue": "Estimated additional revenue/month",
+          "additionalOrders": "Additional closes/day",
+          "monthlyRevenue": "Estimated added value/month",
           "timeSaved": "Time saved per day"
         },
         "disclaimer": "Estimate based on conservative assumptions. Actual values depend on the operation.",
-        "cta": "View demo"
+        "cta": "10-minute check"
       },
       "miniChat": {
         "welcome": "Welcome! I'm your intelligent menu.",
@@ -450,8 +475,8 @@
         "title": "Features — Gastro Landingpage",
         "description": "All features: ordering, kitchen & bar, POS Lite, service."
       },
-      "h1": "Features",
-      "intro": "Here's an overview of all modules. Details are on the subpages.",
+      "h1": "Gastro Starter",
+      "intro": "A ready-made solution for gastronomy — as a starter kit within our AI modernization offering. Live fast, integratable, expandable later.",
       "sections": {
         "ordering": {
           "h2": "Ordering (Chat & Kiosk)",
@@ -670,11 +695,11 @@
     },
     "pricing": {
       "meta": {
-        "title": "Pricing — Gastro Landingpage",
-        "description": "Three plans: Basic, Pro, Premium."
+        "title": "Packages & operations | AKLOW",
+        "description": "Start with a starter kit and expand as needed: integration, automation, and ongoing operations."
       },
-      "h1": "Pricing",
-      "intro": "Start small — expand later. Plans and integrations can vary by region.",
+      "h1": "Packages & operations",
+      "intro": "Start with a package (e.g. Gastro) and expand as needed: integration, automations, and ongoing optimization.",
       "billing": {
         "perMonth": "/month"
       },
@@ -683,75 +708,121 @@
       },
       "tiers": [
         {
-          "name": "Basic",
-          "tag": "Start here",
+          "name": "Starter",
+          "tag": "Fast go-live with one clear use case",
           "price": "29",
           "items": [
-            "Chat-first ordering",
-            "Menu (3 designs)",
-            "Orders & rounds",
-            "Multilingual (DE/EN/ES)"
+            "10-minute check + scope",
+            "One starter kit live",
+            "Clear rules & approval flow",
+            "Measurable impact baseline"
           ],
-          "cta": "Book a demo"
+          "cta": "10-minute check"
         },
         {
-          "name": "Pro",
-          "tag": "For operations",
+          "name": "Plus",
+          "tag": "Integration & additional workflows",
           "price": "89",
           "items": [
-            "KDS: kitchen & bar stations",
-            "Service inbox",
-            "Reports (KPIs)",
-            "Menu import (website/PDF/photos)"
+            "Connect email, calendar, CRM, etc.",
+            "Workflow automation (documented)",
+            "Knowledge & memory setup",
+            "Role-based access control"
           ],
-          "cta": "Book a demo"
+          "cta": "10-minute check"
         },
         {
-          "name": "Premium",
-          "tag": "For growth",
+          "name": "Partner",
+          "tag": "Ongoing operations & optimization",
           "price": "149",
           "items": [
-            "POS Lite (floor, cashier, split)",
-            "Kiosk mode (optional)",
-            "Hybrid bridge (optional later)",
-            "Advanced settings & workflows"
+            "Monitoring & continuous improvement",
+            "Auditability & guardrails",
+            "More automations over time",
+            "Priority support & iteration"
           ],
-          "cta": "Book a demo"
+          "cta": "10-minute check"
         }
       ],
-      "note": "Note: We start pragmatically and build out cleanly over time.",
+      "note": "Pricing depends on industry, integrations, and scope. We clarify it in the 10-minute check.",
       "faqLink": "View FAQ",
       "comparison": {
-        "title": "Feature Comparison",
-        "columns": ["Basic", "Pro", "Premium"],
+        "title": "Scope in detail",
+        "columns": ["Starter", "Plus", "Partner"],
         "categories": [
           {
-            "name": "Ordering",
+            "name": "Modernization",
             "features": [
-              { "name": "QR Ordering (Chat & Web)", "tiers": [true, true, true] },
-              { "name": "Multilingual (Auto-Translate)", "tiers": [true, true, true] },
-              { "name": "Digital Menu", "tiers": [true, true, true] },
-              { "name": "Kiosk Mode", "tiers": [false, false, true] }
+              { "name": "Quick check & roadmap", "tiers": [true, true, true] },
+              { "name": "Starter kit live (one use case)", "tiers": [true, true, true] },
+              { "name": "Rules & approval flow", "tiers": [true, true, true] },
+              { "name": "Additional workflows", "tiers": [false, true, true] }
             ]
           },
           {
-            "name": "Kitchen & Service",
+            "name": "Integration",
             "features": [
-              { "name": "KDS (Kitchen Display)", "tiers": [false, true, true] },
-              { "name": "Service Call & Bill Request", "tiers": [false, true, true] },
-              { "name": "Printer Integration", "tiers": [false, true, true] }
+              { "name": "Email / calendar / CRM integration", "tiers": [false, true, true] },
+              { "name": "Automation workflows (documented)", "tiers": [false, true, true] },
+              { "name": "Knowledge & memory", "tiers": [false, true, true] }
             ]
           },
           {
-            "name": "Management",
+            "name": "Operations",
             "features": [
-              { "name": "Sales Reports", "tiers": [true, true, true] },
-              { "name": "POS Lite (Cashier)", "tiers": [false, false, true] },
-              { "name": "Staff Permissions", "tiers": [false, true, true] }
+              { "name": "Monitoring & continuous optimization", "tiers": [false, false, true] },
+              { "name": "Auditability & guardrails", "tiers": [false, false, true] },
+              { "name": "Role-based access control", "tiers": [false, true, true] }
             ]
           }
         ]
       }
+    },
+    "services": {
+      "meta": {
+        "title": "Services | AKLOW",
+        "description": "AI modernization for SMBs: analysis, integration & automation, operations & optimization."
+      },
+      "h1": "Services",
+      "intro": "Three building blocks we combine based on your starting point — pragmatic, measurable, and without an unnecessary tool switch.",
+      "blocks": [
+        {
+          "title": "AI potential analysis",
+          "text": "Quick wins, risks, and a realistic roadmap — clearly prioritized."
+        },
+        {
+          "title": "Integration & automation",
+          "text": "We connect systems and build workflows that actually run in day-to-day operations."
+        },
+        {
+          "title": "Operations & optimization",
+          "text": "Monitoring, improvements, new automations — so it keeps getting better."
+        }
+      ],
+      "cta": "10-minute check"
+    },
+    "cases": {
+      "meta": {
+        "title": "Results | AKLOW",
+        "description": "Short, anonymized examples of measurable improvements through AI modernization."
+      },
+      "h1": "Results",
+      "intro": "Three typical outcomes — short, anonymized, and focused on impact.",
+      "items": [
+        {
+          "title": "Gastro",
+          "text": "Less phone stress, more orders, clearer workflows."
+        },
+        {
+          "title": "Services",
+          "text": "Faster replies, less inbox chaos, better lead quality."
+        },
+        {
+          "title": "Back office",
+          "text": "Automated routine work, fewer mistakes, better follow-ups."
+        }
+      ],
+      "cta": "10-minute check"
     },
     "demo": {
       "meta": {

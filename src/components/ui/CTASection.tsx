@@ -16,7 +16,7 @@ export async function CTASection() {
         <h2 className="text-3xl font-semibold mb-4">
           {t(locale, 'pages.home.finalCta.h2')}
         </h2>
-        <p className="text-lg mb-8 prose mx-auto text-[color:var(--color-inverse-fg-muted)]">
+        <p className="text-lg mb-8 prose mx-auto text-[color:var(--color-inverse-fg-muted)] whitespace-pre-line">
           {t(locale, 'pages.home.finalCta.p')}
         </p>
         <div className="flex flex-wrap justify-center gap-4">

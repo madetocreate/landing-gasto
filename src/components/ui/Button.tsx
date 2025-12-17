@@ -19,10 +19,10 @@ export function Button({
   href,
   ...props
 }: ButtonProps) {
-  const baseStyles = 'inline-flex items-center justify-center font-medium transition-all duration-[var(--motion-fast)] focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-accent disabled:opacity-50 disabled:pointer-events-none';
+  const baseStyles = 'inline-flex items-center justify-center font-medium transition-all duration-[var(--motion-fast)] focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-action disabled:opacity-50 disabled:pointer-events-none';
   
   const variantStyles = {
-    primary: 'bg-accent text-accent-foreground hover:bg-accent-hover focus:ring-accent',
+    primary: 'bg-action text-action-foreground hover:bg-action-hover focus:ring-action relative overflow-hidden group/btn',
     secondary: 'bg-surface text-foreground hover:bg-background-muted border border-border',
     ghost: 'text-foreground hover:bg-background-muted',
   };
@@ -40,10 +40,19 @@ export function Button({
     className
   );
 
+  const content = (
+    <>
+      {variant === 'primary' && (
+        <span className="absolute inset-0 w-[200%] h-full bg-gradient-to-r from-transparent via-white/20 to-transparent -translate-x-full group-hover/btn:animate-shine pointer-events-none" />
+      )}
+      <span className="relative z-10">{children}</span>
+    </>
+  );
+
   if (asChild && href) {
     return (
       <Link href={href} className={classes}>
-        {children}
+        {content}
       </Link>
     );
   }
@@ -53,7 +62,7 @@ export function Button({
       className={classes}
       {...props}
     >
-      {children}
+      {content}
     </button>
   );
 }

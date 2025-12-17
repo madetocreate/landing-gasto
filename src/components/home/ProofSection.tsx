@@ -18,7 +18,7 @@ export function ProofSection() {
       <Container size="lg">
         <div className="text-center mb-16">
           <h2 className="mb-4 tracking-tight">{t(locale, "pages.home.proof.h2")}</h2>
-          <p className="text-lg text-foreground-muted prose-wide mx-auto leading-relaxed">
+          <p className="text-lg text-foreground-muted prose-wide mx-auto leading-relaxed whitespace-pre-line">
             {t(locale, "pages.home.proof.p")}
           </p>
         </div>

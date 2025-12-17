@@ -9,6 +9,8 @@ import { FeatureRoles } from '@/components/features/FeatureRoles';
 import { Section, Container } from '@/components/ui/Section';
 import { SpotlightCard } from '@/components/ui/SpotlightCard';
 import { MessageSquare, ChefHat, CreditCard } from 'lucide-react';
+import { FlowTimeline } from '@/components/home/FlowTimeline';
+import { RoiCalculator } from '@/components/roi/RoiCalculator';
 
 export default async function Features() {
   const locale = await getLocale();
@@ -29,18 +31,15 @@ export default async function Features() {
 
       {/* 2. Bento Grid (Modules) */}
       <AnimatedModulesSection 
-        title={t(locale, 'pages.home.modules.h2')}
-        items={t(locale, 'pages.home.modules.items') as Array<{ title: string; text: string }>}
+        title={t(locale, 'pages.features.modules.h2')}
+        items={t(locale, 'pages.features.modules.items') as Array<{ title: string; text: string }>}
       />
 
       {/* New Section: Ecosystem Orbit */}
       <FeatureEcosystem />
 
-      {/* 3. Flow Timeline */}
-      <AnimatedHowToSection 
-        title={t(locale, 'pages.home.how.h2')}
-        steps={t(locale, 'pages.home.how.steps') as Array<{ title: string; text: string }>}
-      />
+      {/* 3. Flow Timeline (Moved from Home) */}
+      <FlowTimeline />
 
       {/* New Section: Roles Accordion */}
       <FeatureRoles />
@@ -144,6 +143,9 @@ export default async function Features() {
 
         </Container>
       </Section>
+
+      {/* ROI Calculator (Gastro Specific) - Moved from Home */}
+      <RoiCalculator />
 
       {/* New Section: Dark Analytics Panel */}
       <FeatureAnalytics />

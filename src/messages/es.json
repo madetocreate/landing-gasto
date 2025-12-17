@@ -1,29 +1,31 @@
 {
   "brand": {
-    "name": "Gastro Landingpage",
-    "tagline": "Pedir como con ChatGPT — directamente en el restaurante."
+    "name": "AKLOW",
+    "tagline": "Modernización con IA para pymes"
   },
   "nav": {
     "top": {
-      "home": "Inicio",
-      "features": "Funciones",
-      "pricing": "Precios"
+      "home": "Modernización con IA",
+      "applications": "Aplicaciones",
+      "fundament": "Fundamento",
+      "pricing": "Precios",
+      "contact": "Contacto"
     },
-    "cta": "Reservar demo",
+    "cta": "Chequeo de 10 minutos",
     "drawer": {
       "title": "Menü",
       "groups": {
-        "product": "Producto",
-        "features": "Funciones",
+        "product": "Soluciones",
+        "features": "Gastro Starter",
         "knowledge": "Guía",
         "company": "Empresa",
         "legal": "Legal"
       },
       "links": {
         "home": "Inicio",
-        "features": "Funciones",
+        "features": "Gastro Starter",
         "pricing": "Precios",
-        "demo": "Reservar demo",
+        "demo": "Chequeo de 10 minutos",
         "demo_view": "Ver demo",
         "contact": "Contacto",
         "feat_ordering": "Pedidos (Chat y Kiosco)",
@@ -44,28 +46,35 @@
   },
   "footer": {
     "columns": {
-      "product": "Producto",
-      "features": "Funciones",
+      "menu": "Menú",
+      "applications": "Aplicaciones",
       "company": "Empresa",
-      "knowledge": "Guía"
+      "knowledge": "Centro de Conocimiento"
     },
     "links": {
-      "home": "Inicio",
-      "features": "Funciones",
+      "home": "Modernización con IA",
+      "applications": "Aplicaciones",
+      "fundament": "Fundamento",
       "pricing": "Precios",
-      "demo": "Reservar demo",
-      "feat_ordering": "Pedidos (Chat y Kiosco)",
-      "feat_kds": "Cocina y Barra (KDS)",
-      "feat_poslite": "POS Lite",
-      "feat_service": "Servicio",
-      "about": "Sobre nosotros",
       "contact": "Contacto",
-      "partners": "Socios",
+      "app_inbox": "Bandeja Inteligente",
+      "app_website": "Asistente Web y Teléfono",
+      "app_documents": "Documentos y Organización",
+      "app_reviews": "Reseñas",
+      "app_customers": "Clientes y Procesos",
+      "app_placeholder": "",
+      "about": "Sobre nosotros",
+      "blog": "Blog",
       "jobs": "Empleo",
-      "kb_home": "Base de conocimiento",
-      "kb_getting_started": "Primeros pasos",
-      "kb_faq": "Preguntas frecuentes",
-      "blog": "Blog"
+      "partners": "Socios",
+      "status": "Estado y Actualizaciones",
+      "values": "Valores y responsabilidad",
+      "knowledge_hub": "Centro de Conocimiento",
+      "getting_started": "Primeros Pasos",
+      "system": "Cómo funciona el sistema",
+      "ki_alltag": "IA en la vida cotidiana",
+      "security": "Seguridad",
+      "faq": "Preguntas Frecuentes"
     },
     "legalTitle": "Legal",
     "legalLinks": {
@@ -94,18 +103,22 @@
   "pages": {
     "home": {
       "meta": {
-        "title": "Pedir como con ChatGPT — Gastro Landingpage",
-        "description": "Los clientes escanean un QR, preguntan y piden con un toque. Cocina y barra reciben tickets claros. Sin app."
+        "title": "Modernización con IA – sin caos de herramientas. | AKLOW",
+        "description": "Modernizamos pymes con IA: packs de inicio, integración y operación continua. Rápido en producción, impacto medible — sin obligar a tu equipo a aprender otro software."
       },
       "hero": {
-        "h1": "Pedir como con ChatGPT — directamente en el restaurante.",
-        "sub": "Los clientes escanean el QR en la mesa, hacen preguntas y piden con un toque. Sin app. Sin estrés.",
-        "ctaPrimary": "Reservar demo",
-        "ctaSecondary": "Vista rápida (2 min)",
+        "badge": "Nuevo: modernización con IA",
+        "trustLine": "Con la confianza de pymes innovadoras",
+        "kpiTitle": "+24% eficiencia",
+        "kpiSub": "vs. mes anterior",
+        "h1": "Modernización con IA – sin caos de herramientas.",
+        "sub": "Modernizamos pymes con IA: packs de inicio, integración y operación continua. Rápido en producción, impacto medible — sin obligar a tu equipo a aprender otro software.",
+        "ctaPrimary": "Chequeo de 10 minutos",
+        "ctaSecondary": "Ver Gastro Starter",
         "bullets": [
-          "Multilingüe",
-          "Tickets para cocina y barra (tablet)",
-          "POS Lite / modo kiosco opcional"
+          "En producción en 14 días",
+          "Sin cambio forzado de software",
+          "Seguro y controlable"
         ]
       },
       "featureShowcase": {
@@ -122,19 +135,19 @@
       "problemSolution": {
         "problem": {
           "h2": "El problema del día a día",
-          "p": "Se repiten las mismas preguntas: ingredientes, alérgenos, recomendaciones, la cuenta. El personal se interrumpe y el cliente espera."
+          "p": "Demasiadas solicitudes, muy poco tiempo: email, WhatsApp, llamadas, reservas, facturas. El conocimiento está en las cabezas, los procesos no están automatizados — y cuesta dinero cada día."
         },
         "solution": {
           "h2": "La solución",
-          "p": "Una carta inteligente que funciona como ChatGPT: preguntas → recomendaciones → pedido. Con tarjetas y botones en lugar de escribir."
+          "p": "Una capa de IA integrada en tu flujo real: prioriza la bandeja, prepara respuestas y automatiza procesos — con reglas claras y control."
         },
         "guest": {
-          "h2": "Lo que los clientes quieren",
-          "p": "Sin esperas, sin malentendidos. Los clientes piden cuando quieren – y reciben exactamente lo que pidieron."
+          "h2": "Lo que los clientes realmente quieren",
+          "p": "Respuestas rápidas, información clara y procesos fluidos — sin esperas."
         },
         "team": {
-          "h2": "Lo que alivia al equipo",
-          "p": "Menos viajes, menos '¿La cuenta?'. El servicio puede centrarse en la hospitalidad real."
+          "h2": "Lo que ayuda a tu equipo",
+          "p": "Menos interrupciones, menos tecleo, menos errores. Enfoque en servicio, ventas y trabajo real."
         }
       },
       "problem": {
@@ -146,19 +159,19 @@
         "p": "Una carta inteligente que funciona como ChatGPT: preguntas → recomendaciones → pedido. Con tarjetas y botones en lugar de escribir."
       },
       "how": {
-        "h2": "Cómo funciona",
+        "h2": "Cómo funciona la modernización",
         "steps": [
           {
-            "title": "1) Escanear el QR",
-            "text": "El cliente entra directamente en el chat."
+            "title": "1) Chequeo rápido",
+            "text": "En 10 minutos entendemos objetivos, herramientas y cuellos de botella."
           },
           {
-            "title": "2) Preguntar o tocar",
-            "text": "Carta, bebidas, recomendaciones, servicio — todo con tarjetas/botones."
+            "title": "2) Starter en producción",
+            "text": "Ponemos un pack inicial en productivo — rápido y medible."
           },
           {
-            "title": "3) El pedido llega",
-            "text": "Cocina y barra reciben tickets claros (modo estaciones)."
+            "title": "3) Integración y ampliación",
+            "text": "Conectamos sistemas y automatizamos workflows — seguro y controlable."
           }
         ]
       },
@@ -185,19 +198,31 @@
         ]
       },
       "modules": {
-        "h2": "Módulos",
+        "h2": "Bloques de modernización",
         "items": [
           {
-            "title": "Para clientes",
-            "text": "Pedidos con chat, recomendaciones, reordenar con un toque."
+            "title": "Bandeja inteligente y respuestas",
+            "text": "Las solicitudes se clasifican, las respuestas se preparan — tú apruebas."
           },
           {
-            "title": "Para cocina y barra",
-            "text": "KDS por estaciones: Nuevo → En preparación → Listo. Basta una tablet."
+            "title": "Pedidos y reservas",
+            "text": "Menos estrés telefónico, menos errores, más ingresos."
           },
           {
-            "title": "Para el dueño",
-            "text": "Onboarding por web/PDF/fotos, ajustes, informes."
+            "title": "Workflows y automatización",
+            "text": "Lo repetible se automatiza — bien documentado."
+          },
+          {
+            "title": "Integrar, no reemplazar",
+            "text": "Google, correo, calendario, CRM, POS — conectamos lo que ya usas."
+          },
+          {
+            "title": "Conocimiento y memoria",
+            "text": "Preguntas repetidas, datos e info de clientes se vuelven utilizables."
+          },
+          {
+            "title": "Seguridad y control",
+            "text": "Guardrails, roles y auditoría — sin “IA sin control”."
           }
         ]
       },
@@ -360,45 +385,45 @@
         ]
       },
       "proof": {
-        "h2": "Así se ve en la práctica",
-        "p": "Tres vistas que reflejan el día a día — tranquilo, claro y fácil de entender.",
+        "h2": "IA — con cinturón de seguridad.",
+        "p": "Para que la IA ayude sin riesgos: reglas claras, control y auditoría.",
         "items": [
           {
-            "title": "Vista chat cliente",
-            "subtitle": "Preguntas → botones → pedido. Sin app."
+            "title": "Sin secretos en el navegador",
+            "subtitle": "Accesos y tokens se quedan en el servidor — controlados y trazables."
           },
           {
-            "title": "Tickets KDS",
-            "subtitle": "Cocina/barra separadas, estados claros, menos gritos."
+            "title": "Roles y permisos claros",
+            "subtitle": "¿Quién puede hacer qué? Permisos definidos y aplicables."
           },
           {
-            "title": "Vista admin",
-            "subtitle": "Carta, informes y ajustes — limpio y calmado."
+            "title": "Workflows auditables",
+            "subtitle": "Automatizaciones documentadas y revisables — sin “la IA hace cosas”."
           }
         ]
       },
       "finalCta": {
         "h2": "¿Te apetece una demo de 10 minutos?",
-        "p": "Te mostramos el flujo completo: cliente, cocina/barra y panel de administración.",
-        "ctaPrimary": "Reservar demo",
+        "p": "Te mostramos rápidamente qué es realista para ti — y qué no.",
+        "ctaPrimary": "Chequeo de 10 minutos",
         "ctaSecondary": "Contacto"
       },
       "roi": {
-        "h2": "Calculadora ROI",
-        "p": "Estima los ingresos adicionales potenciales para tu restaurante.",
+        "h2": "¿Cuánto te cuesta el caos por semana?",
+        "p": "Calcula tiempo perdido, errores y solicitudes perdidas — y mira cuándo compensa modernizar.",
         "inputs": {
-          "tables": "Mesas",
-          "guestsPerDay": "Clientes por día",
-          "avgBill": "Cuenta promedio (€)",
-          "internationalGuests": "Clientes internacionales (%)"
+          "tables": "Tamaño del equipo",
+          "guestsPerDay": "Solicitudes por día",
+          "avgBill": "Valor medio por solicitud (€)",
+          "internationalGuests": "Solicitudes recurrentes (%)"
         },
         "outputs": {
-          "additionalOrders": "Pedidos adicionales/día",
-          "monthlyRevenue": "Ingresos adicionales estimados/mes",
+          "additionalOrders": "Cierres adicionales/día",
+          "monthlyRevenue": "Valor añadido estimado/mes",
           "timeSaved": "Tiempo ahorrado por día"
         },
         "disclaimer": "Estimación basada en supuestos conservadores. Los valores reales dependen de la operación.",
-        "cta": "Ver demo"
+        "cta": "Chequeo de 10 minutos"
       },
       "miniChat": {
         "welcome": "¡Bienvenido! Soy tu carta inteligente.",
@@ -450,8 +475,8 @@
         "title": "Funciones — Gastro Landingpage",
         "description": "Todas las funciones: pedidos, cocina y barra, POS Lite, servicio."
       },
-      "h1": "Funciones",
-      "intro": "Resumen de módulos. Más detalle en las subpáginas.",
+      "h1": "Gastro Starter",
+      "intro": "Una solución lista para gastronomía — como pack inicial dentro de nuestra modernización con IA. Rápido en producción, integrable, ampliable después.",
       "sections": {
         "ordering": {
           "h2": "Pedidos (Chat y Kiosco)",
@@ -670,11 +695,11 @@
     },
     "pricing": {
       "meta": {
-        "title": "Precios — Gastro Landingpage",
-        "description": "Tres planes: Basic, Pro, Premium."
+        "title": "Paquetes y operación | AKLOW",
+        "description": "Empieza con un paquete y amplía según necesidad: integración, automatizaciones y operación continua."
       },
-      "h1": "Precios",
-      "intro": "Empieza pequeño y amplía después. Los planes pueden variar según la región.",
+      "h1": "Paquetes y operación",
+      "intro": "Empieza con un paquete (p. ej. Gastro) y amplía según necesidad: integración, automatizaciones y optimización continua.",
       "billing": {
         "perMonth": "/mes"
       },
@@ -683,75 +708,121 @@
       },
       "tiers": [
         {
-          "name": "Basic",
-          "tag": "Para empezar",
+          "name": "Starter",
+          "tag": "Inicio rápido con un caso de uso claro",
           "price": "29",
           "items": [
-            "Pedidos chat-first",
-            "Carta (3 diseños)",
-            "Pedidos y rondas",
-            "Multilingüe (DE/EN/ES)"
+            "Chequeo de 10 minutos + alcance",
+            "Un pack inicial en producción",
+            "Reglas claras y flujo de aprobación",
+            "Baseline de impacto medible"
           ],
-          "cta": "Reservar demo"
+          "cta": "Chequeo de 10 minutos"
         },
         {
-          "name": "Pro",
-          "tag": "Para operación",
+          "name": "Plus",
+          "tag": "Integración y workflows adicionales",
           "price": "89",
           "items": [
-            "KDS cocina y barra",
-            "Bandeja de servicio",
-            "Informes (KPIs)",
-            "Importación de carta (web/PDF/fotos)"
+            "Conectar email, calendario, CRM, etc.",
+            "Automatizaciones documentadas",
+            "Conocimiento y memoria",
+            "Roles y permisos"
           ],
-          "cta": "Reservar demo"
+          "cta": "Chequeo de 10 minutos"
         },
         {
-          "name": "Premium",
-          "tag": "Para crecer",
+          "name": "Partner",
+          "tag": "Operación continua y optimización",
           "price": "149",
           "items": [
-            "POS Lite (mesas, caja, split)",
-            "Modo kiosco (opcional)",
-            "Puente híbrido (opcional más adelante)",
-            "Ajustes y flujos avanzados"
+            "Monitoring y mejora continua",
+            "Guardrails y auditoría",
+            "Nuevas automatizaciones con el tiempo",
+            "Soporte prioritario"
           ],
-          "cta": "Reservar demo"
+          "cta": "Chequeo de 10 minutos"
         }
       ],
-      "note": "Nota: empezamos de forma pragmática y ampliamos de manera limpia.",
+      "note": "Los precios dependen del sector, integraciones y alcance. Lo aclaramos en el chequeo de 10 minutos.",
       "faqLink": "Ver FAQ",
       "comparison": {
-        "title": "Comparación de funciones",
-        "columns": ["Basic", "Pro", "Premium"],
+        "title": "Alcance en detalle",
+        "columns": ["Starter", "Plus", "Partner"],
         "categories": [
           {
-            "name": "Pedidos",
+            "name": "Modernización",
             "features": [
-              { "name": "Pedidos QR (Chat y Web)", "tiers": [true, true, true] },
-              { "name": "Multilingüe (Auto-Translate)", "tiers": [true, true, true] },
-              { "name": "Carta Digital", "tiers": [true, true, true] },
-              { "name": "Modo Kiosco", "tiers": [false, false, true] }
+              { "name": "Chequeo rápido y roadmap", "tiers": [true, true, true] },
+              { "name": "Pack inicial en producción (1 caso)", "tiers": [true, true, true] },
+              { "name": "Reglas y flujo de aprobación", "tiers": [true, true, true] },
+              { "name": "Workflows adicionales", "tiers": [false, true, true] }
             ]
           },
           {
-            "name": "Cocina y Servicio",
+            "name": "Integración",
             "features": [
-              { "name": "KDS (Pantalla de Cocina)", "tiers": [false, true, true] },
-              { "name": "Llamada Servicio y Cuenta", "tiers": [false, true, true] },
-              { "name": "Integración Impresoras", "tiers": [false, true, true] }
+              { "name": "Integración email / calendario / CRM", "tiers": [false, true, true] },
+              { "name": "Workflows automatizados (documentados)", "tiers": [false, true, true] },
+              { "name": "Conocimiento y memoria", "tiers": [false, true, true] }
             ]
           },
           {
-            "name": "Gestión",
+            "name": "Operación",
             "features": [
-              { "name": "Informes de Ventas", "tiers": [true, true, true] },
-              { "name": "POS Lite (Caja)", "tiers": [false, false, true] },
-              { "name": "Permisos de Personal", "tiers": [false, true, true] }
+              { "name": "Monitoring y optimización continua", "tiers": [false, false, true] },
+              { "name": "Guardrails y auditoría", "tiers": [false, false, true] },
+              { "name": "Roles y permisos", "tiers": [false, true, true] }
             ]
           }
         ]
       }
+    },
+    "services": {
+      "meta": {
+        "title": "Servicios | AKLOW",
+        "description": "Modernización con IA para pymes: análisis, integración y automatización, operación y optimización."
+      },
+      "h1": "Servicios",
+      "intro": "Tres bloques que combinamos según tu punto de partida — pragmático, medible y sin un cambio innecesario de herramientas.",
+      "blocks": [
+        {
+          "title": "Análisis de potencial con IA",
+          "text": "Quick wins, riesgos y una hoja de ruta realista — claramente priorizada."
+        },
+        {
+          "title": "Integración y automatización",
+          "text": "Conectamos sistemas y construimos workflows que funcionan en el día a día."
+        },
+        {
+          "title": "Operación y optimización",
+          "text": "Monitoring, mejoras y nuevas automatizaciones — para que mejore de forma continua."
+        }
+      ],
+      "cta": "Chequeo de 10 minutos"
+    },
+    "cases": {
+      "meta": {
+        "title": "Resultados | AKLOW",
+        "description": "Ejemplos cortos y anónimos de mejoras medibles con modernización con IA."
+      },
+      "h1": "Resultados",
+      "intro": "Tres resultados típicos — cortos, anónimos y centrados en impacto.",
+      "items": [
+        {
+          "title": "Gastro",
+          "text": "Menos estrés telefónico, más pedidos, workflows más claros."
+        },
+        {
+          "title": "Servicios",
+          "text": "Respuestas más rápidas, menos caos en la bandeja, mejor calidad de leads."
+        },
+        {
+          "title": "Backoffice",
+          "text": "Rutinas automatizadas, menos errores, mejor seguimiento."
+        }
+      ],
+      "cta": "Chequeo de 10 minutos"
     },
     "demo": {
       "meta": {

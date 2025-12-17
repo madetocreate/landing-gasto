@@ -84,7 +84,7 @@ export function ConciergeChat({ mode, pathname }: ConciergeChatProps) {
     if (message.role === 'user') {
       return (
         <div key={message.id} className="flex justify-end mb-4">
-          <div className="max-w-[80%] px-4 py-2 bg-accent text-accent-foreground rounded-2xl rounded-tr-sm">
+          <div className="max-w-[80%] px-4 py-2 bg-action text-action-foreground rounded-2xl rounded-tr-sm">
             <p className="text-sm">{message.content}</p>
           </div>
         </div>
@@ -107,9 +107,9 @@ export function ConciergeChat({ mode, pathname }: ConciergeChatProps) {
                     'px-3 py-1.5 text-xs font-medium rounded-lg',
                     'bg-background-muted text-foreground',
                     'border border-border/50',
-                    'hover:bg-surface hover:border-accent/50',
+                    'hover:bg-surface hover:border-action/50',
                     'transition-colors duration-[var(--motion-fast)]',
-                    'focus:outline-none focus:ring-2 focus:ring-accent focus:ring-offset-1'
+                    'focus:outline-none focus:ring-2 focus:ring-action focus:ring-offset-1'
                   )}
                 >
                   {action.label}
@@ -123,7 +123,7 @@ export function ConciergeChat({ mode, pathname }: ConciergeChatProps) {
                 <Link
                   key={i}
                   href={link.href}
-                  className="text-xs text-accent hover:underline"
+                  className="text-xs text-action hover:underline"
                 >
                   {link.label}
                 </Link>
@@ -237,7 +237,7 @@ export function ConciergeChat({ mode, pathname }: ConciergeChatProps) {
               'flex-1 px-4 py-2 rounded-lg',
               'bg-background-muted border border-border/50',
               'text-foreground placeholder:text-foreground-muted',
-              'focus:outline-none focus:ring-2 focus:ring-accent focus:ring-offset-1',
+              'focus:outline-none focus:ring-2 focus:ring-action focus:ring-offset-1',
               'transition-colors duration-[var(--motion-fast)]'
             )}
             disabled={isLoading}
@@ -247,11 +247,11 @@ export function ConciergeChat({ mode, pathname }: ConciergeChatProps) {
             disabled={!input.trim() || isLoading}
             className={classNames(
               'px-4 py-2 rounded-lg',
-              'bg-accent text-accent-foreground',
+              'bg-action text-action-foreground',
               'disabled:opacity-50 disabled:cursor-not-allowed',
-              'hover:bg-accent-hover',
+              'hover:bg-action-hover',
               'transition-colors duration-[var(--motion-fast)]',
-              'focus:outline-none focus:ring-2 focus:ring-accent focus:ring-offset-1'
+              'focus:outline-none focus:ring-2 focus:ring-action focus:ring-offset-1'
             )}
           >
             <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">

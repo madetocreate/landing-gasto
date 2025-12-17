@@ -34,7 +34,7 @@ export function AnimatedAlternatingSection({ blocks }: { blocks: ProblemSolution
           <div className="absolute left-1/2 top-0 bottom-0 w-px bg-border hidden md:block -translate-x-1/2">
              <motion.div 
                style={{ height: lineHeight }} 
-               className="w-full bg-accent origin-top"
+               className="w-full bg-action origin-top"
              />
           </div>
 
@@ -44,8 +44,8 @@ export function AnimatedAlternatingSection({ blocks }: { blocks: ProblemSolution
               className={`relative flex flex-col ${block.align === "left" ? "md:items-start" : "md:items-end"}`}
             >
               {/* Connector Dot */}
-              <div className="absolute top-12 left-1/2 -translate-x-1/2 w-4 h-4 rounded-full bg-background border-2 border-accent hidden md:block z-10 shadow-sm">
-                <div className="absolute inset-1 rounded-full bg-accent animate-pulse" />
+              <div className="absolute top-12 left-1/2 -translate-x-1/2 w-4 h-4 rounded-full bg-background border-2 border-action hidden md:block z-10 shadow-sm">
+                <div className="absolute inset-1 rounded-full bg-action animate-pulse" />
               </div>
 
               {/* Connecting Horizontal Line */}
@@ -59,7 +59,7 @@ export function AnimatedAlternatingSection({ blocks }: { blocks: ProblemSolution
                    whileInView={{ scaleX: 1 }}
                    viewport={{ once: true, margin: "-100px" }}
                    transition={{ duration: 0.8, delay: 0.2 }}
-                   className={`h-full bg-accent/30 origin-${block.align === "left" ? "left" : "right"}`}
+                   className={`h-full bg-action/30 origin-${block.align === "left" ? "left" : "right"}`}
                  />
               </div>
 
@@ -70,12 +70,9 @@ export function AnimatedAlternatingSection({ blocks }: { blocks: ProblemSolution
                 transition={shouldReduceMotion ? { duration: 0 } : { duration: motionPolicy.reveal.duration, ease: motionPolicy.reveal.ease }}
                 className={`max-w-xl w-full relative z-20 ${block.align === "left" ? "md:mr-auto" : "md:ml-auto"}`}
               >
-                <GlassCard className="p-8 md:p-10 relative overflow-hidden group border-l-4 border-l-transparent hover:border-l-accent transition-all duration-300">
-                  <div className="text-xs font-bold text-accent mb-2 uppercase tracking-wider opacity-80">
-                    Step 0{i + 1}
-                  </div>
+                <GlassCard className="p-8 md:p-10 relative overflow-hidden group border-l-4 border-l-transparent hover:border-l-action transition-all duration-300">
                   <h2 className="mb-4 text-2xl md:text-3xl font-bold tracking-tight">{block.title}</h2>
-                  <p className="text-lg text-foreground-muted leading-relaxed">
+                  <p className="text-lg text-foreground-muted leading-relaxed whitespace-pre-line">
                     {block.text}
                   </p>
                 </GlassCard>
@@ -138,8 +135,8 @@ export function AnimatedHowToSection({ title, steps }: HowToSectionProps) {
             const Icon = icons[i] || Scan
             return (
               <motion.div key={i} variants={itemVariant}>
-                <GlassCard className="h-full p-8 flex flex-col items-start gap-4 hover:border-accent/20 transition-colors">
-                  <div className="p-3 rounded-xl bg-accent/10 text-accent mb-2">
+                <GlassCard className="h-full p-8 flex flex-col items-start gap-4 hover:border-action/20 transition-colors">
+                  <div className="p-3 rounded-xl bg-action-soft text-action mb-2">
                     <Icon className="w-6 h-6" />
                   </div>
                   <div>
@@ -182,7 +179,7 @@ export function AnimatedModulesSection({ title, items }: ModulesSectionProps) {
             <motion.div key={i} variants={itemVariant}>
               <GlassCard variant="module" className="h-full p-8 flex flex-col justify-between group">
                 <div>
-                  <div className="w-10 h-1 bg-accent/30 rounded-full mb-6 group-hover:bg-accent transition-colors duration-300" />
+                  <div className="w-10 h-1 bg-action/30 rounded-full mb-6 group-hover:bg-action transition-colors duration-300" />
                   <h3 className="text-2xl font-bold text-foreground mb-4">{item.title}</h3>
                   <p className="text-foreground-muted leading-relaxed text-lg">{item.text}</p>
                 </div>

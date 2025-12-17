@@ -18,7 +18,7 @@ export type Messages = typeof de;
 /**
  * Get nested value from object by dot-notation path
  */
-function getNestedValue(obj: any, path: string): any {
+function getNestedValue(obj: unknown, path: string): unknown {
   return path.split('.').reduce((current, key) => current?.[key], obj);
 }
 
@@ -26,7 +26,7 @@ function getNestedValue(obj: any, path: string): any {
  * Simple i18n function for server components
  * Returns string, object, or array depending on the value
  */
-export function t(locale: Locale, key: string, params?: Record<string, string | number>): any {
+export function t(locale: Locale, key: string, params?: Record<string, string | number>): unknown {
   const message = getNestedValue(messages[locale], key);
   if (message === undefined) {
     // Fallback to default locale

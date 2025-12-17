@@ -18,11 +18,6 @@ interface ConciergePanelProps {
 export function ConciergePanel({ isOpen, onClose, initialMode = 'concierge' }: ConciergePanelProps) {
   const [mode, setMode] = useState<ConciergeMode>(initialMode);
   const pathname = usePathname();
-  
-  // Update mode when initialMode changes (e.g. from auto-detection)
-  useEffect(() => {
-    setMode(initialMode);
-  }, [initialMode, isOpen]);
 
   // Lock body scroll on mobile only, or handled by FocusTrap logic?
   // Usually dialogs lock scroll.

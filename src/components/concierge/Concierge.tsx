@@ -1,6 +1,6 @@
 'use client';
 
-import { useState, useEffect } from 'react';
+import { useMemo, useState, useEffect } from 'react';
 import { ConciergeLauncher } from './ConciergeLauncher';
 import { ConciergePanel } from './ConciergePanel';
 import type { ConciergeMode } from './ModeSwitcher';
@@ -9,17 +9,17 @@ import { usePathname } from 'next/navigation';
 export function Concierge() {
   const [isOpen, setIsOpen] = useState(false);
   const [showHint, setShowHint] = useState(false);
-  const [hintShown, setHintShown] = useState(false);
-  const [initialMode, setInitialMode] = useState<ConciergeMode>('concierge');
+  const [hintShown, setHintShown] = useState(() => {
+    if (typeof window === 'undefined') return false;
+    return sessionStorage.getItem('concierge_hint_shown') === 'true';
+  });
   const pathname = usePathname();
 
-  // Check if hint was already shown this session
-  useEffect(() => {
-    const stored = sessionStorage.getItem('concierge_hint_shown');
-    if (stored === 'true') {
-      setHintShown(true);
-    }
-  }, []);
+  const initialMode: ConciergeMode = useMemo(() => {
+    if (pathname.includes('/preise') || pathname.includes('/demo')) return 'onboarding';
+    if (pathname.includes('/wissen') || pathname.includes('/features')) return 'support';
+    return 'concierge';
+  }, [pathname]);
 
   // Scroll-based hint trigger
   useEffect(() => {
@@ -34,6 +34,7 @@ export function Concierge() {
         setShowHint(true);
         setHintShown(true);
         sessionStorage.setItem('concierge_hint_shown', 'true');
+        window.setTimeout(() => setShowHint(false), 5000);
       }
     };
 
@@ -49,21 +50,11 @@ export function Concierge() {
       setShowHint(true);
       setHintShown(true);
       sessionStorage.setItem('concierge_hint_shown', 'true');
+      window.setTimeout(() => setShowHint(false), 5000);
     }, 45000); // 45 seconds
 
     return () => clearTimeout(timer);
   }, [hintShown, isOpen]);
-
-  // Auto-detect mode based on pathname
-  useEffect(() => {
-    if (pathname.includes('/preise') || pathname.includes('/demo')) {
-      setInitialMode('onboarding');
-    } else if (pathname.includes('/wissen') || pathname.includes('/features')) {
-      setInitialMode('support');
-    } else {
-      setInitialMode('concierge');
-    }
-  }, [pathname]);
 
   const handleOpen = () => {
     setIsOpen(true);
@@ -86,6 +77,7 @@ export function Concierge() {
         onHintDismiss={handleHintDismiss}
       />
       <ConciergePanel
+        key={`${pathname}:${initialMode}:${isOpen ? 'open' : 'closed'}`}
         isOpen={isOpen}
         onClose={handleClose}
         initialMode={initialMode}

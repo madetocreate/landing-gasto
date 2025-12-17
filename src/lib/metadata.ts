@@ -1,8 +1,8 @@
 import { Metadata } from 'next';
 
-const baseUrl = process.env.NEXT_PUBLIC_BASE_URL || 'https://gastro.example.com';
-const siteName = 'Gastro';
-const defaultDescription = 'Moderne Lösungen für die Gastronomie';
+const baseUrl = process.env.NEXT_PUBLIC_BASE_URL || 'https://aklow.com';
+const siteName = 'AKLOW';
+const defaultDescription = 'KI-Modernisierung für KMU: Starterkits, Integration & Betrieb.';
 
 export function createMetadata({
   title,
@@ -13,7 +13,8 @@ export function createMetadata({
   description?: string;
   path?: string;
 }): Metadata {
-  const fullTitle = `${title} | ${siteName}`;
+  // Verhindere doppelte Brand-Namen, falls der Titel schon " | AKLOW" enthält
+  const fullTitle = title.includes(`| ${siteName}`) ? title : `${title} | ${siteName}`;
   const url = `${baseUrl}${path}`;
 
   return {

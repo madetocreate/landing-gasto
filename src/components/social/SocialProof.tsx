@@ -1,6 +1,5 @@
 "use client"
 
-import { useMemo } from "react"
 import { Section, Container } from "@/components/ui/Section"
 import { Marquee } from "@/components/ui/Marquee"
 import { useLocale } from "@/hooks/useLocale"
@@ -20,12 +19,11 @@ export function SocialProof() {
 
   // Example for Row 2 - In a real app, this might come from a separate key or just shuffled/reused for visual density
   // Using a slice/re-map for now to simulate "Example Cards" if no distinct content is provided
-  const testimonialsRow2 = [...testimonialsRow1].reverse().map(t => ({
-    ...t,
-    name: t.name + " (Verified)" // Slight variation
-  }))
-
-  const TestimonialCard = ({ name, text }: { name: string; text: string }) => {
+  // UPDATED: No fake verified badges. Just reusing content for density or showing less.
+  // Ideally, we just show one grid or a single row if we don't have enough.
+  // User requested: "KEIN 'Verified' Dupes". So I will just use Row 1.
+  
+  const TestimonialCard = ({ name, text, role }: { name: string; text: string; role?: string }) => {
     // Generate initials
     const initials = name.slice(0, 2).toUpperCase()
     
@@ -38,9 +36,12 @@ export function SocialProof() {
           <div>
             <div className="flex text-yellow-500 text-xs mb-1 gap-0.5">★★★★★</div>
             <p className="text-xs text-foreground-muted font-medium uppercase tracking-wider">{name}</p>
+            {role && <p className="text-[10px] text-foreground-muted/70">{role}</p>}
           </div>
         </div>
-        <p className="text-sm text-foreground leading-relaxed italic opacity-90">"{text}"</p>
+        <p className="text-sm text-foreground leading-relaxed italic opacity-90">
+          &ldquo;{text}&rdquo;
+        </p>
       </SpotlightCard>
     )
   }
@@ -60,46 +61,45 @@ export function SocialProof() {
 
         {shouldReduceMotion ? (
           <Container size="lg">
-            <div className="grid md:grid-cols-2 gap-6">
-               {testimonialsRow1.slice(0, 4).map((testimonial, i) => (
+            <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+               {testimonialsRow1.map((testimonial, i) => (
                  <TestimonialCard
                    key={`grid-1-${i}`}
                    name={testimonial.name}
                    text={testimonial.text}
-                 />
-               ))}
-               {testimonialsRow2.slice(0, 4).map((testimonial, i) => (
-                 <TestimonialCard
-                   key={`grid-2-${i}`}
-                   name={testimonial.name}
-                   text={testimonial.text}
+                   role={testimonial.tag}
                  />
                ))}
             </div>
           </Container>
         ) : (
-          <div className="space-y-8">
-            {/* Row A: Left to Right */}
-            <Marquee direction="left" speed={70} className="py-2">
-              {testimonialsRow1.map((testimonial, i) => (
-                <TestimonialCard
-                  key={`row-a-${i}`}
-                  name={testimonial.name}
-                  text={testimonial.text}
-                />
-              ))}
-            </Marquee>
-
-            {/* Row B: Right to Left (Counter-directional) */}
-            <Marquee direction="right" speed={80} className="py-2">
-              {testimonialsRow2.map((testimonial, i) => (
-                <TestimonialCard
-                  key={`row-b-${i}`}
-                  name={testimonial.name}
-                  text={testimonial.text}
-                />
-              ))}
-            </Marquee>
+          <div className="space-y-4">
+            {/* Row 1: Left direction */}
+            <div className="flex justify-center">
+              <Marquee direction="left" speed={50} className="py-2">
+                {testimonialsRow1.map((testimonial, i) => (
+                  <TestimonialCard
+                    key={`row-1-${i}`}
+                    name={testimonial.name}
+                    text={testimonial.text}
+                    role={testimonial.tag}
+                  />
+                ))}
+              </Marquee>
+            </div>
+            {/* Row 2: Right direction (reversed order for visual variety) */}
+            <div className="flex justify-center">
+              <Marquee direction="right" speed={50} className="py-2">
+                {[...testimonialsRow1].reverse().map((testimonial, i) => (
+                  <TestimonialCard
+                    key={`row-2-${i}`}
+                    name={testimonial.name}
+                    text={testimonial.text}
+                    role={testimonial.tag}
+                  />
+                ))}
+              </Marquee>
+            </div>
           </div>
         )}
       </Container>

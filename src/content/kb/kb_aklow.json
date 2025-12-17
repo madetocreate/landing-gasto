@@ -1,0 +1,31 @@
+[
+  {
+    "id": "aklow-general",
+    "title": "Was ist AKLOW?",
+    "content": "AKLOW modernisiert KMUs mit KI. Wir bieten Starterkits (fertige Lösungen) und individuelle Integrationen an.",
+    "category": "aklow",
+    "keywords": ["aklow", "wer", "was", "agentur"]
+  },
+  {
+    "id": "aklow-process",
+    "title": "Wie läuft ein Projekt ab?",
+    "content": "1. 10-Minuten-Check (Analyse). 2. Starterkit oder Integration wählen. 3. Live gehen (meist in 14 Tagen).",
+    "category": "aklow",
+    "keywords": ["ablauf", "prozess", "dauer", "wie lange"]
+  },
+  {
+    "id": "aklow-pricing",
+    "title": "Was kostet das?",
+    "content": "Starterkits gibt es ab 29€/Monat. Individuelle Integrationen starten mit einem Setup-Fee und einer monatlichen Pauschale.",
+    "category": "aklow",
+    "keywords": ["preis", "kosten", "gebühren"]
+  },
+  {
+    "id": "aklow-starterkits",
+    "title": "Welche Starterkits gibt es?",
+    "content": "Aktuell bieten wir: Gastro Starter (Bestellsystem), Inbox Starter (E-Mail/Chat) und Backoffice Starter (Dokumente).",
+    "category": "aklow",
+    "keywords": ["starterkits", "produkte", "lösungen"]
+  }
+]
+

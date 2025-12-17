@@ -10,8 +10,20 @@
   --color-foreground-muted: var(--color-fg-muted);
   --color-muted: var(--color-bg-muted);
   --color-border: var(--color-border);
-  --color-accent: var(--color-accent);
-  --color-accent-hover: var(--color-accent-hover);
+  
+  /* Brand Graphite */
+  --color-brand: var(--brand-graphite);
+  --color-brand-hover: var(--brand-graphite-hover);
+
+  /* Action Accent (Modern Green) */
+  --color-action: var(--color-action);
+  --color-action-hover: var(--color-action-hover);
+  --color-action-foreground: var(--color-action-fg);
+  --color-action-soft: var(--color-action-soft);
+
+  /* Original Accent (MAPPED TO BRAND GRAPHITE TO PRESERVE LOGO/PANELS) */
+  --color-accent: var(--brand-graphite);
+  --color-accent-hover: var(--brand-graphite-hover);
   --color-accent-contrast: var(--color-accent-contrast);
   --color-accent-foreground: var(--color-accent-fg);
   --color-overlay: var(--color-overlay);
@@ -37,6 +49,7 @@
   /* Animations */
   --animate-float-slow: float 6s ease-in-out infinite;
   --animate-border-beam: border-beam calc(var(--duration)*1s) infinite linear;
+  --animate-shine: shine 1.5s ease-out;
 
   @keyframes float {
     0%, 100% { transform: translateY(0); }
@@ -45,6 +58,10 @@
 
   @keyframes border-beam {
     100% { offset-distance: 100%; }
+  }
+
+  @keyframes shine {
+    100% { transform: translateX(100%); }
   }
 
   /* BorderBeam rotation (used instead of styled-jsx to avoid hydration mismatch) */
@@ -59,7 +76,7 @@ body {
   background: var(--color-bg);
   color: var(--color-fg);
   font-family: var(--font-sans);
-  line-height: var(--leading-relaxed);
+  line-height: 1.65; /* Slightly increased for premium feel */
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -72,8 +89,10 @@ body::before {
   pointer-events: none;
   z-index: -1;
   background:
-    radial-gradient(60% 55% at 18% 8%, var(--ambient-spot-1) 0%, transparent 60%),
-    radial-gradient(55% 55% at 86% 20%, var(--ambient-spot-2) 0%, transparent 62%);
+    radial-gradient(70% 60% at 15% 5%, var(--ambient-spot-1) 0%, transparent 60%),
+    radial-gradient(65% 65% at 85% 15%, var(--ambient-spot-2) 0%, transparent 65%),
+    radial-gradient(60% 60% at 50% 100%, rgba(var(--brand-graphite-rgb), 0.05) 0%, transparent 70%),
+    radial-gradient(40% 40% at 80% 80%, rgba(var(--color-action-rgb), 0.03) 0%, transparent 100%);
   opacity: 1;
 }
 
@@ -94,7 +113,7 @@ h1 {
   font-size: var(--text-5xl);
   line-height: var(--leading-tight);
   font-weight: 650;
-  letter-spacing: -0.02em;
+  letter-spacing: -0.035em; /* Enger für Apple-Look */
   background: linear-gradient(to bottom right, var(--color-fg) 20%, var(--color-fg-muted));
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -106,13 +125,14 @@ h2 {
   font-size: var(--text-4xl);
   line-height: var(--leading-tight);
   font-weight: 600;
-  letter-spacing: -0.01em;
+  letter-spacing: -0.025em; /* Enger */
 }
 
 h3 {
   font-size: var(--text-2xl);
   line-height: var(--leading-normal);
   font-weight: 600;
+  letter-spacing: -0.015em;
 }
 
 h4 {
@@ -121,8 +141,8 @@ h4 {
   font-weight: 600;
 }
 
-.prose { max-width: 65ch; }
-.prose-wide { max-width: 75ch; }
+.prose { max-width: 65ch; line-height: 1.7; }
+.prose-wide { max-width: 75ch; line-height: 1.7; }
 
 /* Utilities - Properly nested or as direct classes if valid CSS */
 @layer utilities {

@@ -1,30 +1,34 @@
 {
   "brand": {
-    "name": "Gastro Landingpage",
-    "tagline": "Bestellen wie mit ChatGPT – direkt im Restaurant."
+    "name": "AKLOW",
+    "tagline": "KI-Modernisierung für KMU"
   },
   "nav": {
     "top": {
-      "home": "Home",
-      "features": "Features",
-      "pricing": "Preise"
+      "home": "KI-Modernisierung",
+      "applications": "Anwendungen",
+      "fundament": "Fundament",
+      "pricing": "Preise",
+      "contact": "Kontakt"
     },
-    "cta": "Demo buchen",
+    "cta": "10-Minuten-Check",
     "drawer": {
       "title": "Menü",
       "groups": {
-        "product": "Produkt",
-        "features": "Features",
+        "product": "Lösungen",
+        "starterkits": "Starterkits",
         "knowledge": "Wissen",
         "company": "Unternehmen",
         "legal": "Rechtliches"
       },
       "links": {
         "home": "Home",
-        "features": "Features",
+        "starterkits": "Alle Starterkits",
+        "features": "Gastro Starter",
         "pricing": "Preise",
-        "demo": "Demo buchen",
-        "demo_view": "Demo ansehen",
+        "check": "10-Minuten-Check",
+        "demo": "Gastro-Demo",
+        "cases": "Cases",
         "contact": "Kontakt",
         "feat_ordering": "Bestellen (Chat & Kiosk)",
         "feat_kds": "Küche & Bar (KDS)",
@@ -44,28 +48,33 @@
   },
   "footer": {
     "columns": {
-      "product": "Produkt",
-      "features": "Features",
+      "menu": "Menü",
+      "applications": "Anwendungen",
       "company": "Unternehmen",
-      "knowledge": "Wissen"
+      "knowledge": "Wissenshub"
     },
     "links": {
-      "home": "Home",
-      "features": "Features",
+      "home": "KI-Modernisierung",
+      "applications": "Anwendungen",
+      "fundament": "Fundament",
       "pricing": "Preise",
-      "demo": "Demo buchen",
-      "feat_ordering": "Bestellen (Chat & Kiosk)",
-      "feat_kds": "Küche & Bar (KDS)",
-      "feat_poslite": "POS-Lite",
-      "feat_service": "Service",
-      "about": "Über uns",
       "contact": "Kontakt",
-      "partners": "Partner",
-      "jobs": "Jobs",
-      "kb_home": "Wissensbasis",
-      "kb_getting_started": "Erste Schritte",
-      "kb_faq": "FAQ",
-      "blog": "Blog"
+      "app_inbox": "Intelligenter Posteingang",
+      "app_website": "Website & Telefon Assistent",
+      "app_documents": "Dokumente & Ordnung",
+      "app_reviews": "Bewertungen",
+      "app_customers": "Kunden & Vorgänge",
+      "app_placeholder": "",
+      "about": "Über uns",
+      "roadmap": "Roadmap",
+      "status": "Status & Updates",
+      "values": "Haltung & Verantwortung",
+      "knowledge_hub": "Wissenshub",
+      "getting_started": "Erste Schritte",
+      "system": "So funktioniert das System",
+      "ki_alltag": "KI im Alltag",
+      "security": "Sicherheit",
+      "faq": "FAQ"
     },
     "legalTitle": "Rechtliches",
     "legalLinks": {
@@ -94,18 +103,22 @@
   "pages": {
     "home": {
       "meta": {
-        "title": "Bestellen wie mit ChatGPT – Gastro Landingpage",
-        "description": "Gäste scannen QR, fragen und bestellen per Klick. Küche und Bar bekommen klare Tickets. Ohne App."
+        "title": "KI-Modernisierung – ohne Tool-Chaos. | AKLOW",
+        "description": "Wir modernisieren kleine und mittlere Unternehmen mit KI: Startpakete, Integration und laufender Betrieb. Schnell live, messbar besser – ohne dass dein Team neue Software lernen muss."
       },
       "hero": {
-        "h1": "Bestellen wie mit ChatGPT – direkt im Restaurant.",
-        "sub": "Gäste scannen den QR-Code am Tisch, stellen Fragen und bestellen per Klick. Ohne App. Ohne Stress.",
-        "ctaPrimary": "Demo buchen",
-        "ctaSecondary": "Kurz ansehen (2 Min.)",
+        "badge": "Neu: KI-Modernisierung",
+        "trustLine": "Vertrauen von modernen KMU",
+        "kpiTitle": "+24% Effizienz",
+        "kpiSub": "vs. letzter Monat",
+        "h1": "KI-Modernisierung ohne Tool-Chaos.",
+        "sub": "Wir modernisieren Dein Business mit KI. Praxisnah, schnell startklar und messbar besser – ohne dass Du Dir Sorgen machen musst oder Deinen Alltag umkrempelst.\n\nDu arbeitest weiter wie gewohnt.\nDie KI übernimmt im Hintergrund das, was Dich heute Zeit kostet.",
+        "ctaPrimary": "10-Minuten-Check",
+        "ctaSecondary": "Anwendungen ansehen",
         "bullets": [
-          "Mehrsprachig",
-          "Küche & Bar als Tickets (Tablet)",
-          "Optional POS-Lite / Kiosk-Modus"
+          "Live in 14 Tagen",
+          "Ohne neue Software-Umstellung",
+          "Sicher & kontrollierbar"
         ]
       },
       "featureShowcase": {
@@ -122,19 +135,19 @@
       "problemSolution": {
         "problem": {
           "h2": "Das Problem im Alltag",
-          "p": "Im Restaurant wiederholen sich dieselben Fragen – und das kostet Zeit: Zutaten, Allergene, Empfehlungen, Rechnung. Gäste warten, das Personal wird unterbrochen."
+          "p": "Zu viele Anfragen.\nZu viele Unterbrechungen.\nZu wenig Zeit für das, was wirklich zählt.\n\nE-Mails, Nachrichten, Telefonate, Rechnungen.\nWissen steckt im Kopf oder in einzelnen Dateien.\nUnd vieles läuft immer noch manuell.\n\nDas kostet jeden Tag Zeit, Geld und Nerven."
         },
         "solution": {
           "h2": "Die Lösung",
-          "p": "Eine intelligente Speisekarte, die wie ChatGPT funktioniert: Fragen → Empfehlungen → Bestellung. Mit Karten und Buttons statt Tippen."
+          "p": "Eine KI-Schicht, die Dich unterstützt,\nstatt Dir neue Arbeit zu machen.\n\nNachrichten werden vorsortiert.\nAntworten vorbereitet.\nDokumente verstanden.\nZusammenhänge erkannt.\n\nMit klaren Regeln.\nMit Kontrolle.\nUnd so, dass Du jederzeit den Überblick behältst."
         },
         "guest": {
-          "h2": "Was Gäste wirklich wollen",
-          "p": "Keine Wartezeiten, keine Missverständnisse. Gäste bestellen, wann sie wollen – und bekommen genau das, was sie bestellt haben."
+          "h2": "Was Kunden wirklich erwarten",
+          "p": "Schnelle Antworten.\nKlare Informationen.\nReibungslose Abläufe.\n\nOhne Warteschleifen.\nOhne Hin- und Her."
         },
         "team": {
-          "h2": "Was das Team entlastet",
-          "p": "Weniger Laufwege, weniger 'Kann ich zahlen?'. Der Service kann sich auf echte Gastfreundschaft und Beratung konzentrieren."
+          "h2": "Was Dich im Alltag entlastet",
+          "p": "Weniger Unterbrechungen.\nWeniger Tipparbeit.\nWeniger Nachfragen.\n\nMehr Zeit für Deine Kunden\nund für die Arbeit, die wirklich Wert schafft."
         }
       },
       "problem": {
@@ -148,19 +161,19 @@
         "extra": "Und Ihr Team hat endlich wieder Zeit für das Wesentliche."
       },
       "how": {
-        "h2": "So funktioniert's",
+        "h2": "So läuft die Modernisierung ab",
         "steps": [
           {
-            "title": "1) QR scannen",
-            "text": "Der Gast landet sofort im Chat."
+            "title": "1) Kurz-Check",
+            "text": "In 10 Minuten schauen wir gemeinsam, wo es hakt und was realistisch ist."
           },
           {
-            "title": "2) Fragen oder klicken",
-            "text": "Speisekarte, Getränke, Empfehlung, Service – als Karten/Buttons."
+            "title": "2) Schnell startklar",
+            "text": "Ein erstes Setup geht live – spürbar und ohne lange Vorlaufzeit."
           },
           {
-            "title": "3) Bestellung kommt an",
-            "text": "Küche und Bar bekommen klare Tickets (Stations-Modus)."
+            "title": "3) Schrittweise weiter",
+            "text": "Abläufe werden nach und nach unterstützt\nund dort automatisiert, wo es Sinn macht."
           }
         ]
       },
@@ -187,19 +200,31 @@
         ]
       },
       "modules": {
-        "h2": "Module",
+        "h2": "Modernisierungs-Bausteine",
         "items": [
           {
-            "title": "Für Gäste",
-            "text": "Chat-first Bestellen, Empfehlungen, Nachbestellen per Klick."
+            "title": "KI-Agenten & Bots",
+            "text": "Intelligente Assistenten, die E-Mails beantworten, Termine finden und Daten erfassen."
           },
           {
-            "title": "Für Küche & Bar",
-            "text": "Stations-KDS: Neu → In Arbeit → Ready. Tablet reicht."
+            "title": "Prozess-Automatisierung",
+            "text": "Wiederkehrende Aufgaben laufen im Hintergrund – ohne menschliches Zutun."
           },
           {
-            "title": "Für Betreiber",
-            "text": "Onboarding per Website/PDF/Fotos, Einstellungen, Reports."
+            "title": "System-Integration",
+            "text": "Wir verbinden Ihre Tools (CRM, ERP, Mail), damit Daten automatisch fließen."
+          },
+          {
+            "title": "Wissen & Dokumente",
+            "text": "KI macht Ihr Firmenwissen durchsuchbar und extrahiert Daten aus PDFs."
+          },
+          {
+            "title": "Sicherheit & Kontrolle",
+            "text": "KI mit Leitplanken: Klare Regeln, wer was darf und was nicht."
+          },
+          {
+            "title": "Human-in-the-Loop",
+            "text": "Kritische Entscheidungen werden vorbereitet, aber vom Menschen freigegeben."
           }
         ]
       },
@@ -262,73 +287,24 @@
         "cta": "FAQ ansehen"
       },
       "socialProof": {
-        "h2": "Das sagen Betriebe (Pilotphase)",
-        "p": "Kurze Stimmen aus der Praxis – weniger Rückfragen, schnellere Bestellungen, mehr Ruhe im Betrieb.",
-        "disclaimer": "Pilotphase – Ergebnisse können je nach Betrieb variieren.",
+        "h2": "Stimmen aus der Praxis",
+        "p": "Echte Ergebnisse aus verschiedenen Branchen – von Gastro bis Dienstleistung.",
+        "disclaimer": "Auszug aus Pilotprojekten.",
         "testimonials": [
           {
-            "name": "Tapas-Bar in Palma",
-            "text": "Gäste bestellen schneller, und wir werden deutlich seltener wegen Zutaten und Empfehlungen unterbrochen."
+            "name": "Immobilien",
+            "tag": "",
+            "text": "Die Vorsortierung spart mir jeden Morgen richtig Zeit."
           },
           {
-            "name": "Café (Innenstadt)",
-            "text": "Die One-Tap-Nachbestellungen sind überraschend stark. Gerade Getränke laufen deutlich flüssiger."
+            "name": "Handwerk",
+            "tag": "",
+            "text": "Rechnungen laufen jetzt deutlich entspannter durch."
           },
           {
-            "name": "Bistro am Strand",
-            "text": "Mehrsprachigkeit ist bei uns der größte Hebel. Weniger Missverständnisse, weniger Wartezeit."
-          },
-          {
-            "name": "Kleines Restaurant (Terrasse)",
-            "text": "Küche und Bar getrennt auf dem Tablet war sofort spürbar. Weniger Zuruf, mehr Überblick."
-          },
-          {
-            "name": "Bar mit viel Durchsatz",
-            "text": "Der schnelle Bestellflow ist Gold. Tap-Tap-Tap statt lange tippen."
-          },
-          {
-            "name": "Familienrestaurant",
-            "text": "Die Gäste verstehen es ohne Erklärung. Das ist selten."
-          },
-          {
-            "name": "Weinbar",
-            "text": "Empfehlungen als Karten funktionieren besser als lange Texte. Die Leute klicken einfach."
-          },
-          {
-            "name": "Café & Frühstück",
-            "text": "Wenn das WLAN schwächelt, bleibt der Flow trotzdem stabil. Das ist im Alltag entscheidend."
-          },
-          {
-            "name": "Restaurant (mittags voll)",
-            "text": "Service-Rufe sauber im System zu sehen reduziert Stress."
-          },
-          {
-            "name": "Tapas & Cocktails",
-            "text": "Bar-Tickets separat zu sehen spart uns Zeit in der Rush-Hour."
-          },
-          {
-            "name": "Kleines Hotel-Restaurant",
-            "text": "Menü-Import spart enorm Arbeit. Karte rein, kurz prüfen, fertig."
-          },
-          {
-            "name": "Snack Bar",
-            "text": "Neue Mitarbeiter kommen schneller klar, weil alles über Buttons funktioniert."
-          },
-          {
-            "name": "Gastro mit Take-away",
-            "text": "Ein Gerät am Tresen reicht, um den Überblick zu halten."
-          },
-          {
-            "name": "Bistro (Tourismus)",
-            "text": "Sprache wählen und sofort bestellen – Gäste sind entspannter."
-          },
-          {
-            "name": "Café mit wechselnden Karten",
-            "text": "Updates sind endlich nicht mehr nervig. Man hat wieder Kontrolle."
-          },
-          {
-            "name": "Restaurant (Abendgeschäft)",
-            "text": "Bestellungen kommen sauber an und sind nachvollziehbar. Das gibt Vertrauen."
+            "name": "Dienstleistung",
+            "tag": "",
+            "text": "Weniger Rückfragen, weniger Chaos."
           }
         ]
       },
@@ -372,45 +348,45 @@
         ]
       },
       "proof": {
-        "h2": "So wirkt es in echt",
-        "p": "Drei Ansichten, die den Alltag abbilden — ruhig, klar und sofort verständlich.",
+        "h2": "Sicherheit & Kontrolle",
+        "p": "KI – aber mit Sicherheitsgurt.\n\nKI hilft nur dann,\nwenn sie beherrschbar bleibt.\n\nDeshalb gibt es klare Regeln,\nsaubere Berechtigungen\nund vollständige Nachvollziehbarkeit.",
         "items": [
           {
-            "title": "Guest Chat View",
-            "subtitle": "Fragen → Buttons → Bestellung. Ohne App."
+            "title": "Keine sensiblen Daten im Browser",
+            "subtitle": "Zugriffe und Tokens bleiben serverseitig – kontrolliert und nachvollziehbar."
           },
           {
-            "title": "KDS Tickets",
-            "subtitle": "Küche/Bar getrennt, klare States, weniger Zuruf."
+            "title": "Klare Freigaben",
+            "subtitle": "Wer darf was? Rechte sind sauber definiert und durchsetzbar."
           },
           {
-            "title": "Admin Preview",
-            "subtitle": "Menüpflege, Reports, Einstellungen — aufgeräumt."
+            "title": "Prüfbarkeit statt Blackbox",
+            "subtitle": "Automationen sind dokumentiert und prüfbar – kein „KI macht irgendwas“."
           }
         ]
       },
       "finalCta": {
         "h2": "Lust auf eine 10-Minuten-Demo?",
-        "p": "Wir zeigen Ihnen den Gast-Flow, Küche/Bar und das Admin-Setup – einmal komplett.",
-        "ctaPrimary": "Demo buchen",
+        "p": "Wir zeigen Dir ehrlich,\nwas bei Dir realistisch ist –\nund was nicht.",
+        "ctaPrimary": "10-Minuten-Check",
         "ctaSecondary": "Kontakt"
       },
       "roi": {
-        "h2": "ROI-Rechner",
-        "p": "Schätzen Sie den potenziellen Mehrumsatz für Ihr Restaurant.",
+        "h2": "Was kostet dich Chaos pro Woche?",
+        "p": "Rechne Zeitverlust, Fehler und verpasste Anfragen – und sieh, wann sich Modernisierung lohnt.",
         "inputs": {
-          "tables": "Tische",
-          "guestsPerDay": "Gäste pro Tag",
-          "avgBill": "Durchschnittsbon (€)",
-          "internationalGuests": "Internationale Gäste (%)"
+          "tables": "Teamgröße",
+          "guestsPerDay": "Anfragen pro Tag",
+          "avgBill": "Ø Wert pro Anfrage (€)",
+          "internationalGuests": "Wiederkehrende Anfragen (%)"
         },
         "outputs": {
-          "additionalOrders": "Zusätzliche Nachbestellungen/Tag",
-          "monthlyRevenue": "Geschätzter Mehrumsatz/Monat",
+          "additionalOrders": "Zusätzliche Abschlüsse/Tag",
+          "monthlyRevenue": "Geschätzter Mehrwert/Monat",
           "timeSaved": "Zeitersparnis pro Tag"
         },
         "disclaimer": "Schätzung auf Basis konservativer Annahmen. Echte Werte hängen vom Betrieb ab.",
-        "cta": "Demo ansehen"
+        "cta": "10-Minuten-Check"
       },
       "miniChat": {
         "welcome": "Willkommen! Ich bin deine intelligente Speisekarte.",
@@ -462,8 +438,54 @@
         "title": "Features – Gastro Landingpage",
         "description": "Alle Funktionen im Überblick: Bestellen, Küche & Bar, POS-Lite, Service."
       },
-      "h1": "Features",
-      "intro": "Hier finden Sie einen Überblick über alle Module. Details auf den Unterseiten.",
+      "roi": {
+        "h2": "Was kostet dich Chaos pro Woche?",
+        "p": "Rechne Zeitverlust, Fehler und verpasste Anfragen – und sieh, wann sich Modernisierung lohnt.",
+        "inputs": {
+          "tables": "Teamgröße",
+          "guestsPerDay": "Anfragen pro Tag",
+          "avgBill": "Ø Wert pro Anfrage (€)",
+          "internationalGuests": "Wiederkehrende Anfragen (%)"
+        },
+        "outputs": {
+          "additionalOrders": "Zusätzliche Abschlüsse/Tag",
+          "monthlyRevenue": "Geschätzter Mehrwert/Monat",
+          "timeSaved": "Zeitersparnis pro Tag"
+        },
+        "disclaimer": "Schätzung auf Basis konservativer Annahmen. Echte Werte hängen vom Betrieb ab.",
+        "cta": "10-Minuten-Check"
+      },
+      "modules": {
+        "h2": "Gastro-Bausteine",
+        "items": [
+          {
+            "title": "Smart Inbox & Antworten",
+            "text": "Anfragen werden vorqualifiziert, Antworten vorbereitet – du gibst frei."
+          },
+          {
+            "title": "Bestellungen & Reservierungen",
+            "text": "Weniger Telefonstress, weniger Fehler, mehr Umsatz."
+          },
+          {
+            "title": "Workflows & Automationen",
+            "text": "Wiederholbares wird automatisiert – sauber dokumentiert."
+          },
+          {
+            "title": "Integration statt Ersatz",
+            "text": "Google, Mail, Kalender, CRM, Kasse – wir verbinden, was da ist."
+          },
+          {
+            "title": "Wissen & Memory",
+            "text": "Wiederkehrende Fragen, Daten und Kundeninfos werden nutzbar gemacht."
+          },
+          {
+            "title": "Sicherheit & Kontrolle",
+            "text": "Guardrails, Rollen, Auditierbarkeit – damit KI nicht „wild“ wird."
+          }
+        ]
+      },
+      "h1": "Gastro Starter",
+      "intro": "Eine fertige Lösung für Gastronomie – als Startpaket unserer KI-Modernisierung. Schnell live, sauber integrierbar, später ausbaubar.",
       "sections": {
         "ordering": {
           "h2": "Bestellen (Chat & Kiosk)",
@@ -799,11 +821,11 @@
     },
     "pricing": {
       "meta": {
-        "title": "Preise – Gastro Landingpage",
-        "description": "Drei Pakete: Basic, Pro, Premium. Starten Sie klein und skalieren Sie später."
+        "title": "Pakete & Betrieb | AKLOW",
+        "description": "Starte mit einem Paket und erweitere nach Bedarf: Integration, Automationen, laufender Betrieb."
       },
       "h1": "Preise",
-      "intro": "Starten Sie klein – und erweitern Sie später. Alle Pakete sind monatlich kündbar (nach Vereinbarung).",
+      "intro": "KI-Modernisierung ist kein Einmal-Kauf.\nSie wächst mit Deinem Alltag.\n\nDarum starten wir mit einem klaren Einstieg\nund erweitern Schritt für Schritt,\nwenn es für Dich Sinn macht.",
       "billing": {
         "perMonth": "/Monat"
       },
@@ -812,75 +834,125 @@
       },
       "tiers": [
         {
-          "name": "Basic",
-          "tag": "Für den Start",
-          "price": "29",
+          "name": "Einstieg",
+          "tag": "Für den Start und schnelle Entlastung.",
+          "price": "",
           "items": [
-            "Chat-first Bestellen",
-            "Menü (3 Designs)",
-            "Bestellungen & Runden",
-            "Mehrsprachig (DE/EN/ES)"
+            "Intelligenter Posteingang",
+            "Dokumente & Ordnung",
+            "Kunden & Vorgänge"
           ],
-          "cta": "Demo buchen"
+          "cta": "Starten"
         },
         {
-          "name": "Pro",
-          "tag": "Für den Betrieb",
-          "price": "89",
+          "name": "Wachstum",
+          "tag": "Für mehr Automatisierung im Alltag.",
+          "price": "",
           "items": [
-            "KDS: Küche & Bar (Stations)",
-            "Service Inbox (Kellner/Rechnung/Problem)",
-            "Reports (KPIs)",
-            "Menü-Import (Website/PDF/Fotos)"
+            "Intelligenter Posteingang",
+            "Dokumente & Ordnung",
+            "Kunden & Vorgänge",
+            "Website & Telefon Assistent",
+            "Automatisierung & Regeln",
+            "Integrationen"
           ],
-          "cta": "Demo buchen"
+          "cta": "Empfohlen"
         },
         {
-          "name": "Premium",
-          "tag": "Für Wachstum",
-          "price": "149",
+          "name": "Ausbau",
+          "tag": "Für strukturierte Abläufe und Skalierung.",
+          "price": "",
           "items": [
-            "POS-Lite (Floor, Cashier, Split)",
-            "Kiosk-Modus (optional)",
-            "Hybrid-Bridge (optional später)",
-            "Erweiterte Settings & Workflows"
+            "Intelligenter Posteingang",
+            "Dokumente & Ordnung",
+            "Kunden & Vorgänge",
+            "Website & Telefon Assistent",
+            "Bewertungen",
+            "Automatisierung & Regeln",
+            "Integrationen",
+            "Kontrolle & Sicherheit"
           ],
-          "cta": "Demo buchen"
+          "cta": "Kontakt"
         }
       ],
-      "note": "Hinweis: Inhalte und Integrationen können je nach Region variieren. Wir starten pragmatisch und bauen sauber aus.",
+      "note": "Preise hängen von Branche, Integrationen und Umfang ab. Im 10‑Minuten‑Check klären wir das konkret.",
       "faqLink": "FAQ ansehen",
       "comparison": {
-        "title": "Funktionsumfang im Detail",
-        "columns": ["Basic", "Pro", "Premium"],
+        "title": "Was ist enthalten?",
+        "columns": ["Einstieg", "Wachstum", "Ausbau"],
         "categories": [
           {
-            "name": "Bestellen",
+            "name": "Anwendungen",
             "features": [
-              { "name": "QR-Bestellungen (Chat & Web)", "tiers": [true, true, true] },
-              { "name": "Mehrsprachigkeit (Auto-Translate)", "tiers": [true, true, true] },
-              { "name": "Digitale Speisekarte", "tiers": [true, true, true] },
-              { "name": "Kiosk-Modus", "tiers": [false, false, true] }
+              { "name": "Intelligenter Posteingang", "tiers": [true, true, true] },
+              { "name": "Dokumente & Ordnung", "tiers": [true, true, true] },
+              { "name": "Kunden & Vorgänge", "tiers": [true, true, true] },
+              { "name": "Website & Telefon Assistent", "tiers": [false, true, true] },
+              { "name": "Bewertungen", "tiers": [false, false, true] }
             ]
           },
           {
-            "name": "Küche & Service",
+            "name": "Funktionen",
             "features": [
-              { "name": "KDS (Küchenmonitor)", "tiers": [false, true, true] },
-              { "name": "Service-Ruf & Rechnung anfordern", "tiers": [false, true, true] },
-              { "name": "Drucker-Anbindung", "tiers": [false, true, true] }
-            ]
-          },
-          {
-            "name": "Management",
-            "features": [
-              { "name": "Umsatz-Berichte", "tiers": [true, true, true] },
-              { "name": "POS-Lite (Kassenfunktion)", "tiers": [false, false, true] },
-              { "name": "Mitarbeiter-Rechte", "tiers": [false, true, true] }
+              { "name": "Automatisierung & Regeln", "tiers": [false, true, true] },
+              { "name": "Integrationen", "tiers": [false, true, true] },
+              { "name": "Kontrolle & Sicherheit", "tiers": [false, false, true] }
             ]
           }
         ]
+      },
+      "pricingCta": {
+        "h2": "Unsicher, welches Paket passt?",
+        "p": "Wir schauen gemeinsam,\nwas Dir wirklich hilft –\nund was Du (noch) nicht brauchst.",
+        "ctaPrimary": "10-Minuten-Check",
+        "ctaSecondary": "Kontakt"
       }
+    },
+    "services": {
+      "meta": {
+        "title": "Leistungen | AKLOW",
+        "description": "KI-Modernisierung für KMU: Analyse, Integration & Automatisierung, Betrieb & Optimierung."
+      },
+      "h1": "Leistungen",
+      "intro": "Drei Bausteine, die wir je nach Ausgangslage kombinieren – pragmatisch, messbar und ohne unnötigen Tool-Wechsel.",
+      "blocks": [
+        {
+          "title": "AI-Potenzial-Analyse",
+          "text": "Quick Wins, Risiken, Roadmap – klar priorisiert und realistisch."
+        },
+        {
+          "title": "Integration & Automatisierung",
+          "text": "Wir verbinden Systeme und bauen Workflows, die im Alltag wirklich laufen."
+        },
+        {
+          "title": "Betrieb & Optimierung",
+          "text": "Monitoring, Verbesserungen, neue Automationen – damit es dauerhaft besser wird."
+        }
+      ],
+      "cta": "10-Minuten-Check"
+    },
+    "cases": {
+      "meta": {
+        "title": "Ergebnisse | AKLOW",
+        "description": "Beispiele für messbare Verbesserungen durch KI-Modernisierung – anonym und kurz."
+      },
+      "h1": "Ergebnisse",
+      "intro": "Drei typische Resultate aus Projekten – kurz, anonym und auf Wirkung fokussiert.",
+      "items": [
+        {
+          "title": "Gastro",
+          "text": "Weniger Telefonstress, mehr Bestellungen, klarere Abläufe."
+        },
+        {
+          "title": "Dienstleistung",
+          "text": "Schnellere Antworten, weniger Inbox-Chaos, bessere Lead-Qualität."
+        },
+        {
+          "title": "Backoffice",
+          "text": "Automatisierte Routineaufgaben, weniger Fehler, bessere Nachverfolgung."
+        }
+      ],
+      "cta": "10-Minuten-Check"
     },
     "demo": {
       "meta": {

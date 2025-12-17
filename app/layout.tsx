@@ -5,8 +5,8 @@ import { createMetadata } from "@/lib/metadata";
 import { ThemeProvider } from "@/components/providers/ThemeProvider";
 
 export const metadata: Metadata = createMetadata({
-  title: "Gastro",
-  description: "Moderne Lösungen für die Gastronomie",
+  title: "AKLOW",
+  description: "AI-Modernisierung für KMU",
   path: "/",
 });
 

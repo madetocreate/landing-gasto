@@ -24,14 +24,20 @@ export function LanguageSwitcher() {
   const router = useRouter()
   const locale = useLocale()
   const [isOpen, setIsOpen] = useState(false)
+  const [pendingLocale, setPendingLocale] = useState<Locale | null>(null)
   const containerRef = useRef<HTMLDivElement>(null)
 
   const changeLocale = (newLocale: Locale) => {
-    // Set cookie
-    document.cookie = `locale=${newLocale}; path=/; max-age=31536000`
-    router.refresh()
+    setPendingLocale(newLocale)
     setIsOpen(false)
   }
+
+  // Write cookie + refresh in an effect (immutability rule allows side effects here)
+  useEffect(() => {
+    if (!pendingLocale) return
+    document.cookie = `locale=${pendingLocale}; path=/; max-age=31536000`
+    router.refresh()
+  }, [pendingLocale, router])
 
   // Close on click outside
   useEffect(() => {

@@ -10,6 +10,7 @@ interface SpotlightCardProps extends React.HTMLAttributes<HTMLDivElement> {
   spotlightColor?: string
   withBorderBeam?: boolean
   beamDuration?: number
+  beamColor?: string
 }
 
 export function SpotlightCard({ 
@@ -18,6 +19,7 @@ export function SpotlightCard({
   spotlightColor = "var(--spotlight-color)", 
   withBorderBeam = false,
   beamDuration = 8,
+  beamColor = "var(--color-accent)",
   ...props 
 }: SpotlightCardProps) {
   const mouseX = useMotionValue(0)
@@ -61,7 +63,7 @@ export function SpotlightCard({
       />
       
       {/* Optional Border Beam */}
-      {withBorderBeam && <BorderBeam duration={beamDuration} />}
+      {withBorderBeam && <BorderBeam duration={beamDuration} color={beamColor} />}
 
       {/* Content */}
       <div className="relative h-full">
@@ -71,13 +73,13 @@ export function SpotlightCard({
   )
 }
 
-function BorderBeam({ duration = 8 }: { duration?: number }) {
+function BorderBeam({ duration = 8, color = "var(--color-accent)" }: { duration?: number, color?: string }) {
   return (
     <div className="absolute inset-0 pointer-events-none overflow-hidden rounded-[inherit]">
       <div 
         className="absolute -inset-[100%] opacity-40 animate-border-beam"
         style={{
-            background: `conic-gradient(from 0deg at 50% 50%, transparent 0deg, transparent 340deg, var(--color-accent) 360deg)`,
+            background: `conic-gradient(from 0deg at 50% 50%, transparent 0deg, transparent 340deg, ${color} 360deg)`,
             animation: `border-beam-spin ${duration}s linear infinite`
         }}
       />

@@ -1,9 +1,8 @@
 import { CTASection } from '@/components/ui/CTASection';
-import { Section, Container } from '@/components/ui/Section';
-import { RoiCalculator } from '@/components/roi/RoiCalculator';
-import { MiniChatDemo } from '@/components/demo/MiniChatDemo';
+import { Container } from '@/components/ui/Section';
+import { TimeCalculator } from '@/components/roi/TimeCalculator';
 import { SocialProof } from '@/components/social/SocialProof';
-import { PartnersSection } from '@/components/partners/PartnersSection';
+import { SystemsNarrativeSection } from '@/components/home/SystemsNarrativeSection';
 import { createMetadata } from '@/lib/metadata';
 import { getLocale } from '@/lib/getLocale';
 import { t } from '@/lib/i18n';
@@ -15,9 +14,9 @@ import {
   AnimatedModulesSection 
 } from '@/components/home/AnimatedSections';
 import { FloatingThemeToggle } from '@/components/ui/FloatingThemeToggle';
-import { FlowTimeline } from '@/components/home/FlowTimeline';
 import { ProofSection } from '@/components/home/ProofSection';
 import { SpotlightCard } from '@/components/ui/SpotlightCard';
+import { PracticePreviewSwitcher } from '@/components/home/PracticePreviewSwitcher';
 
 export async function generateMetadata(): Promise<Metadata> {
   const locale = await getLocale();
@@ -65,12 +64,12 @@ export default async function Home() {
             
             {/* Left: Content */}
             <div className="max-w-2xl">
-              <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-accent/10 text-accent text-sm font-medium mb-6">
+              <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-action-soft text-action text-sm font-medium mb-6">
                 <span className="relative flex h-2 w-2">
-                  <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-accent opacity-75"></span>
-                  <span className="relative inline-flex rounded-full h-2 w-2 bg-accent"></span>
+                  <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-action opacity-75"></span>
+                  <span className="relative inline-flex rounded-full h-2 w-2 bg-action"></span>
                 </span>
-                New: AI-Support 2.0
+                {t(locale, 'pages.home.hero.badge')}
               </div>
               
               <h1 className="mb-8 font-bold tracking-tight text-5xl sm:text-6xl md:text-7xl leading-[1.1]">
@@ -80,22 +79,22 @@ export default async function Home() {
                 </span>
               </h1>
               
-              <p className="text-xl md:text-2xl text-foreground-muted mb-10 leading-relaxed max-w-lg">
+              <p className="text-xl md:text-2xl text-foreground-muted mb-10 leading-relaxed max-w-lg whitespace-pre-line">
                 {t(locale, 'pages.home.hero.sub')}
               </p>
               
               <div className="flex flex-col sm:flex-row gap-4 mb-12">
-                <Button variant="primary" size="xl" asChild href="/demo" className="shadow-xl shadow-accent/20 text-lg px-8 h-14">
+                <Button variant="primary" size="xl" asChild href="/check" className="shadow-xl shadow-action/20 text-lg px-8 h-14">
                   {t(locale, 'pages.home.hero.ctaPrimary')}
                 </Button>
-                <Button variant="secondary" size="xl" asChild href="/features" className="text-lg px-8 h-14 bg-surface border-border hover:bg-muted">
+                <Button variant="secondary" size="xl" asChild href="/anwendungen" className="text-lg px-8 h-14 bg-surface border-border hover:bg-muted">
                   {t(locale, 'pages.home.hero.ctaSecondary')}
                 </Button>
               </div>
 
               {/* Trust/Social Proof Small */}
               <div className="pt-8 border-t border-border/50">
-                 <p className="text-sm text-foreground-muted mb-4 font-medium">Trusted by innovative gastronomy</p>
+                 <p className="text-sm text-foreground-muted mb-4 font-medium">{t(locale, 'pages.home.hero.trustLine')}</p>
                  <div className="flex gap-6 opacity-60 grayscale hover:grayscale-0 transition-all duration-500">
                     {/* Placeholder Logos */}
                     <div className="h-6 w-20 bg-foreground/20 rounded" />
@@ -145,8 +144,8 @@ export default async function Home() {
                      <div className="flex items-center gap-3">
                         <div className="w-10 h-10 rounded-full bg-green-100 text-green-700 flex items-center justify-center">€</div>
                         <div>
-                           <div className="text-sm font-bold text-foreground">+24% Revenue</div>
-                           <div className="text-xs text-foreground-muted">vs. last month</div>
+                           <div className="text-sm font-bold text-foreground">{t(locale, 'pages.home.hero.kpiTitle')}</div>
+                           <div className="text-xs text-foreground-muted">{t(locale, 'pages.home.hero.kpiSub')}</div>
                         </div>
                      </div>
                   </div>
@@ -156,11 +155,11 @@ export default async function Home() {
         </Container>
       </section>
 
-      {/* NEW: Flow Timeline instead of Parallax on Home */}
-      <FlowTimeline />
+      {/* System Preview Section */}
+      <PracticePreviewSwitcher />
 
-      {/* Partners (moved up for trust) */}
-      <PartnersSection />
+      {/* System Integrationen - Narrative */}
+      <SystemsNarrativeSection />
 
       {/* Problem & Solution (4 Blocks Alternating) */}
       <AnimatedAlternatingSection blocks={problemSolutionBlocks} />
@@ -172,7 +171,7 @@ export default async function Home() {
       />
 
       {/* ROI Calculator */}
-      <RoiCalculator />
+      <TimeCalculator />
 
       {/* Modules */}
       <AnimatedModulesSection 

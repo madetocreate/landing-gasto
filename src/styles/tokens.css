@@ -13,12 +13,24 @@
   /* Borders: Soft and organic */
   --color-border: #e7e5e4; /* Stone-200 */
   
-  /* Accent: "Premium Emerald" - Serious, trustworthy, established */
-  /* Old Neon: #16c465 */
-  --color-accent: #047857; /* Emerald-700 - The new "Logo Green" */
-  --color-accent-hover: #065f46; /* Emerald-800 */
+  /* Accent: "Graphite" - Neutral, premium, Apple-clean */
+  --color-accent: #1F2937; /* Slate-800 - Graphite */
+  --color-accent-hover: #111827; /* Slate-900 - Darker Graphite */
   --color-accent-contrast: #ffffff;
   --color-accent-fg: #ffffff;
+  --accent-rgb: 31 41 55; /* RGB values for rgba() usage */
+
+  /* Brand Graphite - For Logo and surfaces */
+  --brand-graphite: #1F2937;
+  --brand-graphite-hover: #111827;
+  --brand-rgb: 31 41 55;
+
+  /* Action Accent: "Modern Emerald" - For Buttons, Badges, Active States */
+  --color-action: #10B981; /* Emerald-500 */
+  --color-action-hover: #059669; /* Emerald-600 */
+  --color-action-fg: #ffffff;
+  --action-rgb: 16 185 129;
+  --color-action-soft: rgba(16, 185, 129, 0.12);
   
   /* Overlay */
   --color-overlay: rgba(28, 25, 23, 0.4); /* Warm black overlay */
@@ -90,9 +102,9 @@
   --color-inverse-fg-muted: rgba(245, 245, 244, 0.65);
 
   /* Ambient layer */
-  --ambient-spot-1: rgba(4, 120, 87, 0.08); /* Emerald-700 haze */
+  --ambient-spot-1: rgba(31, 41, 55, 0.08); /* Graphite haze */
   --ambient-spot-2: rgba(28, 25, 23, 0.03); /* Stone haze */
-  --spotlight-color: rgba(4, 120, 87, 0.08); /* Subtle emerald spotlight */
+  --spotlight-color: rgba(31, 41, 55, 0.08); /* Subtle graphite spotlight */
 }
 
 /* Dark Theme overrides via class */
@@ -107,11 +119,24 @@
   
   --color-border: #292524; /* Stone-800 */
   
-  /* Accent in Dark: Lighter but desaturated */
-  --color-accent: #34d399; /* Emerald-400 - Readable */
-  --color-accent-hover: #10b981; /* Emerald-500 */
+  /* Accent in Dark: Light Graphite for contrast */
+  --color-accent: #E5E7EB; /* Slate-200 - Light Graphite for dark backgrounds */
+  --color-accent-hover: #D1D5DB; /* Slate-300 - Lighter Graphite */
   --color-accent-contrast: #0c0a09;
   --color-accent-fg: #0c0a09;
+  --accent-rgb: 229 231 235; /* RGB values for rgba() usage in dark mode */
+
+  /* Brand Graphite in Dark */
+  --brand-graphite: #E5E7EB;
+  --brand-graphite-hover: #D1D5DB;
+  --brand-rgb: 229 231 235;
+
+  /* Action Accent in Dark */
+  --color-action: #34D399; /* Emerald-400 */
+  --color-action-hover: #10B981; /* Emerald-500 */
+  --color-action-fg: #0c0a09;
+  --action-rgb: 52 211 153;
+  --color-action-soft: rgba(52, 211, 153, 0.15);
   
   --color-overlay: rgba(0, 0, 0, 0.8);
   
@@ -133,7 +158,7 @@
   --color-inverse-fg-muted: rgba(250, 250, 249, 0.65);
 
   /* Ambient layer */
-  --ambient-spot-1: rgba(52, 211, 153, 0.05); /* Emerald-400 haze */
+  --ambient-spot-1: rgba(229, 231, 235, 0.05); /* Light Graphite haze */
   --ambient-spot-2: rgba(255, 255, 255, 0.02);
   --spotlight-color: rgba(255, 255, 255, 0.05);
 }

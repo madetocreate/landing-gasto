@@ -7,6 +7,7 @@ import { t } from "@/lib/i18n"
 import { Button } from "@/components/ui/Button"
 import { SpotlightCard } from "@/components/ui/SpotlightCard"
 import { MessageSquareText, Globe, ChefHat, MonitorSmartphone, BellRing, FileDown } from "lucide-react"
+import type { ComponentType } from "react"
 
 export function FeatureShowcase() {
   const locale = useLocale()
@@ -156,7 +157,17 @@ export function FeatureShowcase() {
   )
 }
 
-function FeatureCard({ icon: Icon, text, align = "left" }: { icon: any, text: string, align?: "left" | "right" }) {
+type IconComponent = ComponentType<{ className?: string }>
+
+function FeatureCard({
+  icon: Icon,
+  text,
+  align = "left",
+}: {
+  icon: IconComponent
+  text: string
+  align?: "left" | "right"
+}) {
   return (
     <SpotlightCard className={`flex items-center gap-4 p-5 max-w-sm ${align === "right" ? "flex-row-reverse text-right" : "flex-row text-left"} bg-surface/90 backdrop-blur-md`}>
       <div className="flex-shrink-0 p-3 bg-accent/10 rounded-xl text-accent">

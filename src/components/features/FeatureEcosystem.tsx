@@ -6,6 +6,7 @@ import { Section, Container } from "@/components/ui/Section"
 import { useLocale } from "@/hooks/useLocale"
 import { t } from "@/lib/i18n"
 import { Database, Share2, Layers, Zap } from "lucide-react"
+import type { ComponentType } from "react"
 
 export function FeatureEcosystem() {
   const locale = useLocale()
@@ -51,7 +52,21 @@ export function FeatureEcosystem() {
   )
 }
 
-function FloatingNode({ icon: Icon, label, angle, radius, delay }: { icon: any, label: string, angle: number, radius: number, delay: number }) {
+type IconComponent = ComponentType<{ className?: string }>
+
+function FloatingNode({
+  icon: Icon,
+  label,
+  angle,
+  radius,
+  delay,
+}: {
+  icon: IconComponent
+  label: string
+  angle: number
+  radius: number
+  delay: number
+}) {
   return (
     <motion.div
       className="absolute top-1/2 left-1/2"
@@ -61,7 +76,7 @@ function FloatingNode({ icon: Icon, label, angle, radius, delay }: { icon: any, 
     >
       <motion.div 
         className="absolute top-0 left-1/2 -translate-x-1/2 -translate-y-1/2"
-        style={{ transformOrigin: "center center" }}
+        style={{ transformOrigin: "center center", rotate: angle }}
         animate={{ rotate: -360 }} // Counter-rotate to keep upright
         transition={{ duration: 40, repeat: Infinity, ease: "linear", delay: -delay * 10 }}
       >

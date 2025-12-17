@@ -1,6 +1,5 @@
 'use client';
 
-import { useState, useEffect } from 'react';
 import { classNames } from '@/lib/classNames';
 import { motion, AnimatePresence } from 'framer-motion';
 import { MessageSquareText, X } from 'lucide-react';
@@ -12,26 +11,11 @@ interface ConciergeLauncherProps {
 }
 
 export function ConciergeLauncher({ onOpen, showHint = false, onHintDismiss }: ConciergeLauncherProps) {
-  const [hintVisible, setHintVisible] = useState(showHint);
-
-  useEffect(() => {
-    if (showHint) {
-      setHintVisible(true);
-      const timer = setTimeout(() => {
-        setHintVisible(false);
-        onHintDismiss?.();
-      }, 5000);
-      return () => clearTimeout(timer);
-    } else {
-      setHintVisible(false);
-    }
-  }, [showHint, onHintDismiss]);
-
   return (
     <div className="fixed bottom-6 right-6 z-50 flex flex-col items-end gap-3 pointer-events-none">
       {/* Hint Tooltip */}
       <AnimatePresence>
-        {hintVisible && (
+        {showHint && (
           <motion.div
             initial={{ opacity: 0, y: 10, scale: 0.9 }}
             animate={{ opacity: 1, y: 0, scale: 1 }}
@@ -48,7 +32,7 @@ export function ConciergeLauncher({ onOpen, showHint = false, onHintDismiss }: C
           >
             <span>Fragen?</span>
             <button 
-              onClick={() => { setHintVisible(false); onHintDismiss?.(); }}
+              onClick={() => { onHintDismiss?.(); }}
               className="p-0.5 hover:bg-background-muted/60 rounded-full transition-colors"
             >
               <X className="w-3 h-3" />

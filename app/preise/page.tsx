@@ -1,14 +1,43 @@
-import { CTASection } from '@/components/ui/CTASection';
 import { Container, Section } from '@/components/ui/Section';
-import { SpotlightCard } from '@/components/ui/SpotlightCard';
 import { Button } from '@/components/ui/Button';
 import { getLocale } from '@/lib/getLocale';
 import { t } from '@/lib/i18n';
-import { Check, Minus } from 'lucide-react';
+import { PricingPlanCard } from '@/components/pricing/PricingPlanCard';
+import { FeatureComparison } from '@/components/pricing/FeatureComparison';
+import { PricingTrust } from '@/components/pricing/PricingTrust';
+import { PricingFAQ } from '@/components/pricing/PricingFAQ';
 
 export default async function Preise() {
   const locale = await getLocale();
-  const pricing = t(locale, 'pages.pricing') as any;
+  type PricingComparisonCategory = {
+    name: string;
+    features: Array<{
+      name: string;
+      tiers: boolean[];
+    }>;
+  };
+
+  type PricingContent = {
+    h1?: string;
+    intro?: string;
+    note?: string;
+    billing?: { perMonth?: string };
+    badges?: { mostPopular?: string };
+    tiers?: Array<{
+      name: string;
+      tag: string;
+      price: string;
+      items: string[];
+      cta: string;
+    }>;
+    comparison?: {
+      title: string;
+      columns: string[];
+      categories: PricingComparisonCategory[];
+    };
+  };
+
+  const pricing = t(locale, 'pages.pricing') as PricingContent;
   const tiers = (pricing?.tiers ?? []) as Array<{
     name: string;
     tag: string;
@@ -19,130 +48,105 @@ export default async function Preise() {
 
   const comparison = pricing?.comparison;
 
+  // FAQ items - using pricing-specific or general FAQ
+  const faqItems = [
+    {
+      q: "Wie schnell kann ich starten?",
+      a: "Nach dem 10-Minuten-Check und der Klärung des Scopes geht es meist innerhalb weniger Tage live. Starter-Pakete sind besonders schnell umsetzbar.",
+    },
+    {
+      q: "Kann ich später upgraden?",
+      a: "Ja, alle Pläne sind modular aufgebaut. Du startest mit dem passenden Paket und erweiterst nach Bedarf – ohne komplizierte Migration.",
+    },
+    {
+      q: "Was passiert mit meinen Daten?",
+      a: "Alle Daten bleiben in deiner Kontrolle. EU-Hosting, verschlüsselte Übertragung, keine Weitergabe an Dritte. Vollständige DSGVO-Konformität.",
+    },
+    {
+      q: "Brauche ich neue Tools oder Systeme?",
+      a: "Nein. Wir integrieren uns in deine bestehenden Tools (Mail, Kalender, CRM, Dokumente). Kein Tool-Wechsel nötig.",
+    },
+    {
+      q: "Wie funktionieren Freigaben und Kontrolle?",
+      a: "Alle AI-Aktionen erfordern manuelle Freigabe. Du behältst die volle Kontrolle, alles ist auditierbar und nachvollziehbar.",
+    },
+    {
+      q: "Was ist im Preis enthalten?",
+      a: "Je nach Plan: Setup, Integration, dokumentierte Workflows, Monitoring, Support. Details klären wir im 10-Minuten-Check.",
+    },
+  ] as Array<{ q: string; a: string }>;
+
   return (
     <>
-      <Section variant="hero" className="pt-32 pb-16">
+      {/* Hero */}
+      <Section variant="hero" className="pt-32 pb-20">
         <Container size="xl">
-          <div className="text-center max-w-3xl mx-auto mb-20">
-            <h1 className="mb-6 tracking-tight">{pricing?.h1}</h1>
-            <p className="text-lg md:text-xl text-foreground-muted leading-relaxed">{pricing?.intro}</p>
+          <div className="text-center max-w-3xl mx-auto mb-16">
+            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight mb-6">
+              {pricing?.h1}
+            </h1>
+            <p className="text-lg md:text-xl text-foreground-muted leading-relaxed whitespace-pre-line">
+              {pricing?.intro}
+            </p>
           </div>
 
-          <div className="grid lg:grid-cols-3 gap-8 items-stretch mb-32">
-            {tiers.map((tier, idx) => {
-              const isPro = idx === 1;
-              return (
-                <SpotlightCard
-                  key={tier.name}
-                  className={`p-8 h-full flex flex-col ${isPro ? 'bg-surface shadow-xl ring-1 ring-accent/20' : 'bg-surface/60'}`}
-                  withBorderBeam={isPro}
-                  beamDuration={10}
-                >
-                  <div className="flex items-start justify-between gap-4 mb-8">
-                    <div>
-                      <div className="text-sm font-medium text-accent mb-2">{tier.tag}</div>
-                      <div className="text-2xl font-bold text-foreground">{tier.name}</div>
-                    </div>
-                    {isPro && (
-                      <div className="text-xs font-semibold px-3 py-1 rounded-full bg-accent text-accent-foreground shadow-sm">
-                        {pricing?.badges?.mostPopular}
-                      </div>
-                    )}
-                  </div>
-
-                  <div className="flex items-baseline gap-1 mb-8">
-                    <span className="text-5xl font-bold tracking-tight text-foreground">{tier.price}€</span>
-                    <span className="text-foreground-muted">{pricing?.billing?.perMonth}</span>
-                  </div>
-
-                  <ul className="space-y-4 mb-8 flex-1">
-                    {tier.items.map((it) => (
-                      <li key={it} className="flex gap-3 text-sm text-foreground-muted">
-                        <Check className="w-5 h-5 text-accent shrink-0" />
-                        <span className="leading-relaxed">{it}</span>
-                      </li>
-                    ))}
-                  </ul>
-
-                  <Button
-                    variant={isPro ? 'primary' : 'secondary'}
-                    size="lg"
-                    asChild
-                    href="/demo"
-                    className="w-full rounded-xl h-12 text-base shadow-sm"
-                  >
-                    {tier.cta}
-                  </Button>
-                  
-                  {isPro && (
-                    <p className="text-xs text-foreground-muted mt-4 text-center">
-                      {pricing?.note}
-                    </p>
-                  )}
-                </SpotlightCard>
-              );
-            })}
+          {/* Pricing Cards */}
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8 mb-24">
+            {tiers.map((tier, idx) => (
+              <PricingPlanCard
+                key={tier.name}
+                name={tier.name}
+                tag={tier.tag}
+                price={tier.price}
+                items={tier.items}
+                cta={tier.cta}
+                isPopular={idx === 1}
+                billingPeriod={pricing?.billing?.perMonth}
+                note={idx === 1 ? pricing?.note : undefined}
+                index={idx}
+              />
+            ))}
           </div>
 
-          {/* Comparison Table */}
+          {/* Feature Comparison */}
           {comparison && (
-            <div className="max-w-5xl mx-auto">
-              <div className="text-center mb-16">
-                <h2 className="text-3xl font-bold tracking-tight mb-4">{comparison.title}</h2>
-              </div>
-
-              <div className="border border-border/50 rounded-3xl overflow-hidden bg-surface/50 backdrop-blur-sm shadow-sm">
-                {/* Header Row (Desktop) */}
-                <div className="hidden md:grid grid-cols-4 gap-4 p-6 border-b border-border/50 bg-background-muted/50">
-                  <div className="font-semibold text-foreground">Feature</div>
-                  {comparison.columns.map((col: string, i: number) => (
-                    <div key={i} className={`text-center font-semibold ${i === 1 ? 'text-accent' : 'text-foreground-muted'}`}>
-                      {col}
-                    </div>
-                  ))}
-                </div>
-
-                {/* Categories */}
-                {comparison.categories.map((cat: any, i: number) => (
-                  <div key={i}>
-                    <div className="px-6 py-4 bg-background-muted/30 font-semibold text-sm uppercase tracking-wider text-foreground-muted border-b border-border/50">
-                      {cat.name}
-                    </div>
-                    {cat.features.map((feat: any, j: number) => (
-                      <div 
-                        key={j} 
-                        className="grid grid-cols-1 md:grid-cols-4 gap-4 p-4 md:px-6 md:py-5 border-b border-border/50 last:border-0 hover:bg-surface/50 transition-colors items-center"
-                      >
-                        <div className="font-medium text-foreground text-sm md:text-base">{feat.name}</div>
-                        <div className="grid grid-cols-3 md:contents mt-2 md:mt-0 gap-2">
-                          {feat.tiers.map((hasIt: boolean, k: number) => (
-                            <div key={k} className="flex justify-center items-center">
-                              {/* Mobile Label */}
-                              <span className="md:hidden text-xs text-foreground-muted mr-2">
-                                {comparison.columns[k]}:
-                              </span>
-                              {hasIt ? (
-                                <div className="w-6 h-6 rounded-full bg-accent/10 flex items-center justify-center">
-                                  <Check className="w-4 h-4 text-accent" />
-                                </div>
-                              ) : (
-                                <Minus className="w-4 h-4 text-border" />
-                              )}
-                            </div>
-                          ))}
-                        </div>
-                      </div>
-                    ))}
-                  </div>
-                ))}
-              </div>
+            <div className="max-w-6xl mx-auto mb-24">
+              <FeatureComparison
+                title={comparison.title}
+                columns={comparison.columns}
+                categories={comparison.categories}
+                popularIndex={1}
+              />
             </div>
           )}
-
         </Container>
       </Section>
 
-      <CTASection />
+      {/* Trust Section */}
+      <PricingTrust />
+
+      {/* FAQ Section */}
+      <PricingFAQ items={faqItems} />
+
+      {/* CTA Section */}
+      <Section variant="normal" className="bg-[color:var(--color-inverse-bg)] text-[color:var(--color-inverse-fg)]">
+        <Container size="md" className="text-center">
+          <h2 className="text-3xl font-semibold mb-4">
+            {t(locale, 'pages.pricing.pricingCta.h2')}
+          </h2>
+          <p className="text-lg mb-8 prose mx-auto text-[color:var(--color-inverse-fg-muted)] whitespace-pre-line">
+            {t(locale, 'pages.pricing.pricingCta.p')}
+          </p>
+          <div className="flex flex-wrap justify-center gap-4">
+            <Button variant="primary" size="lg" asChild href="/check">
+              {t(locale, 'pages.pricing.pricingCta.ctaPrimary')}
+            </Button>
+            <Button variant="secondary" size="lg" asChild href="/kontakt">
+              {t(locale, 'pages.pricing.pricingCta.ctaSecondary')}
+            </Button>
+          </div>
+        </Container>
+      </Section>
     </>
   );
 }
