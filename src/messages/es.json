@@ -720,7 +720,38 @@
         }
       ],
       "note": "Nota: empezamos de forma pragmática y ampliamos de manera limpia.",
-      "faqLink": "Ver FAQ"
+      "faqLink": "Ver FAQ",
+      "comparison": {
+        "title": "Comparación de funciones",
+        "columns": ["Basic", "Pro", "Premium"],
+        "categories": [
+          {
+            "name": "Pedidos",
+            "features": [
+              { "name": "Pedidos QR (Chat y Web)", "tiers": [true, true, true] },
+              { "name": "Multilingüe (Auto-Translate)", "tiers": [true, true, true] },
+              { "name": "Carta Digital", "tiers": [true, true, true] },
+              { "name": "Modo Kiosco", "tiers": [false, false, true] }
+            ]
+          },
+          {
+            "name": "Cocina y Servicio",
+            "features": [
+              { "name": "KDS (Pantalla de Cocina)", "tiers": [false, true, true] },
+              { "name": "Llamada Servicio y Cuenta", "tiers": [false, true, true] },
+              { "name": "Integración Impresoras", "tiers": [false, true, true] }
+            ]
+          },
+          {
+            "name": "Gestión",
+            "features": [
+              { "name": "Informes de Ventas", "tiers": [true, true, true] },
+              { "name": "POS Lite (Caja)", "tiers": [false, false, true] },
+              { "name": "Permisos de Personal", "tiers": [false, true, true] }
+            ]
+          }
+        ]
+      }
     },
     "demo": {
       "meta": {

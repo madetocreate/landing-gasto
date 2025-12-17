@@ -849,7 +849,38 @@
         }
       ],
       "note": "Hinweis: Inhalte und Integrationen können je nach Region variieren. Wir starten pragmatisch und bauen sauber aus.",
-      "faqLink": "FAQ ansehen"
+      "faqLink": "FAQ ansehen",
+      "comparison": {
+        "title": "Funktionsumfang im Detail",
+        "columns": ["Basic", "Pro", "Premium"],
+        "categories": [
+          {
+            "name": "Bestellen",
+            "features": [
+              { "name": "QR-Bestellungen (Chat & Web)", "tiers": [true, true, true] },
+              { "name": "Mehrsprachigkeit (Auto-Translate)", "tiers": [true, true, true] },
+              { "name": "Digitale Speisekarte", "tiers": [true, true, true] },
+              { "name": "Kiosk-Modus", "tiers": [false, false, true] }
+            ]
+          },
+          {
+            "name": "Küche & Service",
+            "features": [
+              { "name": "KDS (Küchenmonitor)", "tiers": [false, true, true] },
+              { "name": "Service-Ruf & Rechnung anfordern", "tiers": [false, true, true] },
+              { "name": "Drucker-Anbindung", "tiers": [false, true, true] }
+            ]
+          },
+          {
+            "name": "Management",
+            "features": [
+              { "name": "Umsatz-Berichte", "tiers": [true, true, true] },
+              { "name": "POS-Lite (Kassenfunktion)", "tiers": [false, false, true] },
+              { "name": "Mitarbeiter-Rechte", "tiers": [false, true, true] }
+            ]
+          }
+        ]
+      }
     },
     "demo": {
       "meta": {

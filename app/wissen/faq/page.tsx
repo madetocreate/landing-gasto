@@ -1,44 +1,33 @@
 import { CTASection } from '@/components/ui/CTASection';
+import { Section, Container } from '@/components/ui/Section';
+import { SpotlightCard } from '@/components/ui/SpotlightCard';
+import { getLocale } from '@/lib/getLocale';
+import { t } from '@/lib/i18n';
 
-export default function FAQ() {
+export default async function FAQ() {
+  const locale = await getLocale();
+  const faqItems = t(locale, 'pages.faq.items') as Array<{ q: string; a: string }>;
+
   return (
     <>
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
-        <h1 className="text-4xl font-bold text-foreground mb-4">FAQ</h1>
-        <p className="text-lg text-foreground-muted mb-12">
-          Häufig gestellte Fragen und Antworten.
-        </p>
-
-        <section className="mb-12">
-          <h2 className="text-2xl font-bold text-foreground mb-4">Allgemeine Fragen</h2>
-          <p className="text-foreground-muted">
-            Antworten auf allgemeine Fragen zu Gastro.
+      <Section variant="hero" className="pt-32">
+        <Container size="md">
+          <h1 className="mb-6 text-center">{t(locale, 'pages.faq.h1')}</h1>
+          <p className="text-xl text-center text-foreground-muted mb-20 max-w-2xl mx-auto">
+            {t(locale, 'pages.faq.meta.description')}
           </p>
-        </section>
 
-        <section className="mb-12">
-          <h2 className="text-2xl font-bold text-foreground mb-4">Technische Fragen</h2>
-          <p className="text-foreground-muted">
-            Hilfe bei technischen Problemen und Fragen.
-          </p>
-        </section>
-
-        <section className="mb-12">
-          <h2 className="text-2xl font-bold text-foreground mb-4">Preise & Abrechnung</h2>
-          <p className="text-foreground-muted">
-            Informationen zu Preisen und Abrechnungsmodellen.
-          </p>
-        </section>
-
-        <section className="mb-12">
-          <h2 className="text-2xl font-bold text-foreground mb-4">Support</h2>
-          <p className="text-foreground-muted">
-            Wie Sie unseren Support erreichen können.
-          </p>
-        </section>
-      </div>
+          <div className="space-y-6">
+            {faqItems.map((item, i) => (
+              <SpotlightCard key={i} className="p-8">
+                <h3 className="text-lg font-bold mb-3 text-foreground">{item.q}</h3>
+                <p className="text-foreground-muted leading-relaxed">{item.a}</p>
+              </SpotlightCard>
+            ))}
+          </div>
+        </Container>
+      </Section>
       <CTASection />
     </>
   );
 }
-

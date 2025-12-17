@@ -1,60 +1,11 @@
 "use client"
 
-import { motion, Variants, useReducedMotion } from "framer-motion"
+import { motion, Variants, useReducedMotion, useScroll, useTransform } from "framer-motion"
+import { useRef } from "react"
 import { Section, Container } from "@/components/ui/Section"
 import { GlassCard } from "@/components/ui/GlassCard"
 import { Scan, MessageSquareText, CheckCircle2 } from "lucide-react"
 import { motion as motionPolicy } from "@/lib/motion"
-
-interface TextSectionProps {
-  title: string
-  text: string
-  extra: string
-}
-
-export function AnimatedProblemSection({ title, text, extra }: TextSectionProps) {
-  return (
-    <Section variant="normal">
-      <Container size="md">
-        <h2 className="mb-6">{title}</h2>
-        <div className="text-lg text-foreground-muted prose">
-          <p className="mb-1">{text}</p>
-          <motion.p
-            initial={{ opacity: 0, x: -20 }}
-            whileInView={{ opacity: 1, x: 0 }}
-            viewport={{ once: true, margin: "-100px" }}
-            transition={{ duration: 0.8, delay: 0.3 }}
-            className="text-accent font-medium"
-          >
-            {extra}
-          </motion.p>
-        </div>
-      </Container>
-    </Section>
-  )
-}
-
-export function AnimatedSolutionSection({ title, text, extra }: TextSectionProps) {
-  return (
-    <Section variant="normal">
-      <Container size="md">
-        <h2 className="mb-6">{title}</h2>
-        <div className="text-lg text-foreground-muted prose">
-          <p className="mb-1">{text}</p>
-          <motion.p
-            initial={{ opacity: 0, x: 20 }}
-            whileInView={{ opacity: 1, x: 0 }}
-            viewport={{ once: true, margin: "-100px" }}
-            transition={{ duration: 0.8, delay: 0.3 }}
-            className="text-accent font-medium"
-          >
-            {extra}
-          </motion.p>
-        </div>
-      </Container>
-    </Section>
-  )
-}
 
 export interface ProblemSolutionBlock {
   title: string
@@ -64,26 +15,66 @@ export interface ProblemSolutionBlock {
 
 export function AnimatedAlternatingSection({ blocks }: { blocks: ProblemSolutionBlock[] }) {
   const shouldReduceMotion = useReducedMotion()
+  const containerRef = useRef<HTMLDivElement>(null)
+  
+  // Scroll progress for the connecting line
+  const { scrollYProgress } = useScroll({
+    target: containerRef,
+    offset: ["start center", "end center"]
+  })
+
+  const lineHeight = useTransform(scrollYProgress, [0, 1], ["0%", "100%"])
 
   return (
-    <Section variant="normal" className="space-y-12 md:space-y-32 bg-surface dark:bg-background">
+    <Section variant="normal" className="space-y-12 md:space-y-32 bg-surface dark:bg-background relative overflow-hidden">
       <Container size="lg">
-        <div className="flex flex-col gap-16 md:gap-32">
+        <div ref={containerRef} className="relative flex flex-col gap-24 md:gap-40">
+          
+          {/* Central Connecting Line (Desktop) */}
+          <div className="absolute left-1/2 top-0 bottom-0 w-px bg-border hidden md:block -translate-x-1/2">
+             <motion.div 
+               style={{ height: lineHeight }} 
+               className="w-full bg-accent origin-top"
+             />
+          </div>
+
           {blocks.map((block, i) => (
             <div 
               key={i} 
-              className={`flex flex-col ${block.align === "left" ? "md:items-start" : "md:items-end"}`}
+              className={`relative flex flex-col ${block.align === "left" ? "md:items-start" : "md:items-end"}`}
             >
+              {/* Connector Dot */}
+              <div className="absolute top-12 left-1/2 -translate-x-1/2 w-4 h-4 rounded-full bg-background border-2 border-accent hidden md:block z-10 shadow-sm">
+                <div className="absolute inset-1 rounded-full bg-accent animate-pulse" />
+              </div>
+
+              {/* Connecting Horizontal Line */}
+              <div 
+                className={`absolute top-[54px] h-px bg-border hidden md:block w-1/2 ${
+                  block.align === "left" ? "left-1/2" : "right-1/2"
+                }`}
+              >
+                 <motion.div 
+                   initial={{ scaleX: 0 }}
+                   whileInView={{ scaleX: 1 }}
+                   viewport={{ once: true, margin: "-100px" }}
+                   transition={{ duration: 0.8, delay: 0.2 }}
+                   className={`h-full bg-accent/30 origin-${block.align === "left" ? "left" : "right"}`}
+                 />
+              </div>
+
               <motion.div
                 initial={shouldReduceMotion ? { opacity: 1 } : { opacity: 0, x: block.align === "left" ? -40 : 40, y: 8 }}
                 whileInView={{ opacity: 1, x: 0 }}
                 viewport={{ once: true, margin: "-100px" }}
                 transition={shouldReduceMotion ? { duration: 0 } : { duration: motionPolicy.reveal.duration, ease: motionPolicy.reveal.ease }}
-                className="max-w-2xl w-full"
+                className={`max-w-xl w-full relative z-20 ${block.align === "left" ? "md:mr-auto" : "md:ml-auto"}`}
               >
-                <GlassCard className="p-8 md:p-12 relative overflow-hidden group">
-                  <div className={`absolute top-0 bottom-0 w-1 bg-accent/50 transition-opacity duration-500 ${block.align === "left" ? "left-0" : "right-0"}`} />
-                  <h2 className="mb-6 text-3xl font-bold tracking-tight">{block.title}</h2>
+                <GlassCard className="p-8 md:p-10 relative overflow-hidden group border-l-4 border-l-transparent hover:border-l-accent transition-all duration-300">
+                  <div className="text-xs font-bold text-accent mb-2 uppercase tracking-wider opacity-80">
+                    Step 0{i + 1}
+                  </div>
+                  <h2 className="mb-4 text-2xl md:text-3xl font-bold tracking-tight">{block.title}</h2>
                   <p className="text-lg text-foreground-muted leading-relaxed">
                     {block.text}
                   </p>
@@ -147,7 +138,7 @@ export function AnimatedHowToSection({ title, steps }: HowToSectionProps) {
             const Icon = icons[i] || Scan
             return (
               <motion.div key={i} variants={itemVariant}>
-                <GlassCard className="h-full p-8 flex flex-col items-start gap-4">
+                <GlassCard className="h-full p-8 flex flex-col items-start gap-4 hover:border-accent/20 transition-colors">
                   <div className="p-3 rounded-xl bg-accent/10 text-accent mb-2">
                     <Icon className="w-6 h-6" />
                   </div>

@@ -720,7 +720,38 @@
         }
       ],
       "note": "Note: We start pragmatically and build out cleanly over time.",
-      "faqLink": "View FAQ"
+      "faqLink": "View FAQ",
+      "comparison": {
+        "title": "Feature Comparison",
+        "columns": ["Basic", "Pro", "Premium"],
+        "categories": [
+          {
+            "name": "Ordering",
+            "features": [
+              { "name": "QR Ordering (Chat & Web)", "tiers": [true, true, true] },
+              { "name": "Multilingual (Auto-Translate)", "tiers": [true, true, true] },
+              { "name": "Digital Menu", "tiers": [true, true, true] },
+              { "name": "Kiosk Mode", "tiers": [false, false, true] }
+            ]
+          },
+          {
+            "name": "Kitchen & Service",
+            "features": [
+              { "name": "KDS (Kitchen Display)", "tiers": [false, true, true] },
+              { "name": "Service Call & Bill Request", "tiers": [false, true, true] },
+              { "name": "Printer Integration", "tiers": [false, true, true] }
+            ]
+          },
+          {
+            "name": "Management",
+            "features": [
+              { "name": "Sales Reports", "tiers": [true, true, true] },
+              { "name": "POS Lite (Cashier)", "tiers": [false, false, true] },
+              { "name": "Staff Permissions", "tiers": [false, true, true] }
+            ]
+          }
+        ]
+      }
     },
     "demo": {
       "meta": {
