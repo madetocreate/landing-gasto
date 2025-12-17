@@ -46,6 +46,12 @@
   @keyframes border-beam {
     100% { offset-distance: 100%; }
   }
+
+  /* BorderBeam rotation (used instead of styled-jsx to avoid hydration mismatch) */
+  @keyframes border-beam-spin {
+    from { transform: rotate(0deg); }
+    to { transform: rotate(360deg); }
+  }
 }
 
 /* Typography Base */

@@ -1,7 +1,7 @@
 "use client"
 
-import React, { useRef, useState, MouseEvent, useEffect } from "react"
-import { motion, useMotionTemplate, useMotionValue, useSpring, animate } from "framer-motion"
+import React, { useState, MouseEvent } from "react"
+import { motion, useMotionTemplate, useMotionValue } from "framer-motion"
 import { classNames } from "@/lib/classNames"
 
 interface SpotlightCardProps extends React.HTMLAttributes<HTMLDivElement> {
@@ -78,15 +78,9 @@ function BorderBeam({ duration = 8 }: { duration?: number }) {
         className="absolute -inset-[100%] opacity-40 animate-border-beam"
         style={{
             background: `conic-gradient(from 0deg at 50% 50%, transparent 0deg, transparent 340deg, var(--color-accent) 360deg)`,
-            animation: `spin ${duration}s linear infinite`
+            animation: `border-beam-spin ${duration}s linear infinite`
         }}
       />
-      <style jsx>{`
-        @keyframes spin {
-          from { transform: rotate(0deg); }
-          to { transform: rotate(360deg); }
-        }
-      `}</style>
     </div>
   )
 }
