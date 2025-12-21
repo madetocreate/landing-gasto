@@ -1,45 +1,49 @@
 {
   "brand": {
     "name": "AKLOW",
-    "tagline": "Modernización con IA para pymes"
+    "tagline": "Tu asistente IA para negocios"
   },
   "nav": {
     "top": {
-      "home": "Modernización con IA",
-      "applications": "Aplicaciones",
-      "fundament": "Fundamento",
+      "home": "Producto",
+      "applications": "Funciones",
+      "fundament": "Tecnología",
       "pricing": "Precios",
       "contact": "Contacto"
     },
-    "cta": "Chequeo de 10 minutos",
+    "cta": "Iniciar demo",
     "drawer": {
-      "title": "Menü",
+      "title": "Menú",
       "groups": {
-        "product": "Soluciones",
-        "features": "Gastro Starter",
-        "knowledge": "Guía",
+        "product": "Producto",
+        "starterkits": "Funciones",
+        "features": "Funciones",
+        "knowledge": "Conocimiento",
         "company": "Empresa",
         "legal": "Legal"
       },
       "links": {
         "home": "Inicio",
-        "features": "Gastro Starter",
+        "starterkits": "Todas las Funciones",
+        "features": "Funciones",
         "pricing": "Precios",
-        "demo": "Chequeo de 10 minutos",
-        "demo_view": "Ver demo",
+        "check": "Iniciar demo",
+        "demo": "Demo",
+        "cases": "Resultados",
         "contact": "Contacto",
-        "feat_ordering": "Pedidos (Chat y Kiosco)",
-        "feat_kds": "Cocina y Barra (KDS)",
-        "feat_poslite": "POS Lite",
-        "feat_service": "Servicio (Bandeja)",
-        "kb_home": "Base de conocimiento",
-        "kb_getting_started": "Primeros pasos",
-        "kb_faq": "Preguntas frecuentes",
+        "demo_view": "Ver Demo",
+        "feat_ordering": "Bandeja de entrada",
+        "feat_kds": "Documentos",
+        "feat_poslite": "Clientes",
+        "feat_service": "Reseñas",
+        "kb_home": "Base de Conocimiento",
+        "kb_getting_started": "Primeros Pasos",
+        "kb_faq": "FAQ",
         "blog": "Blog",
-        "about": "Sobre nosotros",
+        "about": "Sobre Nosotros",
         "partners": "Socios",
         "jobs": "Empleo",
-        "imprint": "Aviso legal",
+        "imprint": "Aviso Legal",
         "privacy": "Privacidad"
       }
     }
@@ -63,18 +67,18 @@
       "app_reviews": "Reseñas",
       "app_customers": "Clientes y Procesos",
       "app_placeholder": "",
-      "about": "Sobre nosotros",
-      "blog": "Blog",
-      "jobs": "Empleo",
-      "partners": "Socios",
+      "about": "Sobre Nosotros",
+      "roadmap": "Roadmap",
       "status": "Estado y Actualizaciones",
-      "values": "Valores y responsabilidad",
+      "jobs": "Empleo",
+      "partner": "Socios",
+      "values": "Responsabilidad",
       "knowledge_hub": "Centro de Conocimiento",
       "getting_started": "Primeros Pasos",
-      "system": "Cómo funciona el sistema",
-      "ki_alltag": "IA en la vida cotidiana",
+      "system": "Cómo funciona",
+      "ki_alltag": "IA en el día a día",
       "security": "Seguridad",
-      "faq": "Preguntas Frecuentes"
+      "faq": "FAQ"
     },
     "legalTitle": "Legal",
     "legalLinks": {
@@ -112,9 +116,11 @@
         "kpiTitle": "+24% eficiencia",
         "kpiSub": "vs. mes anterior",
         "h1": "Modernización con IA – sin caos de herramientas.",
+        "h1Line1": "Modernización con IA",
+        "h1Line2": "sin caos de herramientas.",
         "sub": "Modernizamos pymes con IA: packs de inicio, integración y operación continua. Rápido en producción, impacto medible — sin obligar a tu equipo a aprender otro software.",
-        "ctaPrimary": "Chequeo de 10 minutos",
-        "ctaSecondary": "Ver Gastro Starter",
+        "ctaPrimary": "Chequeo de 3 minutos",
+        "ctaSecondary": "Ver aplicaciones",
         "bullets": [
           "En producción en 14 días",
           "Sin cambio forzado de software",
@@ -163,7 +169,7 @@
         "steps": [
           {
             "title": "1) Chequeo rápido",
-            "text": "En 10 minutos entendemos objetivos, herramientas y cuellos de botella."
+            "text": "En 3 minutos entendemos objetivos, herramientas y cuellos de botella."
           },
           {
             "title": "2) Starter en producción",
@@ -287,6 +293,7 @@
       "socialProof": {
         "h2": "Lo que dicen los negocios (fase piloto)",
         "p": "Voces breves de la práctica – alivio real en el día a día.",
+        "disclaimer": "Extracto de proyectos piloto.",
         "testimonials": [
           {
             "name": "Bar en Palma",
@@ -333,6 +340,7 @@
       "partners": {
         "h2": "Socios e Integraciones",
         "p": "Opcional – según el setup. Empezamos de forma pragmática.",
+        "disclaimer": "Los logotipos son marcadores de posición.",
         "items": [
           {
             "name": "Sistemas POS",
@@ -403,9 +411,9 @@
         ]
       },
       "finalCta": {
-        "h2": "¿Te apetece una demo de 10 minutos?",
-        "p": "Te mostramos rápidamente qué es realista para ti — y qué no.",
-        "ctaPrimary": "Chequeo de 10 minutos",
+        "h2": "¿Listo para tu chequeo de 3 minutos?",
+        "p": "Respondes a unas breves preguntas — te mostramos con qué puedes empezar más rápido.",
+        "ctaPrimary": "Chequeo de 3 minutos",
         "ctaSecondary": "Contacto"
       },
       "roi": {
@@ -423,7 +431,7 @@
           "timeSaved": "Tiempo ahorrado por día"
         },
         "disclaimer": "Estimación basada en supuestos conservadores. Los valores reales dependen de la operación.",
-        "cta": "Chequeo de 10 minutos"
+        "cta": "Chequeo de 3 minutos"
       },
       "miniChat": {
         "welcome": "¡Bienvenido! Soy tu carta inteligente.",
@@ -470,10 +478,52 @@
         }
       }
     },
+    "applications": {
+      "meta": {
+        "title": "Aplicaciones | AKLOW",
+        "description": "Descubre cómo funciona la modernización con IA en la práctica: bandeja de entrada, documentos, contacto con clientes y más."
+      }
+    },
     "features": {
       "meta": {
         "title": "Funciones — Gastro Landingpage",
         "description": "Todas las funciones: pedidos, cocina y barra, POS Lite, servicio."
+      },
+      "roi": {
+        "h2": "¿Cuánto te cuesta el caos por semana?",
+        "p": "Calcula tiempo perdido, errores y solicitudes perdidas — y mira cuándo compensa modernizar.",
+        "inputs": {
+          "ticketsPerWeek": "Tamaño del equipo",
+          "ticketsPerWeekDesc": "Volumen estimado de solicitudes por semana.",
+          "minsPerTicket": "Solicitudes por día",
+          "automationRate": "Tasa de automatización (%)",
+          "automationRateDesc": "Porcentaje de tareas repetitivas que se pueden automatizar.",
+          "hourlyRate": "Valor medio por solicitud (€)",
+          "internationalGuests": "Solicitudes recurrentes (%)"
+        },
+        "outputs": {
+          "savedHoursPerMonth": "Horas ahorradas al mes",
+          "addedValuePerMonth": "Valor añadido al mes",
+          "paybackPeriod": "Periodo de amortización"
+        }
+      },
+      "modules": {
+        "h2": "Bloques de modernización",
+        "p": "Soluciones modulares que crecen con tu negocio.",
+        "items": [
+          {
+            "title": "Bandeja inteligente",
+            "text": "Las solicitudes se clasifican, las respuestas se preparan — tú apruebas."
+          },
+          {
+            "title": "Documentos IA",
+            "text": "Sube PDF, obtén estructura. Sin picar datos manualmente."
+          },
+          {
+            "title": "Automatización",
+            "text": "Workflows que funcionan 24/7 sin errores."
+          }
+        ]
       },
       "h1": "Gastro Starter",
       "intro": "Una solución lista para gastronomía — como pack inicial dentro de nuestra modernización con IA. Rápido en producción, integrable, ampliable después.",
@@ -712,12 +762,12 @@
           "tag": "Inicio rápido con un caso de uso claro",
           "price": "29",
           "items": [
-            "Chequeo de 10 minutos + alcance",
+            "Chequeo de 3 minutos + alcance",
             "Un pack inicial en producción",
             "Reglas claras y flujo de aprobación",
             "Baseline de impacto medible"
           ],
-          "cta": "Chequeo de 10 minutos"
+          "cta": "Chequeo de 3 minutos"
         },
         {
           "name": "Plus",
@@ -729,7 +779,7 @@
             "Conocimiento y memoria",
             "Roles y permisos"
           ],
-          "cta": "Chequeo de 10 minutos"
+          "cta": "Chequeo de 3 minutos"
         },
         {
           "name": "Partner",
@@ -741,10 +791,10 @@
             "Nuevas automatizaciones con el tiempo",
             "Soporte prioritario"
           ],
-          "cta": "Chequeo de 10 minutos"
+          "cta": "Chequeo de 3 minutos"
         }
       ],
-      "note": "Los precios dependen del sector, integraciones y alcance. Lo aclaramos en el chequeo de 10 minutos.",
+      "note": "Los precios dependen del sector, integraciones y alcance. Lo aclaramos en el chequeo de 3 minutos.",
       "faqLink": "Ver FAQ",
       "comparison": {
         "title": "Alcance en detalle",
@@ -943,7 +993,7 @@
       },
       "form": {
         "title": "Reservar demo",
-        "intro": "En 10 minutos verás el flujo completo: cliente → pedido → cocina/barra → admin.",
+        "intro": "En 3 minutos verás el flujo completo: cliente → pedido → cocina/barra → admin.",
         "name": "Nombre",
         "restaurant": "Restaurante",
         "city": "Ciudad",
@@ -1082,6 +1132,893 @@
       },
       "h1": "Privacidad",
       "p": "Esta página explica cómo se tratan los datos personales."
+    },
+    "partner": {
+      "meta": {
+        "title": "Socios e Integraciones | AKLOW",
+        "description": "Únete al ecosistema Aklow. Integraciones, programa de socios y más."
+      },
+      "badge": "Better Together",
+      "h1": "El Ecosistema Aklow.",
+      "intro": "Creemos en el poder de la conexión. Junto con nuestros socios, construimos el puente entre la IA más avanzada y soluciones empresariales probadas.",
+      "integrations": {
+        "title": "Integraciones",
+        "desc": "Nos conectamos con las herramientas que tus clientes ya aman. Ya sean sistemas POS, software CRM o soluciones industriales – Aklow se convierte en la pieza faltante del rompecabezas.",
+        "tech": ["REST API", "Webhooks", "OAuth 2.0", "SDKs"]
+      },
+      "program": {
+        "title": "Programa de Socios",
+        "desc": "Únete a nuestro viaje. Buscamos empresas de TI, agencias y consultores que quieran ofrecer a sus clientes un valor real a través de la modernización con IA.",
+        "cta": "Convertirse en Socio"
+      },
+      "why": {
+        "title": "¿Por qué ser socio?",
+        "items": [
+          {
+            "title": "Acceso Exclusivo",
+            "desc": "Obtén acceso anticipado a nuevas funciones y versiones beta."
+          },
+          {
+            "title": "Soporte y Capacitación",
+            "desc": "Te apoyamos con la implementación y las ventas."
+          },
+          {
+            "title": "Condiciones Atractivas",
+            "desc": "Benefíciate de modelos de socios justos y comisiones."
+          }
+        ]
+      }
+    },
+    "jobs": {
+      "meta": {
+        "title": "Empleo y Carreras | AKLOW",
+        "description": "Únete a la revolución de la IA. Posiciones abiertas y por qué deberías unirte a nosotros."
+      },
+      "badge": "Build the Future",
+      "h1": "Únete a la Revolución de la IA.",
+      "intro": "No solo construimos software. Construimos una nueva forma de trabajar. Sin tonterías, con pasión y tecnología de vanguardia.",
+      "openPositions": "Posiciones Abiertas",
+      "positions": [
+        {
+          "title": "Ingeniero Senior de IA",
+          "type": "Remoto / Híbrido",
+          "focus": "Backend y ML"
+        },
+        {
+          "title": "Desarrollador Frontend (Next.js)",
+          "type": "Remoto",
+          "focus": "UI / UX"
+        },
+        {
+          "title": "Gerente de Ventas (Soluciones IA)",
+          "type": "Híbrido",
+          "focus": "Crecimiento B2B"
+        }
+      ],
+      "details": "Detalles",
+      "noMatch": "¿Nada adecuado?",
+      "initiative": "Envía una solicitud espontánea.",
+      "why": {
+        "title": "¿Por qué unirte a nosotros?",
+        "items": [
+          {
+            "text": "Stack tecnológico de vanguardia (Next.js, Modelos IA, Cloud Native)"
+          },
+          {
+            "text": "Horarios flexibles y verdadera cultura remota"
+          },
+          {
+            "text": "Un equipo que se apoya mutuamente"
+          },
+          {
+            "text": "Trabajo significativo para pymes"
+          }
+        ]
+      }
+    },
+    "wissen": {
+      "meta": {
+        "title": "Centro de Conocimiento | AKLOW",
+        "description": "Todo lo que necesitas saber sobre modernización con IA. Primeros pasos, seguridad, FAQ y más."
+      },
+      "badge": "Centro de Conocimiento",
+      "h1": "Entender, aplicar, crecer.",
+      "intro": "Sin jerga, solo ayuda real. Aquí encontrarás todo lo que necesitas saber para comenzar con éxito con Aklow.",
+      "categories": [
+        {
+          "title": "Primeros Pasos",
+          "desc": "Cómo encontrar tu punto de partida para la IA en 3 minutos."
+        },
+        {
+          "title": "IA en la Vida Cotidiana",
+          "desc": "Ejemplos prácticos de cómo la IA alivia tu trabajo diario."
+        },
+        {
+          "title": "Seguridad y Confianza",
+          "desc": "Todo sobre protección de datos, control y cómo protegemos tus datos."
+        },
+        {
+          "title": "Preguntas Frecuentes (FAQ)",
+          "desc": "Respuestas rápidas a las preguntas más importantes sobre Aklow."
+        }
+      ],
+      "learnMore": "Saber más",
+      "stillQuestions": {
+        "title": "¿Todavía tienes preguntas?",
+        "desc": "Estamos aquí para ti. Solo envíanos un mensaje o programa una cita para un intercambio personal.",
+        "cta": "Ponerse en contacto"
+      }
+    },
+    "wissen_system": {
+      "meta": {
+        "title": "Cómo Funciona el Sistema | AKLOW",
+        "description": "Detalles técnicos sobre la infraestructura y arquitectura de Aklow."
+      },
+      "badge": "Inside Aklow",
+      "h1": "El sistema detrás de todo.",
+      "intro": "¿Cómo funciona realmente Aklow? Aquí aprenderás más sobre la tecnología, infraestructura y cómo llevamos la IA de forma segura a tu vida diaria.",
+      "features": [
+        {
+          "title": "Orquestación LLM",
+          "desc": "No dependemos de un solo modelo. Aklow utiliza una orquestación inteligente de varios modelos de IA especializados para entregar el mejor resultado para cada tarea – de manera eficiente y precisa."
+        },
+        {
+          "title": "Bases de Datos Vectoriales",
+          "desc": "Tu conocimiento se estructura en bases de datos vectoriales de última generación. Esto permite a Aklow acceder al contexto relevante en milisegundos y proporcionar respuestas que realmente se ajustan a tu empresa."
+        },
+        {
+          "title": "Integración Sin Fricciones",
+          "desc": "A través de nuestra arquitectura API-first, Aklow puede integrarse en casi cualquier sistema existente. Conectamos canales como correo electrónico, teléfono y web en una experiencia unificada."
+        },
+        {
+          "title": "Privacidad por Diseño",
+          "desc": "La protección de datos no es un complemento para nosotros, sino la base. Todos los datos se procesan cifrados y nos aseguramos de que tu información permanezca donde pertenece."
+        }
+      ],
+      "performance": {
+        "badge": "Rendimiento y Escalabilidad",
+        "title": "Construido para el futuro.",
+        "desc": "Nuestro sistema crece con tus requisitos. Ya sean 10 o 10,000 solicitudes por día – Aklow permanece estable, rápido y confiable. Confiamos en tecnologías cloud-native para garantizar la máxima disponibilidad."
+      }
+    },
+    "check": {
+      "meta": {
+        "title": "Chequeo de 3 Minutos | AKLOW",
+        "description": "Descubre cómo la IA puede optimizar tu negocio. Rápido, honesto, sin discurso de ventas."
+      },
+      "badge": "Quick Check",
+      "h1": "El Chequeo de Potencial de 3 Minutos.",
+      "intro": "Sin discurso de ventas, solo una evaluación honesta. Revisamos tu situación y te decimos directamente qué es posible.",
+      "form": {
+        "name": "Nombre",
+        "company": "Empresa",
+        "email": "Correo",
+        "challenge": "¿Tu mayor desafío?",
+        "namePlaceholder": "Tu nombre",
+        "companyPlaceholder": "Nombre de la empresa",
+        "emailPlaceholder": "nombre@empresa.com",
+        "challengePlaceholder": "p. ej. Demasiados correos, procesos poco claros, caos de documentos...",
+        "submit": "Iniciar chequeo ahora",
+        "sending": "Enviando...",
+        "privacy": "Tus datos están seguros y se procesan en cumplimiento del RGPD."
+      },
+      "success": {
+        "title": "¡Solicitud recibida!",
+        "desc": "Gracias por tu confianza. Te contactaremos pronto para programar la cita de 3 minutos.",
+        "back": "Volver a la página de inicio"
+      },
+      "error": "Eso no funcionó. Por favor, inténtalo de nuevo más tarde o envíanos un correo.",
+      "benefits": [
+        {
+          "title": "Sin Tonterías",
+          "desc": "Te diremos honestamente si la IA tiene sentido para ti o no."
+        },
+        {
+          "title": "Solo 3 Minutos",
+          "desc": "Sin reuniones largas. Un chequeo rápido para máxima claridad."
+        },
+        {
+          "title": "Solución Directa",
+          "desc": "Obtendrás inmediatamente primeros enfoques para tu optimización."
+        }
+      ],
+      "wizard": {
+        "steps": {
+          "context": "Contexto",
+          "goal": "Objetivo",
+          "pain": "Puntos de dolor",
+          "tools": "Herramientas",
+          "compliance": "Compliance",
+          "result": "Resultado"
+        },
+        "actions": {
+          "next": "Siguiente",
+          "back": "Atrás",
+          "finish": "Calcular resultado",
+          "calculating": "Calculando...",
+          "saveLead": "Guardar (opcional)"
+        },
+        "context": {
+          "title": "Paso 1",
+          "headline": "¿Quién eres y cuán grande es tu equipo?",
+          "desc": "Ajustamos la recomendación a tu sector y tamaño de equipo.",
+          "options": [
+            { "id": "services", "title": "Servicios / Consultoría" },
+            { "id": "ecommerce", "title": "E-Commerce / Retail" },
+            { "id": "production", "title": "Producción / Industria" },
+            { "id": "hospitality", "title": "Hospitalidad" },
+            { "id": "other", "title": "Otro" }
+          ],
+          "teamSizes": [
+            { "id": "1-10", "title": "1-10" },
+            { "id": "10-50", "title": "10-50" },
+            { "id": "50-200", "title": "50-200" },
+            { "id": "200plus", "title": "200+" }
+          ]
+        },
+        "goal": {
+          "title": "Paso 2",
+          "headline": "¿Cuál es tu resultado a 30 días?",
+          "options": [
+            { "id": "automation", "title": "Más automatización", "desc": "Menos trabajo manual, menos tickets." },
+            { "id": "quality", "title": "Mejor calidad", "desc": "Respuestas consistentes, menos errores." },
+            { "id": "speed", "title": "Responder más rápido", "desc": "Tiempos de respuesta más cortos." },
+            { "id": "insights", "title": "Más insights", "desc": "Mejores datos y soporte para decisiones." }
+          ]
+        },
+        "pain": {
+          "title": "Paso 3",
+          "headline": "¿Dónde duele más?",
+          "helper": "Elige hasta 3 puntos de dolor",
+          "options": [
+            { "id": "inbox", "title": "Bandeja llena", "desc": "Demasiados correos/solicitudes, poca priorización." },
+            { "id": "docs", "title": "Caos de documentos", "desc": "Conocimiento disperso, difícil de encontrar." },
+            { "id": "handover", "title": "Entregas difíciles", "desc": "Se pierde información, falta contexto." },
+            { "id": "support", "title": "Soporte lento/caro", "desc": "Tiempos altos y calidad variable." },
+            { "id": "sales", "title": "Leads / follow-ups", "desc": "Muchos leads, poca estructura." },
+            { "id": "compliance", "title": "Compliance/Privacidad", "desc": "Riesgo poco claro con IA." }
+          ]
+        },
+        "tools": {
+          "title": "Paso 4",
+          "headline": "¿Qué herramientas usas hoy?",
+          "options": [
+            { "id": "ms365", "title": "Microsoft 365", "desc": "Outlook, SharePoint, Teams" },
+            { "id": "google", "title": "Google Workspace", "desc": "Gmail, Drive, Docs" },
+            { "id": "hubspot", "title": "HubSpot / CRM", "desc": "CRM / Tickets" },
+            { "id": "zendesk", "title": "Zendesk / Freshdesk", "desc": "Soporte / Helpdesk" },
+            { "id": "notion", "title": "Notion / Confluence", "desc": "Base de conocimiento" },
+            { "id": "other", "title": "Otras", "desc": "Otras herramientas o sistemas propios" }
+          ]
+        },
+        "compliance": {
+          "title": "Paso 5",
+          "headline": "¿Qué tan estricto es tu nivel de compliance?",
+          "options": [
+            { "id": "strict", "title": "Muy estricto", "desc": "RGPD primero, aprobaciones internas" },
+            { "id": "balanced", "title": "Equilibrado", "desc": "Seguro pero pragmático" },
+            { "id": "fast", "title": "Mover rápido", "desc": "La velocidad importa más que la formalidad" }
+          ]
+        },
+        "result": {
+          "title": "Resultado",
+          "headline": "Tu puntuación y plan",
+          "scoreLabel": "Puntuación de modernización",
+          "useCases": "Top 3 casos de uso",
+          "sprint": "Plan de sprint de 7 días",
+          "pending": "Calculando tu resultado..."
+        },
+        "lead": {
+          "title": "Opcional: Guardar resultado",
+          "subtitle": "Para que podamos guardar el resultado para ti.",
+          "name": "Nombre",
+          "company": "Empresa",
+          "email": "Email (opcional)",
+          "phone": "Teléfono (opcional)",
+          "hint": "Sin datos de contacto, el resultado se guarda solo localmente."
+        }
+      }
+    },
+    "impressum": {
+      "meta": {
+        "title": "Aviso Legal | AKLOW",
+        "description": "Información legal y datos de contacto de Aklow GmbH."
+      },
+      "h1": "Aviso Legal.",
+      "intro": "Información legal y datos de contacto de Aklow GmbH.",
+      "sections": {
+        "tmg": {
+          "title": "Información según § 5 TMG",
+          "content": "Aklow GmbH\nCalle Ejemplo 123\n10115 Berlín"
+        },
+        "represented": {
+          "title": "Representado por",
+          "content": "Max Mustermann (Director General)"
+        },
+        "contact": {
+          "title": "Contacto",
+          "content": "Teléfono: +49 (0) 30 1234567\nCorreo: hallo@aklow.com"
+        },
+        "register": {
+          "title": "Entrada en el Registro",
+          "content": "Registrado en el Registro Mercantil.\nTribunal Registral: Tribunal de Distrito de Charlottenburg\nNúmero de Registro: HRB 123456 B"
+        },
+        "vat": {
+          "title": "ID de IVA",
+          "content": "Número de identificación del IVA según § 27 a Ley del IVA:\nDE 123 456 789"
+        },
+        "responsible": {
+          "title": "Responsable editorialmente",
+          "content": "Max Mustermann\nCalle Ejemplo 123\n10115 Berlín"
+        },
+        "dispute": {
+          "title": "Resolución de Disputas de la UE",
+          "content": "La Comisión Europea proporciona una plataforma para la resolución de disputas en línea (OS): https://ec.europa.eu/consumers/odr/.\nPuedes encontrar nuestra dirección de correo arriba en el aviso legal."
+        }
+      }
+    },
+    "datenschutz": {
+      "meta": {
+        "title": "Privacidad | AKLOW",
+        "description": "Tu privacidad es importante para nosotros. Aquí aprenderás cómo manejamos tus datos."
+      },
+      "h1": "Privacidad.",
+      "intro": "Tu privacidad es importante para nosotros. Aquí aprenderás cómo manejamos tus datos.",
+      "sections": [
+        {
+          "title": "1. Privacidad en un vistazo",
+          "content": [
+            "La siguiente información proporciona una visión general simple de lo que sucede con tus datos personales cuando visitas nuestro sitio web.",
+            "Los datos personales son cualquier dato con el que puedas ser identificado personalmente. Información detallada sobre el tema de protección de datos se puede encontrar en nuestra política de privacidad que se enumera a continuación de este texto."
+          ]
+        },
+        {
+          "title": "2. Alojamiento y Redes de Entrega de Contenido (CDN)",
+          "content": [
+            "Alojamos nuestro sitio web con un proveedor externo. Los datos personales recopilados en este sitio web se almacenan en los servidores del proveedor.",
+            "Nuestro proveedor de alojamiento solo procesará tus datos en la medida necesaria para cumplir con sus obligaciones de rendimiento y seguir nuestras instrucciones con respecto a estos datos."
+          ]
+        },
+        {
+          "title": "3. Información general e información obligatoria",
+          "content": [
+            "Los operadores de estas páginas toman muy en serio la protección de tus datos personales. Tratamos tus datos personales de manera confidencial y de acuerdo con las regulaciones legales de protección de datos y esta política de privacidad.",
+            "Cuando usas este sitio web, se recopilan varios datos personales. Esta política de privacidad explica qué datos recopilamos y para qué los usamos."
+          ]
+        }
+      ],
+      "contact": {
+        "title": "Contacto para la parte responsable",
+        "content": "Aklow GmbH\nOficial de Protección de Datos\nCalle Ejemplo 123\n10115 Berlín\nCorreo: datenschutz@aklow.com"
+      },
+      "dataCollection": {
+        "title": "4. Recopilación de datos en nuestro sitio web",
+        "cookies": {
+          "title": "Cookies",
+          "content": "Nuestro sitio web usa parcialmente las llamadas \"Cookies\". Las cookies son pequeños archivos de texto y no causan ningún daño a tu dispositivo. Se almacenan temporalmente durante la duración de una sesión (cookies de sesión) o permanentemente (cookies permanentes) en tu dispositivo."
+        },
+        "contactForm": {
+          "title": "Formulario de contacto",
+          "content": "Si nos envías consultas a través del formulario de contacto, tus detalles del formulario de consulta, incluidos los datos de contacto que proporcionaste allí, serán almacenados por nosotros con el propósito de procesar la consulta y en caso de preguntas de seguimiento."
+        }
+      }
+    },
+    "cookies": {
+      "meta": {
+        "title": "Cookies | AKLOW",
+        "description": "Transparencia sobre los pequeños ayudantes que hacen funcionar nuestro sitio."
+      },
+      "h1": "Cookies.",
+      "intro": "Transparencia sobre los pequeños ayudantes que hacen funcionar nuestro sitio.",
+      "whatAre": {
+        "title": "¿Qué son las cookies?",
+        "content": "Las cookies son pequeños archivos de texto utilizados por los sitios web para hacer la experiencia del usuario más eficiente. La ley establece que podemos almacenar cookies en tu dispositivo si son absolutamente necesarias para el funcionamiento de este sitio. Para todos los demás tipos de cookies, necesitamos tu permiso."
+      },
+      "types": [
+        {
+          "title": "Cookies Necesarias",
+          "desc": "Estas cookies son necesarias para que el sitio web funcione y no se pueden desactivar en nuestros sistemas. Por lo general, solo se establecen en respuesta a acciones que realizas."
+        },
+        {
+          "title": "Cookies de Preferencias",
+          "desc": "Estas cookies permiten que un sitio web recuerde información que afecta cómo se comporta o se ve el sitio web, como tu idioma preferido o la región en la que te encuentras."
+        },
+        {
+          "title": "Cookies de Estadísticas",
+          "desc": "Estas cookies nos ayudan a entender cómo los visitantes interactúan con los sitios web recopilando e informando información de forma anónima."
+        }
+      ],
+      "selection": {
+        "title": "Tu selección",
+        "desc": "Puedes cambiar la configuración de cookies en cualquier momento o revocar tu consentimiento.",
+        "open": "Abrir configuración",
+        "reject": "Rechazar todo"
+      }
+    },
+    "ueber_uns": {
+      "meta": {
+        "title": "Sobre Nosotros | AKLOW",
+        "description": "Hacemos modernización con IA para pymes – sin complejidad y sin que tengas que cambiar tu rutina diaria."
+      },
+      "h1": "Sobre Nosotros",
+      "intro": "Hacemos modernización con IA para pymes – sin complejidad y sin que tengas que cambiar tu rutina diaria.",
+      "whatDrives": {
+        "title": "Lo que nos impulsa",
+        "p1": "Muchas pequeñas y medianas empresas sienten que la IA no está hecha para ellas. Demasiado compleja, demasiado cara, demasiado abstracta.",
+        "p2": "Nosotros lo vemos diferente. La IA puede ayudar exactamente donde realmente comienza el trabajo en la vida diaria: con correos electrónicos, solicitudes, documentos y decisiones. No como un gran proyecto, sino como apoyo práctico que funciona de inmediato.",
+        "p3": "Nuestro objetivo: Sigues trabajando como siempre, mientras la IA se encarga en segundo plano de lo que te cuesta tiempo hoy."
+      },
+      "approach": {
+        "title": "Nuestro enfoque",
+        "p1": "No empezamos con grandes planes, sino con problemas concretos. En 3 minutos vemos dónde está el problema – y qué es realista.",
+        "p2": "Luego va rápido: Una primera configuración suele estar en funcionamiento en pocos días. Paso a paso ampliamos cuando tiene sentido para ti.",
+        "p3": "Sin proyectos de consultoría largos. Sin nuevas herramientas que primero tengas que aprender. Simplemente apoyo donde realmente ayuda."
+      },
+      "important": {
+        "title": "Lo que nos importa",
+        "simplicity": {
+          "label": "Simplicidad:",
+          "text": "Soluciones que funcionan de inmediato – sin que tengas que luchar con manuales."
+        },
+        "control": {
+          "label": "Control:",
+          "text": "Tú decides qué pasa automáticamente y qué no. Nada sin tu aprobación."
+        },
+        "measurability": {
+          "label": "Medibilidad:",
+          "text": "Ves lo que la IA hace por ti – y cuánto tiempo recuperas."
+        }
+      },
+      "team": {
+        "title": "Nuestro Equipo",
+        "desc": "Somos un equipo pequeño que trabaja apasionadamente para hacer accesible la modernización con IA para pymes."
+      }
+    },
+    "roadmap": {
+      "meta": {
+        "title": "Hoja de Ruta – Nuestro Viaje | AKLOW",
+        "description": "En qué estamos trabajando y qué viene a continuación para revolucionar el mundo de la IA."
+      },
+      "h1": "Hoja de Ruta",
+      "intro": "Nuestra visión es clara. Aquí aprenderás cómo estamos redefiniendo la forma en que trabajamos paso a paso.",
+      "phases": [
+        {
+          "phase": "EN VIVO",
+          "title": "La base está establecida",
+          "items": [
+            "Bandeja inteligente (clasificación y prioridad)",
+            "IA de documentos: Comprensión y estructuración",
+            "Integraciones básicas: Correo y calendario",
+            "Panel de gestión de procesos",
+            "Flujos de trabajo de aprobación inteligentes"
+          ]
+        },
+        {
+          "phase": "PRÓXIMAMENTE",
+          "title": "Próxima parada: Contexto",
+          "items": [
+            "Sugerencias de respuesta sensibles al contexto",
+            "Hub de integración profunda (CRM y ERP)",
+            "Reconocimiento de texto optimizado (OCR 2.0)",
+            "Lógica de seguimiento inteligente",
+            "Vista previa de aplicación móvil"
+          ]
+        },
+        {
+          "phase": "EN PROGRESO",
+          "title": "El laboratorio está al rojo vivo",
+          "items": [
+            "Asistente de IA para web y teléfono",
+            "Solicitudes de revisión automatizadas",
+            "Motor de flujo de trabajo personalizado",
+            "Cerebro multiidioma (50+ idiomas)",
+            "Búsqueda semántica en todos los canales"
+          ]
+        },
+        {
+          "phase": "VISIÓN",
+          "title": "Dando forma al futuro",
+          "items": [
+            "Inteligencia empresarial en tiempo real",
+            "API abierta para desarrollos personalizados",
+            "Agentes de IA colaborativos",
+            "Malla de seguridad avanzada",
+            "Herramientas de análisis predictivo"
+          ]
+        }
+      ],
+      "quote": "No solo construimos software. Construimos el futuro de tu vida diaria. Flexible, transparente y siempre enfocado en lo que realmente te hace avanzar hoy."
+    },
+    "status": {
+      "meta": {
+        "title": "Estado del Sistema – Todo en verde | AKLOW",
+        "description": "Monitoreo en tiempo real de nuestra infraestructura y servicios de IA."
+      },
+      "badge": "SISTEMAS OPERATIVOS",
+      "h1": "Estado y Actualizaciones",
+      "intro": "Monitoreo en tiempo real de nuestra infraestructura. Amamos la transparencia tanto como el código limpio.",
+      "services": [
+        {
+          "name": "Motor Core de IA",
+          "status": "operational",
+          "uptime": "99.99%"
+        },
+        {
+          "name": "Procesamiento de Documentos",
+          "status": "operational",
+          "uptime": "99.95%"
+        },
+        {
+          "name": "API e Integraciones",
+          "status": "operational",
+          "uptime": "100%"
+        },
+        {
+          "name": "Panel Web",
+          "status": "operational",
+          "uptime": "99.98%"
+        }
+      ],
+      "operational": "Operativo",
+      "history": {
+        "title": "Historial de Incidentes",
+        "items": [
+          {
+            "date": "18 Dic",
+            "event": "Optimización del Sistema",
+            "type": "maintenance",
+            "typeLabel": "Mantenimiento planificado"
+          },
+          {
+            "date": "15 Dic",
+            "event": "Actualización del Modelo de IA v2.4",
+            "type": "update",
+            "typeLabel": "Actualización del sistema"
+          },
+          {
+            "date": "10 Dic",
+            "event": "Latencia Menor de API",
+            "type": "incident",
+            "typeLabel": "Interrupción del servicio",
+            "duration": "12 min"
+          },
+          {
+            "date": "01 Dic",
+            "event": "Migración de Base de Datos",
+            "type": "maintenance",
+            "typeLabel": "Mantenimiento planificado"
+          }
+        ]
+      },
+      "support": {
+        "title": "Velocidad de Soporte",
+        "value": "~14m",
+        "desc": "Tiempo promedio de respuesta en las últimas 24 horas."
+      },
+      "report": {
+        "title": "¿Algo mal?",
+        "desc": "Si notas problemas que no están listados aquí, por favor contacta directamente a nuestro equipo de operaciones.",
+        "cta": "Reportar incidente"
+      }
+    },
+    "kontakt": {
+      "meta": {
+        "title": "Contacto – Hablemos | AKLOW",
+        "description": "¿Tienes preguntas o quieres saber si la IA realmente tiene sentido en tu vida diaria? Entonces hablemos."
+      },
+      "badge": "Estamos aquí para ti",
+      "h1": "Hablemos del futuro.",
+      "intro": "No te venderemos nada por teléfono. Escuchamos, analizamos tu rutina diaria y te decimos honestamente qué es posible con IA – y qué (todavía) no lo es.",
+      "contact": {
+        "email": {
+          "label": "Correo",
+          "value": "hallo@aklow.com"
+        },
+        "chat": {
+          "label": "Chat",
+          "value": "Justo aquí abajo a la derecha"
+        }
+      },
+      "form": {
+        "title": "Escríbenos",
+        "name": "Nombre",
+        "email": "Correo",
+        "message": "Tu mensaje",
+        "namePlaceholder": "Juan Pérez",
+        "emailPlaceholder": "juan@ejemplo.com",
+        "messagePlaceholder": "¿Cómo podemos ayudarte?",
+        "submit": "Enviar mensaje"
+      },
+      "badgeResponse": {
+        "title": "Respuesta en 24h",
+        "subtitle": "Prometido."
+      },
+      "why": {
+        "title": "¿Por qué nosotros?",
+        "desc": "No somos una empresa de TI típica. Somos un socio para tu vida diaria.",
+        "items": [
+          {
+            "title": "Honestidad",
+            "desc": "También te diremos cuando la IA no tenga sentido."
+          },
+          {
+            "title": "Velocidad",
+            "desc": "Generalmente verás los primeros resultados en pocos días."
+          },
+          {
+            "title": "Simplicidad",
+            "desc": "Sin manuales complejos. Nuestra IA simplemente te entiende."
+          }
+        ]
+      }
+    },
+    "haltung": {
+      "meta": {
+        "title": "Valores y Responsabilidad – Usar la IA de manera significativa | AKLOW",
+        "description": "Creemos: La IA es demasiado útil para usarse solo \"de alguna manera\". Debería aliviar a las personas en la vida diaria – comprensible, controlable y significativa."
+      },
+      "badge": "Nuestros Valores",
+      "h1": "Valores y Responsabilidad",
+      "intro": "La IA es una herramienta. Y como cualquier herramienta, depende de quién la sostiene – y con qué intención.",
+      "sections": [
+        {
+          "title": "Las personas en el centro",
+          "p1": "Muchos ven la IA como algo técnico, abstracto o incluso intimidante. Queremos lo contrario: Construir IA para que realmente te alivie en la vida diaria.",
+          "p2": "Sin interfaces complicadas. Sin nuevos sistemas que primero tengas que aprender. Sino como apoyo invisible donde tu trabajo sucede de todos modos hoy."
+        },
+        {
+          "title": "Significativo en lugar de máximo",
+          "p1": "Nuestro objetivo no es construir tanta IA como sea posible solo porque podemos. Nos enfocamos en los lugares donde ofrece un valor real.",
+          "p2": "Menos interrupciones, menos búsqueda, menos rutina. Más tiempo para lo que realmente importa: tus clientes y tu creatividad."
+        },
+        {
+          "title": "Tecnología con columna vertebral",
+          "p1": "La tecnología nunca es neutral. Por eso la manejamos conscientemente de manera responsable. La transparencia no es una palabra de moda para nosotros, sino la base.",
+          "p2": "Evitamos sistemas de \"caja negra\" que nadie entiende más. Siempre mantienes el control y la soberanía sobre tus datos."
+        },
+        {
+          "title": "Más allá del horizonte",
+          "p1": "Parte de nuestros ingresos fluye hacia proyectos que van más allá del negocio. Las iniciativas humanitarias y los proyectos de bienestar animal nos importan.",
+          "p2": "No como una campaña de relaciones públicas ruidosa, sino porque estamos convencidos de que como empresa de tecnología tenemos una responsabilidad social."
+        }
+      ],
+      "cta": {
+        "title": "Dar forma al futuro juntos",
+        "desc": "Si tienes preguntas sobre nuestra forma de trabajar o quieres saber cómo integramos estándares éticos en nuestro software, contáctanos en cualquier momento.",
+        "contact": "Ponerse en contacto",
+        "check": "El chequeo de 3 minutos"
+      }
+    },
+    "wissen_erste_schritte": {
+      "meta": {
+        "title": "Primeros Pasos con IA – Entrada sin Abrumar | AKLOW",
+        "description": "La IA no tiene que ser complicada. Y no tienes que ser un experto en tecnología para beneficiarte de ella."
+      },
+      "bgText": "Simple.",
+      "h1": "Tu camino hacia la libertad de IA",
+      "intro": "Sin estudios, sin complejidad. Solo un plan claro sobre cómo recuperar tu noche.",
+      "steps": [
+        {
+          "number": "01",
+          "title": "Identificar ladrones de tiempo",
+          "desc": "¿Qué tareas te roban tiempo valioso todos los días? Por lo general son correos electrónicos, documentos o preguntas recurrentes."
+        },
+        {
+          "number": "02",
+          "title": "Elegir asistentes inteligentes",
+          "desc": "Elige el asistente Aklow adecuado para tu mayor desafío – ya sea bandeja de entrada, documentos o consultas de clientes."
+        },
+        {
+          "number": "03",
+          "title": "Mantener el control",
+          "desc": "Empezamos con sugerencias. Tú decides qué aprende la IA y qué (todavía) no puede hacer automáticamente."
+        }
+      ],
+      "dontDo": {
+        "title": "Lo que no debes hacer al principio.",
+        "items": [
+          "No intentes automatizar todo a la vez.",
+          "Sin experimentos de \"la IA hace todo\" sin supervisión.",
+          "No empieces con los casos más difíciles.",
+          "No introduzcas 20 herramientas nuevas al mismo tiempo."
+        ]
+      },
+      "success": {
+        "title": "Nuestro secreto del éxito",
+        "desc": "Si no sientes un alivio notable después de una semana, la entrada fue demasiado grande – no tú demasiado lento. Empezamos pequeño para que el efecto sea enorme.",
+        "cta": "Iniciar chequeo de 3 minutos"
+      }
+    },
+    "wissen_ki_alltag": {
+      "meta": {
+        "title": "IA en la Vida Cotidiana – Finalmente Comprensible | AKLOW",
+        "description": "Cómo la IA realmente ayuda en la vida cotidiana: bandeja de entrada, documentos, contacto con clientes y organización. Explicado de forma relajada."
+      },
+      "badge": "Sin pánico por la tecnología",
+      "h1": "IA en la vida cotidiana. Totalmente relajado.",
+      "intro": "La IA no es una película de ciencia ficción. Es como un nuevo colega que nunca duerme, no necesita café y le encanta hacerse cargo de tus tareas más aburridas.",
+      "toc": {
+        "title": "Enlaces Rápidos",
+        "links": [
+          {
+            "id": "was-ist-ki",
+            "label": "¿Qué es esto en realidad?"
+          },
+          {
+            "id": "beispiele",
+            "label": "5 ejemplos reales"
+          },
+          {
+            "id": "starten",
+            "label": "Cómo empezar"
+          },
+          {
+            "id": "sicherheit",
+            "label": "¿Qué pasa con los datos?"
+          }
+        ]
+      },
+      "sections": {
+        "wasIst": {
+          "title": "¿Qué significa \"IA en la vida cotidiana\" en realidad?",
+          "p1": "Olvida los robots humanoides. En la vida cotidiana, la IA significa: Ayuda inteligente donde molesta.",
+          "p2": "Son las pequeñas cosas. Revisar mensajes, buscar información, responder seguimientos, asignar documentos. La IA te ayuda a organizar información y tomar decisiones más rápido.",
+          "quote": "La IA es como un filtro digital que solo deja pasar lo importante y pre-clasifica el resto."
+        },
+        "beispiele": {
+          "title": "5 ejemplos reales (sin tonterías)",
+          "items": [
+            {
+              "title": "La bandeja inteligente",
+              "desc": "La IA sabe qué es importante. Te escribe borradores para que solo tengas que decir \"Sí\"."
+            },
+            {
+              "title": "Malabarista de documentos",
+              "desc": "Sube PDF, obtén estructura. Nunca más escribas facturas o contratos manualmente."
+            },
+            {
+              "title": "El profesional del teléfono",
+              "desc": "Recibe llamadas, entiende solicitudes y te envía un correo limpio. 24/7."
+            },
+            {
+              "title": "Asesino de repeticiones",
+              "desc": "Las mismas preguntas siempre obtienen la misma respuesta perfecta. Preparado automáticamente."
+            },
+            {
+              "title": "El guardián de la organización",
+              "desc": "Todo aterriza en la carpeta correcta, con el cliente correcto. Sin que muevas un dedo."
+            }
+          ]
+        },
+        "starten": {
+          "title": "¿Listo para menos estrés?",
+          "desc": "El mejor comienzo es siempre: Una conversación corta. Revisamos tu rutina diaria y encontramos las \"frutas al alcance\" – las cosas que inmediatamente te dan tiempo.",
+          "check": "Iniciar chequeo",
+          "chat": "Chatear casualmente"
+        }
+      }
+    },
+    "wissen_sicherheit": {
+      "meta": {
+        "title": "Seguridad – IA con Control y Transparencia | AKLOW",
+        "description": "Si la IA va a ayudar en la vida cotidiana, debe ser segura y controlable. Aquí explicamos cómo pensamos la seguridad de manera práctica."
+      },
+      "badge": "Seguridad de Grado Empresarial",
+      "h1": "Seguridad. Sin compromisos.",
+      "intro": "Si la IA va a ayudar en la vida cotidiana, debe ser segura. No construimos una \"caja negra\", sino un sistema con límites claros y control total.",
+      "features": [
+        {
+          "title": "Transparencia Total",
+          "desc": "Sabes exactamente en todo momento qué está haciendo la IA, por qué hace una sugerencia y en qué base."
+        },
+        {
+          "title": "Aprobación Requerida",
+          "desc": "Las acciones críticas solo ocurren cuando las confirmas. La IA prepara, tú decides."
+        },
+        {
+          "title": "Soberanía de Datos",
+          "desc": "Tus datos siguen siendo tus datos. Usamos canales cifrados y mantenemos el acceso mínimo."
+        },
+        {
+          "title": "Registro de Auditoría",
+          "desc": "Cada acción y cada sugerencia se registra. Esto mantiene todo rastreable y verificable."
+        },
+        {
+          "title": "Sandboxing Inteligente",
+          "desc": "Las acciones de IA se ejecutan en áreas protegidas. La manipulación desde fuera se detecta y bloquea proactivamente."
+        },
+        {
+          "title": "Control de Acceso",
+          "desc": "Roles y permisos precisos aseguran que todos solo vean lo que realmente necesitan."
+        }
+      ],
+      "shield": {
+        "title": "Cómo construimos tu escudo.",
+        "items": [
+          {
+            "label": "Verificación de Entrada",
+            "text": "Cada solicitud se verifica en busca de patrones riesgosos e intentos de manipulación."
+          },
+          {
+            "label": "Aislamiento de Contexto",
+            "text": "Los datos sensibles se detectan y solo se usan donde realmente pertenecen."
+          },
+          {
+            "label": "Validación de Reglas",
+            "text": "Las sugerencias de IA se verifican contra tus reglas comerciales fijas."
+          },
+          {
+            "label": "Limitación de Acciones",
+            "text": "La IA solo puede usar herramientas predefinidas – y solo con tu permiso."
+          }
+        ]
+      },
+      "faq": {
+        "title": "Preguntas Frecuentes sobre Seguridad",
+        "items": [
+          {
+            "q": "¿Puedo definir qué pasa automáticamente y qué no?",
+            "a": "Sí. Puedes definir con mucha precisión qué permanece como sugerencia, qué necesita aprobación y qué nunca debe ejecutarse automáticamente."
+          },
+          {
+            "q": "¿La IA tiene que enviar respuestas automáticamente?",
+            "a": "No. Puedes empezar con borradores y solo más tarde automatizar pasos individuales no críticos – si quieres."
+          },
+          {
+            "q": "¿Qué pasa cuando la IA no está segura?",
+            "a": "Entonces no debe \"adivinar con confianza\", sino marcar visiblemente, preguntar o entregarte a ti."
+          },
+          {
+            "q": "¿Es compatible con RGPD?",
+            "a": "Aclaramos flujos de datos, permisos y propósito. Nuestro objetivo es protección de datos pragmática que realmente funcione en la vida cotidiana."
+          }
+        ]
+      }
+    },
+    "wissen_faq": {
+      "meta": {
+        "title": "Preguntas Frecuentes – Lo aclaramos. | AKLOW",
+        "description": "Respuestas a preguntas frecuentes sobre modernización con IA, aplicaciones, seguridad e integración."
+      },
+      "badge": "Centro de Conocimiento",
+      "h1": "¿Preguntas? Aclarado.",
+      "intro": "Sabemos que la IA plantea muchas preguntas. Aquí encontrarás las respuestas – honestas, directas y sin palabrería de marketing.",
+      "items": [
+        {
+          "q": "¿Qué significa \"modernización con IA\" para ustedes específicamente?",
+          "a": "Modernización con IA significa: No obtienes un nuevo mundo de software, sino una capa inteligente que se conecta a tus procesos reales. Ayuda donde se pierde tiempo hoy – p. ej. con solicitudes, documentos, seguimientos y tareas recurrentes. Empiezas pequeño, ves beneficios rápidamente y luego construyes paso a paso."
+        },
+        {
+          "q": "¿Tengo que aprender una nueva herramienta para esto?",
+          "a": "No. Sigues trabajando en tus canales existentes (p. ej. correo, archivos, solicitudes del sitio web). La IA apoya en segundo plano y solo te devuelve lo que realmente necesitas: visión general, prioridades y sugerencias."
+        },
+        {
+          "q": "¿Para quién es adecuado – también para pequeñas empresas?",
+          "a": "Sí. Especialmente si haces mucho tú mismo, la organización, priorización y buena preparación traen calma inmediatamente. El factor decisivo no es el tamaño de tu empresa, sino si las solicitudes, documentos y procesos se reúnen regularmente contigo."
+        },
+        {
+          "q": "¿Es compatible con RGPD?",
+          "a": "Absolutamente. La protección de datos no es un extra, sino un requisito previo. Aclaramos flujos de datos, permisos y propósito. Nuestro objetivo es protección de datos pragmática que realmente funcione en la vida cotidiana."
+        },
+        {
+          "q": "¿Qué tan rápido noto un efecto?",
+          "a": "A menudo después de solo unos días. Si empezamos con un claro ladrón de tiempo (p. ej. organizar bandeja de entrada), inmediatamente recuperas tiempo. Nuestro principio: primero un beneficio pequeño y medible – luego el siguiente paso."
+        },
+        {
+          "q": "¿Puede la IA responder en mi tono personal?",
+          "a": "Sí. Puedes especificar tono y reglas – por ejemplo \"corto y claro\", \"amigable y relajado\" o \"formal\". Así sigue siendo tu apariencia, no un texto genérico de IA."
+        }
+      ],
+      "more": {
+        "title": "¿Quieres saber más?",
+        "desc": "¿Tu pregunta es demasiado específica? No hay problema. Envíanos un mensaje o chatea brevemente con nosotros.",
+        "cta": "Ponerse en contacto"
+      },
+      "check": {
+        "title": "¿Listo para el chequeo?",
+        "desc": "En 3 minutos descubriremos dónde la IA tiene la mayor influencia en tu vida diaria. Gratis y honesto.",
+        "cta": "Iniciar chequeo ahora"
+      }
     }
   }
 }

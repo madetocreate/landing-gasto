@@ -10,9 +10,10 @@ import type { Metadata } from "next";
 export async function generateMetadata(): Promise<Metadata> {
   const locale = await getLocale();
   return createMetadata({
-    title: t(locale, "pages.services.meta.title"),
-    description: t(locale, "pages.services.meta.description"),
+    title: t(locale, "pages.services.meta.title") as string,
+    description: t(locale, "pages.services.meta.description") as string,
     path: "/services",
+    locale,
   });
 }
 
@@ -25,9 +26,9 @@ export default async function Services() {
       <Section variant="hero" className="pt-32 pb-16">
         <Container size="xl">
           <div className="text-center max-w-3xl mx-auto mb-16">
-            <h1 className="mb-6 tracking-tight">{t(locale, "pages.services.h1")}</h1>
+            <h1 className="mb-6 tracking-tight">{t(locale, "pages.services.h1") as string}</h1>
             <p className="text-lg md:text-xl text-foreground-muted leading-relaxed">
-              {t(locale, "pages.services.intro")}
+              {t(locale, "pages.services.intro") as string}
             </p>
           </div>
 
@@ -44,13 +45,13 @@ export default async function Services() {
 
           <div className="flex justify-center mt-12">
             <Button variant="primary" size="lg" asChild href="/demo" className="rounded-full px-8">
-              {t(locale, "pages.services.cta")}
+              {t(locale, "pages.services.cta") as string}
             </Button>
           </div>
         </Container>
       </Section>
 
-      <CTASection />
+      <CTASection locale={locale} />
     </>
   );
 }

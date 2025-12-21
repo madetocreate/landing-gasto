@@ -1,6 +1,6 @@
 'use client';
 
-import { useEffect, useState } from 'react';
+import { useEffect, useState, useRef } from 'react';
 
 interface AnimatedNumberProps {
   value: number;
@@ -16,14 +16,16 @@ export function AnimatedNumber({
   formatter = (v) => v.toLocaleString('de-DE')
 }: AnimatedNumberProps) {
   const [displayValue, setDisplayValue] = useState(0);
+  const displayValueRef = useRef(0);
 
   useEffect(() => {
     if (value === 0) {
       setDisplayValue(0);
+      displayValueRef.current = 0;
       return;
     }
 
-    const startValue = displayValue;
+    const startValue = displayValueRef.current;
     const endValue = value;
     const startTime = Date.now();
 
@@ -36,16 +38,20 @@ export function AnimatedNumber({
       const easeOut = 1 - Math.pow(1 - progress, 3);
       const current = startValue + (endValue - startValue) * easeOut;
 
-      setDisplayValue(Math.round(current));
+      const rounded = Math.round(current);
+      setDisplayValue(rounded);
+      displayValueRef.current = rounded;
 
       if (progress < 1) {
         requestAnimationFrame(animate);
       } else {
         setDisplayValue(endValue);
+        displayValueRef.current = endValue;
       }
     };
 
-    requestAnimationFrame(animate);
+    const rafId = requestAnimationFrame(animate);
+    return () => cancelAnimationFrame(rafId);
   }, [value, duration]);
 
   return <span className={className}>{formatter(displayValue)}</span>;

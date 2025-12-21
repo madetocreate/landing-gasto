@@ -3,13 +3,8 @@
 import { Section, Container } from "@/components/ui/Section"
 import { SpotlightCard } from "@/components/ui/SpotlightCard"
 import { Button } from "@/components/ui/Button"
-import { useLocale } from "@/hooks/useLocale"
-import { t } from "@/lib/i18n"
-import { Link } from "lucide-react"
 
 export function StarterkitsSection() {
-  const locale = useLocale()
-
   return (
     <Section variant="normal" className="py-24 relative overflow-hidden">
       <div className="absolute top-0 left-1/2 -translate-x-1/2 w-full h-full bg-grid-pattern opacity-[0.03] pointer-events-none" />
@@ -84,7 +79,7 @@ export function StarterkitsSection() {
                     <span className="w-1.5 h-1.5 rounded-full bg-blue-500" /> CRM-Integration
                   </li>
                 </ul>
-                <Button variant="outline" className="w-full hover:border-blue-500/50 hover:bg-blue-500/5" asChild href="/kontakt?topic=inbox">
+                <Button variant="secondary" className="w-full hover:border-blue-500/50 hover:bg-blue-500/5" asChild href="/kontakt?topic=inbox">
                   Pilot anfragen
                 </Button>
               </div>
@@ -120,7 +115,7 @@ export function StarterkitsSection() {
                     <span className="w-1.5 h-1.5 rounded-full bg-green-500" /> Datev-Export
                   </li>
                 </ul>
-                <Button variant="outline" className="w-full hover:border-green-500/50 hover:bg-green-500/5" asChild href="/kontakt?topic=backoffice">
+                <Button variant="secondary" className="w-full hover:border-green-500/50 hover:bg-green-500/5" asChild href="/kontakt?topic=backoffice">
                   Pilot anfragen
                 </Button>
               </div>

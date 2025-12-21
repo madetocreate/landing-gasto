@@ -4,8 +4,7 @@ import { useState, useMemo } from "react"
 import { Section, Container } from "@/components/ui/Section"
 import { Button } from "@/components/ui/Button"
 import { AnimatedNumber } from "@/components/ui/AnimatedNumber"
-import { useLocale } from "@/hooks/useLocale"
-import { t } from "@/lib/i18n"
+import { Locale, t } from "@/lib/i18n"
 import { SpotlightCard } from "@/components/ui/SpotlightCard"
 
 interface TimeInputs {
@@ -15,8 +14,11 @@ interface TimeInputs {
   hourlyRate: number
 }
 
-export function TimeCalculator() {
-  const locale = useLocale()
+interface TimeCalculatorProps {
+  locale: Locale;
+}
+
+export function TimeCalculator({ locale }: TimeCalculatorProps) {
   const [inputs, setInputs] = useState<TimeInputs>({
     ticketsPerWeek: 150,
     minsPerTicket: 15,
@@ -41,16 +43,17 @@ export function TimeCalculator() {
     setInputs((prev) => ({ ...prev, [key]: value }))
   }
 
+  const tKey = "pages.home.roi";
+
   return (
     <Section variant="normal" surface="surface" className="relative overflow-hidden">
       <div className="absolute inset-0 bg-gradient-to-b from-transparent to-background-muted/30 -z-10" />
 
       <Container size="lg">
         <div className="text-center mb-12">
-          <h2 className="mb-4 text-3xl font-bold tracking-tight">Was kostet manuelle Arbeit?</h2>
+          <h2 className="mb-4 text-3xl font-bold tracking-tight">{t(locale, `${tKey}.h2`) as string}</h2>
           <p className="text-foreground-muted prose mx-auto text-lg leading-relaxed">
-            Routineaufgaben fressen Zeit.
-            Rechne kurz nach, wie viel Du zurückgewinnen kannst.
+            {t(locale, `${tKey}.p`) as string}
           </p>
         </div>
 
@@ -62,7 +65,7 @@ export function TimeCalculator() {
                 <div>
                   <div className="flex justify-between mb-3">
                     <label className="text-sm font-medium text-foreground">
-                      Vorgänge / Woche
+                      {t(locale, `${tKey}.inputs.tables`) as string}
                     </label>
                     <span className="text-sm font-bold text-action">{inputs.ticketsPerWeek}</span>
                   </div>
@@ -75,13 +78,12 @@ export function TimeCalculator() {
                     onChange={(e) => updateInput("ticketsPerWeek", parseInt(e.target.value))}
                     className="w-full h-2 bg-muted rounded-xl appearance-none cursor-pointer accent-action hover:opacity-80 transition-opacity"
                   />
-                  <p className="text-xs text-foreground-muted mt-2">z.B. E-Mails, Rechnungen, Support-Tickets</p>
                 </div>
 
                 <div>
                   <div className="flex justify-between mb-3">
                     <label className="text-sm font-medium text-foreground">
-                      Minuten pro Vorgang
+                      {t(locale, `${tKey}.inputs.guestsPerDay`) as string}
                     </label>
                     <span className="text-sm font-bold text-action">{inputs.minsPerTicket} min</span>
                   </div>
@@ -99,7 +101,7 @@ export function TimeCalculator() {
                 <div>
                   <div className="flex justify-between mb-3">
                     <label className="text-sm font-medium text-foreground">
-                      Automatisierungsgrad
+                      {t(locale, `${tKey}.inputs.internationalGuests`) as string}
                     </label>
                     <span className="text-sm font-bold text-action">{inputs.automationRate}%</span>
                   </div>
@@ -112,7 +114,6 @@ export function TimeCalculator() {
                     onChange={(e) => updateInput("automationRate", parseInt(e.target.value))}
                     className="w-full h-2 bg-muted rounded-xl appearance-none cursor-pointer accent-action hover:opacity-80 transition-opacity"
                   />
-                  <p className="text-xs text-foreground-muted mt-2">Typisch sind 50-80% bei Standardprozessen</p>
                 </div>
               </div>
 
@@ -120,13 +121,13 @@ export function TimeCalculator() {
               <div className="flex flex-col justify-center gap-6">
                  <div className="p-6 bg-action-soft border border-action/10 rounded-2xl text-center backdrop-blur-sm">
                    <div className="text-sm text-action font-medium mb-1 uppercase tracking-wide opacity-80">
-                     Gewonnene Stunden / Monat
+                     {t(locale, `${tKey}.outputs.timeSaved`) as string}
                    </div>
                    <div className="text-4xl md:text-5xl font-bold text-action mb-2 tracking-tight">
                      <AnimatedNumber value={outputs.savedHoursPerMonth} /> h
                    </div>
                    <div className="text-xs text-foreground-muted">
-                     Das entspricht ca. {Math.round(outputs.savedHoursPerMonth / 40 * 10) / 10} Arbeitswochen.
+                     {locale === 'de' ? `Das entspricht ca. ${Math.round(outputs.savedHoursPerMonth / 40 * 10) / 10} Arbeitswochen.` : `Equivalent to approx. ${Math.round(outputs.savedHoursPerMonth / 40 * 10) / 10} work weeks.`}
                    </div>
                  </div>
 
@@ -135,12 +136,18 @@ export function TimeCalculator() {
                      €<AnimatedNumber value={outputs.savedCostPerMonth} />
                    </div>
                    <div className="text-xs text-foreground-muted leading-tight">
-                     Geschätzter Gegenwert pro Monat (bei €45/h)
+                     {t(locale, `${tKey}.outputs.monthlyRevenue`) as string}
                    </div>
                  </div>
 
-                 <Button variant="primary" size="lg" className="w-full mt-2 shadow-lg shadow-action/20" asChild href="/check">
-                    {t(locale, "nav.cta")}
+                 <Button 
+                   variant="primary" 
+                   size="lg" 
+                   className="w-full mt-2 shadow-lg shadow-action/20" 
+                   asChild 
+                   href={`/${locale}/check`}
+                 >
+                    {t(locale, "nav.cta") as string}
                  </Button>
               </div>
             </div>

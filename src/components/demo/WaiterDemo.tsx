@@ -42,10 +42,10 @@ export function WaiterDemo() {
       <SpotlightCard className="p-[var(--space-6)] lg:col-span-2">
         <div className="flex items-start justify-between gap-[var(--space-4)]">
           <div>
-            <h4 className="text-lg font-semibold text-foreground">{t(locale, "pages.demo.admin.waiter.h4")}</h4>
-            <p className="mt-1 text-sm text-foreground-muted">{t(locale, "pages.demo.admin.waiter.p")}</p>
+            <h4 className="text-lg font-semibold text-foreground">{t(locale, "pages.demo.admin.waiter.h4") as string}</h4>
+            <p className="mt-1 text-sm text-foreground-muted">{t(locale, "pages.demo.admin.waiter.p") as string}</p>
           </div>
-          <div className="text-xs text-foreground-muted">{t(locale, "pages.demo.admin.waiter.badge")}</div>
+          <div className="text-xs text-foreground-muted">{t(locale, "pages.demo.admin.waiter.badge") as string}</div>
         </div>
 
         <div className="mt-[var(--space-6)] grid gap-[var(--space-3)]">
@@ -66,13 +66,13 @@ export function WaiterDemo() {
                   <div className="min-w-0">
                     <div className="flex items-center gap-[var(--space-3)]">
                       <div className="text-sm font-semibold text-foreground">
-                        {t(locale, "pages.demo.admin.waiter.tableLabel")} {tk.table}
+                        {t(locale, "pages.demo.admin.waiter.tableLabel") as string} {tk.table}
                       </div>
                       <span className={statusBadge(tk.status)}>{statusLabel(tk.status)}</span>
                     </div>
                     <div className="mt-[var(--space-2)] text-sm text-foreground-muted truncate">{tk.summary}</div>
                   </div>
-                  <div className="text-xs text-foreground-muted">{t(locale, "pages.demo.admin.waiter.tapHint")}</div>
+                  <div className="text-xs text-foreground-muted">{t(locale, "pages.demo.admin.waiter.tapHint") as string}</div>
                 </div>
               </button>
             );
@@ -81,8 +81,8 @@ export function WaiterDemo() {
       </SpotlightCard>
 
       <SpotlightCard className="p-[var(--space-6)]">
-        <h4 className="text-lg font-semibold text-foreground">{t(locale, "pages.demo.admin.waiter.actions.h4")}</h4>
-        <p className="mt-1 text-sm text-foreground-muted">{t(locale, "pages.demo.admin.waiter.actions.p")}</p>
+        <h4 className="text-lg font-semibold text-foreground">{t(locale, "pages.demo.admin.waiter.actions.h4") as string}</h4>
+        <p className="mt-1 text-sm text-foreground-muted">{t(locale, "pages.demo.admin.waiter.actions.p") as string}</p>
 
         <div className="mt-[var(--space-6)] grid gap-[var(--space-3)]">
           {(["newOrder", "callWaiter", "requestBill", "takePayment"] as const).map((key) => (
@@ -95,17 +95,17 @@ export function WaiterDemo() {
                 "hover:bg-background-muted/60 transition-colors",
               )}
             >
-              {t(locale, `pages.demo.admin.waiter.actions.buttons.${key}`)}
+              {t(locale, `pages.demo.admin.waiter.actions.buttons.${key}`) as string}
             </button>
           ))}
         </div>
 
         <div className="mt-[var(--space-5)] rounded-[var(--radius-2xl)] border border-border/40 bg-background-muted/40 p-[var(--space-4)]">
           <div className="text-xs font-semibold text-foreground-muted uppercase tracking-wider">
-            {t(locale, "pages.demo.admin.waiter.comingSoon.title")}
+            {t(locale, "pages.demo.admin.waiter.comingSoon.title") as string}
           </div>
           <div className="mt-[var(--space-2)] text-sm text-foreground-muted">
-            {t(locale, "pages.demo.admin.waiter.comingSoon.p")}
+            {t(locale, "pages.demo.admin.waiter.comingSoon.p") as string}
           </div>
         </div>
       </SpotlightCard>

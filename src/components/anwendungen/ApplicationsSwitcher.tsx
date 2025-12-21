@@ -57,20 +57,36 @@ function MediaRenderer({ activeKey }: { activeKey: ApplicationKey }) {
   const app = applications.find(a => a.key === activeKey) || applications[0]
 
   useEffect(() => {
-    setVideoError(false)
-    setImageError(false)
     if (app.videoPath && !shouldReduceMotion) {
+      // Check if video exists before trying to load
+      fetch(app.videoPath, { method: 'HEAD' })
+        .then((response) => {
+          if (response.ok) {
       const video = document.createElement('video')
-      video.src = app.videoPath
+            video.src = app.videoPath!
       video.onloadeddata = () => setHasVideo(true)
       video.onerror = () => {
         setHasVideo(false)
         setVideoError(true)
       }
+          } else {
+            setHasVideo(false)
+            setVideoError(true)
+          }
+        })
+        .catch(() => {
+          setTimeout(() => {
+            setHasVideo(false)
+            setVideoError(true)
+          }, 0)
+        })
     } else {
-      setHasVideo(false)
+      setTimeout(() => {
+        setHasVideo(false)
+        setVideoError(true)
+      }, 0)
     }
-  }, [app.videoPath, activeKey, shouldReduceMotion])
+  }, [app.videoPath, shouldReduceMotion])
 
   // Try video first (if not reduced motion)
   if (hasVideo && app.videoPath && !videoError && !shouldReduceMotion) {
@@ -82,9 +98,20 @@ function MediaRenderer({ activeKey }: { activeKey: ApplicationKey }) {
         loop
         muted
         playsInline
-        onError={() => {
+        preload="metadata"
+        poster={app.imagePath || undefined}
+        onError={(e) => {
+          e.preventDefault()
           setVideoError(true)
           setHasVideo(false)
+        }}
+        onLoadStart={(e) => {
+          // Silently handle load errors
+          const video = e.currentTarget
+          video.onerror = () => {
+            setVideoError(true)
+            setHasVideo(false)
+          }
         }}
       >
         <source src={app.videoPath} type="video/mp4" />
@@ -126,7 +153,6 @@ function MediaRenderer({ activeKey }: { activeKey: ApplicationKey }) {
 
 export function ApplicationsSwitcher() {
   const [activeKey, setActiveKey] = useState<ApplicationKey>('inbox')
-  const shouldReduceMotion = useReducedMotion()
 
   return (
     <Section variant="normal" className="py-24 relative overflow-hidden">
@@ -139,12 +165,12 @@ export function ApplicationsSwitcher() {
           spotlightColor="rgba(var(--accent-rgb), 0.15)"
           withBorderBeam
         >
-          <MediaRenderer activeKey={activeKey} />
+          <MediaRenderer key={activeKey} activeKey={activeKey} />
         </SpotlightCard>
 
         {/* 5 Floating Buttons */}
-        <div className="flex flex-nowrap justify-center items-center gap-2 md:gap-3 overflow-x-auto pb-2 scrollbar-hide">
-          {applications.map((app, idx) => {
+        <div className="flex flex-nowrap justify-center items-center gap-2 md:gap-3 overflow-x-auto pb-2 scrollbar-hide -mx-4 px-4 sm:mx-0 sm:px-0">
+          {applications.map((app) => {
             const isActive = activeKey === app.key
             
             return (

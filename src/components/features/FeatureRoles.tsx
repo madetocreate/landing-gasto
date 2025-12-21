@@ -24,30 +24,30 @@ export function FeatureRoles() {
   const roles = [
     {
       id: "guest",
-      title: t(locale, "pages.features.roles.items.guest.title"),
+      title: t(locale, "pages.features.roles.items.guest.title") as string,
       icon: roleIcons.guest,
-      desc: t(locale, "pages.features.roles.items.guest.desc"),
+      desc: t(locale, "pages.features.roles.items.guest.desc") as string,
       features: t(locale, "pages.features.roles.items.guest.features") as string[],
     },
     {
       id: "kitchen",
-      title: t(locale, "pages.features.roles.items.kitchen.title"),
+      title: t(locale, "pages.features.roles.items.kitchen.title") as string,
       icon: roleIcons.kitchen,
-      desc: t(locale, "pages.features.roles.items.kitchen.desc"),
+      desc: t(locale, "pages.features.roles.items.kitchen.desc") as string,
       features: t(locale, "pages.features.roles.items.kitchen.features") as string[],
     },
     {
       id: "service",
-      title: t(locale, "pages.features.roles.items.service.title"),
+      title: t(locale, "pages.features.roles.items.service.title") as string,
       icon: roleIcons.service,
-      desc: t(locale, "pages.features.roles.items.service.desc"),
+      desc: t(locale, "pages.features.roles.items.service.desc") as string,
       features: t(locale, "pages.features.roles.items.service.features") as string[],
     },
     {
       id: "admin",
-      title: t(locale, "pages.features.roles.items.admin.title"),
+      title: t(locale, "pages.features.roles.items.admin.title") as string,
       icon: roleIcons.admin,
-      desc: t(locale, "pages.features.roles.items.admin.desc"),
+      desc: t(locale, "pages.features.roles.items.admin.desc") as string,
       features: t(locale, "pages.features.roles.items.admin.features") as string[],
     },
   ] as const
@@ -57,10 +57,10 @@ export function FeatureRoles() {
       <Container size="lg">
         <div className="text-center mb-16">
           <h2 className="text-3xl md:text-4xl font-bold tracking-tight mb-4">
-            {t(locale, "pages.features.roles.h2")}
+            {t(locale, "pages.features.roles.h2") as string}
           </h2>
           <p className="text-foreground-muted text-lg max-w-2xl mx-auto">
-            {t(locale, "pages.features.roles.p")}
+            {t(locale, "pages.features.roles.p") as string}
           </p>
         </div>
 

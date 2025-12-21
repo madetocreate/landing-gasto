@@ -2,6 +2,7 @@ import { Section, Container } from "@/components/ui/Section"
 import Image from "next/image"
 import Link from "next/link"
 import { classNames } from "@/lib/classNames"
+import { ArrowRight, CheckCircle2 } from "lucide-react"
 
 interface ApplicationDetail {
   key: string
@@ -18,80 +19,82 @@ interface ApplicationDetail {
 export const applications: ApplicationDetail[] = [
   {
     key: 'inbox',
-    title: 'Intelligenter Posteingang',
-    shortText: 'Alle deine Nachrichten an einem Ort – und nur das Wichtige kommt bei dir an. AKLOW sammelt E-Mails, Anfragen, Support-Nachrichten und Kontaktformulare und erkennt automatisch, worum es geht.',
+    title: 'Posteingang',
+    headline: 'Alles an einem Ort.',
+    shortText: 'E-Mails, WhatsApp, Support – alle Nachrichten fließen in einen Posteingang. Die KI sortiert, fasst zusammen und bereitet Antworten vor.',
     features: [
-      'erkennt dringende Themen',
-      'sortiert nach Wichtigkeit',
-      'fasst Inhalte zusammen',
-      'schlägt Antworten vor',
-      'benachrichtigt dich nur dann, wenn du es willst'
+      'Alle Kanäle in einem Posteingang',
+      'Automatisch nach Wichtigkeit sortiert',
+      'Zusammenfassungen auf einen Blick',
+      'Antwort-Vorschläge per Klick',
+      'Du entscheidest, was rausgeht'
     ],
-    example: 'Du bekommst neue E-Mails, mehrere Nachrichten und eine Support-Anfrage. AKLOW filtert das Entscheidende heraus, erstellt auf Wunsch eine kurze Zusammenfassung und legt dir Antwort-Vorschläge bereit – per Knopfdruck.',
-    result: 'Du verpasst nichts, aber du wirst auch nicht ständig unterbrochen.',
+    example: 'Du öffnest AKLOW und siehst sofort: Was ist wichtig? Was kann warten? Und für die wichtigen Sachen liegen Antwort-Entwürfe bereit.',
+    result: 'Weniger Chaos. Mehr Überblick. Schneller antworten.',
     imagePath: '/media/previews/inbox.jpg',
     href: '/anwendungen/intelligenter-posteingang'
   },
   {
-    key: 'website-telefon',
-    title: 'Website & Telefon Assistent',
-    shortText: 'Verpasse nie wieder eine Anfrage oder einen Termin. AKLOW unterstützt dich auf der Website und am Telefon und erkennt, was deine Kunden wirklich wollen.',
-    features: [
-      'beantwortet häufige Fragen',
-      'erkennt Anliegen und Termine',
-      'sammelt relevante Informationen',
-      'leitet Gespräche gezielt weiter',
-      'merkt sich vorherige Kontakte'
-    ],
-    example: 'Ein Kunde schreibt über die Website oder ruft an. AKLOW erkennt das Anliegen, kennt den Kontext und sorgt dafür, dass die Anfrage richtig ankommt – oder direkt beantwortet wird.',
-    result: 'Deine Kunden fühlen sich verstanden, und du verpasst keine Anfrage mehr.',
-    imagePath: '/media/previews/website-telefon.jpg',
-    href: '/anwendungen/website-telefon'
-  },
-  {
     key: 'dokumente-ordnung',
-    title: 'Dokumente & Ordnung',
+    title: 'Dokumente',
     headline: 'Nie wieder Zettelchaos.',
-    shortText: 'Schmeiß deine Dokumente einfach bei AKLOW rein und bekomme strukturierte Ergebnisse zurück.',
+    shortText: 'Rechnungen, Verträge, Notizen – einfach scannen oder hochladen. Die KI liest, versteht und sortiert. Frag sie, was drin steht.',
     features: [
-      'liest Dateien und PDFs',
-      'erkennt Inhalte und Zusammenhänge',
-      'fasst Informationen zusammen',
-      'ordnet alles dem richtigen Vorgang zu'
+      'PDFs, Scans und Fotos verstehen',
+      'Automatisch dem richtigen Kunden zuordnen',
+      'Inhalte durchsuchbar machen',
+      'Fragen stellen: "Was steht in der Rechnung?"'
     ],
-    example: 'Du lädst Angebote, Rechnungen oder Notizen hoch. AKLOW versteht die Inhalte, bereitet sie auf und macht sie jederzeit wieder auffindbar.',
-    result: 'Weniger Suchen. Mehr Überblick. Alles an einem Ort.',
+    example: 'Du fotografierst eine Rechnung. AKLOW liest sie aus, ordnet sie dem Kunden zu und du kannst später fragen: "Wie viel schuldet mir Firma X?"',
+    result: 'Nie wieder suchen. Alles findbar. Alles verstanden.',
     imagePath: '/media/previews/dokumente-ordnung.jpg',
     href: '/anwendungen/dokumente-ordnung'
   },
   {
     key: 'kunden-vorgaenge',
-    title: 'Kunden & Vorgänge',
-    shortText: 'Behalte den Überblick, ohne ein neues System pflegen zu müssen. AKLOW verbindet Gespräche, Nachrichten und Dokumente und hält den Verlauf sauber zusammen.',
+    title: 'Kunden',
+    shortText: 'Die KI merkt sich alles. Jeder Kontakt, jedes Gespräch, jedes Dokument – immer griffbereit. Kein CRM-Stress.',
     features: [
-      'wer der Kunde ist',
-      'was bereits passiert ist',
-      'welche Dokumente dazugehören',
-      'was als Nächstes ansteht'
+      'Alles zu einem Kunden auf einen Blick',
+      'Automatische Kontakt-Historie',
+      'Verknüpfte Dokumente und Nachrichten',
+      'Erinnerungen und nächste Schritte'
     ],
-    example: 'Du öffnest einen Vorgang und siehst sofort: letzte Nachricht, letzte Entscheidung, nächste Aufgabe.',
-    result: 'Weniger Rückfragen. Weniger Kontextverlust. Mehr Klarheit.',
+    example: 'Ein Kunde ruft an. Du fragst AKLOW: "Was weiß ich über Firma Müller?" – und hast sofort den kompletten Kontext.',
+    result: 'Nie wieder vergessen. Immer vorbereitet. Kunden beeindruckt.',
     imagePath: '/media/previews/kunden-vorgaenge.jpg',
     href: '/anwendungen/kunden-vorgaenge'
   },
   {
     key: 'bewertungen',
     title: 'Bewertungen',
-    shortText: 'Mach dein Business besser – durch echtes Feedback und schnellere Reaktionen. AKLOW hilft dir, Bewertungen einzuholen und auf Feedback zu reagieren, ohne Mehraufwand.',
+    shortText: 'Google-Bewertungen automatisch beantworten. Freundlich, schnell, in deinem Stil. Die KI schreibt, du gibst frei.',
     features: [
-      'erinnert nach Kontakten an Bewertungen',
-      'sammelt Feedback automatisch',
-      'erkennt positives und kritisches Feedback früh'
+      'Neue Bewertungen sofort sehen',
+      'Antwort-Vorschläge in deinem Ton',
+      'Mit einem Klick veröffentlichen',
+      'Trends und Stimmung erkennen'
     ],
-    example: 'Nach einem Termin oder Kontakt fragt AKLOW dezent nach Feedback. Du bekommst Überblick, ohne ständig nachfassen zu müssen.',
-    result: 'Mehr Bewertungen. Bessere Außenwirkung. Mehr Vertrauen.',
+    example: 'Neue 5-Sterne-Bewertung? AKLOW schreibt eine passende Antwort. Du schaust drüber, klickst "Senden" – fertig.',
+    result: 'Mehr Antworten. Bessere Bewertungen. Weniger Aufwand.',
     imagePath: '/media/previews/bewertungen.jpg',
     href: '/anwendungen/bewertungen'
+  },
+  {
+    key: 'website-telefon',
+    title: 'Website & Telefon Bot',
+    headline: 'Upgrade',
+    shortText: '24/7 erreichbar. Die KI beantwortet Fragen auf deiner Website und nimmt Anrufe an. Du verpasst nichts mehr.',
+    features: [
+      'Website-Chat beantwortet Fragen sofort',
+      'Telefon-Bot nimmt Anrufe an',
+      'Termine werden automatisch gebucht',
+      'Wichtiges wird an dich weitergeleitet'
+    ],
+    example: 'Ein Kunde ruft um 22 Uhr an. Der Bot nimmt ab, beantwortet die Frage oder nimmt eine Nachricht auf. Am nächsten Morgen hast du alles im Posteingang.',
+    result: 'Nie wieder verpasste Anfragen. Rund um die Uhr erreichbar.',
+    imagePath: '/media/previews/website-telefon.jpg',
+    href: '/anwendungen/website-telefon'
   }
 ]
 
@@ -99,70 +102,69 @@ export function SingleApplicationSection({ app, index }: { app: ApplicationDetai
   const isReversed = index % 2 === 1
   
   return (
-    <Section id={app.key} variant="normal" className="py-0">
+    <Section id={app.key} variant="normal" className="py-8 sm:py-12 md:py-16">
       <Container size="xl">
-        <div className="rounded-3xl overflow-hidden bg-surface dark:bg-surface/5 border border-border/50 shadow-sm">
+        <div className="rounded-2xl sm:rounded-[3rem] overflow-hidden bg-white border-2 border-stone-100 shadow-2xl shadow-stone-200/50">
           <div className={classNames(
-            "grid md:grid-cols-2 gap-0 items-center",
+            "grid grid-cols-1 md:grid-cols-2 gap-0 items-stretch",
             isReversed ? "md:grid-flow-dense" : ""
           )}>
             {/* Text Content */}
             <div className={classNames(
-              "p-8 md:p-12 lg:p-16 flex flex-col justify-center",
+              "p-6 sm:p-8 md:p-12 lg:p-20 flex flex-col justify-center",
               isReversed ? "md:col-start-2" : ""
             )}>
-              {app.headline && (
-                <h2 className="text-2xl md:text-3xl font-bold mb-4 text-action">
-                  {app.headline}
-                </h2>
-              )}
-              <h3 className="text-3xl md:text-4xl font-bold tracking-tight mb-6">
-                {app.title}
-              </h3>
-              <p className="text-lg text-foreground-muted leading-relaxed mb-8">
-                {app.shortText}
-              </p>
+              <div className="mb-8 sm:mb-12">
+                {app.headline && (
+                  <div className="inline-block px-3 sm:px-4 py-1.5 rounded-full bg-emerald-50 text-action text-[10px] sm:text-xs font-bold uppercase tracking-widest mb-4 sm:mb-6">
+                    {app.headline}
+                  </div>
+                )}
+                <h3 className="text-3xl sm:text-4xl lg:text-5xl font-bold tracking-tighter mb-4 sm:mb-8 text-stone-900 leading-[1.1] break-words">
+                  {app.title}
+                </h3>
+                <p className="text-lg sm:text-xl text-stone-500 font-medium leading-relaxed break-words">
+                  {app.shortText}
+                </p>
+              </div>
 
-              <div className="mb-8">
-                <h4 className="text-sm font-semibold uppercase tracking-wider text-foreground-muted mb-4 opacity-70">
-                  Funktionen
+              <div className="mb-8 sm:mb-12">
+                <h4 className="text-[10px] sm:text-xs font-bold uppercase tracking-widest text-stone-400 mb-4 sm:mb-6">
+                  Highlights
                 </h4>
-                <ul className="space-y-3">
+                <ul className="space-y-3 sm:space-y-4">
                   {app.features.map((feature, fIdx) => (
-                    <li key={fIdx} className="flex items-start">
-                      <span className="text-action mr-3 mt-0.5">•</span>
-                      <span className="text-foreground">{feature}</span>
+                    <li key={fIdx} className="flex items-start gap-3 sm:gap-4">
+                      <div className="mt-1 p-0.5 rounded-full bg-emerald-100 text-action shrink-0">
+                        <CheckCircle2 className="w-4 h-4 sm:w-5 sm:h-5" />
+                      </div>
+                      <span className="text-base sm:text-lg font-medium text-stone-700 break-words">{feature}</span>
                     </li>
                   ))}
                 </ul>
               </div>
 
-              <div className="mt-auto pt-8 border-t border-border/50">
-                <div className="bg-muted/30 -mx-4 -mb-4 p-6 rounded-xl">
-                  <p className="text-sm font-medium text-foreground-muted mb-2 uppercase tracking-wide opacity-70">Ergebnis</p>
-                  <p className="text-lg font-medium text-foreground">
+              <div className="pt-8 sm:pt-10 border-t-2 border-stone-50 mt-4 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-6 sm:gap-8">
+                <div className="flex-1">
+                  <p className="text-[10px] sm:text-xs font-bold text-stone-400 uppercase tracking-widest mb-2">Dein Benefit</p>
+                  <p className="text-lg sm:text-xl font-bold text-stone-900 leading-snug break-words">
                     {app.result}
                   </p>
                 </div>
-              </div>
-
-              <div className="mt-8">
                 <Link
                   href={app.href}
-                  className="inline-flex items-center text-sm font-semibold text-action hover:text-action-hover transition-colors"
+                  className="group inline-flex items-center gap-3 px-6 sm:px-8 py-3.5 sm:py-4 rounded-xl sm:rounded-2xl bg-stone-900 text-white font-bold uppercase tracking-widest text-xs sm:text-sm hover:bg-stone-800 transition-all shadow-lg shadow-stone-200 w-full sm:w-auto justify-center touch-manipulation min-h-[44px]"
                 >
-                  <span className="mr-2">Details ansehen</span>
-                  <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M14 5l7 7m0 0l-7 7m7-7H3" />
-                  </svg>
+                  <span>Details</span>
+                  <ArrowRight className="w-4 h-4 transition-transform group-hover:translate-x-1" />
                 </Link>
               </div>
             </div>
 
             {/* Image */}
             <div className={classNames(
-              "relative aspect-square md:aspect-auto md:h-full min-h-[400px] bg-muted",
-              isReversed ? "md:col-start-1 md:row-start-1" : ""
+              "relative aspect-video sm:aspect-square md:aspect-auto bg-stone-100 min-h-[250px] sm:min-h-[400px]",
+              isReversed ? "md:col-start-1 md:row-start-1 md:border-r-2 border-stone-50" : "md:border-l-2 border-stone-50"
             )}>
               <Image
                 src={app.imagePath}
@@ -170,9 +172,23 @@ export function SingleApplicationSection({ app, index }: { app: ApplicationDetai
                 fill
                 className="object-cover"
                 sizes="(max-width: 768px) 100vw, 50vw"
+                onError={(e) => {
+                  const target = e.target as HTMLImageElement
+                  target.style.display = 'none'
+                }}
               />
-              {/* Overlay Gradient for depth */}
-              <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent pointer-events-none" />
+              {/* Fallback Placeholder */}
+              <div className="absolute inset-0 bg-gradient-to-br from-stone-200/50 via-stone-100/30 to-stone-50 flex items-center justify-center pointer-events-none">
+                <div className="text-center p-8">
+                  <div className="w-16 h-16 rounded-xl bg-stone-200/50 mx-auto mb-4 flex items-center justify-center">
+                    <svg className="w-8 h-8 text-stone-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z" />
+                    </svg>
+                  </div>
+                  <p className="text-sm text-stone-500 font-medium">{app.title}</p>
+                </div>
+              </div>
+              <div className="absolute inset-0 bg-gradient-to-br from-black/20 via-transparent to-transparent pointer-events-none" />
             </div>
           </div>
         </div>
@@ -183,11 +199,10 @@ export function SingleApplicationSection({ app, index }: { app: ApplicationDetai
 
 export function ApplicationDetailSections() {
   return (
-    <div className="space-y-8 md:space-y-12 py-12 md:py-24">
+    <div className="space-y-24 py-24">
       {applications.map((app, idx) => (
         <SingleApplicationSection key={app.key} app={app} index={idx} />
       ))}
     </div>
   )
 }
-

@@ -52,7 +52,7 @@ export function ApplicationsTiles() {
     <Section variant="normal" id="anwendungen" className="relative">
       <Container size="xl">
         <div className="space-y-4">
-          {tiles.map((tile, idx) => (
+          {tiles.map((tile) => (
             <Link
               key={tile.key}
               href={tile.href}

@@ -23,16 +23,16 @@ export function FeatureAnalytics() {
           <div>
             <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-[color:var(--color-inverse-surface)] text-xs font-medium text-[color:var(--color-inverse-fg-muted)] mb-6 border border-[color:var(--color-inverse-border)]">
               <BarChart3 className="w-3 h-3" />
-              <span>{t(locale, "pages.features.analytics.kicker")}</span>
+              <span>{t(locale, "pages.features.analytics.kicker") as string}</span>
             </div>
-            <h2 className="text-4xl font-bold mb-6 tracking-tight">{t(locale, "pages.features.analytics.h2")}</h2>
+            <h2 className="text-4xl font-bold mb-6 tracking-tight">{t(locale, "pages.features.analytics.h2") as string}</h2>
             <p className="text-lg leading-relaxed mb-8 text-[color:var(--color-inverse-fg-muted)]">
-              {t(locale, "pages.features.analytics.p")}
+              {t(locale, "pages.features.analytics.p") as string}
             </p>
             
             <div className="grid grid-cols-2 gap-4">
-              <StatCard label={t(locale, "pages.features.analytics.stats.0.label")} value={t(locale, "pages.features.analytics.stats.0.value")} />
-              <StatCard label={t(locale, "pages.features.analytics.stats.1.label")} value={t(locale, "pages.features.analytics.stats.1.value")} />
+              <StatCard label={t(locale, "pages.features.analytics.stats.0.label") as string} value={t(locale, "pages.features.analytics.stats.0.value") as string} />
+              <StatCard label={t(locale, "pages.features.analytics.stats.1.label") as string} value={t(locale, "pages.features.analytics.stats.1.value") as string} />
             </div>
           </div>
 
@@ -75,9 +75,9 @@ export function FeatureAnalytics() {
                 </div>
                 <div>
                   <div className="text-xs text-[color:var(--color-inverse-fg-muted)]">
-                    {t(locale, "pages.features.analytics.floating.label")}
+                    {t(locale, "pages.features.analytics.floating.label") as string}
                   </div>
-                  <div className="text-sm font-bold">{t(locale, "pages.features.analytics.floating.value")}</div>
+                  <div className="text-sm font-bold">{t(locale, "pages.features.analytics.floating.value") as string}</div>
                 </div>
               </GlassCard>
             </motion.div>

@@ -2,7 +2,7 @@ import { CTASection } from '@/components/ui/CTASection';
 import { FeatureShowcase } from '@/components/sections/FeatureShowcase';
 import { getLocale } from '@/lib/getLocale';
 import { t } from '@/lib/i18n';
-import { AnimatedModulesSection, AnimatedHowToSection } from '@/components/home/AnimatedSections';
+import { AnimatedModulesSection } from '@/components/home/AnimatedSections';
 import { FeatureEcosystem } from '@/components/features/FeatureEcosystem';
 import { FeatureAnalytics } from '@/components/features/FeatureAnalytics';
 import { FeatureRoles } from '@/components/features/FeatureRoles';
@@ -21,17 +21,17 @@ export default async function Features() {
       <Section variant="hero" className="pt-32 pb-24">
         <Container size="lg" className="text-center">
           <h1 className="tracking-tight text-balance mb-8">
-            {t(locale, 'pages.features.h1')}
+            {t(locale, 'pages.features.h1') as string}
           </h1>
           <p className="text-xl md:text-2xl text-foreground-muted prose-wide mx-auto leading-relaxed">
-            {t(locale, 'pages.features.intro')}
+            {t(locale, 'pages.features.intro') as string}
           </p>
         </Container>
       </Section>
 
       {/* 2. Bento Grid (Modules) */}
       <AnimatedModulesSection 
-        title={t(locale, 'pages.features.modules.h2')}
+        title={t(locale, 'pages.features.modules.h2') as string}
         items={t(locale, 'pages.features.modules.items') as Array<{ title: string; text: string }>}
       />
 
@@ -54,9 +54,9 @@ export default async function Features() {
               <div className="w-12 h-12 rounded-2xl bg-accent/10 flex items-center justify-center text-accent mb-6">
                 <MessageSquare className="w-6 h-6" />
               </div>
-              <h2 className="mb-6 tracking-tight text-3xl font-bold">{t(locale, "pages.features.detailBlocks.items.0.h2")}</h2>
+              <h2 className="mb-6 tracking-tight text-3xl font-bold">{t(locale, "pages.features.detailBlocks.items.0.h2") as string}</h2>
               <p className="text-xl text-foreground-muted leading-relaxed prose">
-                {t(locale, "pages.features.detailBlocks.items.0.p")}
+                {t(locale, "pages.features.detailBlocks.items.0.p") as string}
               </p>
             </div>
             <SpotlightCard className="aspect-[4/3] bg-surface p-8 flex flex-col justify-center items-center relative overflow-hidden group">
@@ -84,9 +84,9 @@ export default async function Features() {
               <div className="w-12 h-12 rounded-2xl bg-accent/10 flex items-center justify-center text-accent mb-6">
                 <ChefHat className="w-6 h-6" />
               </div>
-              <h2 className="mb-6 tracking-tight text-3xl font-bold">{t(locale, "pages.features.detailBlocks.items.1.h2")}</h2>
+              <h2 className="mb-6 tracking-tight text-3xl font-bold">{t(locale, "pages.features.detailBlocks.items.1.h2") as string}</h2>
               <p className="text-xl text-foreground-muted leading-relaxed prose">
-                {t(locale, "pages.features.detailBlocks.items.1.p")}
+                {t(locale, "pages.features.detailBlocks.items.1.p") as string}
               </p>
             </div>
             <SpotlightCard className="md:order-1 aspect-[4/3] bg-surface p-8 flex flex-col justify-center items-center relative overflow-hidden group">
@@ -117,9 +117,9 @@ export default async function Features() {
               <div className="w-12 h-12 rounded-2xl bg-accent/10 flex items-center justify-center text-accent mb-6">
                 <CreditCard className="w-6 h-6" />
               </div>
-              <h2 className="mb-6 tracking-tight text-3xl font-bold">{t(locale, "pages.features.detailBlocks.items.2.h2")}</h2>
+              <h2 className="mb-6 tracking-tight text-3xl font-bold">{t(locale, "pages.features.detailBlocks.items.2.h2") as string}</h2>
               <p className="text-xl text-foreground-muted leading-relaxed prose">
-                {t(locale, "pages.features.detailBlocks.items.2.p")}
+                {t(locale, "pages.features.detailBlocks.items.2.p") as string}
               </p>
             </div>
             <SpotlightCard className="aspect-[4/3] bg-surface p-8 flex flex-col justify-center items-center relative overflow-hidden group">
@@ -153,14 +153,14 @@ export default async function Features() {
       {/* 5. Parallax Showcase (Sticky Phone) - Now in second third */}
       <div className="relative py-24 border-t border-border/50">
         <div className="text-center mb-12">
-           <h2 className="text-3xl font-bold tracking-tight">{t(locale, "pages.features.deepDive.h2")}</h2>
-           <p className="text-foreground-muted">{t(locale, "pages.features.deepDive.p")}</p>
+           <h2 className="text-3xl font-bold tracking-tight">{t(locale, "pages.features.deepDive.h2") as string}</h2>
+           <p className="text-foreground-muted">{t(locale, "pages.features.deepDive.p") as string}</p>
         </div>
         <FeatureShowcase />
       </div>
       
       {/* 6. Final CTA */}
-      <CTASection />
+      <CTASection locale={locale} />
     </>
   );
 }

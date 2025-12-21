@@ -1,13 +1,18 @@
+import { ReactNode } from "react"
 import { createMetadata } from "@/lib/metadata"
-import CheckPage from "./page" // Client Component
+import { getLocale } from "@/lib/getLocale"
 
-export const metadata = createMetadata({
-  title: "10-Minuten-Check",
-  description: "Finde heraus, ob und wie KI-Modernisierung bei dir funktioniert.",
-  path: "/check",
-})
+export async function generateMetadata() {
+  const locale = await getLocale()
+  return createMetadata({
+    title: "3-Minuten-Check",
+    description: "Finde heraus, ob und wie KI-Modernisierung bei dir funktioniert.",
+    path: "/check",
+    locale
+  })
+}
 
-export default function Page() {
-  return <CheckPage />
+export default function Layout({ children }: { children: ReactNode }) {
+  return <>{children}</>
 }
 

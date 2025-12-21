@@ -11,9 +11,9 @@ export async function PartnersSection() {
     <Section variant="tight" className="bg-surface dark:bg-background">
       <Container size="lg">
         <div className="text-center mb-10">
-          <h2 className="text-2xl font-bold mb-4">{t(locale, 'pages.home.partners.h2')}</h2>
+          <h2 className="text-2xl font-bold mb-4">{t(locale, 'pages.home.partners.h2') as string}</h2>
           <p className="text-foreground-muted max-w-2xl mx-auto">
-            {t(locale, 'pages.home.partners.p')}
+            {t(locale, 'pages.home.partners.p') as string}
           </p>
         </div>
 
@@ -35,7 +35,7 @@ export async function PartnersSection() {
         </div>
         
         <p className="text-center text-xs text-foreground-muted mt-8 opacity-60">
-          {t(locale, 'pages.home.partners.disclaimer')}
+          {t(locale, 'pages.home.partners.disclaimer') as string}
         </p>
       </Container>
     </Section>

@@ -5,265 +5,176 @@ import { createMetadata } from '@/lib/metadata';
 import Image from 'next/image';
 import Link from 'next/link';
 import { FAQAccordion } from '@/components/ui/FAQAccordion';
-import { Check } from 'lucide-react';
+import { Inbox, Mail, ArrowRight, Sparkles, Filter, CheckCircle2 } from 'lucide-react';
+import { getLocale } from '@/lib/getLocale';
+import { InternalLinks } from '@/components/seo/InternalLinks';
+import type { Metadata } from 'next';
 
-export const metadata = createMetadata({
-  title: 'Intelligenter Posteingang – Anfragen, E‑Mails & Nachrichten mit KI sortieren',
-  description: 'Alle Anfragen an einem Ort. Die KI priorisiert, fasst zusammen und schlägt Antworten vor – ohne komplizierte Dashboards. Du behältst die Kontrolle.',
-  path: '/anwendungen/intelligenter-posteingang',
-});
+export async function generateMetadata(): Promise<Metadata> {
+  const locale = await getLocale();
+  return createMetadata({
+    title: 'Intelligenter Posteingang – E-Mails automatisch sortieren',
+    description: 'KI sortiert, priorisiert und bereitet Antworten vor – bevor Sie Ihre Mails überhaupt lesen. Alle Nachrichten an einem Ort, nur das Wichtige kommt durch.',
+    path: '/anwendungen/intelligenter-posteingang',
+    locale,
+  });
+}
 
-export default function IntelligenterPosteingang() {
+export default async function IntelligenterPosteingang() {
   const faqItems = [
     {
-      q: 'Kann die KI auch „deutsch im Alltag" – ohne Floskeln?',
-      a: 'Ja. Die KI lernt deinen Tonfall und passt sich an. Du kannst Beispiele geben und Feedback geben, damit Antworten natürlich klingen – nicht wie aus der Maschine.',
+      q: 'Welche Kanäle werden unterstützt?',
+      a: 'E-Mail (IMAP/Exchange), Website-Formulare, Chat-Anfragen und Messenger-Dienste.',
     },
     {
-      q: 'Kann ich einstellen, wann ich Benachrichtigungen bekomme?',
-      a: 'Ja. Du bestimmst, wann du informiert wirst: nur bei Dringendem, zu bestimmten Zeiten oder gar nicht. Du behältst die Kontrolle über deine Ruhezeiten.',
+      q: 'Antwortet die KI automatisch?',
+      a: 'Standardmäßig erstellt sie nur Entwürfe. Du entscheidest, welche Standard-Anfragen (z.B. Terminanfragen) nach deinen Regeln automatisch beantwortet werden dürfen.',
     },
     {
-      q: 'Muss ich dafür ein neues System pflegen?',
-      a: 'Nein. Der Posteingang verbindet sich mit deinen bestehenden Kanälen – E-Mail, Kontaktformular, Support. Keine neue Oberfläche, keine doppelte Pflege.',
-    },
-    {
-      q: 'Wie verhindert ihr falsche Antworten?',
-      a: 'Jede Antwort wird dir vorgeschlagen, bevor sie rausgeht. Du prüfst, passt an und sendest. Nichts passiert ohne deine Freigabe. Zusätzlich gibt es klare Regeln, was automatisch gehen darf und was nicht.',
+      q: 'Lernt das System mit?',
+      a: 'Ja. Jedes Mal, wenn du einen Entwurf korrigierst, lernt die KI deinen Stil und deine spezifischen Geschäftsregeln besser kennen.',
     },
   ];
 
   return (
-    <>
-      {/* Hero - Split Layout */}
-      <Section variant="hero" className="pt-32 pb-20">
+    <div className="bg-white min-h-screen">
+      {/* Hero */}
+      <Section variant="hero" className="pt-40 pb-24 relative overflow-hidden">
+        <div className="absolute top-0 right-0 w-[600px] h-[600px] bg-amber-50/50 rounded-full blur-3xl -z-10 translate-x-1/2 -translate-y-1/2" />
+        
         <Container size="lg">
-          <div className="grid md:grid-cols-2 gap-16 items-center">
-            <div>
-              <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight mb-6">
-                Intelligenter Posteingang
+          <div className="grid lg:grid-cols-2 gap-16 items-center">
+            <div className="relative z-10">
+              <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-stone-100 text-stone-600 text-xs font-bold uppercase tracking-[0.2em] mb-8">
+                <Inbox className="w-4 h-4 text-amber-500" />
+                Inbox Management 2.0
+              </div>
+              <h1 className="text-6xl md:text-8xl font-bold tracking-tighter mb-8 leading-[0.9] text-stone-900">
+                Postfach <br />
+                <span className="text-amber-500 underline decoration-amber-100 decoration-8 underline-offset-8">befreien.</span>
               </h1>
-              <p className="text-lg md:text-xl text-foreground-muted leading-relaxed mb-6">
-                Alles landet an einem Ort: E‑Mails, Kontaktformulare, Support-Nachrichten und Rückfragen.
-                Die KI erkennt, worum es geht, priorisiert automatisch und legt dir Zusammenfassungen und Antwortvorschläge bereit.
-                Du entscheidest, was rausgeht – und wann du benachrichtigt wirst.
+              <p className="text-xl md:text-2xl text-stone-500 leading-relaxed max-w-xl font-medium mb-10">
+                KI sortiert, priorisiert und bereitet Antworten vor – bevor du deine Mails überhaupt liest. Hol dir die Kontrolle über deinen Tag zurück.
               </p>
-              
-              {/* Mini-Highlights */}
-              <div className="flex flex-wrap gap-3">
-                <span className="px-3 py-1.5 rounded-full bg-action-soft text-action text-sm font-medium">Wichtiges zuerst</span>
-                <span className="px-3 py-1.5 rounded-full bg-action-soft text-action text-sm font-medium">Antworten per Knopfdruck</span>
-                <span className="px-3 py-1.5 rounded-full bg-action-soft text-action text-sm font-medium">Zusammenfassungen statt Suchen</span>
-                <span className="px-3 py-1.5 rounded-full bg-action-soft text-action text-sm font-medium">Wiedervorlagen, wenn es zählt</span>
+              <div className="flex flex-col sm:flex-row gap-4">
+                <Button variant="primary" size="lg" className="h-16 px-10 rounded-2xl text-xl font-bold bg-amber-500 hover:bg-amber-600 shadow-amber-200/50" asChild href="/check">
+                  <span>Jetzt Check starten</span>
+                </Button>
               </div>
             </div>
-            <div className="relative aspect-[4/3] rounded-2xl overflow-hidden bg-muted/30 border border-border/50">
-              <Image
-                src="/media/previews/inbox.jpg"
-                alt="Intelligenter Posteingang"
-                fill
-                className="object-cover"
-                sizes="(max-width: 768px) 100vw, 50vw"
-              />
-              <div className="absolute inset-0 bg-gradient-to-br from-[#1F2937]/20 to-[#111827]/40" />
+            <div className="relative group">
+              <div className="absolute -inset-4 bg-amber-100/50 rounded-[3rem] blur-2xl group-hover:bg-amber-200/50 transition-colors duration-700" />
+              <div className="relative aspect-square rounded-[3rem] overflow-hidden border-8 border-white shadow-2xl">
+                <Image
+                  src="/media/previews/intelligenter-posteingang.jpg"
+                  alt="Posteingang"
+                  fill
+                  className="object-cover transition-transform duration-700 group-hover:scale-105"
+                  sizes="(max-width: 768px) 100vw, 50vw"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-amber-900/40 via-transparent to-transparent" />
+              </div>
             </div>
           </div>
         </Container>
       </Section>
 
-      {/* Was dich im Alltag ausbremst */}
-      <Section variant="normal">
+      <Section variant="normal" className="py-24 bg-stone-50">
         <Container size="lg">
-          <div className="max-w-3xl mb-16">
-            <h2 className="text-3xl md:text-4xl font-bold tracking-tight mb-6">
-              Was dich im Alltag ausbremst
-            </h2>
-            <p className="text-lg text-foreground-muted leading-relaxed mb-6">
-              Wenn Anfragen über mehrere Kanäle reinkommen, passiert immer dasselbe:
-              Man springt hin und her, sucht Informationen, vergisst Follow-ups und beantwortet Dinge doppelt.
-              Das kostet Zeit – und oft auch Aufträge.
-            </p>
-            <ul className="space-y-3">
-              <li className="flex items-start gap-3 text-foreground-muted">
-                <span className="text-action mr-2 mt-1">•</span>
-                <span>Nachrichten verteilen sich auf zu viele Kanäle</span>
-              </li>
-              <li className="flex items-start gap-3 text-foreground-muted">
-                <span className="text-action mr-2 mt-1">•</span>
-                <span>Wichtiges geht im „Rauschen" unter</span>
-              </li>
-              <li className="flex items-start gap-3 text-foreground-muted">
-                <span className="text-action mr-2 mt-1">•</span>
-                <span>Rückfragen kosten jedes Mal Kontext</span>
-              </li>
-              <li className="flex items-start gap-3 text-foreground-muted">
-                <span className="text-action mr-2 mt-1">•</span>
-                <span>Antworten dauern länger als nötig</span>
-              </li>
-              <li className="flex items-start gap-3 text-foreground-muted">
-                <span className="text-action mr-2 mt-1">•</span>
-                <span>Wiedervorlagen passieren per Bauchgefühl</span>
-              </li>
-            </ul>
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+            {[
+              { 
+                title: 'Smarte Sortierung', 
+                desc: 'KI erkennt Themen und Dringlichkeit sofort.', 
+                icon: Filter,
+                color: 'bg-amber-50 text-amber-600'
+              },
+              { 
+                title: 'Antwort-Entwürfe', 
+                desc: 'Perfekt vorbereitete Mails in deinem persönlichen Ton.', 
+                icon: Mail,
+                color: 'bg-blue-50 text-blue-600'
+              },
+              { 
+                title: 'Vorgangs-Zuordnung', 
+                desc: 'Jede Mail landet automatisch im richtigen Projekt.', 
+                icon: CheckCircle2,
+                color: 'bg-emerald-50 text-emerald-600'
+              },
+            ].map((item, i) => (
+              <SpotlightCard key={i} className="p-10 rounded-[2.5rem] bg-white border-2 border-stone-100 hover:border-amber-200 transition-all duration-500">
+                <div className={`w-16 h-16 rounded-2xl ${item.color} flex items-center justify-center mb-8 shadow-sm`}>
+                  <item.icon className="w-8 h-8" />
+                </div>
+                <h3 className="text-2xl font-bold mb-4 tracking-tight">{item.title}</h3>
+                <p className="text-stone-500 leading-relaxed">{item.desc}</p>
+              </SpotlightCard>
+            ))}
           </div>
+        </Container>
+      </Section>
 
-          {/* So wird daraus ein ruhiger Morgen */}
-          <div className="max-w-3xl mb-16">
-            <h2 className="text-3xl md:text-4xl font-bold tracking-tight mb-6">
-              So wird daraus ein ruhiger Morgen
-            </h2>
-            <p className="text-lg text-foreground-muted leading-relaxed">
-              Stell dir vor: Du öffnest den Posteingang und siehst sofort, was heute wirklich wichtig ist.
-              Die KI hat schon sortiert, zusammengefasst und passende Antwortentwürfe vorbereitet.
-              Du klickst dich nicht durch E-Mail-Ketten – du triffst Entscheidungen.
-            </p>
-          </div>
-
-          {/* Was der Posteingang automatisch übernimmt */}
-          <div className="mb-16">
-            <h2 className="text-3xl md:text-4xl font-bold tracking-tight mb-4">
-              Was der Posteingang automatisch übernimmt
-            </h2>
-            <p className="text-lg text-foreground-muted mb-8 max-w-3xl">
-              Nicht „magisch", sondern nachvollziehbar – mit klaren Regeln.
-            </p>
-            <div className="grid md:grid-cols-2 gap-6">
-              <div className="flex items-start gap-3">
-                <Check className="w-5 h-5 text-action shrink-0 mt-0.5" strokeWidth={2.5} />
-                <div>
-                  <h3 className="font-semibold text-foreground mb-1">Kanal-Zusammenführung</h3>
-                  <p className="text-sm text-foreground-muted">Alles landet im gleichen Strom</p>
-                </div>
-              </div>
-              <div className="flex items-start gap-3">
-                <Check className="w-5 h-5 text-action shrink-0 mt-0.5" strokeWidth={2.5} />
-                <div>
-                  <h3 className="font-semibold text-foreground mb-1">Erkennen & Einordnen</h3>
-                  <p className="text-sm text-foreground-muted">Anliegen, Dringlichkeit, Thema</p>
-                </div>
-              </div>
-              <div className="flex items-start gap-3">
-                <Check className="w-5 h-5 text-action shrink-0 mt-0.5" strokeWidth={2.5} />
-                <div>
-                  <h3 className="font-semibold text-foreground mb-1">Zusammenfassen</h3>
-                  <p className="text-sm text-foreground-muted">kurze Übersicht statt langer Threads</p>
-                </div>
-              </div>
-              <div className="flex items-start gap-3">
-                <Check className="w-5 h-5 text-action shrink-0 mt-0.5" strokeWidth={2.5} />
-                <div>
-                  <h3 className="font-semibold text-foreground mb-1">Antwortvorschläge</h3>
-                  <p className="text-sm text-foreground-muted">passend zum Anliegen, in deinem Ton</p>
-                </div>
-              </div>
-              <div className="flex items-start gap-3">
-                <Check className="w-5 h-5 text-action shrink-0 mt-0.5" strokeWidth={2.5} />
-                <div>
-                  <h3 className="font-semibold text-foreground mb-1">Zuordnen</h3>
-                  <p className="text-sm text-foreground-muted">Kunde/Vorgang/Dokumente verknüpfen</p>
-                </div>
-              </div>
-              <div className="flex items-start gap-3">
-                <Check className="w-5 h-5 text-action shrink-0 mt-0.5" strokeWidth={2.5} />
-                <div>
-                  <h3 className="font-semibold text-foreground mb-1">Wiedervorlage</h3>
-                  <p className="text-sm text-foreground-muted">wenn jemand nicht antwortet oder etwas offen bleibt</p>
-                </div>
-              </div>
-              <div className="flex items-start gap-3">
-                <Check className="w-5 h-5 text-action shrink-0 mt-0.5" strokeWidth={2.5} />
-                <div>
-                  <h3 className="font-semibold text-foreground mb-1">Benachrichtigen</h3>
-                  <p className="text-sm text-foreground-muted">nur wenn du es willst (z. B. „nur dringend")</p>
-                </div>
-              </div>
-              <div className="flex items-start gap-3">
-                <Check className="w-5 h-5 text-action shrink-0 mt-0.5" strokeWidth={2.5} />
-                <div>
-                  <h3 className="font-semibold text-foreground mb-1">Übergaben</h3>
-                  <p className="text-sm text-foreground-muted">wenn ihr zu zweit/zu fünft seid, sieht jeder sofort den Stand</p>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          {/* Beispiel aus dem Alltag */}
-          <div className="mb-16">
-            <h2 className="text-3xl md:text-4xl font-bold tracking-tight mb-6">
-              Beispiel aus dem Alltag
-            </h2>
-            <SpotlightCard className="p-8 md:p-12" spotlightColor="rgba(var(--action-rgb), 0.1)">
-              <h3 className="text-2xl font-bold mb-4">Montagmorgen, ohne Chaos</h3>
-              <p className="text-lg text-foreground-muted leading-relaxed">
-                Es kommen drei Dinge gleichzeitig rein: eine neue Anfrage, eine Rückfrage zu einem Angebot und ein Support-Thema.
-                Die KI ordnet alles ein, markiert das Dringende, legt dir eine Kurzfassung hin und schlägt Antworten vor.
-                Du musst nicht suchen – du arbeitest ab.
-              </p>
-            </SpotlightCard>
-          </div>
-
-          {/* Kontrolle statt Autopilot */}
-          <div className="mb-16">
-            <h2 className="text-3xl md:text-4xl font-bold tracking-tight mb-6">
-              Kontrolle statt Autopilot
-            </h2>
-            <p className="text-lg text-foreground-muted leading-relaxed mb-6">
-              Automatisierung hilft nur dann, wenn du sie steuern kannst.
-              Darum gibt es klare Regeln, Freigaben und Nachvollziehbarkeit.
-              Auf Wunsch gehen Vorschläge erst raus, wenn du sie freigibst.
-            </p>
-            <ul className="space-y-3">
-              <li className="flex items-start gap-3 text-foreground-muted">
-                <span className="text-action mr-2 mt-1">•</span>
-                <span>Freigabe statt „einfach senden"</span>
-              </li>
-              <li className="flex items-start gap-3 text-foreground-muted">
-                <span className="text-action mr-2 mt-1">•</span>
-                <span>Regeln pro Kanal/Thema</span>
-              </li>
-              <li className="flex items-start gap-3 text-foreground-muted">
-                <span className="text-action mr-2 mt-1">•</span>
-                <span>Nachvollziehbarkeit (was wurde warum vorgeschlagen)</span>
-              </li>
-            </ul>
-          </div>
-
-          {/* CTA */}
-          <div className="bg-background-muted rounded-2xl p-8 md:p-12 mb-16 text-center">
-            <h2 className="text-2xl md:text-3xl font-bold mb-4">
-              Willst du sehen, wie das bei dir aussehen kann?
-            </h2>
-            <p className="text-lg text-foreground-muted mb-8 max-w-2xl mx-auto">
-              Wir schauen uns kurz an, welche Kanäle du hast – und was sich realistisch automatisieren lässt.
-            </p>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center mb-8">
-              <Button variant="primary" size="lg" asChild href="/check">
-                10-Minuten-Check
-              </Button>
-              <Button variant="secondary" size="lg" asChild href="/kontakt">
-                Kontakt
-              </Button>
-            </div>
-            <div className="flex flex-wrap justify-center gap-4 text-sm text-foreground-muted">
-              <Link href="/anwendungen" className="hover:text-action transition-colors">
-                Zurück zu Anwendungen
-              </Link>
-              <span>•</span>
-              <Link href="/fundament" className="hover:text-action transition-colors">
-                Zum Fundament
-              </Link>
-            </div>
-          </div>
-
-          {/* FAQ */}
-          <div className="mb-16">
-            <h2 className="text-3xl md:text-4xl font-bold tracking-tight mb-8">
+      <Section variant="normal" className="py-32">
+        <Container size="lg">
+          <div className="max-w-4xl mx-auto">
+            <h2 className="text-4xl md:text-6xl font-bold tracking-tighter mb-16 text-center">
               Häufige Fragen
             </h2>
             <FAQAccordion items={faqItems} />
           </div>
         </Container>
       </Section>
-    </>
+
+      <Section variant="normal" className="pb-32">
+        <Container size="lg">
+          <div className="p-12 md:p-20 rounded-[4rem] bg-stone-900 text-white relative overflow-hidden text-center group">
+            <div className="absolute top-0 right-0 w-96 h-96 bg-amber-500 opacity-10 blur-[120px] group-hover:opacity-20 transition-opacity duration-700" />
+            <div className="relative z-10">
+              <Sparkles className="w-16 h-16 text-amber-400 mx-auto mb-10" />
+              <h2 className="text-4xl md:text-7xl font-bold tracking-tighter mb-8 leading-none">
+                Zeit für <br className="hidden md:block" /> Inbox Zero.
+              </h2>
+              <p className="text-xl md:text-2xl text-stone-400 max-w-2xl mx-auto mb-12 font-medium">
+                Schluss mit dem Mail-Chaos. Lass uns in 3 Minuten besprechen, wie wir deinen Posteingang beruhigen.
+              </p>
+              <div className="flex flex-col sm:flex-row justify-center gap-6">
+                <Button variant="primary" size="lg" className="h-16 px-12 rounded-2xl text-xl font-bold bg-amber-600 hover:bg-amber-700 shadow-xl shadow-amber-900/20 hover:scale-105 transition-transform" asChild href="/check">
+                  <span>Check starten</span>
+                </Button>
+                <Link href="/anwendungen" className="inline-flex items-center gap-2 text-white/60 hover:text-white font-bold transition-colors">
+                  Alle Anwendungen sehen <ArrowRight className="w-5 h-5" />
+                </Link>
+              </div>
+            </div>
+          </div>
+        </Container>
+      </Section>
+      
+      <InternalLinks
+        links={[
+          {
+            href: '/fundament/verstehen-einordnen',
+            label: 'Verstehen & Einordnen',
+            description: 'Wie KI Nachrichten kategorisiert',
+          },
+          {
+            href: '/fundament/verbinden-weitergeben',
+            label: 'Verbinden & Weitergeben',
+            description: 'Wie verschiedene Kanäle verbunden werden',
+          },
+          {
+            href: '/wissen/erste-schritte',
+            label: 'Erste Schritte',
+            description: 'So starten Sie mit KI',
+          },
+          {
+            href: '/preise',
+            label: 'Preise',
+            description: 'Transparente Preise für KI-Modernisierung',
+          },
+        ]}
+        title="Weiterführende Informationen"
+      />
+    </div>
   );
 }

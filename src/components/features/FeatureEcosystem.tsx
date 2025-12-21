@@ -19,10 +19,10 @@ export function FeatureEcosystem() {
       <Container size="lg">
         <div className="text-center mb-20">
           <h2 className="text-3xl md:text-4xl font-bold tracking-tight mb-4">
-            {t(locale, "pages.features.ecosystem.h2")}
+            {t(locale, "pages.features.ecosystem.h2") as string}
           </h2>
           <p className="text-lg max-w-2xl mx-auto text-[color:var(--color-inverse-fg-muted)]">
-            {t(locale, "pages.features.ecosystem.p")}
+            {t(locale, "pages.features.ecosystem.p") as string}
           </p>
         </div>
 
@@ -36,16 +36,16 @@ export function FeatureEcosystem() {
             <div className="text-center">
               <span className="text-3xl font-bold text-accent">G</span>
               <p className="text-[10px] uppercase tracking-widest font-semibold mt-1">
-                {t(locale, "pages.features.ecosystem.core")}
+                {t(locale, "pages.features.ecosystem.core") as string}
               </p>
             </div>
           </div>
 
           {/* Orbiting Items */}
-          <FloatingNode icon={Database} label={t(locale, "pages.features.ecosystem.nodes.0")} angle={0} radius={200} delay={0} />
-          <FloatingNode icon={Share2} label={t(locale, "pages.features.ecosystem.nodes.1")} angle={90} radius={200} delay={1} />
-          <FloatingNode icon={Layers} label={t(locale, "pages.features.ecosystem.nodes.2")} angle={180} radius={200} delay={2} />
-          <FloatingNode icon={Zap} label={t(locale, "pages.features.ecosystem.nodes.3")} angle={270} radius={200} delay={3} />
+          <FloatingNode icon={Database} label={t(locale, "pages.features.ecosystem.nodes.0") as string} angle={0} radius={200} delay={0} />
+          <FloatingNode icon={Share2} label={t(locale, "pages.features.ecosystem.nodes.1") as string} angle={90} radius={200} delay={1} />
+          <FloatingNode icon={Layers} label={t(locale, "pages.features.ecosystem.nodes.2") as string} angle={180} radius={200} delay={2} />
+          <FloatingNode icon={Zap} label={t(locale, "pages.features.ecosystem.nodes.3") as string} angle={270} radius={200} delay={3} />
         </div>
       </Container>
     </Section>

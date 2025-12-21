@@ -5,8 +5,13 @@ import { ConciergeLauncher } from './ConciergeLauncher';
 import { ConciergePanel } from './ConciergePanel';
 import type { ConciergeMode } from './ModeSwitcher';
 import { usePathname } from 'next/navigation';
+import { Locale } from '@/lib/i18n';
 
-export function Concierge() {
+interface ConciergeProps {
+  locale: Locale;
+}
+
+export function Concierge({ locale }: ConciergeProps) {
   const [isOpen, setIsOpen] = useState(false);
   const [showHint, setShowHint] = useState(false);
   const [hintShown, setHintShown] = useState(() => {
@@ -81,6 +86,7 @@ export function Concierge() {
         isOpen={isOpen}
         onClose={handleClose}
         initialMode={initialMode}
+        locale={locale}
       />
     </>
   );

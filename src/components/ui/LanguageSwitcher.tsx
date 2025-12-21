@@ -12,12 +12,16 @@ const FLAGS: Record<Locale, string> = {
   de: "🇩🇪",
   en: "🇺🇸",
   es: "🇪🇸",
+  fr: "🇫🇷",
+  it: "🇮🇹",
 }
 
 const LABELS: Record<Locale, string> = {
   de: "Deutsch",
   en: "English",
   es: "Español",
+  fr: "Français",
+  it: "Italiano",
 }
 
 export function LanguageSwitcher() {

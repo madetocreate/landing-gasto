@@ -1,6 +1,6 @@
 'use client';
 
-import { useState, useEffect, useRef } from 'react';
+import { useState, useEffect, useRef, useMemo } from 'react';
 import { ConciergeMode } from './ModeSwitcher';
 import { StaticWizardProvider } from './providers/StaticWizardProvider';
 import type { ChatMessage, ChatContext } from './providers/ChatProvider';
@@ -8,31 +8,34 @@ import { WizardFlow } from './WizardFlow';
 import { OnboardingWizard } from './OnboardingWizard';
 import { classNames } from '@/lib/classNames';
 import Link from 'next/link';
+import { Locale } from '@/lib/i18n';
 
 interface ConciergeChatProps {
   mode: ConciergeMode;
   pathname: string;
+  locale: Locale;
 }
 
-export function ConciergeChat({ mode, pathname }: ConciergeChatProps) {
+export function ConciergeChat({ mode, pathname, locale }: ConciergeChatProps) {
   const [messages, setMessages] = useState<ChatMessage[]>([]);
   const [input, setInput] = useState('');
   const [isLoading, setIsLoading] = useState(false);
   const [wizardState, setWizardState] = useState<{ type: 'support' | 'onboarding'; category?: string } | null>(null);
   const messagesEndRef = useRef<HTMLDivElement>(null);
-  const provider = new StaticWizardProvider();
+  
+  const provider = useMemo(() => new StaticWizardProvider(), []);
 
-  const context: ChatContext = {
+  const context = useMemo((): ChatContext => ({
     currentPage: pathname,
-    scrollDepth: 0, // Could be enhanced with scroll tracking
-    language: 'de',
-  };
+    scrollDepth: 0,
+    language: locale,
+  }), [pathname, locale]);
 
   useEffect(() => {
     // Initialize with first message
     const initialMessage = provider.getInitialMessage(mode, context);
     setMessages([initialMessage]);
-  }, [mode]);
+  }, [mode, provider, context]);
 
   useEffect(() => {
     messagesEndRef.current?.scrollIntoView({ behavior: 'smooth' });

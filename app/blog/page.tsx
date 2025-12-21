@@ -1,5 +1,4 @@
 import { Section, Container } from '@/components/ui/Section';
-import Image from 'next/image';
 import Link from 'next/link';
 
 const posts = [

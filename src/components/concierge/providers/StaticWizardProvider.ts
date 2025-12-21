@@ -98,7 +98,7 @@ export class StaticWizardProvider implements ChatProvider {
               content: 'Fertige Lösungen sind oft in 14 Tagen live. Individuelle Integrationen hängen vom Umfang ab, starten aber meist mit einem schnellen Piloten.',
               timestamp: Date.now(),
               actions: [
-                { id: 'check', label: '10-Minuten-Check machen', type: 'link', href: '/check' },
+                { id: 'check', label: '3-Minuten-Check machen', type: 'link', href: '/check' },
               ],
             },
           };
@@ -246,7 +246,7 @@ export class StaticWizardProvider implements ChatProvider {
           : [
             { id: 'what-is', label: 'Was ist AKLOW?', type: 'button', value: 'Was ist das?' },
             { id: 'anwendungen', label: 'Anwendungen?', type: 'link', href: '/anwendungen' },
-            { id: 'check', label: '10-Min-Check', type: 'link', href: '/check' },
+            { id: 'check', label: '3-Minuten-Check', type: 'link', href: '/check' },
           ],
       };
     }

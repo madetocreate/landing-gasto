@@ -1,8 +1,9 @@
 import { MetadataRoute } from 'next';
-
-const baseUrl = process.env.NEXT_PUBLIC_BASE_URL || 'https://aklow.com';
+import { getBaseUrl } from '@/lib/metadata';
 
 export default function robots(): MetadataRoute.Robots {
+  const baseUrl = getBaseUrl();
+  
   return {
     rules: {
       userAgent: '*',
@@ -10,6 +11,7 @@ export default function robots(): MetadataRoute.Robots {
       disallow: ['/api/', '/admin/'],
     },
     sitemap: `${baseUrl}/sitemap.xml`,
+    host: baseUrl,
   };
 }
 

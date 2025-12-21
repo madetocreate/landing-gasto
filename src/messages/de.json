@@ -1,39 +1,41 @@
 {
   "brand": {
     "name": "AKLOW",
-    "tagline": "KI-Modernisierung für KMU"
+    "tagline": "Dein KI-Assistent fürs Business"
   },
   "nav": {
     "top": {
-      "home": "KI-Modernisierung",
-      "applications": "Anwendungen",
-      "fundament": "Fundament",
+      "home": "Produkt",
+      "applications": "Funktionen",
+      "fundament": "Technologie",
       "pricing": "Preise",
       "contact": "Kontakt"
     },
-    "cta": "10-Minuten-Check",
+    "cta": "Demo starten",
     "drawer": {
       "title": "Menü",
       "groups": {
-        "product": "Lösungen",
-        "starterkits": "Starterkits",
+        "product": "Produkt",
+        "starterkits": "Funktionen",
+        "features": "Funktionen",
         "knowledge": "Wissen",
         "company": "Unternehmen",
         "legal": "Rechtliches"
       },
       "links": {
         "home": "Home",
-        "starterkits": "Alle Starterkits",
-        "features": "Gastro Starter",
+        "starterkits": "Alle Funktionen",
+        "features": "Funktionen",
+        "demo_view": "Demo ansehen",
         "pricing": "Preise",
-        "check": "10-Minuten-Check",
-        "demo": "Gastro-Demo",
-        "cases": "Cases",
+        "check": "Demo starten",
+        "demo": "Demo",
+        "cases": "Ergebnisse",
         "contact": "Kontakt",
-        "feat_ordering": "Bestellen (Chat & Kiosk)",
-        "feat_kds": "Küche & Bar (KDS)",
-        "feat_poslite": "POS-Lite",
-        "feat_service": "Service (Warteschlange)",
+        "feat_ordering": "Posteingang",
+        "feat_kds": "Dokumente",
+        "feat_poslite": "Kunden",
+        "feat_service": "Bewertungen",
         "kb_home": "Wissensbasis",
         "kb_getting_started": "Erste Schritte",
         "kb_faq": "FAQ",
@@ -49,29 +51,31 @@
   "footer": {
     "columns": {
       "menu": "Menü",
-      "applications": "Anwendungen",
+      "applications": "Funktionen",
       "company": "Unternehmen",
       "knowledge": "Wissenshub"
     },
     "links": {
-      "home": "KI-Modernisierung",
-      "applications": "Anwendungen",
-      "fundament": "Fundament",
+      "home": "Produkt",
+      "applications": "Funktionen",
+      "fundament": "Technologie",
       "pricing": "Preise",
       "contact": "Kontakt",
-      "app_inbox": "Intelligenter Posteingang",
-      "app_website": "Website & Telefon Assistent",
-      "app_documents": "Dokumente & Ordnung",
+      "app_inbox": "Posteingang",
+      "app_website": "Website & Telefon Bot",
+      "app_documents": "Dokumente",
       "app_reviews": "Bewertungen",
-      "app_customers": "Kunden & Vorgänge",
+      "app_customers": "Kunden",
       "app_placeholder": "",
       "about": "Über uns",
       "roadmap": "Roadmap",
       "status": "Status & Updates",
+      "jobs": "Jobs",
+      "partner": "Partner",
       "values": "Haltung & Verantwortung",
       "knowledge_hub": "Wissenshub",
       "getting_started": "Erste Schritte",
-      "system": "So funktioniert das System",
+      "system": "So funktioniert's",
       "ki_alltag": "KI im Alltag",
       "security": "Sicherheit",
       "faq": "FAQ"
@@ -86,10 +90,10 @@
     "fineprint": "© {year} {company}. Alle Rechte vorbehalten."
   },
   "common": {
-    "cta_demo": "Demo buchen",
+    "cta_demo": "Demo starten",
     "cta_contact": "Kontakt",
     "cta_pricing": "Preise ansehen",
-    "cta_features": "Features ansehen",
+    "cta_features": "Funktionen ansehen",
     "cta_back": "Zurück",
     "cta_read_more": "Mehr erfahren",
     "cta_open": "Öffnen",
@@ -103,77 +107,79 @@
   "pages": {
     "home": {
       "meta": {
-        "title": "KI-Modernisierung – ohne Tool-Chaos. | AKLOW",
-        "description": "Wir modernisieren kleine und mittlere Unternehmen mit KI: Startpakete, Integration und laufender Betrieb. Schnell live, messbar besser – ohne dass dein Team neue Software lernen muss."
+        "title": "AKLOW – Dein KI-Assistent fürs Business",
+        "description": "Alles an einem Ort. Ein Chat. Eine KI. E-Mails, Dokumente, Kunden, Bewertungen – sag der KI, was du brauchst. Sie macht's."
       },
       "hero": {
-        "badge": "Neu: KI-Modernisierung",
-        "trustLine": "Vertrauen von modernen KMU",
-        "kpiTitle": "+24% Effizienz",
-        "kpiSub": "vs. letzter Monat",
-        "h1": "KI-Modernisierung ohne Tool-Chaos.",
-        "sub": "Wir modernisieren Dein Business mit KI. Praxisnah, schnell startklar und messbar besser – ohne dass Du Dir Sorgen machen musst oder Deinen Alltag umkrempelst.\n\nDu arbeitest weiter wie gewohnt.\nDie KI übernimmt im Hintergrund das, was Dich heute Zeit kostet.",
-        "ctaPrimary": "10-Minuten-Check",
-        "ctaSecondary": "Anwendungen ansehen",
+        "badge": "Dein KI-Assistent",
+        "trustLine": "Vertraut von Unternehmern wie dir",
+        "kpiTitle": "−3h/Tag",
+        "kpiSub": "weniger Routine",
+        "h1": "Alles an einem Ort.",
+        "h1Line1": "Alles an einem Ort.",
+        "h1Line2": "Ein Chat. Eine KI.",
+        "sub": "E-Mails, Nachrichten, Dokumente, Kunden – alles fließt in deinen Posteingang. Sag der KI, was du brauchst. Sie macht's.\n\nNie wieder Zettelchaos.\nNie wieder 5 Apps gleichzeitig.",
+        "ctaPrimary": "Demo starten",
+        "ctaSecondary": "Funktionen ansehen",
         "bullets": [
-          "Live in 14 Tagen",
-          "Ohne neue Software-Umstellung",
-          "Sicher & kontrollierbar"
+          "Alles per Chat steuern",
+          "Dokumente automatisch verstehen",
+          "Sofort einsatzbereit"
         ]
       },
       "featureShowcase": {
         "items": [
-          "Chat-first Bestellen (Buttons statt Tippen)",
-          "Mehrsprachig (DE/EN/ES)",
-          "Küche & Bar getrennt (Stations-KDS)",
-          "POS-Lite (Floor, Kasse, Split)",
-          "Service Inbox (Kellner / Rechnung / Problem)",
-          "Menü-Import (Website/PDF/Fotos)"
+          "Alle Nachrichten an einem Ort",
+          "Dokumente scannen & verstehen",
+          "Kunden & Vorgänge im Blick",
+          "Bewertungen automatisch beantworten",
+          "Telefon-Bot (Upgrade)",
+          "Website-Bot (Upgrade)"
         ],
         "cta": "Demo ansehen"
       },
       "problemSolution": {
         "problem": {
-          "h2": "Das Problem im Alltag",
-          "p": "Zu viele Anfragen.\nZu viele Unterbrechungen.\nZu wenig Zeit für das, was wirklich zählt.\n\nE-Mails, Nachrichten, Telefonate, Rechnungen.\nWissen steckt im Kopf oder in einzelnen Dateien.\nUnd vieles läuft immer noch manuell.\n\nDas kostet jeden Tag Zeit, Geld und Nerven."
+          "h2": "Das Problem",
+          "p": "Zu viele Nachrichten.\nZu viele Dokumente.\nZu wenig Überblick.\n\nE-Mails hier, WhatsApp da, Rechnungen irgendwo.\nWissen steckt im Kopf oder verstreut in Dateien.\n\nDas kostet jeden Tag Zeit und Nerven."
         },
         "solution": {
           "h2": "Die Lösung",
-          "p": "Eine KI-Schicht, die Dich unterstützt,\nstatt Dir neue Arbeit zu machen.\n\nNachrichten werden vorsortiert.\nAntworten vorbereitet.\nDokumente verstanden.\nZusammenhänge erkannt.\n\nMit klaren Regeln.\nMit Kontrolle.\nUnd so, dass Du jederzeit den Überblick behältst."
+          "p": "Ein Posteingang für alles.\nEin Chat, der versteht.\nEine KI, die macht.\n\nNachrichten werden sortiert.\nDokumente werden verstanden.\nAntworten werden vorbereitet.\n\nDu sagst, was du brauchst.\nDie KI erledigt den Rest."
         },
         "guest": {
-          "h2": "Was Kunden wirklich erwarten",
-          "p": "Schnelle Antworten.\nKlare Informationen.\nReibungslose Abläufe.\n\nOhne Warteschleifen.\nOhne Hin- und Her."
+          "h2": "Was deine Kunden bekommen",
+          "p": "Schnelle Antworten.\nKlare Informationen.\nKein Warten.\n\nOb per E-Mail, Telefon oder Website –\ndie KI ist immer bereit."
         },
         "team": {
-          "h2": "Was Dich im Alltag entlastet",
-          "p": "Weniger Unterbrechungen.\nWeniger Tipparbeit.\nWeniger Nachfragen.\n\nMehr Zeit für Deine Kunden\nund für die Arbeit, die wirklich Wert schafft."
+          "h2": "Was du bekommst",
+          "p": "Weniger Chaos.\nWeniger Suchen.\nWeniger Tippen.\n\nMehr Zeit für das,\nwas wirklich zählt."
         }
       },
       "problem": {
-        "h2": "Das Problem im Alltag",
-        "p": "Im Restaurant wiederholen sich dieselben Fragen – und das kostet Zeit: Zutaten, Allergene, Empfehlungen, Rechnung. Gäste warten, das Personal wird unterbrochen.",
-        "extra": "Das Ergebnis: Hektik statt Gastfreundschaft."
+        "h2": "Kennst du das?",
+        "p": "E-Mails stapeln sich. Dokumente liegen herum. Kunden warten auf Antwort. Und du weißt nicht, wo du anfangen sollst.",
+        "extra": "Das Ergebnis: Stress statt Fokus."
       },
       "solution": {
-        "h2": "Die Lösung",
-        "p": "Eine intelligente Speisekarte, die wie ChatGPT funktioniert: Fragen → Empfehlungen → Bestellung. Mit Karten und Buttons statt Tippen.",
-        "extra": "Und Ihr Team hat endlich wieder Zeit für das Wesentliche."
+        "h2": "So geht's besser",
+        "p": "Alles an einem Ort. Ein Chat für alles. Sag der KI, was du brauchst – sie sortiert, fasst zusammen und bereitet vor.",
+        "extra": "Du entscheidest. Die KI arbeitet."
       },
       "how": {
-        "h2": "So läuft die Modernisierung ab",
+        "h2": "So einfach geht's",
         "steps": [
           {
-            "title": "1) Kurz-Check",
-            "text": "In 10 Minuten schauen wir gemeinsam, wo es hakt und was realistisch ist."
+            "title": "1) Verbinden",
+            "text": "E-Mail, Kalender, Tools – wir verbinden, was du nutzt."
           },
           {
-            "title": "2) Schnell startklar",
-            "text": "Ein erstes Setup geht live – spürbar und ohne lange Vorlaufzeit."
+            "title": "2) Chatten",
+            "text": "Sag der KI, was du brauchst. Sie versteht und macht."
           },
           {
-            "title": "3) Schrittweise weiter",
-            "text": "Abläufe werden nach und nach unterstützt\nund dort automatisiert, wo es Sinn macht."
+            "title": "3) Entspannen",
+            "text": "Die KI sortiert, fasst zusammen und bereitet vor. Du entscheidest."
           }
         ]
       },
@@ -200,31 +206,31 @@
         ]
       },
       "modules": {
-        "h2": "Modernisierungs-Bausteine",
+        "h2": "Das kann AKLOW",
         "items": [
           {
-            "title": "KI-Agenten & Bots",
-            "text": "Intelligente Assistenten, die E-Mails beantworten, Termine finden und Daten erfassen."
+            "title": "Posteingang",
+            "text": "Alle Nachrichten an einem Ort. E-Mail, WhatsApp, Support – sortiert und zusammengefasst."
           },
           {
-            "title": "Prozess-Automatisierung",
-            "text": "Wiederkehrende Aufgaben laufen im Hintergrund – ohne menschliches Zutun."
+            "title": "Dokumente",
+            "text": "Nie wieder Zettelchaos. Scannen, verstehen, finden. Frag die KI, was in der Rechnung steht."
           },
           {
-            "title": "System-Integration",
-            "text": "Wir verbinden Ihre Tools (CRM, ERP, Mail), damit Daten automatisch fließen."
+            "title": "Kunden",
+            "text": "Die KI merkt sich alles. Jeder Kontakt, jedes Gespräch – immer griffbereit."
           },
           {
-            "title": "Wissen & Dokumente",
-            "text": "KI macht Ihr Firmenwissen durchsuchbar und extrahiert Daten aus PDFs."
+            "title": "Bewertungen",
+            "text": "Google-Bewertungen automatisch beantworten. Freundlich, schnell, in deinem Stil."
           },
           {
-            "title": "Sicherheit & Kontrolle",
-            "text": "KI mit Leitplanken: Klare Regeln, wer was darf und was nicht."
+            "title": "Integrationen",
+            "text": "Verbinde deine Tools: E-Mail, Kalender, CRM und mehr. Alles fließt zusammen."
           },
           {
-            "title": "Human-in-the-Loop",
-            "text": "Kritische Entscheidungen werden vorbereitet, aber vom Menschen freigegeben."
+            "title": "Kontrolle",
+            "text": "Du bestimmst, was die KI darf. Klare Regeln, volle Transparenz."
           }
         ]
       },
@@ -250,187 +256,216 @@
         "h2": "Ohne Risiko starten",
         "items": [
           {
-            "title": "Keine App nötig",
-            "text": "QR scannen reicht."
+            "title": "Läuft im Browser",
+            "text": "Keine App, keine Installation. Einfach loslegen."
           },
           {
-            "title": "Kasse bleibt, wenn Sie wollen",
-            "text": "Start als Bestell- und Küchen-System. Integration optional."
+            "title": "Deine Tools bleiben",
+            "text": "Wir verbinden, was du hast. Kein Umstieg nötig."
           },
           {
-            "title": "Für schwaches WLAN gebaut",
-            "text": "Stabiler Flow, klare Zustände."
+            "title": "DSGVO-konform",
+            "text": "Deutsche Server, verschlüsselt, sicher."
           }
         ]
       },
       "pricingTeaser": {
         "h2": "Pakete",
-        "p": "Starten Sie klein – und erweitern Sie später.",
+        "p": "Starte einfach – erweitere, wenn du mehr brauchst.",
         "cta": "Preise ansehen"
       },
       "faqTeaser": {
         "h2": "Häufige Fragen",
         "items": [
           {
-            "q": "Brauchen Gäste eine App?",
-            "a": "Nein. QR scannen reicht."
+            "q": "Muss ich was installieren?",
+            "a": "Nein. AKLOW läuft im Browser. Einfach loslegen."
           },
           {
-            "q": "Müssen wir unsere Kasse ersetzen?",
-            "a": "Nein. Wir starten als Bestell- und Küchen-System. Integration später optional."
+            "q": "Kann ich meine Tools weiter nutzen?",
+            "a": "Ja. Wir verbinden E-Mail, Kalender, CRM und mehr."
           },
           {
-            "q": "Wie schnell sind wir live?",
-            "a": "In der Regel in Minuten: Import → Review → QR."
+            "q": "Wie schnell bin ich startklar?",
+            "a": "Meist in wenigen Minuten. Verbinden, loslegen, fertig."
           }
         ],
-        "cta": "FAQ ansehen"
+        "cta": "Alle Fragen"
       },
       "socialProof": {
-        "h2": "Stimmen aus der Praxis",
-        "p": "Echte Ergebnisse aus verschiedenen Branchen – von Gastro bis Dienstleistung.",
-        "disclaimer": "Auszug aus Pilotprojekten.",
+        "h2": "Das sagen unsere Nutzer",
+        "p": "Echte Ergebnisse von echten Unternehmern.",
+        "disclaimer": "Aus unseren Pilotprojekten.",
         "testimonials": [
           {
-            "name": "Immobilien",
+            "name": "Immobilienbüro",
             "tag": "",
-            "text": "Die Vorsortierung spart mir jeden Morgen richtig Zeit."
+            "text": "Endlich alle Anfragen an einem Ort. Spart mir jeden Morgen eine Stunde."
           },
           {
-            "name": "Handwerk",
+            "name": "Handwerksbetrieb",
             "tag": "",
-            "text": "Rechnungen laufen jetzt deutlich entspannter durch."
+            "text": "Rechnungen scannen, KI liest aus. Nie wieder abtippen."
           },
           {
-            "name": "Dienstleistung",
+            "name": "Beratung",
             "tag": "",
-            "text": "Weniger Rückfragen, weniger Chaos."
+            "text": "Die KI beantwortet Bewertungen in meinem Stil. Mega."
           }
         ]
       },
+      "practice": {
+        "h2": "So sieht KI-Modernisierung in der Praxis aus",
+        "p": "Posteingang, Dokumente, Kundenkontakt und Bewertungen – alles greift ineinander und unterstützt Dich genau dort, wo im Alltag wirklich Arbeit anfällt.",
+        "inbox": {
+          "label": "Intelligenter Posteingang"
+        },
+        "website": {
+          "label": "Website & Telefon Assistent"
+        },
+        "documents": {
+          "label": "Dokumente & Ordnung"
+        },
+        "reviews": {
+          "label": "Bewertungen"
+        },
+        "customers": {
+          "label": "Kunden & Vorgänge"
+        }
+      },
+      "systems": {
+        "h2": "Anschluss an Deine bestehenden Abläufe",
+        "p": "Dein Alltag besteht aus E-Mails, Anfragen, Dokumenten und Entscheidungen.\nGenau dort setzt die KI an.\n\nInformationen, die bisher verstreut waren,\nwerden sinnvoll zusammengeführt und bleiben im richtigen Zusammenhang verfügbar.\n\nStatt ständig nachzuschauen oder Dinge weiterzuleiten,\nentsteht ein ruhiger, durchgängiger Arbeitsfluss."
+      },
       "partners": {
-        "h2": "Partner & Integrationen",
-        "p": "Optional – je nach Setup. Wir starten pragmatisch und bauen die passenden Verbindungen aus.",
-        "disclaimer": "Logos sind Platzhalter.",
+        "h2": "Verbindet sich mit deinen Tools",
+        "p": "AKLOW arbeitet mit dem, was du schon nutzt. Keine Umstellung nötig.",
+        "disclaimer": "Auswahl der Integrationen.",
         "items": [
           {
-            "name": "Kassensysteme",
-            "icon": "💳"
+            "name": "E-Mail",
+            "icon": "📧"
           },
           {
-            "name": "Zahlung",
-            "icon": "💵"
-          },
-          {
-            "name": "Drucker",
-            "icon": "🖨️"
-          },
-          {
-            "name": "Reservierung",
+            "name": "Kalender",
             "icon": "📅"
-          },
-          {
-            "name": "Lieferdienste",
-            "icon": "🚚"
-          },
-          {
-            "name": "Analytics",
-            "icon": "📊"
-          },
-          {
-            "name": "WhatsApp / Messaging",
-            "icon": "💬"
           },
           {
             "name": "Google",
             "icon": "🔍"
+          },
+          {
+            "name": "WhatsApp",
+            "icon": "💬"
+          },
+          {
+            "name": "CRM",
+            "icon": "👥"
+          },
+          {
+            "name": "Buchhaltung",
+            "icon": "📊"
+          },
+          {
+            "name": "Cloud-Speicher",
+            "icon": "☁️"
+          },
+          {
+            "name": "Und mehr...",
+            "icon": "🔗"
           }
         ]
       },
       "proof": {
         "h2": "Sicherheit & Kontrolle",
-        "p": "KI – aber mit Sicherheitsgurt.\n\nKI hilft nur dann,\nwenn sie beherrschbar bleibt.\n\nDeshalb gibt es klare Regeln,\nsaubere Berechtigungen\nund vollständige Nachvollziehbarkeit.",
+        "p": "KI, die du kontrollierst.\n\nDu bestimmst, was automatisch passiert.\nDu siehst, was die KI macht.\nDu behältst die Hoheit über deine Daten.",
         "items": [
           {
-            "title": "Keine sensiblen Daten im Browser",
-            "subtitle": "Zugriffe und Tokens bleiben serverseitig – kontrolliert und nachvollziehbar."
+            "title": "Deine Daten bleiben deine",
+            "subtitle": "Deutsche Server, verschlüsselt, DSGVO-konform."
           },
           {
-            "title": "Klare Freigaben",
-            "subtitle": "Wer darf was? Rechte sind sauber definiert und durchsetzbar."
+            "title": "Du entscheidest",
+            "subtitle": "Die KI schlägt vor, du gibst frei. Nichts passiert ohne dich."
           },
           {
-            "title": "Prüfbarkeit statt Blackbox",
-            "subtitle": "Automationen sind dokumentiert und prüfbar – kein „KI macht irgendwas“."
+            "title": "Volle Transparenz",
+            "subtitle": "Sieh jederzeit, was die KI macht und warum."
           }
         ]
       },
       "finalCta": {
-        "h2": "Lust auf eine 10-Minuten-Demo?",
-        "p": "Wir zeigen Dir ehrlich,\nwas bei Dir realistisch ist –\nund was nicht.",
-        "ctaPrimary": "10-Minuten-Check",
+        "h2": "Bereit für weniger Chaos?",
+        "p": "Starte jetzt mit AKLOW und hol dir deine Zeit zurück.",
+        "ctaPrimary": "Demo starten",
         "ctaSecondary": "Kontakt"
       },
       "roi": {
-        "h2": "Was kostet dich Chaos pro Woche?",
-        "p": "Rechne Zeitverlust, Fehler und verpasste Anfragen – und sieh, wann sich Modernisierung lohnt.",
+        "h2": "Wie viel Zeit verlierst du täglich?",
+        "p": "Rechne aus, wie viel Zeit du mit AKLOW sparen kannst.",
         "inputs": {
           "tables": "Teamgröße",
-          "guestsPerDay": "Anfragen pro Tag",
-          "avgBill": "Ø Wert pro Anfrage (€)",
-          "internationalGuests": "Wiederkehrende Anfragen (%)"
+          "guestsPerDay": "E-Mails pro Tag",
+          "avgBill": "Minuten pro E-Mail",
+          "internationalGuests": "Dokumente pro Woche"
         },
         "outputs": {
-          "additionalOrders": "Zusätzliche Abschlüsse/Tag",
-          "monthlyRevenue": "Geschätzter Mehrwert/Monat",
-          "timeSaved": "Zeitersparnis pro Tag"
+          "additionalOrders": "Gesparte Stunden/Woche",
+          "monthlyRevenue": "Zeitersparnis/Monat",
+          "timeSaved": "Weniger Stress"
         },
-        "disclaimer": "Schätzung auf Basis konservativer Annahmen. Echte Werte hängen vom Betrieb ab.",
-        "cta": "10-Minuten-Check"
+        "disclaimer": "Schätzung auf Basis typischer Werte. Deine Ergebnisse können abweichen.",
+        "cta": "Demo starten"
       },
       "miniChat": {
-        "welcome": "Willkommen! Ich bin deine intelligente Speisekarte.",
+        "welcome": "Hallo! Ich bin dein KI-Assistent. Was kann ich für dich tun?",
         "actions": {
-          "menu": "Speisekarte",
-          "drinks": "Getränke",
-          "recommendation": "Empfehlung",
-          "waiter": "Kellner rufen"
+          "menu": "E-Mails zeigen",
+          "drinks": "Dokumente",
+          "recommendation": "Zusammenfassen",
+          "waiter": "Hilfe"
         },
         "recommendation": {
-          "title": "Basierend auf deinen Vorlieben:",
+          "title": "Das könnte dich interessieren:",
           "items": [
             {
-              "name": "Hausgemachte Pasta",
-              "price": "€14.90",
-              "add": "Hinzufügen"
+              "name": "Posteingang sortieren",
+              "price": "Automatisch",
+              "add": "Starten"
             },
             {
-              "name": "Frischer Salat",
-              "price": "€9.50",
-              "add": "Hinzufügen"
+              "name": "Rechnung auslesen",
+              "price": "Sofort",
+              "add": "Scannen"
             },
             {
-              "name": "Tagesgericht",
-              "price": "€12.00",
-              "add": "Hinzufügen"
+              "name": "Bewertung beantworten",
+              "price": "1 Klick",
+              "add": "Antworten"
             }
           ]
         },
         "upsell": {
-          "question": "Noch ein Bier?",
+          "question": "Soll ich die E-Mails zusammenfassen?",
           "options": [
-            "1 Bier",
-            "2 Bier",
+            "Ja, bitte",
+            "Nur wichtige",
             "Nein"
           ]
         },
         "confirmation": {
-          "text": "Perfekt! Deine Bestellung ist angekommen.",
-          "viewOrders": "Bestellungen ansehen"
+          "text": "Erledigt! Deine Zusammenfassung ist fertig.",
+          "viewOrders": "Anzeigen"
         },
         "bill": {
-          "text": "Rechnung wird an die Service-Inbox gesendet."
+          "text": "Die Aufgabe wurde abgeschlossen."
         }
+      }
+    },
+    "applications": {
+      "meta": {
+        "title": "Funktionen | AKLOW",
+        "description": "Posteingang, Dokumente, Kunden, Bewertungen – alles was AKLOW kann. Einfach erklärt."
       }
     },
     "features": {
@@ -453,7 +488,7 @@
           "timeSaved": "Zeitersparnis pro Tag"
         },
         "disclaimer": "Schätzung auf Basis konservativer Annahmen. Echte Werte hängen vom Betrieb ab.",
-        "cta": "10-Minuten-Check"
+        "cta": "3-Minuten-Check"
       },
       "modules": {
         "h2": "Gastro-Bausteine",
@@ -821,138 +856,139 @@
     },
     "pricing": {
       "meta": {
-        "title": "Pakete & Betrieb | AKLOW",
-        "description": "Starte mit einem Paket und erweitere nach Bedarf: Integration, Automationen, laufender Betrieb."
+        "title": "Preise | AKLOW",
+        "description": "Einfache Pakete für deinen KI-Assistenten. Starte klein, erweitere wenn du mehr brauchst."
       },
       "h1": "Preise",
-      "intro": "KI-Modernisierung ist kein Einmal-Kauf.\nSie wächst mit Deinem Alltag.\n\nDarum starten wir mit einem klaren Einstieg\nund erweitern Schritt für Schritt,\nwenn es für Dich Sinn macht.",
+      "intro": "Einfache Pakete.\nKeine versteckten Kosten.\n\nStarte mit dem, was du brauchst.\nErweitere, wenn du mehr willst.",
       "billing": {
         "perMonth": "/Monat"
       },
       "badges": {
-        "mostPopular": "Am beliebtesten"
+        "mostPopular": "Beliebt"
       },
       "tiers": [
         {
-          "name": "Einstieg",
-          "tag": "Für den Start und schnelle Entlastung.",
-          "price": "",
+          "name": "Starter",
+          "tag": "Für den Einstieg.",
+          "price": "49€",
           "items": [
-            "Intelligenter Posteingang",
-            "Dokumente & Ordnung",
-            "Kunden & Vorgänge"
+            "Posteingang (alle Nachrichten)",
+            "Dokumente scannen & verstehen",
+            "Kunden & Vorgänge",
+            "Bewertungen beantworten",
+            "3 Integrationen"
           ],
           "cta": "Starten"
         },
         {
-          "name": "Wachstum",
-          "tag": "Für mehr Automatisierung im Alltag.",
-          "price": "",
+          "name": "Pro",
+          "tag": "Für mehr Power.",
+          "price": "99€",
           "items": [
-            "Intelligenter Posteingang",
-            "Dokumente & Ordnung",
-            "Kunden & Vorgänge",
-            "Website & Telefon Assistent",
-            "Automatisierung & Regeln",
-            "Integrationen"
+            "Alles aus Starter",
+            "Telefon-Bot",
+            "Website-Bot",
+            "Unbegrenzte Integrationen",
+            "Eigene Workflows",
+            "Priority Support"
           ],
           "cta": "Empfohlen"
         },
         {
-          "name": "Ausbau",
-          "tag": "Für strukturierte Abläufe und Skalierung.",
-          "price": "",
+          "name": "Business",
+          "tag": "Für Teams.",
+          "price": "199€",
           "items": [
-            "Intelligenter Posteingang",
-            "Dokumente & Ordnung",
-            "Kunden & Vorgänge",
-            "Website & Telefon Assistent",
-            "Bewertungen",
-            "Automatisierung & Regeln",
-            "Integrationen",
-            "Kontrolle & Sicherheit"
+            "Alles aus Pro",
+            "AI Shield (Kontrolle)",
+            "Team-Verwaltung",
+            "Audit-Logs",
+            "Dedizierter Support",
+            "Custom Integrationen"
           ],
           "cta": "Kontakt"
         }
       ],
-      "note": "Preise hängen von Branche, Integrationen und Umfang ab. Im 10‑Minuten‑Check klären wir das konkret.",
-      "faqLink": "FAQ ansehen",
+      "note": "Alle Preise zzgl. MwSt. 14 Tage kostenlos testen.",
+      "faqLink": "Alle Fragen",
       "comparison": {
         "title": "Was ist enthalten?",
-        "columns": ["Einstieg", "Wachstum", "Ausbau"],
+        "columns": ["Starter", "Pro", "Business"],
         "categories": [
           {
-            "name": "Anwendungen",
+            "name": "Kernfunktionen",
             "features": [
-              { "name": "Intelligenter Posteingang", "tiers": [true, true, true] },
-              { "name": "Dokumente & Ordnung", "tiers": [true, true, true] },
-              { "name": "Kunden & Vorgänge", "tiers": [true, true, true] },
-              { "name": "Website & Telefon Assistent", "tiers": [false, true, true] },
-              { "name": "Bewertungen", "tiers": [false, false, true] }
+              { "name": "Posteingang", "tiers": [true, true, true] },
+              { "name": "Dokumente", "tiers": [true, true, true] },
+              { "name": "Kunden", "tiers": [true, true, true] },
+              { "name": "Bewertungen", "tiers": [true, true, true] },
+              { "name": "Telefon-Bot", "tiers": [false, true, true] },
+              { "name": "Website-Bot", "tiers": [false, true, true] }
             ]
           },
           {
-            "name": "Funktionen",
+            "name": "Extras",
             "features": [
-              { "name": "Automatisierung & Regeln", "tiers": [false, true, true] },
-              { "name": "Integrationen", "tiers": [false, true, true] },
-              { "name": "Kontrolle & Sicherheit", "tiers": [false, false, true] }
+              { "name": "Eigene Workflows", "tiers": [false, true, true] },
+              { "name": "AI Shield", "tiers": [false, false, true] },
+              { "name": "Team-Verwaltung", "tiers": [false, false, true] }
             ]
           }
         ]
       },
       "pricingCta": {
-        "h2": "Unsicher, welches Paket passt?",
-        "p": "Wir schauen gemeinsam,\nwas Dir wirklich hilft –\nund was Du (noch) nicht brauchst.",
-        "ctaPrimary": "10-Minuten-Check",
+        "h2": "Noch Fragen?",
+        "p": "Wir helfen dir gerne,\ndas passende Paket zu finden.",
+        "ctaPrimary": "Demo starten",
         "ctaSecondary": "Kontakt"
       }
     },
     "services": {
       "meta": {
-        "title": "Leistungen | AKLOW",
-        "description": "KI-Modernisierung für KMU: Analyse, Integration & Automatisierung, Betrieb & Optimierung."
+        "title": "So funktioniert's | AKLOW",
+        "description": "Verbinden, chatten, entspannen. So einfach ist AKLOW."
       },
-      "h1": "Leistungen",
-      "intro": "Drei Bausteine, die wir je nach Ausgangslage kombinieren – pragmatisch, messbar und ohne unnötigen Tool-Wechsel.",
+      "h1": "So funktioniert's",
+      "intro": "Drei Schritte zu weniger Chaos und mehr Zeit für das Wesentliche.",
       "blocks": [
         {
-          "title": "AI-Potenzial-Analyse",
-          "text": "Quick Wins, Risiken, Roadmap – klar priorisiert und realistisch."
+          "title": "Verbinden",
+          "text": "E-Mail, Kalender, Tools – wir verbinden, was du nutzt. Schnell und sicher."
         },
         {
-          "title": "Integration & Automatisierung",
-          "text": "Wir verbinden Systeme und bauen Workflows, die im Alltag wirklich laufen."
+          "title": "Chatten",
+          "text": "Sag der KI, was du brauchst. Sie versteht dich und erledigt den Rest."
         },
         {
-          "title": "Betrieb & Optimierung",
-          "text": "Monitoring, Verbesserungen, neue Automationen – damit es dauerhaft besser wird."
+          "title": "Entspannen",
+          "text": "Die KI sortiert, fasst zusammen und bereitet vor. Du entscheidest."
         }
       ],
-      "cta": "10-Minuten-Check"
+      "cta": "Demo starten"
     },
     "cases": {
       "meta": {
         "title": "Ergebnisse | AKLOW",
-        "description": "Beispiele für messbare Verbesserungen durch KI-Modernisierung – anonym und kurz."
+        "description": "Echte Ergebnisse von echten Unternehmern. So hilft AKLOW im Alltag."
       },
       "h1": "Ergebnisse",
-      "intro": "Drei typische Resultate aus Projekten – kurz, anonym und auf Wirkung fokussiert.",
+      "intro": "Was unsere Nutzer erreichen – kurz und auf den Punkt.",
       "items": [
         {
-          "title": "Gastro",
-          "text": "Weniger Telefonstress, mehr Bestellungen, klarere Abläufe."
+          "title": "Immobilien",
+          "text": "Alle Anfragen an einem Ort. 1 Stunde gespart pro Tag."
         },
         {
-          "title": "Dienstleistung",
-          "text": "Schnellere Antworten, weniger Inbox-Chaos, bessere Lead-Qualität."
+          "title": "Handwerk",
+          "text": "Rechnungen scannen, KI liest aus. Nie wieder abtippen."
         },
         {
-          "title": "Backoffice",
-          "text": "Automatisierte Routineaufgaben, weniger Fehler, bessere Nachverfolgung."
+          "title": "Beratung",
+          "text": "Bewertungen automatisch beantworten. Kunden glücklich."
         }
       ],
-      "cta": "10-Minuten-Check"
+      "cta": "Demo starten"
     },
     "demo": {
       "meta": {
@@ -1212,6 +1248,893 @@
       },
       "h1": "Datenschutz",
       "p": "Hier informieren wir über Art, Umfang und Zweck der Verarbeitung personenbezogener Daten."
+    },
+    "partner": {
+      "meta": {
+        "title": "Partner & Integrationen | AKLOW",
+        "description": "Werde Teil des Aklow Ökosystems. Integrationen, Partnerprogramm und mehr."
+      },
+      "badge": "Better Together",
+      "h1": "Das Aklow Ökosystem.",
+      "intro": "Wir glauben an die Kraft der Vernetzung. Gemeinsam mit unseren Partnern bauen wir die Brücke zwischen modernster KI und bewährten Business-Lösungen.",
+      "integrations": {
+        "title": "Integrationen",
+        "desc": "Wir verbinden uns mit den Tools, die deine Kunden bereits lieben. Ob Kassensysteme, CRM-Software oder Branchenlösungen – Aklow wird zum fehlenden Teil im Puzzle.",
+        "tech": ["REST API", "Webhooks", "OAuth 2.0", "SDKs"]
+      },
+      "program": {
+        "title": "Partnerprogramm",
+        "desc": "Werde Teil unserer Reise. Wir suchen IT-Häuser, Agenturen und Berater, die ihren Kunden echten Mehrwert durch KI-Modernisierung bieten wollen.",
+        "cta": "Partner werden"
+      },
+      "why": {
+        "title": "Warum Partner werden?",
+        "items": [
+          {
+            "title": "Exklusiver Zugang",
+            "desc": "Erhalte frühen Zugriff auf neue Features und Beta-Versionen."
+          },
+          {
+            "title": "Support & Training",
+            "desc": "Wir unterstützen dich bei der Implementierung und im Vertrieb."
+          },
+          {
+            "title": "Attraktive Konditionen",
+            "desc": "Profitiere von fairen Partnermodellen und Provisionen."
+          }
+        ]
+      }
+    },
+    "jobs": {
+      "meta": {
+        "title": "Jobs & Karriere | AKLOW",
+        "description": "Werde Teil der KI-Revolution. Offene Positionen und warum du zu uns kommen solltest."
+      },
+      "badge": "Build the Future",
+      "h1": "Werde Teil der KI-Revolution.",
+      "intro": "Wir bauen nicht nur Software. Wir bauen eine neue Art zu arbeiten. Ohne Bullshit, mit viel Herzblut und modernster Technologie.",
+      "openPositions": "Offene Positionen",
+      "positions": [
+        {
+          "title": "Senior AI Engineer",
+          "type": "Remote / Hybrid",
+          "focus": "Backend & ML"
+        },
+        {
+          "title": "Frontend Developer (Next.js)",
+          "type": "Remote",
+          "focus": "UI / UX"
+        },
+        {
+          "title": "Sales Manager (KI-Solutions)",
+          "type": "Hybrid",
+          "focus": "B2B Growth"
+        }
+      ],
+      "details": "Details",
+      "noMatch": "Nichts Passendes dabei?",
+      "initiative": "Initiativbewerbung schicken.",
+      "why": {
+        "title": "Warum zu uns?",
+        "items": [
+          {
+            "text": "Modernster Tech-Stack (Next.js, AI Models, Cloud Native)"
+          },
+          {
+            "text": "Flexible Arbeitszeiten & echte Remote-Kultur"
+          },
+          {
+            "text": "Ein Team, das sich gegenseitig unterstützt"
+          },
+          {
+            "text": "Sinnvolle Arbeit für den Mittelstand"
+          }
+        ]
+      }
+    },
+    "wissen": {
+      "meta": {
+        "title": "Wissenshub | AKLOW",
+        "description": "Alles was du über AKLOW wissen musst. Einfach erklärt."
+      },
+      "badge": "Wissenshub",
+      "h1": "Alles was du wissen musst.",
+      "intro": "Kein Fachchinesisch. Echte Antworten auf echte Fragen.",
+      "categories": [
+        {
+          "title": "Erste Schritte",
+          "desc": "So startest du mit AKLOW. In 5 Minuten erklärt."
+        },
+        {
+          "title": "Was kann AKLOW?",
+          "desc": "Posteingang, Dokumente, Kunden – alles im Überblick."
+        },
+        {
+          "title": "Sicherheit",
+          "desc": "Wie wir deine Daten schützen. DSGVO und mehr."
+        },
+        {
+          "title": "FAQ",
+          "desc": "Die häufigsten Fragen. Schnell beantwortet."
+        }
+      ],
+      "learnMore": "Mehr erfahren",
+      "stillQuestions": {
+        "title": "Noch Fragen?",
+        "desc": "Kein Problem. Schreib uns einfach.",
+        "cta": "Kontakt"
+      }
+    },
+    "wissen_system": {
+      "meta": {
+        "title": "So funktioniert das System | AKLOW",
+        "description": "Technische Details über die Aklow-Infrastruktur und Architektur."
+      },
+      "badge": "Inside Aklow",
+      "h1": "Das System dahinter.",
+      "intro": "Wie funktioniert Aklow eigentlich? Hier erfährst Du mehr über die Technologie, die Infrastruktur und wie wir KI sicher in Deinen Alltag bringen.",
+      "features": [
+        {
+          "title": "LLM Orchestrierung",
+          "desc": "Wir setzen nicht auf ein einzelnes Modell. Aklow nutzt eine intelligente Orchestrierung verschiedener spezialisierter KI-Modelle, um für jede Aufgabe das beste Ergebnis zu liefern – effizient und präzise."
+        },
+        {
+          "title": "Vektordatenbanken",
+          "desc": "Dein Wissen wird in hochmodernen Vektordatenbanken strukturiert. So kann Aklow in Millisekunden auf relevanten Kontext zugreifen und Antworten geben, die wirklich zu Deinem Unternehmen passen."
+        },
+        {
+          "title": "Nahtlose Integration",
+          "desc": "Durch unsere API-First Architektur lässt sich Aklow in fast jedes bestehende System integrieren. Wir verbinden Kanäle wie E-Mail, Telefon und Web zu einem einheitlichen Erlebnis."
+        },
+        {
+          "title": "Privacy by Design",
+          "desc": "Datenschutz ist bei uns kein Add-on, sondern das Fundament. Alle Daten werden verschlüsselt verarbeitet und wir stellen sicher, dass Deine Informationen dort bleiben, wo sie hingehören."
+        }
+      ],
+      "performance": {
+        "badge": "Performance & Skalierbarkeit",
+        "title": "Gebaut für die Zukunft.",
+        "desc": "Unser System wächst mit Deinen Anforderungen. Ob 10 oder 10.000 Anfragen am Tag – Aklow bleibt stabil, schnell und zuverlässig. Wir setzen auf Cloud-Native Technologien, um höchste Verfügbarkeit zu garantieren."
+      }
+    },
+    "check": {
+      "meta": {
+        "title": "Demo starten | AKLOW",
+        "description": "Teste AKLOW kostenlos. Sieh selbst, wie dein KI-Assistent funktioniert."
+      },
+      "badge": "Kostenlos testen",
+      "h1": "Teste AKLOW selbst.",
+      "intro": "Keine Kreditkarte. Kein Verkaufsgespräch. Einfach ausprobieren und sehen, ob's passt.",
+      "form": {
+        "name": "Name",
+        "company": "Firma",
+        "email": "E-Mail",
+        "challenge": "Was nervt dich am meisten?",
+        "namePlaceholder": "Dein Name",
+        "companyPlaceholder": "Firmenname",
+        "emailPlaceholder": "name@firma.de",
+        "challengePlaceholder": "z.B. Zu viele E-Mails, Zettelchaos, verpasste Anfragen...",
+        "submit": "Demo starten",
+        "sending": "Wird gestartet...",
+        "privacy": "Deine Daten sind sicher. DSGVO-konform."
+      },
+      "success": {
+        "title": "Fast geschafft!",
+        "desc": "Wir richten deine Demo ein und melden uns gleich bei dir.",
+        "back": "Zurück zur Startseite"
+      },
+      "error": "Das hat leider nicht geklappt. Bitte versuche es später noch einmal oder schreibe uns eine Mail.",
+      "benefits": [
+        {
+          "title": "Kostenlos",
+          "desc": "14 Tage testen. Keine Kreditkarte nötig."
+        },
+        {
+          "title": "Schnell",
+          "desc": "In 5 Minuten startklar. Wirklich."
+        },
+        {
+          "title": "Ehrlich",
+          "desc": "Kein Druck. Wenn's nicht passt, ist das okay."
+        }
+      ],
+      "wizard": {
+        "steps": {
+          "context": "Über dich",
+          "goal": "Dein Ziel",
+          "pain": "Dein Problem",
+          "tools": "Deine Tools",
+          "compliance": "Sicherheit",
+          "result": "Deine Demo"
+        },
+        "actions": {
+          "next": "Weiter",
+          "back": "Zurück",
+          "finish": "Demo einrichten",
+          "calculating": "Wird eingerichtet...",
+          "saveLead": "Speichern"
+        },
+        "context": {
+          "title": "Schritt 1",
+          "headline": "Erzähl uns kurz von dir.",
+          "desc": "Damit wir AKLOW für dich vorbereiten können.",
+          "options": [
+            { "id": "services", "title": "Dienstleistung / Beratung" },
+            { "id": "ecommerce", "title": "E-Commerce / Handel" },
+            { "id": "production", "title": "Produktion / Handwerk" },
+            { "id": "hospitality", "title": "Gastro / Hotel" },
+            { "id": "other", "title": "Andere" }
+          ],
+          "teamSizes": [
+            { "id": "1-10", "title": "1-10" },
+            { "id": "10-50", "title": "10-50" },
+            { "id": "50-200", "title": "50-200" },
+            { "id": "200plus", "title": "200+" }
+          ]
+        },
+        "goal": {
+          "title": "Schritt 2",
+          "headline": "Was willst du erreichen?",
+          "options": [
+            { "id": "automation", "title": "Weniger Routine", "desc": "Die KI übernimmt wiederkehrende Aufgaben." },
+            { "id": "quality", "title": "Bessere Antworten", "desc": "Schneller und konsistenter kommunizieren." },
+            { "id": "speed", "title": "Zeit sparen", "desc": "Weniger Suchen, weniger Tippen." },
+            { "id": "insights", "title": "Überblick behalten", "desc": "Alles an einem Ort, nichts vergessen." }
+          ]
+        },
+        "pain": {
+          "title": "Schritt 3",
+          "headline": "Was nervt dich am meisten?",
+          "helper": "Wähle bis zu 3",
+          "options": [
+            { "id": "inbox", "title": "Zu viele Nachrichten", "desc": "E-Mails, WhatsApp, Support – überall." },
+            { "id": "docs", "title": "Zettelchaos", "desc": "Dokumente verstreut, schwer zu finden." },
+            { "id": "handover", "title": "Vergessene Infos", "desc": "Wichtiges geht unter." },
+            { "id": "support", "title": "Langsame Antworten", "desc": "Kunden warten zu lange." },
+            { "id": "sales", "title": "Verpasste Anfragen", "desc": "Leads gehen verloren." },
+            { "id": "compliance", "title": "Datenschutz-Sorgen", "desc": "Unsicher bei KI und DSGVO." }
+          ]
+        },
+        "tools": {
+          "title": "Schritt 4",
+          "headline": "Was nutzt du heute?",
+          "options": [
+            { "id": "ms365", "title": "Microsoft 365", "desc": "Outlook, Teams" },
+            { "id": "google", "title": "Google Workspace", "desc": "Gmail, Drive" },
+            { "id": "hubspot", "title": "CRM", "desc": "HubSpot, Pipedrive, etc." },
+            { "id": "zendesk", "title": "Support-Tool", "desc": "Zendesk, Freshdesk" },
+            { "id": "notion", "title": "Notizen", "desc": "Notion, Evernote" },
+            { "id": "other", "title": "Andere", "desc": "Sonstige Tools" }
+          ]
+        },
+        "compliance": {
+          "title": "Schritt 5",
+          "headline": "Wie wichtig ist dir Datenschutz?",
+          "options": [
+            { "id": "strict", "title": "Sehr wichtig", "desc": "DSGVO ist Pflicht." },
+            { "id": "balanced", "title": "Wichtig", "desc": "Sicher, aber pragmatisch." },
+            { "id": "fast", "title": "Pragmatisch", "desc": "Hauptsache es funktioniert." }
+          ]
+        },
+        "result": {
+          "title": "Fertig!",
+          "headline": "Deine Demo ist bereit",
+          "scoreLabel": "Passt zu dir",
+          "useCases": "Das hilft dir am meisten",
+          "sprint": "Starte mit",
+          "pending": "Demo wird eingerichtet..."
+        },
+        "lead": {
+          "title": "Wohin sollen wir den Zugang schicken?",
+          "subtitle": "Du bekommst sofort Zugang zu deiner Demo.",
+          "name": "Name",
+          "company": "Firma",
+          "email": "E-Mail",
+          "phone": "Telefon (optional)",
+          "hint": "Wir schicken dir den Demo-Zugang per E-Mail."
+        }
+      }
+    },
+    "impressum": {
+      "meta": {
+        "title": "Impressum | AKLOW",
+        "description": "Gesetzliche Angaben und Kontaktinformationen der Aklow GmbH."
+      },
+      "h1": "Impressum.",
+      "intro": "Gesetzliche Angaben und Kontaktinformationen der Aklow GmbH.",
+      "sections": {
+        "tmg": {
+          "title": "Angaben gemäß § 5 TMG",
+          "content": "Aklow GmbH\nMusterstraße 123\n10115 Berlin"
+        },
+        "represented": {
+          "title": "Vertreten durch",
+          "content": "Max Mustermann (Geschäftsführer)"
+        },
+        "contact": {
+          "title": "Kontakt",
+          "content": "Telefon: +49 (0) 30 1234567\nE-Mail: hallo@aklow.com"
+        },
+        "register": {
+          "title": "Registereintrag",
+          "content": "Eintragung im Handelsregister.\nRegistergericht: Amtsgericht Charlottenburg\nRegisternummer: HRB 123456 B"
+        },
+        "vat": {
+          "title": "Umsatzsteuer-ID",
+          "content": "Umsatzsteuer-Identifikationsnummer gemäß § 27 a Umsatzsteuergesetz:\nDE 123 456 789"
+        },
+        "responsible": {
+          "title": "Redaktionell verantwortlich",
+          "content": "Max Mustermann\nMusterstraße 123\n10115 Berlin"
+        },
+        "dispute": {
+          "title": "EU-Streitschlichtung",
+          "content": "Die Europäische Kommission stellt eine Plattform zur Online-Streitbeilegung (OS) bereit: https://ec.europa.eu/consumers/odr/.\nUnsere E-Mail-Adresse finden Sie oben im Impressum."
+        }
+      }
+    },
+    "datenschutz": {
+      "meta": {
+        "title": "Datenschutz | AKLOW",
+        "description": "Deine Privatsphäre ist uns wichtig. Hier erfährst du, wie wir mit deinen Daten umgehen."
+      },
+      "h1": "Datenschutz.",
+      "intro": "Deine Privatsphäre ist uns wichtig. Hier erfährst du, wie wir mit deinen Daten umgehen.",
+      "sections": [
+        {
+          "title": "1. Datenschutz auf einen Blick",
+          "content": [
+            "Die folgenden Hinweise geben einen einfachen Überblick darüber, was mit Ihren personenbezogenen Daten passiert, wenn Sie unsere Website besuchen.",
+            "Personenbezogene Daten sind alle Daten, mit denen Sie persönlich identifiziert werden können. Ausführliche Informationen zum Thema Datenschutz entnehmen Sie unserer unter diesem Text aufgeführten Datenschutzerklärung."
+          ]
+        },
+        {
+          "title": "2. Hosting und Content Delivery Networks (CDN)",
+          "content": [
+            "Wir hosten unsere Website bei einem externen Dienstleister. Die personenbezogenen Daten, die auf dieser Website erfasst werden, werden auf den Servern des Hosters gespeichert.",
+            "Unser Hoster wird Ihre Daten nur insoweit verarbeiten, wie dies zur Erfüllung seiner Leistungspflichten erforderlich ist und unsere Weisungen in Bezug auf diese Daten befolgen."
+          ]
+        },
+        {
+          "title": "3. Allgemeine Hinweise und Pflichtinformationen",
+          "content": [
+            "Die Betreiber dieser Seiten nehmen den Schutz Ihrer persönlichen Daten sehr ernst. Wir behandeln Ihre personenbezogenen Daten vertraulich und entsprechend den gesetzlichen Datenschutzvorschriften sowie dieser Datenschutzerklärung.",
+            "Wenn Sie diese Website benutzen, werden verschiedene personenbezogene Daten erhoben. Diese Datenschutzerklärung erläutert, welche Daten wir erheben und wofür wir sie nutzen."
+          ]
+        }
+      ],
+      "contact": {
+        "title": "Kontakt zur verantwortlichen Stelle",
+        "content": "Aklow GmbH\nDatenschutzbeauftragter\nMusterstraße 123\n10115 Berlin\nE-Mail: datenschutz@aklow.com"
+      },
+      "dataCollection": {
+        "title": "4. Datenerfassung auf unserer Website",
+        "cookies": {
+          "title": "Cookies",
+          "content": "Unsere Internetseiten verwenden teilweise so genannte \"Cookies\". Cookies sind kleine Textdateien und richten auf Ihrem Endgerät keinen Schaden an. Sie werden entweder vorübergehend für die Dauer einer Sitzung (Session-Cookies) oder dauerhaft (permanente Cookies) auf Ihrem Endgerät gespeichert."
+        },
+        "contactForm": {
+          "title": "Kontaktformular",
+          "content": "Wenn Sie uns per Kontaktformular Anfragen zukommen lassen, werden Ihre Angaben aus dem Anfrageformular inklusive der von Ihnen dort angegebenen Kontaktdaten zwecks Bearbeitung der Anfrage und für den Fall von Anschlussfragen bei uns gespeichert."
+        }
+      }
+    },
+    "cookies": {
+      "meta": {
+        "title": "Cookies | AKLOW",
+        "description": "Transparenz über die kleinen Helfer, die unsere Seite zum Laufen bringen."
+      },
+      "h1": "Cookies.",
+      "intro": "Transparenz über die kleinen Helfer, die unsere Seite zum Laufen bringen.",
+      "whatAre": {
+        "title": "Was sind Cookies?",
+        "content": "Cookies sind kleine Textdateien, die von Webseiten verwendet werden, um die Benutzererfahrung effizienter zu gestalten. Das Gesetz besagt, dass wir Cookies auf Ihrem Gerät speichern können, wenn diese für den Betrieb dieser Seite unbedingt notwendig sind. Für alle anderen Cookie-Typen benötigen wir Ihre Erlaubnis."
+      },
+      "types": [
+        {
+          "title": "Notwendige Cookies",
+          "desc": "Diese Cookies sind für das Funktionieren der Website erforderlich und können in unseren Systemen nicht abgeschaltet werden. Sie werden in der Regel nur als Reaktion auf von Ihnen getätigte Aktionen gesetzt."
+        },
+        {
+          "title": "Präferenz-Cookies",
+          "desc": "Diese Cookies ermöglichen es einer Website, sich an Informationen zu erinnern, die die Art und Weise beeinflussen, wie sich die Website verhält oder aussieht, wie z. B. Ihre bevorzugte Sprache oder die Region, in der Sie sich befinden."
+        },
+        {
+          "title": "Statistik-Cookies",
+          "desc": "Diese Cookies helfen uns zu verstehen, wie Besucher mit Webseiten interagieren, indem Informationen anonym gesammelt und gemeldet werden."
+        }
+      ],
+      "selection": {
+        "title": "Deine Auswahl",
+        "desc": "Du kannst Deine Cookie-Einstellungen jederzeit ändern oder Deine Einwilligung widerrufen.",
+        "open": "Einstellungen öffnen",
+        "reject": "Alle ablehnen"
+      }
+    },
+    "ueber_uns": {
+      "meta": {
+        "title": "Über uns | AKLOW",
+        "description": "Wir bauen den KI-Assistenten, den wir selbst immer wollten. Einfach, schnell, ehrlich."
+      },
+      "h1": "Über uns",
+      "intro": "Wir bauen den KI-Assistenten, den wir selbst immer wollten. Einfach, schnell, ehrlich.",
+      "whatDrives": {
+        "title": "Warum wir das machen",
+        "p1": "Wir kennen das Chaos. Zu viele E-Mails, zu viele Dokumente, zu wenig Zeit. Und die meisten KI-Tools machen es nur komplizierter.",
+        "p2": "Deshalb bauen wir AKLOW: Einen Assistenten, der einfach funktioniert. Kein Fachchinesisch, keine wochenlange Einrichtung, kein neues Tool, das du erst lernen musst.",
+        "p3": "Du sagst, was du brauchst. Die KI macht's. So einfach sollte es sein."
+      },
+      "approach": {
+        "title": "Unser Ansatz",
+        "p1": "Wir glauben an Chat-First. Alles, was du mit AKLOW machst, kannst du einfach sagen oder tippen. Keine komplizierten Menüs.",
+        "p2": "Wir glauben an Schnelligkeit. In Minuten startklar, nicht in Wochen.",
+        "p3": "Wir glauben an Ehrlichkeit. Wenn AKLOW nicht zu dir passt, sagen wir's dir."
+      },
+      "important": {
+        "title": "Was uns wichtig ist",
+        "simplicity": {
+          "label": "Einfach:",
+          "text": "Wenn du es nicht in 5 Minuten verstehst, haben wir unseren Job nicht gemacht."
+        },
+        "control": {
+          "label": "Du entscheidest:",
+          "text": "Die KI schlägt vor, du gibst frei. Nichts passiert ohne dich."
+        },
+        "measurability": {
+          "label": "Ehrlich:",
+          "text": "Kein Marketing-Blabla. Wenn's nicht passt, sagen wir's."
+        }
+      },
+      "team": {
+        "title": "Das Team",
+        "desc": "Ein kleines Team, das große Probleme löst. Mit viel Kaffee und noch mehr Leidenschaft."
+      }
+    },
+    "roadmap": {
+      "meta": {
+        "title": "Roadmap – Unsere Reise | AKLOW",
+        "description": "Woran wir gerade tüfteln und was als Nächstes die KI-Welt revolutioniert."
+      },
+      "h1": "Roadmap",
+      "intro": "Unsere Vision ist klar. Hier erfährst du, wie wir Schritt für Schritt die Art, wie wir arbeiten, neu definieren.",
+      "phases": [
+        {
+          "phase": "LIVE",
+          "title": "Das Fundament steht",
+          "items": [
+            "Intelligenter Posteingang (Sortierung & Vorrang)",
+            "Dokumenten-KI: Verstehen & Strukturieren",
+            "Basis-Integrationen: E-Mail & Kalender",
+            "Vorgangs-Management Dashboard",
+            "Smarte Freigabe-Workflows"
+          ]
+        },
+        {
+          "phase": "DEMNÄCHST",
+          "title": "Nächste Haltestelle: Kontext",
+          "items": [
+            "Kontextsensitive Antwortvorschläge",
+            "Deep Integration Hub (CRM & ERP)",
+            "Optimierte Texterkennung (OCR 2.0)",
+            "Intelligente Wiedervorlage-Logik",
+            "Mobile App Preview"
+          ]
+        },
+        {
+          "phase": "IN ARBEIT",
+          "title": "Das Labor glüht",
+          "items": [
+            "Website & Telefon KI-Assistent",
+            "Automatisierte Review-Anfragen",
+            "Custom Workflow Engine",
+            "Multi-Language Brain (50+ Sprachen)",
+            "Semantische Suche über alle Kanäle"
+          ]
+        },
+        {
+          "phase": "VISION",
+          "title": "Die Zukunft gestalten",
+          "items": [
+            "Echtzeit-Business-Intelligence",
+            "Open API für Eigenentwicklungen",
+            "Kollaborative KI-Agenten",
+            "Advanced Security Mesh",
+            "Prädiktive Analyse-Tools"
+          ]
+        }
+      ],
+      "quote": "Wir bauen nicht nur Software. Wir bauen die Zukunft deines Alltags. Flexibel, transparent und immer mit dem Fokus auf das, was dich heute wirklich weiterbringt."
+    },
+    "status": {
+      "meta": {
+        "title": "System Status – Alles im grünen Bereich | AKLOW",
+        "description": "Echtzeit-Überwachung unserer KI-Infrastruktur und Dienste."
+      },
+      "badge": "SYSTEMS OPERATIONAL",
+      "h1": "Status & Updates",
+      "intro": "Echtzeit-Überwachung unserer Infrastruktur. Wir lieben Transparenz genauso sehr wie sauberen Code.",
+      "services": [
+        {
+          "name": "KI-Core Engine",
+          "status": "operational",
+          "uptime": "99.99%"
+        },
+        {
+          "name": "Dokumenten-Verarbeitung",
+          "status": "operational",
+          "uptime": "99.95%"
+        },
+        {
+          "name": "API & Integrationen",
+          "status": "operational",
+          "uptime": "100%"
+        },
+        {
+          "name": "Web Dashboard",
+          "status": "operational",
+          "uptime": "99.98%"
+        }
+      ],
+      "operational": "Operational",
+      "history": {
+        "title": "Vorfall-Historie",
+        "items": [
+          {
+            "date": "18. Dez",
+            "event": "System Optimierung",
+            "type": "maintenance",
+            "typeLabel": "Geplante Wartung"
+          },
+          {
+            "date": "15. Dez",
+            "event": "KI-Modell Update v2.4",
+            "type": "update",
+            "typeLabel": "System-Aktualisierung"
+          },
+          {
+            "date": "10. Dez",
+            "event": "Minor API Latency",
+            "type": "incident",
+            "typeLabel": "Service-Einschränkung",
+            "duration": "12 min"
+          },
+          {
+            "date": "01. Dez",
+            "event": "Datenbank Migration",
+            "type": "maintenance",
+            "typeLabel": "Geplante Wartung"
+          }
+        ]
+      },
+      "support": {
+        "title": "Support-Speed",
+        "value": "~14m",
+        "desc": "Durchschnittliche Antwortzeit in den letzten 24 Stunden."
+      },
+      "report": {
+        "title": "Etwas stimmt nicht?",
+        "desc": "Falls du Probleme bemerkst, die hier nicht aufgeführt sind, melde dich bitte direkt bei unserem Ops-Team.",
+        "cta": "Vorfall melden"
+      }
+    },
+    "kontakt": {
+      "meta": {
+        "title": "Kontakt | AKLOW",
+        "description": "Fragen zu AKLOW? Schreib uns. Wir antworten schnell und ehrlich."
+      },
+      "badge": "Wir helfen gerne",
+      "h1": "Lass uns reden.",
+      "intro": "Fragen, Feedback oder einfach mal Hallo sagen? Wir freuen uns auf deine Nachricht.",
+      "contact": {
+        "email": {
+          "label": "E-Mail",
+          "value": "hallo@aklow.com"
+        },
+        "chat": {
+          "label": "Chat",
+          "value": "Unten rechts im Fenster"
+        }
+      },
+      "form": {
+        "title": "Schreib uns",
+        "name": "Name",
+        "email": "E-Mail",
+        "message": "Deine Nachricht",
+        "namePlaceholder": "Dein Name",
+        "emailPlaceholder": "deine@email.de",
+        "messagePlaceholder": "Was können wir für dich tun?",
+        "submit": "Absenden"
+      },
+      "badgeResponse": {
+        "title": "Antwort in 24h",
+        "subtitle": "Meistens schneller."
+      },
+      "why": {
+        "title": "Warum AKLOW?",
+        "desc": "Weil wir selbst wissen, wie nervig Chaos ist.",
+        "items": [
+          {
+            "title": "Einfach",
+            "desc": "Kein Fachchinesisch. Kein Handbuch. Einfach loslegen."
+          },
+          {
+            "title": "Schnell",
+            "desc": "In Minuten startklar. Wirklich."
+          },
+          {
+            "title": "Ehrlich",
+            "desc": "Wenn's nicht passt, sagen wir's dir."
+          }
+        ]
+      }
+    },
+    "haltung": {
+      "meta": {
+        "title": "Haltung & Verantwortung – KI sinnvoll einsetzen | AKLOW",
+        "description": "Wir finden: KI ist zu nützlich, um nur \"irgendwie\" eingesetzt zu werden. Sie sollte Menschen im Alltag entlasten – verständlich, kontrollierbar und sinnvoll."
+      },
+      "badge": "Unsere Werte",
+      "h1": "Haltung & Verantwortung",
+      "intro": "KI ist ein Werkzeug. Und wie jedes Werkzeug kommt es darauf an, wer es hält – und mit welcher Absicht.",
+      "sections": [
+        {
+          "title": "Den Menschen im Mittelpunkt",
+          "p1": "Viele sehen KI als etwas Technisches, Abstraktes oder sogar Einschüchterndes. Wir wollen das Gegenteil: KI so bauen, dass sie dich im Alltag wirklich entlastet.",
+          "p2": "Ohne komplizierte Oberflächen. Ohne neue Systeme, die du erst lernen musst. Sondern als unsichtbare Unterstützung dort, wo deine Arbeit heute sowieso passiert."
+        },
+        {
+          "title": "Sinnvoll statt maximal",
+          "p1": "Unser Ziel ist nicht, möglichst viel KI einzubauen, nur weil es geht. Wir fokussieren uns auf die Stellen, an denen sie echten Mehrwert bietet.",
+          "p2": "Weniger Unterbrechungen, weniger Sucherei, weniger Routine. Dafür mehr Zeit für das, was wirklich zählt: deine Kunden und deine Kreativität."
+        },
+        {
+          "title": "Technologie mit Rückgrat",
+          "p1": "Technologie ist nie neutral. Darum gehen wir bewusst verantwortungsvoll damit um. Transparenz ist für uns kein Buzzword, sondern die Basis.",
+          "p2": "Wir vermeiden \"Blackbox\"-Systeme, die niemand mehr versteht. Du behältst immer die Kontrolle und die Hoheit über deine Daten."
+        },
+        {
+          "title": "Über den Tellerrand",
+          "p1": "Ein Teil unserer Erlöse fließt in Projekte, die über das Business hinausgehen. Humanitäre Initiativen und Tierschutz-Projekte liegen uns am Herzen.",
+          "p2": "Nicht als laute PR-Kampagne, sondern weil wir überzeugt sind, dass wir als Technologie-Unternehmen eine gesellschaftliche Verantwortung tragen."
+        }
+      ],
+      "cta": {
+        "title": "Gemeinsam die Zukunft gestalten",
+        "desc": "Wenn du Fragen zu unserer Arbeitsweise hast oder wissen willst, wie wir ethische Standards in unsere Software integrieren, melde dich jederzeit bei uns.",
+        "contact": "Kontakt aufnehmen",
+        "check": "Der 3-Minuten-Check"
+      }
+    },
+    "wissen_erste_schritte": {
+      "meta": {
+        "title": "Erste Schritte mit KI – Einstieg ohne Überforderung | AKLOW",
+        "description": "KI muss nicht kompliziert sein. Und Du musst kein Technikprofi sein, um davon zu profitieren."
+      },
+      "bgText": "Einfach.",
+      "h1": "Dein Weg zur KI-Freiheit",
+      "intro": "Kein Studium, keine Komplexität. Nur ein klarer Plan, wie du dir deinen Feierabend zurückholst.",
+      "steps": [
+        {
+          "number": "01",
+          "title": "Zeitfresser identifizieren",
+          "desc": "Welche Aufgaben rauben dir täglich wertvolle Zeit? Meist sind es E-Mails, Dokumente oder wiederkehrende Fragen."
+        },
+        {
+          "number": "02",
+          "title": "Smarte Assistenten wählen",
+          "desc": "Wähle den passenden Aklow-Assistenten für deine größte Baustelle – ob Posteingang, Dokumente oder Kundenanfragen."
+        },
+        {
+          "number": "03",
+          "title": "Kontrolle behalten",
+          "desc": "Wir starten mit Vorschlägen. Du entscheidest, was die KI lernt und was sie (noch) nicht automatisch tun darf."
+        }
+      ],
+      "dontDo": {
+        "title": "Was du am Anfang nicht tun solltest.",
+        "items": [
+          "Nicht alles auf einmal automatisieren wollen.",
+          "Keine \"KI macht alles\"-Experimente ohne Aufsicht.",
+          "Nicht mit den schwierigsten Ausnahmefällen starten.",
+          "Keine 20 neuen Tools gleichzeitig einführen."
+        ]
+      },
+      "success": {
+        "title": "Unser Erfolgs-Geheimnis",
+        "desc": "Wenn du nach einer Woche keine spürbare Entlastung merkst, war der Einstieg zu groß – nicht du zu langsam. Wir fangen klein an, damit der Effekt riesig ist.",
+        "cta": "3-Minuten-Check starten"
+      }
+    },
+    "wissen_ki_alltag": {
+      "meta": {
+        "title": "KI im Alltag – Endlich verständlich | AKLOW",
+        "description": "Wie KI im Alltag wirklich hilft: Posteingang, Dokumente, Kundenkontakt und Ordnung. Ganz locker erklärt."
+      },
+      "badge": "Keine Panik vor Technik",
+      "h1": "KI im Alltag. Ganz entspannt.",
+      "intro": "KI ist kein Science-Fiction Film. Es ist wie ein neuer Kollege, der nie schläft, keinen Kaffee braucht und liebend gerne deine langweiligsten Aufgaben übernimmt.",
+      "toc": {
+        "title": "Quick Links",
+        "links": [
+          {
+            "id": "was-ist-ki",
+            "label": "Was ist das eigentlich?"
+          },
+          {
+            "id": "beispiele",
+            "label": "5 echte Beispiele"
+          },
+          {
+            "id": "starten",
+            "label": "So fängst du an"
+          },
+          {
+            "id": "sicherheit",
+            "label": "Was ist mit Daten?"
+          }
+        ]
+      },
+      "sections": {
+        "wasIst": {
+          "title": "Was bedeutet „KI im Alltag\" überhaupt?",
+          "p1": "Vergiss humanoide Roboter. Im Alltag bedeutet KI: Smarte Hilfe, wo es nervt.",
+          "p2": "Es sind die kleinen Dinge. Nachrichten sichten, Infos suchen, Rückfragen beantworten, Dokumente zuordnen. Die KI hilft dir, Informationen zu ordnen und Entscheidungen schneller zu treffen.",
+          "quote": "KI ist wie ein digitaler Filter, der nur das Wichtige durchlässt und den Rest schon mal vorsortiert."
+        },
+        "beispiele": {
+          "title": "5 echte Beispiele (ohne Bullshit)",
+          "items": [
+            {
+              "title": "Der schlaue Posteingang",
+              "desc": "Die KI weiß, was wichtig ist. Sie schreibt dir Entwürfe, damit du nur noch \"Ja\" sagen musst."
+            },
+            {
+              "title": "Dokumenten-Jongleur",
+              "desc": "PDF hochladen, Struktur rausbekommen. Nie wieder Rechnungen oder Verträge manuell abtippen."
+            },
+            {
+              "title": "Der Telefon-Profi",
+              "desc": "Anrufe entgegennehmen, Anliegen verstehen und dir eine saubere Mail schicken. 24/7."
+            },
+            {
+              "title": "Wiederholungs-Killer",
+              "desc": "Gleiche Fragen bekommen immer die gleiche, perfekte Antwort. Automatisch vorbereitet."
+            },
+            {
+              "title": "Der Ordnungs-Hüter",
+              "desc": "Alles landet im richtigen Ordner, beim richtigen Kunden. Ohne dass du einen Finger rührst."
+            }
+          ]
+        },
+        "starten": {
+          "title": "Bereit für weniger Stress?",
+          "desc": "Der beste Start ist immer: Ein kurzes Gespräch. Wir schauen uns deinen Alltag an und finden die \"Low Hanging Fruits\" – die Dinge, die dir sofort Zeit schenken.",
+          "check": "Check starten",
+          "chat": "Locker quatschen"
+        }
+      }
+    },
+    "wissen_sicherheit": {
+      "meta": {
+        "title": "Sicherheit – KI mit Kontrolle und Transparenz | AKLOW",
+        "description": "Wenn KI im Alltag helfen soll, muss sie sicher und kontrollierbar sein. Hier erklären wir, wie Sicherheit bei uns praktisch gedacht ist."
+      },
+      "badge": "Enterprise Grade Security",
+      "h1": "Sicherheit. Ohne Kompromisse.",
+      "intro": "Wenn KI im Alltag helfen soll, muss sie sicher sein. Wir bauen keine \"Blackbox\", sondern ein System mit klaren Grenzen und voller Kontrolle.",
+      "features": [
+        {
+          "title": "Volle Transparenz",
+          "desc": "Du weißt zu jeder Zeit genau, was die KI macht, warum sie einen Vorschlag macht und auf welcher Basis."
+        },
+        {
+          "title": "Freigabe-Pflicht",
+          "desc": "Kritische Aktionen passieren erst, wenn du sie bestätigst. Die KI bereitet vor, du entscheidest."
+        },
+        {
+          "title": "Daten-Hoheit",
+          "desc": "Deine Daten bleiben deine Daten. Wir nutzen verschlüsselte Kanäle und halten Zugriffe minimal."
+        },
+        {
+          "title": "Audit-Log",
+          "desc": "Jede Aktion und jeder Vorschlag wird protokolliert. So bleibt alles nachvollziehbar und prüfbar."
+        },
+        {
+          "title": "Smart Sandboxing",
+          "desc": "KI-Aktionen laufen in geschützten Bereichen. Manipulation von außen wird proaktiv erkannt und geblockt."
+        },
+        {
+          "title": "Access Control",
+          "desc": "Präzise Rollen und Berechtigungen sorgen dafür, dass jeder nur das sieht, was er wirklich braucht."
+        }
+      ],
+      "shield": {
+        "title": "So bauen wir dein Schutzschild.",
+        "items": [
+          {
+            "label": "Eingangs-Check",
+            "text": "Jede Anfrage wird auf riskante Muster und Manipulationsversuche geprüft."
+          },
+          {
+            "label": "Kontext-Isolation",
+            "text": "Sensible Daten werden erkannt und nur dort genutzt, wo sie wirklich hingehören."
+          },
+          {
+            "label": "Regel-Validierung",
+            "text": "Vorschläge der KI werden gegen deine festen Geschäftsregeln geprüft."
+          },
+          {
+            "label": "Aktions-Limitierung",
+            "text": "KI darf nur vordefinierte Werkzeuge nutzen – und das nur mit deiner Erlaubnis."
+          }
+        ]
+      },
+      "faq": {
+        "title": "Häufige Fragen zur Sicherheit",
+        "items": [
+          {
+            "q": "Kann ich festlegen, was automatisch passiert und was nicht?",
+            "a": "Ja. Du kannst sehr genau definieren, was Vorschlag bleibt, was Freigabe braucht und was nie automatisch laufen darf."
+          },
+          {
+            "q": "Muss KI Antworten automatisch verschicken?",
+            "a": "Nein. Du kannst mit Entwürfen starten und erst später einzelne, unkritische Schritte automatisieren – wenn du das willst."
+          },
+          {
+            "q": "Was passiert, wenn die KI unsicher ist?",
+            "a": "Dann soll sie nicht „selbstbewusst raten\", sondern sichtbar markieren, nachfragen oder an dich übergeben."
+          },
+          {
+            "q": "Ist das DSGVO-konform?",
+            "a": "Wir klären Datenflüsse, Berechtigungen und Zweck. Unser Ziel ist pragmatischer Datenschutz, der im Alltag wirklich funktioniert."
+          }
+        ]
+      }
+    },
+    "wissen_faq": {
+      "meta": {
+        "title": "FAQ | AKLOW",
+        "description": "Die häufigsten Fragen zu AKLOW. Schnell und ehrlich beantwortet."
+      },
+      "badge": "FAQ",
+      "h1": "Häufige Fragen",
+      "intro": "Alles, was du wissen willst. Ohne Umschweife.",
+      "items": [
+        {
+          "q": "Was ist AKLOW genau?",
+          "a": "AKLOW ist dein KI-Assistent fürs Business. Alle Nachrichten, Dokumente und Kunden an einem Ort. Du chattest mit der KI, sie erledigt den Rest."
+        },
+        {
+          "q": "Muss ich was installieren?",
+          "a": "Nein. AKLOW läuft im Browser. Einfach einloggen und loslegen."
+        },
+        {
+          "q": "Kann ich meine Tools weiter nutzen?",
+          "a": "Ja. AKLOW verbindet sich mit E-Mail, Kalender, CRM und mehr. Kein Umstieg nötig."
+        },
+        {
+          "q": "Ist das DSGVO-konform?",
+          "a": "Ja. Deutsche Server, verschlüsselt, DSGVO-konform. Deine Daten bleiben deine."
+        },
+        {
+          "q": "Wie schnell bin ich startklar?",
+          "a": "In Minuten. Tools verbinden, loslegen, fertig."
+        },
+        {
+          "q": "Kann die KI in meinem Stil antworten?",
+          "a": "Ja. Du sagst, wie du klingen willst – freundlich, formell, locker. Die KI passt sich an."
+        }
+      ],
+      "more": {
+        "title": "Noch Fragen?",
+        "desc": "Schreib uns einfach. Wir antworten schnell.",
+        "cta": "Kontakt"
+      },
+      "check": {
+        "title": "Bereit zum Testen?",
+        "desc": "14 Tage kostenlos. Keine Kreditkarte.",
+        "cta": "Demo starten"
+      }
     }
   }
 }

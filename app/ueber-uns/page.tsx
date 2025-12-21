@@ -1,83 +1,90 @@
 import { CTASection } from '@/components/ui/CTASection';
 import { Section, Container } from '@/components/ui/Section';
 import { TeamGrid } from '@/components/ueber-uns/TeamGrid';
+import { getLocale } from '@/lib/getLocale';
+import { t } from '@/lib/i18n';
+import { createMetadata } from '@/lib/metadata';
 
-export default function UeberUns() {
+export const metadata = createMetadata({
+  title: t('de', 'pages.ueber_uns.meta.title') as string,
+  description: t('de', 'pages.ueber_uns.meta.description') as string,
+  path: '/ueber-uns'
+});
+
+export default async function UeberUns() {
+  const locale = await getLocale();
+  const whatDrives = t(locale, 'pages.ueber_uns.whatDrives') as {title: string, p1: string, p2: string, p3: string};
+  const approach = t(locale, 'pages.ueber_uns.approach') as {title: string, p1: string, p2: string, p3: string};
+  const important = t(locale, 'pages.ueber_uns.important') as {title: string, simplicity: {label: string, text: string}, control: {label: string, text: string}, measurability: {label: string, text: string}};
+  const team = t(locale, 'pages.ueber_uns.team') as {title: string, desc: string};
+
   return (
     <>
       <Section variant="normal">
         <Container size="lg">
           <div className="text-center max-w-3xl mx-auto mb-16">
-            <h1 className="mb-6 text-4xl md:text-5xl font-bold tracking-tight">Über uns</h1>
+            <h1 className="mb-6 text-4xl md:text-5xl font-bold tracking-tight">{t(locale, 'pages.ueber_uns.h1') as string}</h1>
             <p className="text-lg text-foreground-muted mb-12 prose max-w-3xl mx-auto leading-relaxed">
-              Wir machen KI-Modernisierung für den Mittelstand – ohne Komplexität und ohne dass du deinen Alltag umkrempeln musst.
+              {t(locale, 'pages.ueber_uns.intro') as string}
             </p>
           </div>
 
           <div className="mb-24 max-w-3xl mx-auto">
-            <h2 className="mb-4 text-2xl md:text-3xl font-bold">Was uns antreibt</h2>
+            <h2 className="mb-4 text-2xl md:text-3xl font-bold">{whatDrives.title}</h2>
             <p className="text-foreground-muted prose leading-relaxed mb-6">
-              Viele kleine und mittlere Unternehmen haben das Gefühl, dass KI nicht für sie gemacht ist.
-              Zu komplex, zu teuer, zu abstrakt.
+              {whatDrives.p1}
             </p>
             <p className="text-foreground-muted prose leading-relaxed mb-6">
-              Wir sehen das anders.
-              KI kann genau dort helfen, wo im Alltag wirklich Arbeit anfällt: bei E-Mails, Anfragen, Dokumenten und Entscheidungen.
-              Nicht als großes Projekt, sondern als praktische Unterstützung, die sofort funktioniert.
+              {whatDrives.p2}
             </p>
             <p className="text-foreground-muted prose leading-relaxed">
-              Unser Ziel: Du arbeitest weiter wie gewohnt, während die KI im Hintergrund das übernimmt, was dich heute Zeit kostet.
+              {whatDrives.p3}
             </p>
           </div>
 
           <div className="mb-24 max-w-3xl mx-auto">
-            <h2 className="mb-4 text-2xl md:text-3xl font-bold">Unser Ansatz</h2>
+            <h2 className="mb-4 text-2xl md:text-3xl font-bold">{approach.title}</h2>
             <p className="text-foreground-muted prose leading-relaxed mb-6">
-              Wir starten nicht mit großen Plänen, sondern mit konkreten Problemen.
-              In 10 Minuten schauen wir, wo es hakt – und was realistisch ist.
+              {approach.p1}
             </p>
             <p className="text-foreground-muted prose leading-relaxed mb-6">
-              Dann geht es schnell: Ein erstes Setup ist meist in wenigen Tagen live.
-              Schritt für Schritt erweitern wir, wenn es für dich Sinn macht.
+              {approach.p2}
             </p>
             <p className="text-foreground-muted prose leading-relaxed">
-              Keine langen Consulting-Projekte. Keine neuen Tools, die du erst lernen musst.
-              Einfach Unterstützung dort, wo sie wirklich hilft.
+              {approach.p3}
             </p>
           </div>
 
           <div className="mb-24 max-w-3xl mx-auto">
-            <h2 className="mb-4 text-2xl md:text-3xl font-bold">Was uns wichtig ist</h2>
+            <h2 className="mb-4 text-2xl md:text-3xl font-bold">{important.title}</h2>
             <p className="text-foreground-muted prose leading-relaxed mb-6">
-              <strong className="text-foreground">Einfachheit:</strong> Lösungen, die sofort funktionieren – ohne dass du dich durch Handbücher kämpfen musst.
+              <strong className="text-foreground">{important.simplicity.label}</strong> {important.simplicity.text}
             </p>
             <p className="text-foreground-muted prose leading-relaxed mb-6">
-              <strong className="text-foreground">Kontrolle:</strong> Du bestimmst, was automatisch passiert und was nicht. Nichts ohne deine Freigabe.
+              <strong className="text-foreground">{important.control.label}</strong> {important.control.text}
             </p>
             <p className="text-foreground-muted prose leading-relaxed">
-              <strong className="text-foreground">Messbarkeit:</strong> Du siehst, was die KI für dich übernimmt – und wie viel Zeit du zurückgewinnst.
+              <strong className="text-foreground">{important.measurability.label}</strong> {important.measurability.text}
             </p>
           </div>
         </Container>
       </Section>
 
-      {/* Team Section */}
       <Section variant="normal" className="bg-background-muted">
         <Container size="xl">
           <div className="mx-auto max-w-2xl text-center mb-20">
             <h2 className="text-4xl font-semibold tracking-tight text-balance text-foreground sm:text-5xl">
-              Unser Team
+              {team.title}
             </h2>
             <p className="mt-6 text-lg text-foreground-muted leading-relaxed">
-              Wir sind ein kleines Team, das leidenschaftlich daran arbeitet,
-              KI-Modernisierung für den Mittelstand zugänglich zu machen.
+              {team.desc}
             </p>
           </div>
           <TeamGrid />
         </Container>
       </Section>
 
-      <CTASection />
+      <CTASection locale={locale} />
     </>
   );
 }

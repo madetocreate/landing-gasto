@@ -15,7 +15,6 @@ export function OnboardingWizard({ onComplete }: OnboardingWizardProps) {
   const [step, setStep] = useState(0);
   const [businessType, setBusinessType] = useState<BusinessType>(null);
   const [needsKds, setNeedsKds] = useState<Answer>(null);
-  const [needsLanguages, setNeedsLanguages] = useState<Answer>(null);
 
   const handleBusinessType = (type: BusinessType) => {
     setBusinessType(type);
@@ -27,8 +26,7 @@ export function OnboardingWizard({ onComplete }: OnboardingWizardProps) {
     setStep(2);
   };
 
-  const handleLanguages = (answer: Answer) => {
-    setNeedsLanguages(answer);
+  const handleLanguages = () => {
     calculateRecommendation();
   };
 
@@ -133,7 +131,7 @@ export function OnboardingWizard({ onComplete }: OnboardingWizardProps) {
           {(['yes', 'no'] as const).map((answer) => (
             <button
               key={answer}
-              onClick={() => handleLanguages(answer)}
+              onClick={() => handleLanguages()}
               className={classNames(
                 'w-full px-4 py-3 rounded-lg',
                 'bg-surface border border-border/50',

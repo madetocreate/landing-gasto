@@ -2,125 +2,89 @@ import { CTASection } from '@/components/ui/CTASection';
 import { Section, Container } from '@/components/ui/Section';
 import { Button } from '@/components/ui/Button';
 import { createMetadata } from '@/lib/metadata';
+import { Heart, Shield, Users, Globe, Lightbulb } from 'lucide-react';
+import { getLocale } from '@/lib/getLocale';
+import { t } from '@/lib/i18n';
 
 export const metadata = createMetadata({
-  title: 'Haltung & Verantwortung – KI sinnvoll einsetzen',
-  description: 'Wir finden: KI ist zu nützlich, um nur „irgendwie" eingesetzt zu werden. Sie sollte Menschen im Alltag entlasten – verständlich, kontrollierbar und sinnvoll.',
+  title: t('de', 'pages.haltung.meta.title') as string,
+  description: t('de', 'pages.haltung.meta.description') as string,
   path: '/haltung',
 });
 
-export default function Haltung() {
+export default async function Haltung() {
+  const locale = await getLocale();
+  const sections = t(locale, 'pages.haltung.sections') as Array<{title: string, p1: string, p2: string}>;
+  const sectionIcons = [Users, Lightbulb, Shield, Globe];
+  const cta = t(locale, 'pages.haltung.cta') as {title: string, desc: string, contact: string, check: string};
+
   return (
-    <>
-      <Section variant="hero" className="pt-32 pb-20">
+    <div className="bg-white">
+      <Section variant="hero" className="pt-40 pb-24 relative overflow-hidden">
+        <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[1000px] h-[600px] bg-emerald-50/30 rounded-[100%] blur-3xl -z-10" />
+        
         <Container size="lg">
-          <div className="text-center max-w-3xl mx-auto mb-12">
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight mb-6">
-              Haltung & Verantwortung
+          <div className="text-center max-w-4xl mx-auto">
+            <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-emerald-50 text-emerald-600 text-xs font-bold uppercase tracking-widest mb-8">
+              <Heart className="w-3 h-3 fill-current" />
+              {t(locale, 'pages.haltung.badge') as string}
+            </div>
+            <h1 className="text-5xl md:text-7xl font-bold tracking-tight mb-8 text-stone-900">
+              {t(locale, 'pages.haltung.h1') as string}
             </h1>
-            <p className="text-lg md:text-xl text-foreground-muted leading-relaxed">
-              Wir finden: KI ist zu nützlich, um nur „irgendwie" eingesetzt zu werden.
-              Sie sollte Menschen im Alltag entlasten – verständlich, kontrollierbar und sinnvoll.
+            <p className="text-xl md:text-2xl text-stone-500 leading-relaxed font-medium">
+              {t(locale, 'pages.haltung.intro') as string}
             </p>
           </div>
         </Container>
       </Section>
 
-      <Section variant="normal">
+      <Section variant="normal" className="py-24">
         <Container size="lg">
-          {/* KI näher an den Menschen bringen */}
-          <div className="max-w-3xl mx-auto mb-16">
-            <h2 className="text-3xl md:text-4xl font-bold tracking-tight mb-6">
-              KI näher an den Menschen bringen
-            </h2>
-            <p className="text-lg text-foreground-muted leading-relaxed mb-4">
-              Viele sehen KI als etwas Technisches, Abstraktes oder sogar Einschüchterndes.
-              Wir wollen das Gegenteil: KI so bauen und erklären, dass Du sie im Alltag wirklich nutzen kannst.
-            </p>
-            <p className="text-lg text-foreground-muted leading-relaxed mb-4">
-              Ohne komplizierte Oberflächen. Ohne neue Systeme, die Du erst lernen musst.
-              Sondern als Unterstützung dort, wo Arbeit heute sowieso passiert.
-            </p>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-x-16 gap-y-24">
+            {sections.map((section, i) => {
+              const Icon = sectionIcons[i];
+              return (
+                <div key={i} className="group">
+                  <div className="w-16 h-16 rounded-2xl bg-stone-50 flex items-center justify-center mb-8 group-hover:bg-emerald-50 transition-colors duration-500">
+                    <Icon className="w-8 h-8 text-stone-400 group-hover:text-emerald-600 transition-colors duration-500" />
+                  </div>
+                  <h2 className="text-3xl font-bold mb-6 text-stone-900 tracking-tight">
+                    {section.title}
+                  </h2>
+                  <p className="text-lg text-stone-500 leading-relaxed mb-6">
+                    {section.p1}
+                  </p>
+                  <p className="text-lg text-stone-500 leading-relaxed">
+                    {section.p2}
+                  </p>
+                </div>
+              );
+            })}
           </div>
+        </Container>
+      </Section>
 
-          {/* Sinnvoll statt maximal */}
-          <div className="max-w-3xl mx-auto mb-16">
-            <h2 className="text-3xl md:text-4xl font-bold tracking-tight mb-6">
-              Sinnvoll statt maximal
-            </h2>
-            <p className="text-lg text-foreground-muted leading-relaxed mb-4">
-              Unser Ziel ist nicht, möglichst viel KI einzubauen.
-              Unser Ziel ist, dass KI an den richtigen Stellen hilft:
-              weniger Unterbrechungen, weniger Sucherei, weniger Routine.
-            </p>
-            <p className="text-lg text-foreground-muted leading-relaxed">
-              Und gleichzeitig klare Regeln, klare Kontrolle und nachvollziehbare Abläufe.
-            </p>
-          </div>
-
-          {/* Technologie mit Verantwortung */}
-          <div className="max-w-3xl mx-auto mb-16">
-            <h2 className="text-3xl md:text-4xl font-bold tracking-tight mb-6">
-              Technologie mit Verantwortung
-            </h2>
-            <p className="text-lg text-foreground-muted leading-relaxed mb-4">
-              Technologie ist nie nur „neutral" – sie hat Auswirkungen.
-              Darum gehen wir bewusst verantwortungsvoll mit KI um:
-            </p>
-            <p className="text-lg text-foreground-muted leading-relaxed">
-              Wir bevorzugen Lösungen, die transparent sind und im Alltag funktionieren.
-              Und wir vermeiden „Blackbox"-Automatik, die niemand mehr versteht.
-            </p>
-          </div>
-
-          {/* KI auch für Gutes nutzen */}
-          <div className="max-w-3xl mx-auto mb-16">
-            <h2 className="text-3xl md:text-4xl font-bold tracking-tight mb-6">
-              KI auch für Gutes nutzen
-            </h2>
-            <p className="text-lg text-foreground-muted leading-relaxed mb-4">
-              Ein Teil unserer Erlöse fließt in Projekte, die über Business hinausgehen:
-              humanitäre Initiativen und Tierschutz-Projekte, bei denen KI sinnvoll unterstützen kann.
-            </p>
-            <p className="text-lg text-foreground-muted leading-relaxed">
-              Nicht als laute Kampagne.
-              Sondern, weil wir überzeugt sind, dass Technologie Verantwortung mit sich bringt.
-            </p>
-          </div>
-
-          {/* Ein kleines, fokussiertes Team */}
-          <div className="max-w-3xl mx-auto mb-16">
-            <h2 className="text-3xl md:text-4xl font-bold tracking-tight mb-6">
-              Ein kleines, fokussiertes Team
-            </h2>
-            <p className="text-lg text-foreground-muted leading-relaxed mb-4">
-              Wir sind kein anonymer Konzern und keine klassische Agentur.
-              Wir bauen lieber ruhig und sauber, als laut und schnell.
-            </p>
-            <p className="text-lg text-foreground-muted leading-relaxed">
-              Und wir hören genau hin, was im Alltag wirklich gebraucht wird.
-            </p>
-          </div>
-
-          {/* CTA */}
-          <div className="bg-background-muted rounded-2xl p-8 md:p-12 mb-16 text-center max-w-3xl mx-auto">
-            <p className="text-lg text-foreground-muted mb-8 leading-relaxed">
-              Wenn Du Fragen hast oder wissen willst, ob KI bei Dir sinnvoll passt, melde Dich gern.
+      <Section variant="normal" className="py-24 bg-stone-50">
+        <Container size="lg">
+          <div className="max-w-3xl mx-auto text-center">
+            <h2 className="text-3xl font-bold mb-8">{cta.title}</h2>
+            <p className="text-lg text-stone-500 mb-12 leading-relaxed">
+              {cta.desc}
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Button variant="primary" size="lg" asChild href="/kontakt">
-                Kontakt
+                {cta.contact}
               </Button>
               <Button variant="secondary" size="lg" asChild href="/check">
-                10-Minuten-Check
+                {cta.check}
               </Button>
             </div>
           </div>
         </Container>
       </Section>
 
-      <CTASection />
-    </>
+      <CTASection locale={locale} />
+    </div>
   );
 }
-

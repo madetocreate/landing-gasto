@@ -35,9 +35,9 @@ export function FeatureComparison({
         </p>
       </div>
 
-      <div className="border border-border/50 rounded-3xl overflow-hidden bg-surface/50 backdrop-blur-sm shadow-sm">
+      <div className="border border-border/50 rounded-2xl sm:rounded-3xl overflow-x-auto overflow-y-hidden bg-surface/50 backdrop-blur-sm shadow-sm">
         {/* Header Row (Desktop) */}
-        <div className="hidden md:grid grid-cols-4 gap-4 p-6 border-b border-border/50 bg-background-muted/50">
+        <div className="hidden md:grid grid-cols-4 gap-4 p-4 sm:p-6 border-b border-border/50 bg-background-muted/50 min-w-[600px]">
           <div className="font-semibold text-foreground text-sm uppercase tracking-wider">
             Feature
           </div>
@@ -68,16 +68,16 @@ export function FeatureComparison({
                 key={featIdx}
                 className={classNames(
                   "grid grid-cols-1 md:grid-cols-4 gap-4 p-4 md:px-6 md:py-5 border-b border-border/50 last:border-0",
-                  "hover:bg-surface/50 transition-colors items-center"
+                  "hover:bg-surface/50 transition-colors items-center min-w-[600px] md:min-w-0"
                 )}
               >
                 {/* Feature Name */}
-                <div className="font-medium text-foreground text-sm md:text-base">
+                <div className="font-medium text-foreground text-sm md:text-base break-words">
                   {feat.name}
                 </div>
 
                 {/* Tier Indicators */}
-                <div className="grid grid-cols-3 md:contents mt-2 md:mt-0 gap-2">
+                <div className="grid grid-cols-3 md:contents mt-2 md:mt-0 gap-2 md:gap-4">
                   {feat.tiers.map((hasIt, tierIdx) => (
                     <div
                       key={tierIdx}

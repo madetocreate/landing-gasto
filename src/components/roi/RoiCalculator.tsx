@@ -7,7 +7,6 @@ import { AnimatedNumber } from "@/components/ui/AnimatedNumber"
 import { useLocale } from "@/hooks/useLocale"
 import { t } from "@/lib/i18n"
 import { calculateRoi, type RoiInputs } from "@/hooks/useRoiModel"
-import { classNames } from "@/lib/classNames"
 import { SpotlightCard } from "@/components/ui/SpotlightCard"
 
 export function RoiCalculator() {
@@ -32,9 +31,9 @@ export function RoiCalculator() {
 
       <Container size="lg">
         <div className="text-center mb-12">
-          <h2 className="mb-4 text-3xl font-bold tracking-tight">{t(locale, "pages.features.roi.h2")}</h2>
+          <h2 className="mb-4 text-3xl font-bold tracking-tight">{t(locale, "pages.features.roi.h2") as string}</h2>
           <p className="text-foreground-muted prose mx-auto text-lg leading-relaxed">
-            {t(locale, "pages.features.roi.p")}
+            {t(locale, "pages.features.roi.p") as string}
           </p>
         </div>
 
@@ -46,7 +45,7 @@ export function RoiCalculator() {
                 <div>
                   <div className="flex justify-between mb-3">
                     <label className="text-sm font-medium text-foreground">
-                      {t(locale, "pages.features.roi.inputs.tables")}
+                      {t(locale, "pages.features.roi.inputs.tables") as string}
                     </label>
                     <span className="text-sm font-bold text-action">{inputs.tables}</span>
                   </div>
@@ -63,7 +62,7 @@ export function RoiCalculator() {
                 <div>
                   <div className="flex justify-between mb-3">
                     <label className="text-sm font-medium text-foreground">
-                      {t(locale, "pages.features.roi.inputs.guestsPerDay")}
+                      {t(locale, "pages.features.roi.inputs.guestsPerDay") as string}
                     </label>
                     <span className="text-sm font-bold text-action">{inputs.guestsPerDay}</span>
                   </div>
@@ -81,7 +80,7 @@ export function RoiCalculator() {
                 <div>
                   <div className="flex justify-between mb-3">
                     <label className="text-sm font-medium text-foreground">
-                      {t(locale, "pages.features.roi.inputs.avgBill")}
+                      {t(locale, "pages.features.roi.inputs.avgBill") as string}
                     </label>
                     <span className="text-sm font-bold text-action">€{inputs.avgBill}</span>
                   </div>
@@ -101,13 +100,13 @@ export function RoiCalculator() {
               <div className="flex flex-col justify-center gap-6">
                  <div className="p-6 bg-action-soft border border-action/10 rounded-2xl text-center backdrop-blur-sm">
                    <div className="text-sm text-action font-medium mb-1 uppercase tracking-wide opacity-80">
-                     {t(locale, "pages.features.roi.outputs.monthlyRevenue")}
+                     {t(locale, "pages.features.roi.outputs.monthlyRevenue") as string}
                    </div>
                    <div className="text-4xl md:text-5xl font-bold text-action mb-2 tracking-tight">
                      €<AnimatedNumber value={outputs.monthlyRevenue} />
                    </div>
                    <div className="text-xs text-foreground-muted">
-                     {t(locale, "pages.features.roi.disclaimer")}
+                     {t(locale, "pages.features.roi.disclaimer") as string}
                    </div>
                  </div>
 
@@ -117,7 +116,7 @@ export function RoiCalculator() {
                        <AnimatedNumber value={outputs.additionalOrdersPerDay} />
                      </div>
                      <div className="text-xs text-foreground-muted leading-tight">
-                       {t(locale, "pages.features.roi.outputs.additionalOrders")}
+                       {t(locale, "pages.features.roi.outputs.additionalOrders") as string}
                      </div>
                    </div>
 
@@ -126,13 +125,13 @@ export function RoiCalculator() {
                        <AnimatedNumber value={outputs.timeSavedPerDay} /> min
                      </div>
                      <div className="text-xs text-foreground-muted leading-tight">
-                       {t(locale, "pages.features.roi.outputs.timeSaved")}
+                       {t(locale, "pages.features.roi.outputs.timeSaved") as string}
                      </div>
                    </div>
                  </div>
 
                  <Button variant="primary" size="lg" className="w-full mt-2 shadow-lg shadow-action/20" asChild href="/demo">
-                    {t(locale, "pages.features.roi.cta")}
+                    {t(locale, "pages.features.roi.cta") as string}
                  </Button>
               </div>
             </div>

@@ -1,40 +1,56 @@
 import { Section, Container } from "@/components/ui/Section"
-import Link from "next/link"
 import { Button } from "@/components/ui/Button"
+import { Layers, ArrowRight, CheckCircle2 } from "lucide-react"
 
 export function FundamentTeaser() {
   return (
-    <Section variant="normal" className="relative bg-surface/30 dark:bg-surface/10">
+    <Section variant="normal" className="py-32 bg-stone-50 overflow-hidden">
       <Container size="lg">
-        <div className="max-w-3xl mx-auto text-center">
-          <h2 className="text-3xl md:text-4xl font-bold tracking-tight mb-6">
-            Ein Fundament, viele Anwendungen
-          </h2>
-          <p className="text-lg md:text-xl text-foreground-muted leading-relaxed mb-8">
-            Alle Anwendungen basieren auf demselben Fundament. So bleibt alles verbunden und verständlich.
-          </p>
+        <div className="relative p-12 md:p-20 bg-white border-2 border-stone-100 rounded-[4rem] shadow-xl overflow-hidden">
+          {/* Decorative layers icon in background */}
+          <Layers className="absolute -bottom-10 -right-10 w-64 h-64 text-stone-50 -rotate-12 pointer-events-none" />
+          
+          <div className="relative z-10 grid lg:grid-cols-2 gap-16 items-center">
+            <div>
+              <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-stone-100 text-stone-600 text-xs font-bold uppercase tracking-widest mb-8">
+                <Layers className="w-4 h-4 text-action" />
+                The Core
+              </div>
+              <h2 className="text-4xl md:text-5xl font-bold tracking-tighter mb-8 text-stone-900 leading-tight">
+                Ein <span className="text-action">Fundament</span>,<br />viele Möglichkeiten.
+              </h2>
+              <p className="text-xl text-stone-500 font-medium leading-relaxed mb-10">
+                Alle Anwendungen basieren auf demselben Fundament. So bleibt alles verbunden, verständlich und sicher. Ein System, das mitdenkt.
+              </p>
+              <Button asChild href="/fundament" variant="secondary" size="lg" className="h-14 px-8 rounded-xl text-lg font-bold group">
+                <div className="flex items-center gap-2">
+                  <span>Alles zum Fundament</span>
+                  <ArrowRight className="w-5 h-5 transition-transform group-hover:translate-x-1" />
+                </div>
+              </Button>
+            </div>
 
-          <ul className="text-left max-w-md mx-auto space-y-3 mb-10">
-            {[
-              'Gedächtnis & Kontext',
-              'Verstehen & Einordnen',
-              'Dokumente verstehen',
-              'Verbinden & Weitergeben',
-              'Kontrolle & Sicherheit'
-            ].map((item, idx) => (
-              <li key={idx} className="flex items-start">
-                <span className="text-action mr-3 mt-1">•</span>
-                <span className="text-foreground-muted">{item}</span>
-              </li>
-            ))}
-          </ul>
-
-          <Button asChild href="/fundament" variant="primary" size="lg">
-            Zum Fundament →
-          </Button>
+            <div>
+              <ul className="space-y-6">
+                {[
+                  'Gedächtnis & Kontext',
+                  'Verstehen & Einordnen',
+                  'Dokumente verstehen',
+                  'Verbinden & Weitergeben',
+                  'Kontrolle & Sicherheit'
+                ].map((item, idx) => (
+                  <li key={idx} className="flex items-center gap-4 group">
+                    <div className="p-1 rounded-full bg-emerald-50 text-action group-hover:bg-emerald-100 transition-colors">
+                      <CheckCircle2 className="w-6 h-6" />
+                    </div>
+                    <span className="text-xl font-bold text-stone-800 tracking-tight">{item}</span>
+                  </li>
+                ))}
+              </ul>
+            </div>
+          </div>
         </div>
       </Container>
     </Section>
   )
 }
-

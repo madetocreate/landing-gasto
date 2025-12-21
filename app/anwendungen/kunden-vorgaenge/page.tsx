@@ -5,233 +5,143 @@ import { createMetadata } from '@/lib/metadata';
 import Image from 'next/image';
 import Link from 'next/link';
 import { FAQAccordion } from '@/components/ui/FAQAccordion';
-import { Check } from 'lucide-react';
+import { Users, Briefcase, ArrowRight, Sparkles, FolderKanban, History } from 'lucide-react';
 
 export const metadata = createMetadata({
-  title: 'Kunden & Vorgänge – Überblick über Anfragen, Verlauf und nächste Schritte',
-  description: 'Alles zum Kunden an einem Ort: Nachrichten, Dokumente, Entscheidungen und To-dos. Klarer Verlauf statt Suchen, ohne CRM-Overkill.',
+  title: 'Kunden & Vorgänge – Alles im Blick, alles im Kontext.',
+  description: 'Mails, Dokumente, Telefonate: Ein Vorgang hält alles zusammen – ohne Suchen und ohne Lücken.',
   path: '/anwendungen/kunden-vorgaenge',
 });
 
 export default function KundenVorgaenge() {
   const faqItems = [
     {
-      q: 'Ist das ein CRM?',
-      a: 'Es ist kein klassisches CRM mit komplexen Feldern und Admin-Marathon. Es ist ein klarer Überblick über das, was wirklich zählt: Kunde, Verlauf, nächste Schritte. Ohne Overkill.',
+      q: 'Ist das ein vollwertiges CRM?',
+      a: 'Nein, es ist eine intelligente Vorgangs-Ansicht. Wir ergänzen dein bestehendes CRM oder bieten eine schlanke Alternative für den Arbeitsalltag.',
     },
     {
-      q: 'Kann ich eigene Status/Schritte definieren?',
-      a: 'Ja. Du bestimmst, welche Status es gibt und wie ein Vorgang durchläuft. Das System passt sich an deine Abläufe an – nicht umgekehrt.',
+      q: 'Wie werden Vorgänge verknüpft?',
+      a: 'Das System erkennt automatisch Bezüge über Absender, Themen oder Projektdaten und ordnet neue Infos dem richtigen Vorgang zu.',
     },
     {
-      q: 'Gibt es Aufgaben/Wiedervorlagen?',
-      a: 'Ja. Offene Punkte, Fristen und Wiedervorlagen werden automatisch erkannt und angezeigt. Du verpasst nichts.',
-    },
-    {
-      q: 'Kann ich Daten exportieren, wenn ich will?',
-      a: 'Ja. Alle Daten bleiben in deiner Kontrolle. Du kannst exportieren, wenn du willst – oder alles dort lassen, wo es ist.',
+      q: 'Kann ich Team-Mitglieder einladen?',
+      a: 'Ja. Vorgänge können geteilt werden, sodass jeder im Team sofort den aktuellen Stand und alle relevanten Dokumente sieht.',
     },
   ];
 
   return (
-    <>
-      {/* Hero - Split Layout */}
-      <Section variant="hero" className="pt-32 pb-20">
+    <div className="bg-white min-h-screen">
+      {/* Hero */}
+      <Section variant="hero" className="pt-40 pb-24 relative overflow-hidden">
+        <div className="absolute top-0 right-0 w-[600px] h-[600px] bg-purple-50/50 rounded-full blur-3xl -z-10 translate-x-1/2 -translate-y-1/2" />
+        
         <Container size="lg">
-          <div className="grid md:grid-cols-2 gap-16 items-center">
-            <div>
-              <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight mb-6">
-                Kunden & Vorgänge
+          <div className="grid lg:grid-cols-2 gap-16 items-center">
+            <div className="relative z-10">
+              <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-stone-100 text-stone-600 text-xs font-bold uppercase tracking-[0.2em] mb-8">
+                <FolderKanban className="w-4 h-4 text-purple-500" />
+                Case Management Pro
+              </div>
+              <h1 className="text-6xl md:text-8xl font-bold tracking-tighter mb-8 leading-[0.9] text-stone-900">
+                Kontext <br />
+                <span className="text-purple-600 underline decoration-purple-100 decoration-8 underline-offset-8">behalten.</span>
               </h1>
-              <p className="text-lg md:text-xl text-foreground-muted leading-relaxed">
-                Alles zum Kunden an einem Ort: Nachrichten, Dokumente, Entscheidungen und nächste Schritte.
-                Du siehst sofort, was Sache ist – ohne Excel und ohne Admin-Marathon.
-                Perfekt, wenn mehrere Dinge parallel laufen und du trotzdem den Überblick behalten willst.
+              <p className="text-xl md:text-2xl text-stone-500 leading-relaxed max-w-xl font-medium mb-10">
+                Mails, Dokumente, Telefonate: Ein Vorgang hält alles zusammen. Keine Lücken, kein Suchen – nur Klarheit für dich und dein Team.
               </p>
+              <div className="flex flex-col sm:flex-row gap-4">
+                <Button variant="primary" size="lg" className="h-16 px-10 rounded-2xl text-xl font-bold bg-purple-600 hover:bg-purple-700 shadow-purple-200/50" asChild href="/check">
+                  <span>Jetzt Check starten</span>
+                </Button>
+              </div>
             </div>
-            <div className="relative aspect-[4/3] rounded-2xl overflow-hidden bg-muted/30 border border-border/50">
-              <Image
-                src="/media/previews/kunden-vorgaenge.jpg"
-                alt="Kunden & Vorgänge"
-                fill
-                className="object-cover"
-                sizes="(max-width: 768px) 100vw, 50vw"
-              />
-              <div className="absolute inset-0 bg-gradient-to-br from-[#1F2937]/20 to-[#111827]/40" />
+            <div className="relative group">
+              <div className="absolute -inset-4 bg-purple-100/50 rounded-[3rem] blur-2xl group-hover:bg-purple-200/50 transition-colors duration-700" />
+              <div className="relative aspect-square rounded-[3rem] overflow-hidden border-8 border-white shadow-2xl">
+                <Image
+                  src="/media/previews/kunden-vorgaenge.jpg"
+                  alt="Kunden & Vorgänge"
+                  fill
+                  className="object-cover transition-transform duration-700 group-hover:scale-105"
+                  sizes="(max-width: 768px) 100vw, 50vw"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-purple-900/40 via-transparent to-transparent" />
+              </div>
             </div>
           </div>
         </Container>
       </Section>
 
-      {/* Was ein „Vorgang" bei dir wirklich ist */}
-      <Section variant="normal">
+      <Section variant="normal" className="py-24 bg-stone-50">
         <Container size="lg">
-          <div className="max-w-3xl mb-16">
-            <h2 className="text-3xl md:text-4xl font-bold tracking-tight mb-6">
-              Was ein „Vorgang" bei dir wirklich ist
-            </h2>
-            <p className="text-lg text-foreground-muted leading-relaxed">
-              Ein Vorgang ist der rote Faden: von der ersten Anfrage bis zum Abschluss.
-              Nicht nur eine Mail, nicht nur ein Dokument – sondern der komplette Zusammenhang.
-            </p>
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+            {[
+              { 
+                title: 'Zentraler Faden', 
+                desc: 'Alle Infos zu einem Thema an einem Ort gebündelt.', 
+                icon: Briefcase,
+                color: 'bg-purple-50 text-purple-600'
+              },
+              { 
+                title: 'Historie verstehen', 
+                desc: 'Lückenlose Chronologie aller Absprachen und Dateien.', 
+                icon: History,
+                color: 'bg-blue-50 text-blue-600'
+              },
+              { 
+                title: 'Team-Ready', 
+                desc: 'Gemeinsames Wissen statt Wissens-Silos in Postfächern.', 
+                icon: Users,
+                color: 'bg-emerald-50 text-emerald-600'
+              },
+            ].map((item, i) => (
+              <SpotlightCard key={i} className="p-10 rounded-[2.5rem] bg-white border-2 border-stone-100 hover:border-purple-200 transition-all duration-500">
+                <div className={`w-16 h-16 rounded-2xl ${item.color} flex items-center justify-center mb-8 shadow-sm`}>
+                  <item.icon className="w-8 h-8" />
+                </div>
+                <h3 className="text-2xl font-bold mb-4 tracking-tight">{item.title}</h3>
+                <p className="text-stone-500 leading-relaxed">{item.desc}</p>
+              </SpotlightCard>
+            ))}
           </div>
+        </Container>
+      </Section>
 
-          {/* Auf einen Blick, ohne Suchen - Kompakte Liste */}
-          <div className="mb-16">
-            <h2 className="text-3xl md:text-4xl font-bold tracking-tight mb-8">
-              Auf einen Blick, ohne Suchen
-            </h2>
-            <div className="grid md:grid-cols-2 gap-4">
-              <div className="flex items-start gap-3 p-4 bg-surface border border-border/50 rounded-lg">
-                <Check className="w-5 h-5 text-action shrink-0 mt-0.5" strokeWidth={2.5} />
-                <div>
-                  <h3 className="font-semibold text-foreground mb-1">Letzter Stand</h3>
-                  <p className="text-sm text-foreground-muted">was war zuletzt?</p>
-                </div>
-              </div>
-              <div className="flex items-start gap-3 p-4 bg-surface border border-border/50 rounded-lg">
-                <Check className="w-5 h-5 text-action shrink-0 mt-0.5" strokeWidth={2.5} />
-                <div>
-                  <h3 className="font-semibold text-foreground mb-1">Nächster Schritt</h3>
-                  <p className="text-sm text-foreground-muted">was ist offen?</p>
-                </div>
-              </div>
-              <div className="flex items-start gap-3 p-4 bg-surface border border-border/50 rounded-lg">
-                <Check className="w-5 h-5 text-action shrink-0 mt-0.5" strokeWidth={2.5} />
-                <div>
-                  <h3 className="font-semibold text-foreground mb-1">Alle Nachrichten</h3>
-                  <p className="text-sm text-foreground-muted">im Zusammenhang</p>
-                </div>
-              </div>
-              <div className="flex items-start gap-3 p-4 bg-surface border border-border/50 rounded-lg">
-                <Check className="w-5 h-5 text-action shrink-0 mt-0.5" strokeWidth={2.5} />
-                <div>
-                  <h3 className="font-semibold text-foreground mb-1">Passende Dokumente</h3>
-                  <p className="text-sm text-foreground-muted">direkt dabei</p>
-                </div>
-              </div>
-              <div className="flex items-start gap-3 p-4 bg-surface border border-border/50 rounded-lg">
-                <Check className="w-5 h-5 text-action shrink-0 mt-0.5" strokeWidth={2.5} />
-                <div>
-                  <h3 className="font-semibold text-foreground mb-1">Zuständigkeit</h3>
-                  <p className="text-sm text-foreground-muted">falls ihr zu zweit/zu fünft seid</p>
-                </div>
-              </div>
-              <div className="flex items-start gap-3 p-4 bg-surface border border-border/50 rounded-lg">
-                <Check className="w-5 h-5 text-action shrink-0 mt-0.5" strokeWidth={2.5} />
-                <div>
-                  <h3 className="font-semibold text-foreground mb-1">Wiedervorlage & Fristen</h3>
-                  <p className="text-sm text-foreground-muted">wenn nötig</p>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          {/* Timeline statt Durcheinander */}
-          <div className="mb-16">
-            <h2 className="text-3xl md:text-4xl font-bold tracking-tight mb-6">
-              Timeline statt Durcheinander
-            </h2>
-            <p className="text-lg text-foreground-muted leading-relaxed mb-8">
-              Statt durch Chats, Mails und Ordner zu springen, gibt es einen nachvollziehbaren Verlauf.
-              So kannst du auch nach Wochen sofort wieder einsteigen.
-            </p>
-            <SpotlightCard className="p-8 md:p-12" spotlightColor="rgba(var(--action-rgb), 0.1)">
-              <div className="space-y-6">
-                <div className="flex gap-4">
-                  <div className="w-2 h-2 rounded-full bg-action shrink-0 mt-2" />
-                  <div>
-                    <div className="text-sm text-foreground-muted mb-1">Tag 1</div>
-                    <h3 className="font-semibold mb-1">Anfrage eingegangen</h3>
-                    <p className="text-sm text-foreground-muted">Kunde fragt nach Angebot</p>
-                  </div>
-                </div>
-                <div className="flex gap-4">
-                  <div className="w-2 h-2 rounded-full bg-action shrink-0 mt-2" />
-                  <div>
-                    <div className="text-sm text-foreground-muted mb-1">Tag 2</div>
-                    <h3 className="font-semibold mb-1">Dokument hochgeladen</h3>
-                    <p className="text-sm text-foreground-muted">Angebot erstellt und zugeordnet</p>
-                  </div>
-                </div>
-                <div className="flex gap-4">
-                  <div className="w-2 h-2 rounded-full bg-action shrink-0 mt-2" />
-                  <div>
-                    <div className="text-sm text-foreground-muted mb-1">Tag 5</div>
-                    <h3 className="font-semibold mb-1">Rückfrage beantwortet</h3>
-                    <p className="text-sm text-foreground-muted">Kunde hat Fragen, Antwort gesendet</p>
-                  </div>
-                </div>
-                <div className="flex gap-4">
-                  <div className="w-2 h-2 rounded-full bg-action shrink-0 mt-2" />
-                  <div>
-                    <div className="text-sm text-foreground-muted mb-1">Tag 8</div>
-                    <h3 className="font-semibold mb-1">Termin vereinbart</h3>
-                    <p className="text-sm text-foreground-muted">Nächster Schritt: Vor-Ort-Termin</p>
-                  </div>
-                </div>
-              </div>
-            </SpotlightCard>
-          </div>
-
-          {/* Beispiel: Von Anfrage bis Abschluss */}
-          <div className="mb-16">
-            <h2 className="text-3xl md:text-4xl font-bold tracking-tight mb-6">
-              Beispiel: Von Anfrage bis Abschluss
-            </h2>
-            <p className="text-lg text-foreground-muted leading-relaxed">
-              Ein Kunde fragt an. Es kommt ein Dokument dazu. Es gibt Rückfragen. Dann ein Termin. Dann ein Abschluss.
-              Alles bleibt zusammen. Du verlierst keine Details – und musst nichts zusammensuchen.
-            </p>
-          </div>
-
-          {/* Kontrolle & Nachvollziehbarkeit */}
-          <div className="mb-16">
-            <h2 className="text-3xl md:text-4xl font-bold tracking-tight mb-6">
-              Kontrolle & Nachvollziehbarkeit
-            </h2>
-            <p className="text-lg text-foreground-muted leading-relaxed">
-              Gerade wenn mehrere Dinge parallel laufen, brauchst du Klarheit.
-              Darum ist nachvollziehbar, was passiert ist – und warum.
-            </p>
-          </div>
-
-          {/* CTA */}
-          <div className="bg-background-muted rounded-2xl p-8 md:p-12 mb-16 text-center">
-            <h2 className="text-2xl md:text-3xl font-bold mb-4">
-              Willst du weniger Kontextverlust im Alltag?
-            </h2>
-            <p className="text-lg text-foreground-muted mb-8 max-w-2xl mx-auto">
-              Wir schauen auf deine typischen Vorgänge und bauen eine Struktur, die sofort hilft.
-            </p>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center mb-8">
-              <Button variant="primary" size="lg" asChild href="/check">
-                10-Minuten-Check
-              </Button>
-              <Button variant="secondary" size="lg" asChild href="/kontakt">
-                Kontakt
-              </Button>
-            </div>
-            <div className="flex flex-wrap justify-center gap-4 text-sm text-foreground-muted">
-              <Link href="/anwendungen" className="hover:text-action transition-colors">
-                Zurück zu Anwendungen
-              </Link>
-              <span>•</span>
-              <Link href="/fundament" className="hover:text-action transition-colors">
-                Zum Fundament
-              </Link>
-            </div>
-          </div>
-
-          {/* FAQ */}
-          <div className="mb-16">
-            <h2 className="text-3xl md:text-4xl font-bold tracking-tight mb-8">
+      <Section variant="normal" className="py-32">
+        <Container size="lg">
+          <div className="max-w-4xl mx-auto">
+            <h2 className="text-4xl md:text-6xl font-bold tracking-tighter mb-16 text-center">
               Häufige Fragen
             </h2>
             <FAQAccordion items={faqItems} />
           </div>
         </Container>
       </Section>
-    </>
+
+      <Section variant="normal" className="pb-32">
+        <Container size="lg">
+          <div className="p-12 md:p-20 rounded-[4rem] bg-stone-900 text-white relative overflow-hidden text-center group">
+            <div className="absolute top-0 right-0 w-96 h-96 bg-purple-500 opacity-10 blur-[120px] group-hover:opacity-20 transition-opacity duration-700" />
+            <div className="relative z-10">
+              <Sparkles className="w-16 h-16 text-purple-400 mx-auto mb-10" />
+              <h2 className="text-4xl md:text-7xl font-bold tracking-tighter mb-8 leading-none">
+                Alles im Griff.
+              </h2>
+              <p className="text-xl md:text-2xl text-stone-400 max-w-2xl mx-auto mb-12 font-medium">
+                Schluss mit dem Hin-und-Her-Gespringe zwischen Tools. Lass uns schauen, wie wir deine Vorgänge ordnen.
+              </p>
+              <div className="flex flex-col sm:flex-row justify-center gap-6">
+                <Button variant="primary" size="lg" className="h-16 px-12 rounded-2xl text-xl font-bold bg-purple-600 hover:bg-purple-700 shadow-xl shadow-purple-900/20 hover:scale-105 transition-transform" asChild href="/check">
+                  <span>Check starten</span>
+                </Button>
+                <Link href="/anwendungen" className="inline-flex items-center gap-2 text-white/60 hover:text-white font-bold transition-colors">
+                  Alle Anwendungen sehen <ArrowRight className="w-5 h-5" />
+                </Link>
+              </div>
+            </div>
+          </div>
+        </Container>
+      </Section>
+    </div>
   );
 }

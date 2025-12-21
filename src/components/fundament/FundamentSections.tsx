@@ -1,5 +1,6 @@
 import { Section, Container } from "@/components/ui/Section"
 import { classNames } from "@/lib/classNames"
+import { Button } from "@/components/ui/Button"
 
 interface Fundament {
   key: string
@@ -105,7 +106,7 @@ export function FundamentSections() {
                     ))}
                   </div>
 
-                  <div className="pt-8">
+                  <div className="pt-8 space-y-6">
                     <div className="inline-block px-8 py-6 rounded-3xl bg-[#111827]/5 dark:bg-white/5 border border-border/50 shadow-sm">
                       <p className="text-sm font-bold uppercase tracking-[0.2em] text-action mb-3">
                         Im Alltag heißt das:
@@ -113,6 +114,11 @@ export function FundamentSections() {
                       <p className="text-xl md:text-2xl font-medium text-foreground leading-relaxed">
                         {fundament.everyday}
                       </p>
+                    </div>
+                    <div>
+                      <Button variant="secondary" size="md" asChild href={`/fundament/${fundament.key}`}>
+                        Mehr erfahren →
+                      </Button>
                     </div>
                   </div>
                 </div>

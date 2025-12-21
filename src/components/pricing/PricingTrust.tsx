@@ -60,7 +60,7 @@ export function PricingTrust({ items = defaultTrustItems }: PricingTrustProps) {
                 spotlightColor="rgba(var(--action-rgb), 0.08)"
               >
                 <div className="w-12 h-12 rounded-xl bg-action-soft flex items-center justify-center text-action">
-                  <Icon className="w-6 h-6" strokeWidth={2} />
+                  <Icon className="w-6 h-6" />
                 </div>
                 <div>
                   <h3 className="font-bold text-foreground mb-2 text-lg">{item.title}</h3>

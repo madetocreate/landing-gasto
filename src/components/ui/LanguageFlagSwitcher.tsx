@@ -1,9 +1,7 @@
 "use client"
 
 import { useState, useRef, useEffect } from "react"
-import { useRouter } from "next/navigation"
 import { motion, AnimatePresence, useReducedMotion } from "framer-motion"
-import { useLocale } from "@/hooks/useLocale"
 import { Locale, locales } from "@/lib/i18n"
 import { classNames } from "@/lib/classNames"
 
@@ -11,15 +9,30 @@ const FLAGS: Record<Locale, string> = {
   de: "🇩🇪",
   en: "🇬🇧",
   es: "🇪🇸",
+  fr: "🇫🇷",
+  it: "🇮🇹",
 }
 
-export function LanguageFlagSwitcher() {
-  const router = useRouter()
-  const locale = useLocale()
+interface LanguageFlagSwitcherProps {
+  locale: Locale;
+}
+
+export function LanguageFlagSwitcher({ locale }: LanguageFlagSwitcherProps) {
   const [isOpen, setIsOpen] = useState(false)
-  const [pendingLocale, setPendingLocale] = useState<Locale | null>(null)
   const containerRef = useRef<HTMLDivElement>(null)
   const shouldReduceMotion = useReducedMotion()
+
+  const [pendingLocale, setPendingLocale] = useState<Locale | null>(null)
+
+  useEffect(() => {
+    if (!pendingLocale) return
+    
+    // Set cookie immediately
+    document.cookie = `locale=${pendingLocale}; path=/; max-age=31536000; SameSite=Lax`
+    
+    // Force page reload to apply new locale
+    window.location.reload()
+  }, [pendingLocale])
 
   const changeLocale = (newLocale: Locale) => {
     if (newLocale === locale) {
@@ -29,13 +42,6 @@ export function LanguageFlagSwitcher() {
     setPendingLocale(newLocale)
     setIsOpen(false)
   }
-
-  // Write cookie + refresh in an effect
-  useEffect(() => {
-    if (!pendingLocale) return
-    document.cookie = `locale=${pendingLocale}; path=/; max-age=31536000`
-    router.refresh()
-  }, [pendingLocale, router])
 
   // Close on click outside
   useEffect(() => {
@@ -77,7 +83,10 @@ export function LanguageFlagSwitcher() {
         aria-haspopup="listbox"
         aria-label="Sprache ändern"
       >
-        <span className="text-lg leading-none block w-6 h-6 flex items-center justify-center">
+        <span 
+          className="text-lg leading-none block w-6 h-6 flex items-center justify-center"
+          suppressHydrationWarning
+        >
           {FLAGS[locale]}
         </span>
       </button>
@@ -89,7 +98,7 @@ export function LanguageFlagSwitcher() {
             animate={shouldReduceMotion ? { opacity: 1 } : { opacity: 1, scale: 1, x: 0 }}
             exit={shouldReduceMotion ? { opacity: 0 } : { opacity: 0, scale: 0.95, x: 10 }}
             transition={shouldReduceMotion ? { duration: 0 } : { duration: 0.2, ease: "easeOut" }}
-            className="absolute right-0 top-full mt-2 bg-[#111827] border border-white/10 rounded-xl shadow-xl overflow-hidden z-50 backdrop-blur-md"
+            className="absolute right-0 top-full mt-2 bg-[#111827] border border-white/10 rounded-xl shadow-xl overflow-hidden z-[100001] backdrop-blur-md"
             role="listbox"
           >
             <div className="p-2 flex gap-2">

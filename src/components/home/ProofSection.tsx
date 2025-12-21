@@ -2,13 +2,15 @@
 
 import { motion, useReducedMotion } from "framer-motion"
 import { Section, Container } from "@/components/ui/Section"
-import { useLocale } from "@/hooks/useLocale"
-import { t } from "@/lib/i18n"
+import { Locale, t } from "@/lib/i18n"
 import { SpotlightCard } from "@/components/ui/SpotlightCard"
 import { motion as motionPolicy } from "@/lib/motion"
 
-export function ProofSection() {
-  const locale = useLocale()
+interface ProofSectionProps {
+  locale: Locale;
+}
+
+export function ProofSection({ locale }: ProofSectionProps) {
   const shouldReduceMotion = useReducedMotion()
 
   const items = t(locale, "pages.home.proof.items") as Array<{ title: string; subtitle: string }>
@@ -17,9 +19,9 @@ export function ProofSection() {
     <Section variant="normal" className="bg-surface dark:bg-background">
       <Container size="lg">
         <div className="text-center mb-16">
-          <h2 className="mb-4 tracking-tight">{t(locale, "pages.home.proof.h2")}</h2>
+          <h2 className="mb-4 tracking-tight">{t(locale, "pages.home.proof.h2") as string}</h2>
           <p className="text-lg text-foreground-muted prose-wide mx-auto leading-relaxed whitespace-pre-line">
-            {t(locale, "pages.home.proof.p")}
+            {t(locale, "pages.home.proof.p") as string}
           </p>
         </div>
 
@@ -33,6 +35,7 @@ export function ProofSection() {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true, margin: "-80px" }}
                 transition={shouldReduceMotion ? { duration: 0 } : { duration: motionPolicy.reveal.duration, ease: motionPolicy.reveal.ease, delay: idx * 0.05 }}
+                style={{ willChange: 'transform, opacity' }}
                 className={isHero ? "lg:col-span-2 lg:row-span-2" : "col-span-1"}
               >
                 <SpotlightCard className="p-6 h-full flex flex-col" withBorderBeam={isHero}>
@@ -47,7 +50,7 @@ export function ProofSection() {
                   </div>
 
                   <div className="mt-auto pt-4">
-                     <DeviceFrame seed={idx} isHero={isHero} />
+                     <DeviceFrame />
                   </div>
                 </SpotlightCard>
               </motion.div>
@@ -59,7 +62,7 @@ export function ProofSection() {
   )
 }
 
-function DeviceFrame({ seed = 0, isHero = false }: { seed?: number, isHero?: boolean }) {
+function DeviceFrame() {
   // Use CSS vars for inverse tokens
   const bg = "var(--color-inverse-bg)"
   const surface = "var(--color-inverse-surface)"

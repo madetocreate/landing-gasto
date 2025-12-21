@@ -3,186 +3,96 @@ import { Section, Container } from '@/components/ui/Section';
 import { SpotlightCard } from '@/components/ui/SpotlightCard';
 import { createMetadata } from '@/lib/metadata';
 import { FAQAccordion } from '@/components/ui/FAQAccordion';
-import { Shield, Lock, Eye, CheckCircle2 } from 'lucide-react';
+import { ShieldCheck, Lock, Eye, Key, Activity, ShieldAlert, CheckCircle2 } from 'lucide-react';
+import { getLocale } from '@/lib/getLocale';
+import { t } from '@/lib/i18n';
 
 export const metadata = createMetadata({
-  title: 'Sicherheit – KI mit Kontrolle und Transparenz',
-  description: 'Warum Sicherheit bei KI wichtig ist. Kontrolle statt Blackbox, Datensicherheit pragmatisch umgesetzt.',
+  title: t('de', 'pages.wissen_sicherheit.meta.title') as string,
+  description: t('de', 'pages.wissen_sicherheit.meta.description') as string,
   path: '/wissen/sicherheit',
 });
 
-export default function SicherheitWissen() {
-  const faqItems = [
-    {
-      q: 'Was bedeutet „Kontrolle statt Blackbox"?',
-      a: 'Jeder Schritt ist nachvollziehbar. Du siehst, was die KI vorschlägt und warum. Nichts passiert ohne deine Freigabe.',
-    },
-    {
-      q: 'Wie werden meine Daten geschützt?',
-      a: 'Sensible Daten bleiben serverseitig. Zugriffe sind klar geregelt, Tokens werden nicht unkontrolliert weitergegeben.',
-    },
-    {
-      q: 'Was ist AI Shield?',
-      a: 'AI Shield ist eine Sicherheitsschicht, die das System vor Manipulationen schützt: Prompt Injection, Tool-Missbrauch, Context Poisoning. Alles wird überwacht und protokolliert.',
-    },
-    {
-      q: 'Kann ich sehen, was die KI gemacht hat?',
-      a: 'Ja. Alle Aktionen sind nachvollziehbar dokumentiert. Du kannst jederzeit prüfen, was passiert ist und warum.',
-    },
-  ];
+export default async function SicherheitWissen() {
+  const locale = await getLocale();
+  const features = t(locale, 'pages.wissen_sicherheit.features') as Array<{title: string, desc: string}>;
+  const featureIcons = [Eye, CheckCircle2, Lock, Activity, ShieldAlert, Key];
+  const shield = t(locale, 'pages.wissen_sicherheit.shield') as {title: string, items: Array<{label: string, text: string}>};
+  const faq = t(locale, 'pages.wissen_sicherheit.faq') as {title: string, items: Array<{q: string, a: string}>};
 
   return (
-    <>
-      <Section variant="hero" className="pt-32 pb-20">
+    <div className="bg-stone-900 text-stone-100 min-h-screen selection:bg-emerald-500/30 selection:text-emerald-200">
+      <Section variant="hero" className="pt-40 pb-24 relative overflow-hidden">
+        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[1000px] h-[1000px] border border-white/5 rounded-full pointer-events-none" />
+        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[800px] border border-white/10 rounded-full pointer-events-none" />
+        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] border border-white/20 rounded-full pointer-events-none" />
+        
         <Container size="lg">
-          <div className="text-center max-w-3xl mx-auto mb-12">
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight mb-6">
-              Sicherheit
+          <div className="text-center max-w-4xl mx-auto relative z-10">
+            <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-emerald-500/10 text-emerald-400 text-xs font-bold uppercase tracking-widest mb-8 border border-emerald-500/20">
+              <ShieldCheck className="w-4 h-4" />
+              {t(locale, 'pages.wissen_sicherheit.badge') as string}
+            </div>
+            <h1 className="text-5xl md:text-8xl font-bold tracking-tighter mb-8 leading-none">
+              {t(locale, 'pages.wissen_sicherheit.h1') as string}
             </h1>
-            <p className="text-lg md:text-xl text-foreground-muted leading-relaxed">
-              KI kann im Alltag enorm helfen – aber nur, wenn sie sicher und kontrollierbar bleibt.
+            <p className="text-xl md:text-2xl text-stone-400 leading-relaxed max-w-3xl mx-auto font-medium">
+              {t(locale, 'pages.wissen_sicherheit.intro') as string}
             </p>
           </div>
         </Container>
       </Section>
 
-      <Section variant="normal">
+      <Section variant="normal" className="py-24">
         <Container size="lg">
-          {/* Warum Sicherheit bei KI wichtig ist */}
-          <div className="max-w-3xl mx-auto mb-16">
-            <h2 className="text-3xl md:text-4xl font-bold tracking-tight mb-6">
-              Warum Sicherheit bei KI wichtig ist
-            </h2>
-            <p className="text-lg text-foreground-muted leading-relaxed mb-4">
-              KI ist mächtig. Und genau deshalb braucht sie klare Grenzen und Kontrolle.
-              Sicherheit bedeutet nicht nur Verschlüsselung, sondern vor allem: Du weißt, was passiert – und Du behältst die Kontrolle.
-            </p>
-            <p className="text-lg text-foreground-muted leading-relaxed">
-              Das System arbeitet nicht „irgendwie im Hintergrund", sondern nachvollziehbar und prüfbar.
-            </p>
-          </div>
-
-          {/* Kontrolle statt Blackbox */}
-          <div className="max-w-3xl mx-auto mb-16">
-            <h2 className="text-3xl md:text-4xl font-bold tracking-tight mb-6">
-              Kontrolle statt Blackbox
-            </h2>
-            <p className="text-lg text-foreground-muted leading-relaxed mb-6">
-              Jeder Schritt ist erklärbar. Jede Entscheidung ist nachvollziehbar.
-            </p>
-            <ul className="space-y-3">
-              <li className="flex items-start gap-3 text-foreground-muted">
-                <span className="text-action mr-2 mt-1">•</span>
-                <span>Freigaben bleiben bei Dir – nichts passiert ohne deine Zustimmung</span>
-              </li>
-              <li className="flex items-start gap-3 text-foreground-muted">
-                <span className="text-action mr-2 mt-1">•</span>
-                <span>Rollen und Rechte sind klar definiert</span>
-              </li>
-              <li className="flex items-start gap-3 text-foreground-muted">
-                <span className="text-action mr-2 mt-1">•</span>
-                <span>Vorschläge bleiben Vorschläge – Du entscheidest</span>
-              </li>
-              <li className="flex items-start gap-3 text-foreground-muted">
-                <span className="text-action mr-2 mt-1">•</span>
-                <span>Nachvollziehbarkeit über den gesamten Ablauf</span>
-              </li>
-            </ul>
-          </div>
-
-          {/* Datensicherheit pragmatisch */}
-          <div className="max-w-3xl mx-auto mb-16">
-            <h2 className="text-3xl md:text-4xl font-bold tracking-tight mb-6">
-              Datensicherheit pragmatisch
-            </h2>
-            <p className="text-lg text-foreground-muted leading-relaxed mb-4">
-              Sensible Informationen gehören nicht unkontrolliert in den Browser oder in fremde Oberflächen.
-            </p>
-            <p className="text-lg text-foreground-muted leading-relaxed mb-4">
-              Darum ist das System so aufgebaut:
-            </p>
-            <ul className="space-y-3">
-              <li className="flex items-start gap-3 text-foreground-muted">
-                <span className="text-action mr-2 mt-1">•</span>
-                <span>Zugriffe und Tokens bleiben serverseitig – kontrolliert und nachvollziehbar</span>
-              </li>
-              <li className="flex items-start gap-3 text-foreground-muted">
-                <span className="text-action mr-2 mt-1">•</span>
-                <span>Keine sensiblen Daten im Browser</span>
-              </li>
-              <li className="flex items-start gap-3 text-foreground-muted">
-                <span className="text-action mr-2 mt-1">•</span>
-                <span>Klare Berechtigungen: Wer darf was?</span>
-              </li>
-              <li className="flex items-start gap-3 text-foreground-muted">
-                <span className="text-action mr-2 mt-1">•</span>
-                <span>Du behältst jederzeit die Hoheit über deine Daten</span>
-              </li>
-            </ul>
-          </div>
-
-          {/* AI Shield als Sicherheits-Layer */}
-          <div className="max-w-3xl mx-auto mb-16">
-            <h2 className="text-3xl md:text-4xl font-bold tracking-tight mb-6">
-              AI Shield als Sicherheits-Layer
-            </h2>
-            <p className="text-lg text-foreground-muted leading-relaxed mb-6">
-              AI Shield ist eine zusätzliche Sicherheitsschicht, die das System vor Manipulationen schützt.
-            </p>
-            <SpotlightCard 
-              className="p-6 md:p-8 bg-[#1F2937]/30 border border-border/50" 
-              spotlightColor="rgba(var(--action-rgb), 0.15)"
-            >
-              <h3 className="text-xl font-bold mb-4">Was AI Shield schützt:</h3>
-              <ul className="space-y-3">
-                <li className="flex items-start gap-3 text-foreground-muted">
-                  <Shield className="w-5 h-5 text-action shrink-0 mt-0.5" strokeWidth={2} />
-                  <div>
-                    <span className="font-semibold text-foreground">Prompt Injection:</span>
-                    <span className="ml-2">Verhindert, dass externe Eingaben das System manipulieren</span>
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            {features.map((feature, i) => {
+              const Icon = featureIcons[i];
+              return (
+                <SpotlightCard key={i} className="p-8 bg-white/5 border-white/10 hover:border-emerald-500/50 transition-all group">
+                  <div className="w-12 h-12 rounded-xl bg-emerald-500/10 text-emerald-500 flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
+                    <Icon className="w-6 h-6" />
                   </div>
-                </li>
-                <li className="flex items-start gap-3 text-foreground-muted">
-                  <Lock className="w-5 h-5 text-action shrink-0 mt-0.5" strokeWidth={2} />
-                  <div>
-                    <span className="font-semibold text-foreground">Tool-Missbrauch:</span>
-                    <span className="ml-2">Überwacht, welche Tools verwendet werden und ob sie autorisiert sind</span>
-                  </div>
-                </li>
-                <li className="flex items-start gap-3 text-foreground-muted">
-                  <Eye className="w-5 h-5 text-action shrink-0 mt-0.5" strokeWidth={2} />
-                  <div>
-                    <span className="font-semibold text-foreground">Context Poisoning:</span>
-                    <span className="ml-2">Erkennt, wenn Kontext manipuliert wird</span>
-                  </div>
-                </li>
-                <li className="flex items-start gap-3 text-foreground-muted">
-                  <CheckCircle2 className="w-5 h-5 text-action shrink-0 mt-0.5" strokeWidth={2} />
-                  <div>
-                    <span className="font-semibold text-foreground">Logging & Monitoring:</span>
-                    <span className="ml-2">Alle Aktionen werden protokolliert und überwacht</span>
-                  </div>
-                </li>
-              </ul>
-            </SpotlightCard>
-            <p className="text-lg text-foreground-muted leading-relaxed mt-6">
-              Das klingt technisch – ist aber wichtig, damit das System im Alltag zuverlässig funktioniert.
-              Ohne Panik, ohne Paranoia. Einfach sauber und kontrolliert.
-            </p>
-          </div>
-
-          {/* FAQ */}
-          <div className="max-w-3xl mx-auto mb-16">
-            <h2 className="text-3xl md:text-4xl font-bold tracking-tight mb-8">
-              Häufige Fragen
-            </h2>
-            <FAQAccordion items={faqItems} />
+                  <h3 className="text-xl font-bold mb-3 text-white">{feature.title}</h3>
+                  <p className="text-stone-400 leading-relaxed">{feature.desc}</p>
+                </SpotlightCard>
+              );
+            })}
           </div>
         </Container>
       </Section>
 
-      <CTASection />
-    </>
+      <Section variant="normal" className="py-24 bg-stone-800/50">
+        <Container size="lg">
+          <div className="max-w-4xl mx-auto">
+            <h2 className="text-3xl md:text-5xl font-bold mb-12 tracking-tight text-center">{shield.title}</h2>
+            <div className="space-y-6">
+              {shield.items.map((item, i) => (
+                <div key={i} className="flex gap-6 p-6 rounded-3xl bg-stone-900 border border-white/5 items-center">
+                  <div className="w-10 h-10 rounded-full bg-emerald-500/20 text-emerald-500 flex items-center justify-center shrink-0 font-bold">
+                    {i + 1}
+                  </div>
+                  <div>
+                    <h4 className="font-bold text-lg mb-1">{item.label}</h4>
+                    <p className="text-stone-500">{item.text}</p>
+                  </div>
+                </div>
+              ))}
+            </div>
+          </div>
+        </Container>
+      </Section>
+
+      <Section variant="normal" className="py-24">
+        <Container size="lg">
+          <div className="max-w-3xl mx-auto">
+            <h2 className="text-3xl font-bold mb-12 text-center">{faq.title}</h2>
+            <FAQAccordion items={faq.items} className="text-stone-300" />
+          </div>
+        </Container>
+      </Section>
+
+      <CTASection locale={locale} />
+    </div>
   );
 }
-

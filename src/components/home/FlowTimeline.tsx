@@ -18,14 +18,14 @@ export function FlowTimeline() {
   }))
 
   return (
-    <Section variant="normal" surface="surface">
+    <Section variant="normal" surface="surface" className="py-16 sm:py-24">
       <Container size="xl">
-        <div className="text-center mb-16">
-          <h2 className="text-3xl font-bold tracking-tight mb-4">{t(locale, "pages.home.timeline.h2")}</h2>
-          <p className="text-lg text-foreground-muted max-w-2xl mx-auto">{t(locale, "pages.home.timeline.p")}</p>
+        <div className="text-center mb-12 sm:mb-16">
+          <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold tracking-tight mb-4 break-words px-4">{t(locale, "pages.home.timeline.h2") as string}</h2>
+          <p className="text-lg sm:text-xl text-foreground-muted max-w-2xl mx-auto px-4 break-words">{t(locale, "pages.home.timeline.p") as string}</p>
         </div>
 
-        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
           {steps.map((step, i) => (
             <motion.div
               key={i}

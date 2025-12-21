@@ -10,9 +10,10 @@ import type { Metadata } from "next";
 export async function generateMetadata(): Promise<Metadata> {
   const locale = await getLocale();
   return createMetadata({
-    title: t(locale, "pages.cases.meta.title"),
-    description: t(locale, "pages.cases.meta.description"),
+    title: t(locale, "pages.cases.meta.title") as string,
+    description: t(locale, "pages.cases.meta.description") as string,
     path: "/cases",
+    locale,
   });
 }
 
@@ -25,9 +26,9 @@ export default async function Cases() {
       <Section variant="hero" className="pt-32 pb-16">
         <Container size="xl">
           <div className="text-center max-w-3xl mx-auto mb-16">
-            <h1 className="mb-6 tracking-tight">{t(locale, "pages.cases.h1")}</h1>
+            <h1 className="mb-6 tracking-tight">{t(locale, "pages.cases.h1") as string}</h1>
             <p className="text-lg md:text-xl text-foreground-muted leading-relaxed">
-              {t(locale, "pages.cases.intro")}
+              {t(locale, "pages.cases.intro") as string}
             </p>
           </div>
 
@@ -44,13 +45,13 @@ export default async function Cases() {
 
           <div className="flex justify-center mt-12">
             <Button variant="primary" size="lg" asChild href="/demo" className="rounded-full px-8">
-              {t(locale, "pages.cases.cta")}
+              {t(locale, "pages.cases.cta") as string}
             </Button>
           </div>
         </Container>
       </Section>
 
-      <CTASection />
+      <CTASection locale={locale} />
     </>
   );
 }

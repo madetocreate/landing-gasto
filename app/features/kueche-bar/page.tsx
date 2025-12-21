@@ -9,9 +9,10 @@ import type { Metadata } from 'next';
 export async function generateMetadata(): Promise<Metadata> {
   const locale = await getLocale();
   return createMetadata({
-    title: t(locale, 'pages.feature_kds.meta.title'),
-    description: t(locale, 'pages.feature_kds.meta.description'),
+    title: t(locale, 'pages.feature_kds.meta.title') as string,
+    description: t(locale, 'pages.feature_kds.meta.description') as string,
     path: '/features/kueche-bar',
+    locale,
   });
 }
 
@@ -22,13 +23,13 @@ export default async function KuecheBar() {
     p: string; 
     bullets?: string[];
   }>;
-  const intro = t(locale, 'pages.feature_kds.intro');
+  const intro = t(locale, 'pages.feature_kds.intro') as string | undefined;
 
   return (
     <>
       <Section variant="normal">
         <Container size="lg">
-          <h1 className="mb-6">{t(locale, 'pages.feature_kds.h1')}</h1>
+          <h1 className="mb-6">{t(locale, 'pages.feature_kds.h1') as string}</h1>
           {intro && (
             <p className="text-lg text-foreground-muted mb-12 prose max-w-3xl">
               {intro}
@@ -50,14 +51,14 @@ export default async function KuecheBar() {
           ))}
 
           <div className="mt-16 text-center">
-            <h2 className="mb-6">{t(locale, 'pages.feature_kds.cta.title')}</h2>
+            <h2 className="mb-6">{t(locale, 'pages.feature_kds.cta.title') as string}</h2>
             <Button variant="primary" size="lg" asChild href="/demo#form">
-              {t(locale, 'pages.feature_kds.cta.button')}
+              {t(locale, 'pages.feature_kds.cta.button') as string}
             </Button>
           </div>
         </Container>
       </Section>
-      <CTASection />
+      <CTASection locale={locale} />
     </>
   );
 }

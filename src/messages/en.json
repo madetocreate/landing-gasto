@@ -1,42 +1,46 @@
 {
   "brand": {
     "name": "AKLOW",
-    "tagline": "AI modernization for SMBs"
+    "tagline": "Your AI assistant for business"
   },
   "nav": {
     "top": {
-      "home": "AI Modernization",
-      "applications": "Applications",
-      "fundament": "Foundation",
+      "home": "Product",
+      "applications": "Features",
+      "fundament": "Technology",
       "pricing": "Pricing",
       "contact": "Contact"
     },
-    "cta": "10-minute check",
+    "cta": "Start demo",
     "drawer": {
       "title": "Menu",
       "groups": {
-        "product": "Solutions",
-        "features": "Gastro Starter",
+        "product": "Product",
+        "starterkits": "Features",
+        "features": "Features",
         "knowledge": "Knowledge",
         "company": "Company",
         "legal": "Legal"
       },
       "links": {
         "home": "Home",
-        "features": "Gastro Starter",
+        "starterkits": "All Features",
+        "features": "Features",
         "pricing": "Pricing",
-        "demo": "10-minute check",
-        "demo_view": "View demo",
+        "check": "Start demo",
+        "demo": "Demo",
+        "cases": "Results",
         "contact": "Contact",
-        "feat_ordering": "Ordering (Chat & Kiosk)",
-        "feat_kds": "Kitchen & Bar (KDS)",
-        "feat_poslite": "POS Lite",
-        "feat_service": "Service (Inbox)",
-        "kb_home": "Knowledge base",
-        "kb_getting_started": "Getting started",
+        "demo_view": "View Demo",
+        "feat_ordering": "Inbox",
+        "feat_kds": "Documents",
+        "feat_poslite": "Customers",
+        "feat_service": "Reviews",
+        "kb_home": "Knowledge Base",
+        "kb_getting_started": "Getting Started",
         "kb_faq": "FAQ",
         "blog": "Blog",
-        "about": "About",
+        "about": "About Us",
         "partners": "Partners",
         "jobs": "Jobs",
         "imprint": "Imprint",
@@ -47,32 +51,32 @@
   "footer": {
     "columns": {
       "menu": "Menu",
-      "applications": "Applications",
+      "applications": "Features",
       "company": "Company",
       "knowledge": "Knowledge Hub"
     },
     "links": {
-      "home": "AI Modernization",
-      "applications": "Applications",
-      "fundament": "Foundation",
+      "home": "Product",
+      "applications": "Features",
+      "fundament": "Technology",
       "pricing": "Pricing",
       "contact": "Contact",
-      "app_inbox": "Smart Inbox",
-      "app_website": "Website & Phone Assistant",
-      "app_documents": "Documents & Organization",
+      "app_inbox": "Inbox",
+      "app_website": "Website & Phone Bot",
+      "app_documents": "Documents",
       "app_reviews": "Reviews",
-      "app_customers": "Customers & Processes",
+      "app_customers": "Customers",
       "app_placeholder": "",
-      "about": "About",
-      "blog": "Blog",
-      "jobs": "Jobs",
-      "partners": "Partners",
+      "about": "About Us",
+      "roadmap": "Roadmap",
       "status": "Status & Updates",
+      "jobs": "Jobs",
+      "partner": "Partners",
       "values": "Values & Responsibility",
       "knowledge_hub": "Knowledge Hub",
       "getting_started": "Getting Started",
-      "system": "How the System Works",
-      "ki_alltag": "AI in Everyday Life",
+      "system": "How it works",
+      "ki_alltag": "AI in everyday life",
       "security": "Security",
       "faq": "FAQ"
     },
@@ -86,7 +90,7 @@
     "fineprint": "© {year} {company}. All rights reserved."
   },
   "common": {
-    "cta_demo": "Book a demo",
+    "cta_demo": "Start demo",
     "cta_contact": "Contact",
     "cta_pricing": "View pricing",
     "cta_features": "View features",
@@ -103,144 +107,148 @@
   "pages": {
     "home": {
       "meta": {
-        "title": "AI modernization — without tool chaos. | AKLOW",
-        "description": "We modernize SMBs with AI: starter kits, integration, and ongoing operations. Live fast, measurable impact — without forcing your team into new software."
+        "title": "AKLOW – Your AI assistant for business",
+        "description": "Everything in one place. One chat. One AI. Emails, documents, customers, reviews – tell the AI what you need. It does the rest."
       },
       "hero": {
-        "badge": "New: AI modernization",
-        "trustLine": "Trusted by innovative SMBs",
-        "kpiTitle": "+24% efficiency",
-        "kpiSub": "vs. last month",
-        "h1": "AI modernization — without tool chaos.",
-        "sub": "We modernize SMBs with AI: starter kits, integration, and ongoing operations. Live fast, measurable impact — without forcing your team into new software.",
-        "ctaPrimary": "10-minute check",
-        "ctaSecondary": "See Gastro Starter",
+        "badge": "Your AI assistant",
+        "trustLine": "Trusted by business owners like you",
+        "kpiTitle": "−3h/day",
+        "kpiSub": "less routine",
+        "h1": "Everything in one place.",
+        "h1Line1": "Everything in one place.",
+        "h1Line2": "One chat. One AI.",
+        "sub": "Emails, messages, documents, customers – everything flows into your inbox. Tell the AI what you need. It does the rest.\n\nNo more paper chaos.\nNo more juggling 5 apps.",
+        "ctaPrimary": "Start demo",
+        "ctaSecondary": "See features",
         "bullets": [
-          "Live in 14 days",
-          "No forced software switch",
-          "Safe & controllable"
+          "Control everything via chat",
+          "Documents understood automatically",
+          "Ready to use instantly"
         ]
       },
       "featureShowcase": {
         "items": [
-          "Chat-first Ordering (Buttons instead of typing)",
-          "Multilingual (DE/EN/ES)",
-          "Kitchen & Bar separated (Stations KDS)",
-          "POS-Lite (Floor, Cashier, Split)",
-          "Service Inbox (Waiter / Bill / Issues)",
-          "Menu Import (Website/PDF/Photos)"
+          "All messages in one place",
+          "Scan & understand documents",
+          "Customers & processes at a glance",
+          "Auto-reply to reviews",
+          "Phone bot (upgrade)",
+          "Website bot (upgrade)"
         ],
         "cta": "View Demo"
       },
       "problemSolution": {
         "problem": {
-          "h2": "The daily problem",
-          "p": "Too many requests, too little time: email, WhatsApp, calls, bookings, invoices. Knowledge lives in heads, processes aren’t automated — and it costs money every day."
+          "h2": "The problem",
+          "p": "Too many messages.\nToo many documents.\nNot enough overview.\n\nEmails here, WhatsApp there, invoices somewhere.\nKnowledge scattered in files.\n\nIt costs time and nerves every day."
         },
         "solution": {
           "h2": "The solution",
-          "p": "An AI layer integrated into your real workflow: qualify inbox items, draft replies, automate processes — with clear rules and control."
+          "p": "One inbox for everything.\nOne chat that understands.\nOne AI that does.\n\nMessages get sorted.\nDocuments get understood.\nReplies get prepared.\n\nYou say what you need.\nThe AI handles the rest."
         },
         "guest": {
-          "h2": "What customers really want",
-          "p": "Fast replies, clear information, smooth processes — no waiting loops."
+          "h2": "What your customers get",
+          "p": "Fast answers.\nClear information.\nNo waiting.\n\nWhether by email, phone, or website –\nthe AI is always ready."
         },
         "team": {
-          "h2": "What helps your team",
-          "p": "Fewer interruptions, less typing, fewer mistakes. Focus on service, sales, and real work."
+          "h2": "What you get",
+          "p": "Less chaos.\nLess searching.\nLess typing.\n\nMore time for what\nreally matters."
         }
       },
       "problem": {
-        "h2": "The daily problem",
-        "p": "The same questions keep coming up: ingredients, allergens, recommendations, the bill. Staff get interrupted and guests wait."
+        "h2": "Sound familiar?",
+        "p": "Emails piling up. Documents scattered. Customers waiting for answers. And you don't know where to start.",
+        "extra": "Result: stress instead of focus."
       },
       "solution": {
-        "h2": "The solution",
-        "p": "An intelligent menu that works like ChatGPT: questions → recommendations → ordering. With cards and buttons instead of typing."
+        "h2": "There's a better way",
+        "p": "Everything in one place. One chat for everything. Tell the AI what you need – it sorts, summarizes, and prepares.",
+        "extra": "You decide. The AI works."
       },
       "how": {
-        "h2": "How modernization works",
+        "h2": "How it works",
         "steps": [
           {
-            "title": "1) Quick check",
-            "text": "In 10 minutes we understand goals, tools, and bottlenecks."
+            "title": "1) Connect",
+            "text": "Email, calendar, tools – we connect what you use."
           },
           {
-            "title": "2) Starter live",
-            "text": "We ship a starter kit into production — fast and measurable."
+            "title": "2) Chat",
+            "text": "Tell the AI what you need. It understands and does."
           },
           {
-            "title": "3) Integration & scale",
-            "text": "We connect systems and automate workflows — safe and controllable."
+            "title": "3) Relax",
+            "text": "The AI sorts, summarizes, and prepares. You decide."
           }
         ]
       },
       "timeline": {
-        "h2": "Daily Workflow",
-        "p": "Less stress, more time for hospitality. A seamless process.",
+        "h2": "Your daily workflow",
+        "p": "Less chaos, more focus. Simple as that.",
         "steps": [
           {
-            "title": "1. Scan & Start",
-            "desc": "Guest scans QR. No app download."
+            "title": "1. Messages arrive",
+            "desc": "Email, WhatsApp, support – all in one place."
           },
           {
-            "title": "2. Chat & Click",
-            "desc": "Bot asks, guest answers via buttons."
+            "title": "2. AI sorts",
+            "desc": "Important first. Summaries ready."
           },
           {
-            "title": "3. Kitchen & Bar",
-            "desc": "Tickets appear sorted instantly."
+            "title": "3. You respond",
+            "desc": "With prepared drafts or one click."
           },
           {
             "title": "4. Done",
-            "desc": "Payment & Service completed."
+            "desc": "More time for what matters."
           }
         ]
       },
       "modules": {
-        "h2": "Modernization building blocks",
+        "h2": "What AKLOW can do",
         "items": [
           {
-            "title": "Smart inbox & replies",
-            "text": "Requests get qualified, replies drafted — you approve."
+            "title": "Inbox",
+            "text": "All messages in one place. Email, WhatsApp, support – sorted and summarized."
           },
           {
-            "title": "Orders & bookings",
-            "text": "Less phone stress, fewer errors, more revenue."
+            "title": "Documents",
+            "text": "No more paper chaos. Scan, understand, find. Ask the AI what's in that invoice."
           },
           {
-            "title": "Workflows & automation",
-            "text": "Repeatable work gets automated — clearly documented."
+            "title": "Customers",
+            "text": "The AI remembers everything. Every contact, every conversation – always at hand."
           },
           {
-            "title": "Integrate, don’t replace",
-            "text": "Google, email, calendar, CRM, POS — we connect what you already use."
+            "title": "Reviews",
+            "text": "Auto-reply to Google reviews. Friendly, fast, in your style."
           },
           {
-            "title": "Knowledge & memory",
-            "text": "Recurring questions, data, and customer info become usable."
+            "title": "Integrations",
+            "text": "Connect your tools: email, calendar, CRM and more. Everything flows together."
           },
           {
-            "title": "Security & control",
-            "text": "Guardrails, roles, auditability — no “AI goes wild”."
+            "title": "Control",
+            "text": "You decide what the AI can do. Clear rules, full transparency."
           }
         ]
       },
       "themes": {
-        "h2": "Three menu designs",
-        "p": "Not every restaurant looks the same. Choose the style that fits your concept.",
+        "h2": "Built for your workflow",
+        "p": "AKLOW adapts to how you work, not the other way around.",
         "items": [
           {
-            "title": "Photo",
-            "text": "Image-first, modern, fast."
+            "title": "Chat-first",
+            "text": "Just say what you need. No complicated menus."
           },
           {
-            "title": "Classic",
-            "text": "Typography-first, elegant, fine dining."
+            "title": "Your tools",
+            "text": "Works with what you already use."
           },
           {
-            "title": "Modern",
-            "text": "Clean, calm, Apple-like."
+            "title": "Your rules",
+            "text": "You control what the AI does."
           }
         ]
       },
@@ -248,22 +256,22 @@
         "h2": "Start without risk",
         "items": [
           {
-            "title": "No app required",
-            "text": "Scanning the QR is enough."
+            "title": "Runs in browser",
+            "text": "No app, no installation. Just start."
           },
           {
-            "title": "Keep your current POS if you want",
-            "text": "Start with ordering + kitchen. Integrations are optional later."
+            "title": "Keep your tools",
+            "text": "We connect what you have. No switching required."
           },
           {
-            "title": "Built for weak Wi-Fi",
-            "text": "Robust flows and clear states."
+            "title": "GDPR compliant",
+            "text": "Secure servers, encrypted, safe."
           }
         ]
       },
       "pricingTeaser": {
         "h2": "Plans",
-        "p": "Start small — expand later.",
+        "p": "Start simple – expand when you need more.",
         "cta": "View pricing"
       },
       "faqTeaser": {
@@ -287,6 +295,7 @@
       "socialProof": {
         "h2": "What businesses say (pilot phase)",
         "p": "Short voices from practice – real relief in daily operations.",
+        "disclaimer": "Extract from pilot projects.",
         "testimonials": [
           {
             "name": "Bar in Palma",
@@ -333,6 +342,7 @@
       "partners": {
         "h2": "Partners & Integrations",
         "p": "Optional – depending on setup. We start pragmatically.",
+        "disclaimer": "Logos are placeholders.",
         "items": [
           {
             "name": "POS Systems",
@@ -403,9 +413,9 @@
         ]
       },
       "finalCta": {
-        "h2": "Want a 10-minute demo?",
-        "p": "We’ll quickly show what’s realistic for you — and what isn’t.",
-        "ctaPrimary": "10-minute check",
+        "h2": "Ready for your 3-minute AI potential check?",
+        "p": "You answer a few short questions — we show you what you can start with fastest.",
+        "ctaPrimary": "Start 3-minute check",
         "ctaSecondary": "Contact"
       },
       "roi": {
@@ -423,7 +433,7 @@
           "timeSaved": "Time saved per day"
         },
         "disclaimer": "Estimate based on conservative assumptions. Actual values depend on the operation.",
-        "cta": "10-minute check"
+        "cta": "3-minute check"
       },
       "miniChat": {
         "welcome": "Welcome! I'm your intelligent menu.",
@@ -470,10 +480,67 @@
         }
       }
     },
+    "applications": {
+      "meta": {
+        "title": "Applications | AKLOW",
+        "description": "Discover how AI modernization works in practice: inbox, documents, customer contact and more."
+      }
+    },
     "features": {
       "meta": {
         "title": "Features — Gastro Landingpage",
         "description": "All features: ordering, kitchen & bar, POS Lite, service."
+      },
+      "roi": {
+        "h2": "What does chaos cost you per week?",
+        "p": "Calculate lost time, mistakes, and missed requests — and see when modernization pays off.",
+        "inputs": {
+          "ticketsPerWeek": "Team size",
+          "ticketsPerWeekDesc": "Estimated volume of requests per week.",
+          "minsPerTicket": "Requests per day",
+          "automationRate": "Automation rate (%)",
+          "automationRateDesc": "Percentage of repetitive tasks that can be automated.",
+          "hourlyRate": "Avg. value per request (€)",
+          "internationalGuests": "Recurring requests (%)"
+        },
+        "outputs": {
+          "savedHoursPerMonth": "Saved hours/month",
+          "savedHoursPerMonthDesc": "This is equivalent to about {hours} full-time positions.",
+          "savedCostPerMonth": "Estimated added value/month",
+          "savedCostPerMonthDesc": "Based on an internal cost of {hourlyRate}€/h.",
+          "timeSaved": "Time saved per day"
+        },
+        "disclaimer": "Estimate based on conservative assumptions. Actual values depend on the operation.",
+        "cta": "3-minute check"
+      },
+      "modules": {
+        "h2": "Modernization building blocks",
+        "items": [
+          {
+            "title": "Smart inbox & replies",
+            "text": "Requests get qualified, replies drafted — you approve."
+          },
+          {
+            "title": "Orders & bookings",
+            "text": "Less phone stress, fewer errors, more revenue."
+          },
+          {
+            "title": "Workflows & automation",
+            "text": "Repeatable work gets automated — clearly documented."
+          },
+          {
+            "title": "Integrate, don’t replace",
+            "text": "Google, email, calendar, CRM, POS — we connect what you already use."
+          },
+          {
+            "title": "Knowledge & memory",
+            "text": "Recurring questions, data, and customer info become usable."
+          },
+          {
+            "title": "Security & control",
+            "text": "Guardrails, roles, auditability — no “AI goes wild”."
+          }
+        ]
       },
       "h1": "Gastro Starter",
       "intro": "A ready-made solution for gastronomy — as a starter kit within our AI modernization offering. Live fast, integratable, expandable later.",
@@ -712,12 +779,12 @@
           "tag": "Fast go-live with one clear use case",
           "price": "29",
           "items": [
-            "10-minute check + scope",
+            "3-minute check + scope",
             "One starter kit live",
             "Clear rules & approval flow",
             "Measurable impact baseline"
           ],
-          "cta": "10-minute check"
+          "cta": "3-minute check"
         },
         {
           "name": "Plus",
@@ -729,7 +796,7 @@
             "Knowledge & memory setup",
             "Role-based access control"
           ],
-          "cta": "10-minute check"
+          "cta": "3-minute check"
         },
         {
           "name": "Partner",
@@ -741,10 +808,10 @@
             "More automations over time",
             "Priority support & iteration"
           ],
-          "cta": "10-minute check"
+          "cta": "3-minute check"
         }
       ],
-      "note": "Pricing depends on industry, integrations, and scope. We clarify it in the 10-minute check.",
+      "note": "Pricing depends on industry, integrations, and scope. We clarify it in the 3-minute check.",
       "faqLink": "View FAQ",
       "comparison": {
         "title": "Scope in detail",
@@ -776,6 +843,12 @@
             ]
           }
         ]
+      },
+      "pricingCta": {
+        "h2": "Unsure which package fits?",
+        "p": "We look together at what really helps you – and what you don't (yet) need.",
+        "ctaPrimary": "Start 3-minute check",
+        "ctaSecondary": "Contact"
       }
     },
     "services": {
@@ -799,7 +872,7 @@
           "text": "Monitoring, improvements, new automations — so it keeps getting better."
         }
       ],
-      "cta": "10-minute check"
+      "cta": "3-minute check"
     },
     "cases": {
       "meta": {
@@ -822,7 +895,7 @@
           "text": "Automated routine work, fewer mistakes, better follow-ups."
         }
       ],
-      "cta": "10-minute check"
+      "cta": "3-minute check"
     },
     "demo": {
       "meta": {
@@ -943,7 +1016,7 @@
       },
       "form": {
         "title": "Book a demo",
-        "intro": "In 10 minutes you'll see the complete flow: guest → order → kitchen/bar → admin.",
+        "intro": "In 3 minutes you'll see the complete flow: guest → order → kitchen/bar → admin.",
         "name": "Name",
         "restaurant": "Restaurant",
         "city": "City",
@@ -1082,6 +1155,893 @@
       },
       "h1": "Privacy",
       "p": "This page explains how personal data is processed."
+    },
+    "partner": {
+      "meta": {
+        "title": "Partners & Integrations | AKLOW",
+        "description": "Join the Aklow ecosystem. Integrations, partner program and more."
+      },
+      "badge": "Better Together",
+      "h1": "The Aklow Ecosystem.",
+      "intro": "We believe in the power of networking. Together with our partners, we build the bridge between cutting-edge AI and proven business solutions.",
+      "integrations": {
+        "title": "Integrations",
+        "desc": "We connect with the tools your customers already love. Whether POS systems, CRM software or industry solutions – Aklow becomes the missing piece of the puzzle.",
+        "tech": ["REST API", "Webhooks", "OAuth 2.0", "SDKs"]
+      },
+      "program": {
+        "title": "Partner Program",
+        "desc": "Join our journey. We're looking for IT companies, agencies and consultants who want to offer their customers real value through AI modernization.",
+        "cta": "Become a Partner"
+      },
+      "why": {
+        "title": "Why become a partner?",
+        "items": [
+          {
+            "title": "Exclusive Access",
+            "desc": "Get early access to new features and beta versions."
+          },
+          {
+            "title": "Support & Training",
+            "desc": "We support you with implementation and sales."
+          },
+          {
+            "title": "Attractive Terms",
+            "desc": "Benefit from fair partner models and commissions."
+          }
+        ]
+      }
+    },
+    "jobs": {
+      "meta": {
+        "title": "Jobs & Careers | AKLOW",
+        "description": "Join the AI revolution. Open positions and why you should join us."
+      },
+      "badge": "Build the Future",
+      "h1": "Join the AI Revolution.",
+      "intro": "We don't just build software. We build a new way of working. No bullshit, with passion and cutting-edge technology.",
+      "openPositions": "Open Positions",
+      "positions": [
+        {
+          "title": "Senior AI Engineer",
+          "type": "Remote / Hybrid",
+          "focus": "Backend & ML"
+        },
+        {
+          "title": "Frontend Developer (Next.js)",
+          "type": "Remote",
+          "focus": "UI / UX"
+        },
+        {
+          "title": "Sales Manager (AI Solutions)",
+          "type": "Hybrid",
+          "focus": "B2B Growth"
+        }
+      ],
+      "details": "Details",
+      "noMatch": "Nothing suitable?",
+      "initiative": "Send an unsolicited application.",
+      "why": {
+        "title": "Why join us?",
+        "items": [
+          {
+            "text": "Cutting-edge tech stack (Next.js, AI Models, Cloud Native)"
+          },
+          {
+            "text": "Flexible working hours & true remote culture"
+          },
+          {
+            "text": "A team that supports each other"
+          },
+          {
+            "text": "Meaningful work for SMBs"
+          }
+        ]
+      }
+    },
+    "wissen": {
+      "meta": {
+        "title": "Knowledge Hub | AKLOW",
+        "description": "Everything you need to know about AI modernization. Getting started, security, FAQ and more."
+      },
+      "badge": "Knowledge Hub",
+      "h1": "Understand, apply, grow.",
+      "intro": "No jargon, just real help. Here you'll find everything you need to know to get started successfully with Aklow.",
+      "categories": [
+        {
+          "title": "Getting Started",
+          "desc": "How to find your starting point for AI in 3 minutes."
+        },
+        {
+          "title": "AI in Everyday Life",
+          "desc": "Practical examples of how AI relieves your daily work."
+        },
+        {
+          "title": "Security & Trust",
+          "desc": "Everything about data protection, control and how we protect your data."
+        },
+        {
+          "title": "Frequently Asked Questions (FAQ)",
+          "desc": "Quick answers to the most important questions about Aklow."
+        }
+      ],
+      "learnMore": "Learn more",
+      "stillQuestions": {
+        "title": "Still have questions?",
+        "desc": "We're here for you. Just send us a message or schedule an appointment for a personal exchange.",
+        "cta": "Get in touch"
+      }
+    },
+    "wissen_system": {
+      "meta": {
+        "title": "How the System Works | AKLOW",
+        "description": "Technical details about the Aklow infrastructure and architecture."
+      },
+      "badge": "Inside Aklow",
+      "h1": "The system behind it.",
+      "intro": "How does Aklow actually work? Here you'll learn more about the technology, infrastructure and how we safely bring AI into your daily life.",
+      "features": [
+        {
+          "title": "LLM Orchestration",
+          "desc": "We don't rely on a single model. Aklow uses intelligent orchestration of various specialized AI models to deliver the best result for each task – efficiently and precisely."
+        },
+        {
+          "title": "Vector Databases",
+          "desc": "Your knowledge is structured in state-of-the-art vector databases. This allows Aklow to access relevant context in milliseconds and provide answers that truly fit your company."
+        },
+        {
+          "title": "Seamless Integration",
+          "desc": "Through our API-first architecture, Aklow can be integrated into almost any existing system. We connect channels like email, phone and web into a unified experience."
+        },
+        {
+          "title": "Privacy by Design",
+          "desc": "Data protection is not an add-on for us, but the foundation. All data is processed encrypted and we ensure that your information stays where it belongs."
+        }
+      ],
+      "performance": {
+        "badge": "Performance & Scalability",
+        "title": "Built for the future.",
+        "desc": "Our system grows with your requirements. Whether 10 or 10,000 requests per day – Aklow remains stable, fast and reliable. We rely on cloud-native technologies to guarantee the highest availability."
+      }
+    },
+    "check": {
+      "meta": {
+        "title": "3-Minute Check | AKLOW",
+        "description": "Find out how AI can optimize your business. Fast, honest, no sales pitch."
+      },
+      "badge": "Quick Check",
+      "h1": "The 3-Minute Potential Check.",
+      "intro": "No sales pitch, just an honest assessment. We look at your situation and tell you directly what's possible.",
+      "form": {
+        "name": "Name",
+        "company": "Company",
+        "email": "Email",
+        "challenge": "Your biggest challenge?",
+        "namePlaceholder": "Your name",
+        "companyPlaceholder": "Company name",
+        "emailPlaceholder": "name@company.com",
+        "challengePlaceholder": "e.g. Too many emails, unclear processes, document chaos...",
+        "submit": "Start check now",
+        "sending": "Sending...",
+        "privacy": "Your data is secure and processed in compliance with GDPR."
+      },
+      "success": {
+        "title": "Request received!",
+        "desc": "Thanks for your trust. We'll get back to you shortly to schedule the 3-minute appointment.",
+        "back": "Back to homepage"
+      },
+      "error": "That didn't work. Please try again later or send us an email.",
+      "benefits": [
+        {
+          "title": "No Bullshit",
+          "desc": "We'll honestly tell you whether AI makes sense for you or not."
+        },
+        {
+          "title": "Just 3 Minutes",
+          "desc": "No long meetings. A quick check for maximum clarity."
+        },
+        {
+          "title": "Direct Solution",
+          "desc": "You'll immediately get first approaches for your optimization."
+        }
+      ],
+      "wizard": {
+        "steps": {
+          "context": "Context",
+          "goal": "Goal",
+          "pain": "Painpoints",
+          "tools": "Tools",
+          "compliance": "Compliance",
+          "result": "Result"
+        },
+        "actions": {
+          "next": "Next",
+          "back": "Back",
+          "finish": "Calculate result",
+          "calculating": "Calculating...",
+          "saveLead": "Save (optional)"
+        },
+        "context": {
+          "title": "Step 1",
+          "headline": "Who are you and how big is your team?",
+          "desc": "We tailor the recommendations to your industry and team size.",
+          "options": [
+            { "id": "services", "title": "Services / Consulting" },
+            { "id": "ecommerce", "title": "E-Commerce / Retail" },
+            { "id": "production", "title": "Production / Industry" },
+            { "id": "hospitality", "title": "Hospitality" },
+            { "id": "other", "title": "Other" }
+          ],
+          "teamSizes": [
+            { "id": "1-10", "title": "1-10" },
+            { "id": "10-50", "title": "10-50" },
+            { "id": "50-200", "title": "50-200" },
+            { "id": "200plus", "title": "200+" }
+          ]
+        },
+        "goal": {
+          "title": "Step 2",
+          "headline": "What's your 30-day outcome?",
+          "options": [
+            { "id": "automation", "title": "More automation", "desc": "Less manual work, fewer tickets." },
+            { "id": "quality", "title": "Better quality", "desc": "Consistent answers, fewer errors." },
+            { "id": "speed", "title": "Respond faster", "desc": "Shorter turnaround & response times." },
+            { "id": "insights", "title": "More insights", "desc": "Better data & decision support." }
+          ]
+        },
+        "pain": {
+          "title": "Step 3",
+          "headline": "Where does it hurt most?",
+          "helper": "Select up to 3 painpoints",
+          "options": [
+            { "id": "inbox", "title": "Overflowing inbox", "desc": "Too many emails/requests, low prioritization." },
+            { "id": "docs", "title": "Document chaos", "desc": "Knowledge scattered, hard to find." },
+            { "id": "handover", "title": "Handovers messy", "desc": "Info gets lost, context missing." },
+            { "id": "support", "title": "Support slow/expensive", "desc": "High response times, varying quality." },
+            { "id": "sales", "title": "Lead qual / follow-ups", "desc": "Many leads, little structure." },
+            { "id": "compliance", "title": "Compliance/Privacy", "desc": "Risk unclear when using AI." }
+          ]
+        },
+        "tools": {
+          "title": "Step 4",
+          "headline": "Which tools do you use today?",
+          "options": [
+            { "id": "ms365", "title": "Microsoft 365", "desc": "Outlook, SharePoint, Teams" },
+            { "id": "google", "title": "Google Workspace", "desc": "Gmail, Drive, Docs" },
+            { "id": "hubspot", "title": "HubSpot / CRM", "desc": "CRM / Tickets" },
+            { "id": "zendesk", "title": "Zendesk / Freshdesk", "desc": "Support / Helpdesk" },
+            { "id": "notion", "title": "Notion / Confluence", "desc": "Knowledge base" },
+            { "id": "other", "title": "Other", "desc": "Other tools or custom systems" }
+          ]
+        },
+        "compliance": {
+          "title": "Step 5",
+          "headline": "How strict is your compliance level?",
+          "options": [
+            { "id": "strict", "title": "Very strict", "desc": "GDPR-first, internal approvals required" },
+            { "id": "balanced", "title": "Balanced", "desc": "Secure but pragmatic" },
+            { "id": "fast", "title": "Move fast", "desc": "Speed matters more than formalities" }
+          ]
+        },
+        "result": {
+          "title": "Result",
+          "headline": "Your score & plan",
+          "scoreLabel": "Modernization score",
+          "useCases": "Top 3 use cases",
+          "sprint": "7-day sprint plan",
+          "pending": "Calculating your result..."
+        },
+        "lead": {
+          "title": "Optional: Save result",
+          "subtitle": "So we can store the result for you.",
+          "name": "Name",
+          "company": "Company",
+          "email": "Email (optional)",
+          "phone": "Phone (optional)",
+          "hint": "Without lead data the result stays local only."
+        }
+      }
+    },
+    "impressum": {
+      "meta": {
+        "title": "Imprint | AKLOW",
+        "description": "Legal information and contact details of Aklow GmbH."
+      },
+      "h1": "Imprint.",
+      "intro": "Legal information and contact details of Aklow GmbH.",
+      "sections": {
+        "tmg": {
+          "title": "Information according to § 5 TMG",
+          "content": "Aklow GmbH\nSample Street 123\n10115 Berlin"
+        },
+        "represented": {
+          "title": "Represented by",
+          "content": "Max Mustermann (Managing Director)"
+        },
+        "contact": {
+          "title": "Contact",
+          "content": "Phone: +49 (0) 30 1234567\nEmail: hallo@aklow.com"
+        },
+        "register": {
+          "title": "Register Entry",
+          "content": "Registered in the Commercial Register.\nRegister Court: Charlottenburg District Court\nRegistration Number: HRB 123456 B"
+        },
+        "vat": {
+          "title": "VAT ID",
+          "content": "VAT identification number according to § 27 a VAT Act:\nDE 123 456 789"
+        },
+        "responsible": {
+          "title": "Editorially responsible",
+          "content": "Max Mustermann\nSample Street 123\n10115 Berlin"
+        },
+        "dispute": {
+          "title": "EU Dispute Resolution",
+          "content": "The European Commission provides a platform for online dispute resolution (OS): https://ec.europa.eu/consumers/odr/.\nYou can find our email address above in the imprint."
+        }
+      }
+    },
+    "datenschutz": {
+      "meta": {
+        "title": "Privacy | AKLOW",
+        "description": "Your privacy is important to us. Here you'll learn how we handle your data."
+      },
+      "h1": "Privacy.",
+      "intro": "Your privacy is important to us. Here you'll learn how we handle your data.",
+      "sections": [
+        {
+          "title": "1. Privacy at a glance",
+          "content": [
+            "The following information provides a simple overview of what happens to your personal data when you visit our website.",
+            "Personal data is any data with which you can be personally identified. Detailed information on the subject of data protection can be found in our privacy policy listed below this text."
+          ]
+        },
+        {
+          "title": "2. Hosting and Content Delivery Networks (CDN)",
+          "content": [
+            "We host our website with an external provider. The personal data collected on this website is stored on the provider's servers.",
+            "Our host will only process your data to the extent necessary to fulfill its performance obligations and follow our instructions regarding this data."
+          ]
+        },
+        {
+          "title": "3. General information and mandatory information",
+          "content": [
+            "The operators of these pages take the protection of your personal data very seriously. We treat your personal data confidentially and in accordance with the statutory data protection regulations and this privacy policy.",
+            "When you use this website, various personal data is collected. This privacy policy explains what data we collect and what we use it for."
+          ]
+        }
+      ],
+      "contact": {
+        "title": "Contact for the responsible party",
+        "content": "Aklow GmbH\nData Protection Officer\nSample Street 123\n10115 Berlin\nEmail: datenschutz@aklow.com"
+      },
+      "dataCollection": {
+        "title": "4. Data collection on our website",
+        "cookies": {
+          "title": "Cookies",
+          "content": "Our website partially uses so-called \"Cookies\". Cookies are small text files and do not cause any damage to your device. They are stored either temporarily for the duration of a session (session cookies) or permanently (permanent cookies) on your device."
+        },
+        "contactForm": {
+          "title": "Contact form",
+          "content": "If you send us inquiries via the contact form, your details from the inquiry form, including the contact details you provided there, will be stored by us for the purpose of processing the inquiry and in case of follow-up questions."
+        }
+      }
+    },
+    "cookies": {
+      "meta": {
+        "title": "Cookies | AKLOW",
+        "description": "Transparency about the little helpers that make our site run."
+      },
+      "h1": "Cookies.",
+      "intro": "Transparency about the little helpers that make our site run.",
+      "whatAre": {
+        "title": "What are cookies?",
+        "content": "Cookies are small text files used by websites to make the user experience more efficient. The law states that we can store cookies on your device if they are absolutely necessary for the operation of this site. For all other cookie types, we need your permission."
+      },
+      "types": [
+        {
+          "title": "Necessary Cookies",
+          "desc": "These cookies are required for the website to function and cannot be disabled in our systems. They are usually only set in response to actions you take."
+        },
+        {
+          "title": "Preference Cookies",
+          "desc": "These cookies allow a website to remember information that affects how the website behaves or looks, such as your preferred language or the region you are in."
+        },
+        {
+          "title": "Statistics Cookies",
+          "desc": "These cookies help us understand how visitors interact with websites by collecting and reporting information anonymously."
+        }
+      ],
+      "selection": {
+        "title": "Your selection",
+        "desc": "You can change your cookie settings at any time or revoke your consent.",
+        "open": "Open settings",
+        "reject": "Reject all"
+      }
+    },
+    "ueber_uns": {
+      "meta": {
+        "title": "About Us | AKLOW",
+        "description": "We do AI modernization for SMBs – without complexity and without you having to overhaul your daily routine."
+      },
+      "h1": "About Us",
+      "intro": "We do AI modernization for SMBs – without complexity and without you having to overhaul your daily routine.",
+      "whatDrives": {
+        "title": "What drives us",
+        "p1": "Many small and medium-sized businesses feel that AI isn't made for them. Too complex, too expensive, too abstract.",
+        "p2": "We see it differently. AI can help exactly where work really happens in daily life: with emails, requests, documents and decisions. Not as a big project, but as practical support that works immediately.",
+        "p3": "Our goal: You continue to work as usual, while AI takes over in the background what costs you time today."
+      },
+      "approach": {
+        "title": "Our approach",
+        "p1": "We don't start with big plans, but with concrete problems. In 3 minutes we look at where it's stuck – and what's realistic.",
+        "p2": "Then it goes quickly: A first setup is usually live within a few days. Step by step we expand when it makes sense for you.",
+        "p3": "No long consulting projects. No new tools you have to learn first. Simply support where it really helps."
+      },
+      "important": {
+        "title": "What matters to us",
+        "simplicity": {
+          "label": "Simplicity:",
+          "text": "Solutions that work immediately – without you having to fight through manuals."
+        },
+        "control": {
+          "label": "Control:",
+          "text": "You decide what happens automatically and what doesn't. Nothing without your approval."
+        },
+        "measurability": {
+          "label": "Measurability:",
+          "text": "You see what AI takes over for you – and how much time you get back."
+        }
+      },
+      "team": {
+        "title": "Our Team",
+        "desc": "We are a small team that is passionate about making AI modernization accessible to SMBs."
+      }
+    },
+    "roadmap": {
+      "meta": {
+        "title": "Roadmap – Our Journey | AKLOW",
+        "description": "What we're working on and what's next to revolutionize the AI world."
+      },
+      "h1": "Roadmap",
+      "intro": "Our vision is clear. Here you'll learn how we're redefining the way we work step by step.",
+      "phases": [
+        {
+          "phase": "LIVE",
+          "title": "The foundation is set",
+          "items": [
+            "Smart inbox (sorting & priority)",
+            "Document AI: Understanding & structuring",
+            "Basic integrations: Email & calendar",
+            "Process management dashboard",
+            "Smart approval workflows"
+          ]
+        },
+        {
+          "phase": "COMING SOON",
+          "title": "Next stop: Context",
+          "items": [
+            "Context-sensitive response suggestions",
+            "Deep integration hub (CRM & ERP)",
+            "Optimized text recognition (OCR 2.0)",
+            "Smart follow-up logic",
+            "Mobile app preview"
+          ]
+        },
+        {
+          "phase": "IN PROGRESS",
+          "title": "The lab is glowing",
+          "items": [
+            "Website & phone AI assistant",
+            "Automated review requests",
+            "Custom workflow engine",
+            "Multi-language brain (50+ languages)",
+            "Semantic search across all channels"
+          ]
+        },
+        {
+          "phase": "VISION",
+          "title": "Shaping the future",
+          "items": [
+            "Real-time business intelligence",
+            "Open API for custom developments",
+            "Collaborative AI agents",
+            "Advanced security mesh",
+            "Predictive analytics tools"
+          ]
+        }
+      ],
+      "quote": "We don't just build software. We build the future of your daily life. Flexible, transparent and always focused on what really moves you forward today."
+    },
+    "status": {
+      "meta": {
+        "title": "System Status – All systems green | AKLOW",
+        "description": "Real-time monitoring of our AI infrastructure and services."
+      },
+      "badge": "SYSTEMS OPERATIONAL",
+      "h1": "Status & Updates",
+      "intro": "Real-time monitoring of our infrastructure. We love transparency as much as clean code.",
+      "services": [
+        {
+          "name": "AI Core Engine",
+          "status": "operational",
+          "uptime": "99.99%"
+        },
+        {
+          "name": "Document Processing",
+          "status": "operational",
+          "uptime": "99.95%"
+        },
+        {
+          "name": "API & Integrations",
+          "status": "operational",
+          "uptime": "100%"
+        },
+        {
+          "name": "Web Dashboard",
+          "status": "operational",
+          "uptime": "99.98%"
+        }
+      ],
+      "operational": "Operational",
+      "history": {
+        "title": "Incident History",
+        "items": [
+          {
+            "date": "Dec 18",
+            "event": "System Optimization",
+            "type": "maintenance",
+            "typeLabel": "Planned maintenance"
+          },
+          {
+            "date": "Dec 15",
+            "event": "AI Model Update v2.4",
+            "type": "update",
+            "typeLabel": "System update"
+          },
+          {
+            "date": "Dec 10",
+            "event": "Minor API Latency",
+            "type": "incident",
+            "typeLabel": "Service disruption",
+            "duration": "12 min"
+          },
+          {
+            "date": "Dec 1",
+            "event": "Database Migration",
+            "type": "maintenance",
+            "typeLabel": "Planned maintenance"
+          }
+        ]
+      },
+      "support": {
+        "title": "Support Speed",
+        "value": "~14m",
+        "desc": "Average response time in the last 24 hours."
+      },
+      "report": {
+        "title": "Something wrong?",
+        "desc": "If you notice problems that aren't listed here, please contact our ops team directly.",
+        "cta": "Report incident"
+      }
+    },
+    "kontakt": {
+      "meta": {
+        "title": "Contact – Let's talk | AKLOW",
+        "description": "Do you have questions or want to know if AI really makes sense in your daily life? Then let's talk."
+      },
+      "badge": "We're here for you",
+      "h1": "Let's discuss the future.",
+      "intro": "We won't sell you anything on the phone. We listen, analyze your daily routine and honestly tell you what's possible with AI – and what (still) isn't.",
+      "contact": {
+        "email": {
+          "label": "Email",
+          "value": "hallo@aklow.com"
+        },
+        "chat": {
+          "label": "Chat",
+          "value": "Right here bottom right"
+        }
+      },
+      "form": {
+        "title": "Write to us",
+        "name": "Name",
+        "email": "Email",
+        "message": "Your message",
+        "namePlaceholder": "John Doe",
+        "emailPlaceholder": "john@example.com",
+        "messagePlaceholder": "How can we help you?",
+        "submit": "Send message"
+      },
+      "badgeResponse": {
+        "title": "Response in 24h",
+        "subtitle": "Promised."
+      },
+      "why": {
+        "title": "Why us?",
+        "desc": "We're not a typical IT company. We're a partner for your daily life.",
+        "items": [
+          {
+            "title": "Honesty",
+            "desc": "We'll also tell you when AI doesn't make sense."
+          },
+          {
+            "title": "Speed",
+            "desc": "You'll usually see first results within a few days."
+          },
+          {
+            "title": "Simplicity",
+            "desc": "No complex manuals. Our AI simply understands you."
+          }
+        ]
+      }
+    },
+    "haltung": {
+      "meta": {
+        "title": "Values & Responsibility – Using AI meaningfully | AKLOW",
+        "description": "We believe: AI is too useful to be used just \"somehow\". It should relieve people in daily life – understandable, controllable and meaningful."
+      },
+      "badge": "Our Values",
+      "h1": "Values & Responsibility",
+      "intro": "AI is a tool. And like any tool, it depends on who holds it – and with what intention.",
+      "sections": [
+        {
+          "title": "People at the center",
+          "p1": "Many see AI as something technical, abstract or even intimidating. We want the opposite: Build AI so it really relieves you in daily life.",
+          "p2": "Without complicated interfaces. Without new systems you have to learn first. But as invisible support where your work happens anyway today."
+        },
+        {
+          "title": "Meaningful instead of maximum",
+          "p1": "Our goal is not to build in as much AI as possible just because we can. We focus on the places where it offers real added value.",
+          "p2": "Fewer interruptions, less searching, less routine. More time for what really matters: your customers and your creativity."
+        },
+        {
+          "title": "Technology with backbone",
+          "p1": "Technology is never neutral. That's why we consciously handle it responsibly. Transparency is not a buzzword for us, but the basis.",
+          "p2": "We avoid \"black box\" systems that no one understands anymore. You always keep control and sovereignty over your data."
+        },
+        {
+          "title": "Beyond the horizon",
+          "p1": "Part of our revenue flows into projects that go beyond business. Humanitarian initiatives and animal welfare projects are close to our hearts.",
+          "p2": "Not as a loud PR campaign, but because we're convinced that as a technology company we have a social responsibility."
+        }
+      ],
+      "cta": {
+        "title": "Shape the future together",
+        "desc": "If you have questions about our way of working or want to know how we integrate ethical standards into our software, contact us anytime.",
+        "contact": "Get in touch",
+        "check": "The 3-minute check"
+      }
+    },
+    "wissen_erste_schritte": {
+      "meta": {
+        "title": "Getting Started with AI – Entry without Overwhelm | AKLOW",
+        "description": "AI doesn't have to be complicated. And you don't have to be a tech expert to benefit from it."
+      },
+      "bgText": "Simple.",
+      "h1": "Your path to AI freedom",
+      "intro": "No studies, no complexity. Just a clear plan on how to get your evening back.",
+      "steps": [
+        {
+          "number": "01",
+          "title": "Identify time wasters",
+          "desc": "Which tasks rob you of valuable time every day? Usually it's emails, documents or recurring questions."
+        },
+        {
+          "number": "02",
+          "title": "Choose smart assistants",
+          "desc": "Choose the right Aklow assistant for your biggest challenge – whether inbox, documents or customer inquiries."
+        },
+        {
+          "number": "03",
+          "title": "Keep control",
+          "desc": "We start with suggestions. You decide what AI learns and what it (still) can't do automatically."
+        }
+      ],
+      "dontDo": {
+        "title": "What you shouldn't do at the beginning.",
+        "items": [
+          "Don't try to automate everything at once.",
+          "No \"AI does everything\" experiments without supervision.",
+          "Don't start with the most difficult edge cases.",
+          "Don't introduce 20 new tools at the same time."
+        ]
+      },
+      "success": {
+        "title": "Our success secret",
+        "desc": "If you don't feel noticeable relief after a week, the entry was too big – not you too slow. We start small so the effect is huge.",
+        "cta": "Start 3-minute check"
+      }
+    },
+    "wissen_ki_alltag": {
+      "meta": {
+        "title": "AI in Everyday Life – Finally Understandable | AKLOW",
+        "description": "How AI really helps in everyday life: inbox, documents, customer contact and organization. Explained in a relaxed way."
+      },
+      "badge": "No panic about technology",
+      "h1": "AI in everyday life. Totally relaxed.",
+      "intro": "AI is not a science fiction movie. It's like a new colleague who never sleeps, doesn't need coffee and loves to take over your most boring tasks.",
+      "toc": {
+        "title": "Quick Links",
+        "links": [
+          {
+            "id": "was-ist-ki",
+            "label": "What is this actually?"
+          },
+          {
+            "id": "beispiele",
+            "label": "5 real examples"
+          },
+          {
+            "id": "starten",
+            "label": "How to get started"
+          },
+          {
+            "id": "sicherheit",
+            "label": "What about data?"
+          }
+        ]
+      },
+      "sections": {
+        "wasIst": {
+          "title": "What does \"AI in everyday life\" actually mean?",
+          "p1": "Forget humanoid robots. In everyday life, AI means: Smart help where it's annoying.",
+          "p2": "It's the little things. Reviewing messages, searching for info, answering follow-ups, assigning documents. AI helps you organize information and make decisions faster.",
+          "quote": "AI is like a digital filter that only lets through what's important and pre-sorts the rest."
+        },
+        "beispiele": {
+          "title": "5 real examples (no bullshit)",
+          "items": [
+            {
+              "title": "The smart inbox",
+              "desc": "AI knows what's important. It writes drafts for you so you just have to say \"Yes\"."
+            },
+            {
+              "title": "Document juggler",
+              "desc": "Upload PDF, get structure. Never manually type invoices or contracts again."
+            },
+            {
+              "title": "The phone pro",
+              "desc": "Take calls, understand requests and send you a clean email. 24/7."
+            },
+            {
+              "title": "Repetition killer",
+              "desc": "Same questions always get the same, perfect answer. Automatically prepared."
+            },
+            {
+              "title": "The organization keeper",
+              "desc": "Everything lands in the right folder, with the right customer. Without you lifting a finger."
+            }
+          ]
+        },
+        "starten": {
+          "title": "Ready for less stress?",
+          "desc": "The best start is always: A short conversation. We look at your daily routine and find the \"low hanging fruits\" – the things that immediately give you time.",
+          "check": "Start check",
+          "chat": "Chat casually"
+        }
+      }
+    },
+    "wissen_sicherheit": {
+      "meta": {
+        "title": "Security – AI with Control and Transparency | AKLOW",
+        "description": "If AI is to help in everyday life, it must be safe and controllable. Here we explain how security is practically thought of with us."
+      },
+      "badge": "Enterprise Grade Security",
+      "h1": "Security. No compromises.",
+      "intro": "If AI is to help in everyday life, it must be safe. We don't build a \"black box\", but a system with clear boundaries and full control.",
+      "features": [
+        {
+          "title": "Full Transparency",
+          "desc": "You know exactly at all times what AI is doing, why it's making a suggestion and on what basis."
+        },
+        {
+          "title": "Approval Required",
+          "desc": "Critical actions only happen when you confirm them. AI prepares, you decide."
+        },
+        {
+          "title": "Data Sovereignty",
+          "desc": "Your data stays your data. We use encrypted channels and keep access minimal."
+        },
+        {
+          "title": "Audit Log",
+          "desc": "Every action and every suggestion is logged. This keeps everything traceable and verifiable."
+        },
+        {
+          "title": "Smart Sandboxing",
+          "desc": "AI actions run in protected areas. Manipulation from outside is proactively detected and blocked."
+        },
+        {
+          "title": "Access Control",
+          "desc": "Precise roles and permissions ensure that everyone only sees what they really need."
+        }
+      ],
+      "shield": {
+        "title": "How we build your shield.",
+        "items": [
+          {
+            "label": "Input Check",
+            "text": "Every request is checked for risky patterns and manipulation attempts."
+          },
+          {
+            "label": "Context Isolation",
+            "text": "Sensitive data is detected and only used where it really belongs."
+          },
+          {
+            "label": "Rule Validation",
+            "text": "AI suggestions are checked against your fixed business rules."
+          },
+          {
+            "label": "Action Limitation",
+            "text": "AI may only use predefined tools – and only with your permission."
+          }
+        ]
+      },
+      "faq": {
+        "title": "Frequently Asked Questions about Security",
+        "items": [
+          {
+            "q": "Can I define what happens automatically and what doesn't?",
+            "a": "Yes. You can very precisely define what remains a suggestion, what needs approval and what must never run automatically."
+          },
+          {
+            "q": "Does AI have to send answers automatically?",
+            "a": "No. You can start with drafts and only later automate individual, non-critical steps – if you want."
+          },
+          {
+            "q": "What happens when AI is uncertain?",
+            "a": "Then it shouldn't \"confidently guess\", but visibly mark, ask or hand over to you."
+          },
+          {
+            "q": "Is this GDPR compliant?",
+            "a": "We clarify data flows, permissions and purpose. Our goal is pragmatic data protection that really works in everyday life."
+          }
+        ]
+      }
+    },
+    "wissen_faq": {
+      "meta": {
+        "title": "FAQ – We clarify that. | AKLOW",
+        "description": "Answers to frequently asked questions about AI modernization, applications, security and integration."
+      },
+      "badge": "Knowledge Hub",
+      "h1": "Questions? Clarified.",
+      "intro": "We know that AI raises many questions. Here you'll find the answers – honest, direct and without marketing blabla.",
+      "items": [
+        {
+          "q": "What does \"AI modernization\" mean for you specifically?",
+          "a": "AI modernization means: You don't get a new software world, but an intelligent layer that docks onto your real processes. It helps where time is lost today – e.g. with requests, documents, follow-ups and recurring tasks. You start small, see benefits quickly and then build step by step."
+        },
+        {
+          "q": "Do I have to learn a new tool for this?",
+          "a": "No. You continue to work in your existing channels (e.g. email, files, website requests). AI supports in the background and only gives you back what you really need: overview, priorities and suggestions."
+        },
+        {
+          "q": "Who is this suitable for – also for small businesses?",
+          "a": "Yes. Especially if you do a lot yourself, organization, prioritization and good preparation immediately bring calm. The decisive factor is not the size of your company, but whether requests, documents and processes regularly come together with you."
+        },
+        {
+          "q": "Is this GDPR compliant?",
+          "a": "Absolutely. Data protection is not an extra, but a prerequisite. We clarify data flows, permissions and purpose. Our goal is pragmatic data protection that really works in everyday life."
+        },
+        {
+          "q": "How quickly do I notice an effect?",
+          "a": "Often after just a few days. If we start with a clear time waster (e.g. organizing inbox), you immediately get time back. Our principle: first a small, measurable benefit – then the next step."
+        },
+        {
+          "q": "Can AI respond in my personal tone?",
+          "a": "Yes. You can specify tone and rules – for example \"short and clear\", \"friendly and relaxed\" or \"formal\". So it stays your appearance, not a generic AI text."
+        }
+      ],
+      "more": {
+        "title": "Want to know more?",
+        "desc": "Your question is too specific? No problem. Send us a message or chat briefly with us.",
+        "cta": "Get in touch"
+      },
+      "check": {
+        "title": "Ready for the check?",
+        "desc": "In 3 minutes we'll find out where AI has the biggest leverage in your daily life. Free and honest.",
+        "cta": "Start check now"
+      }
     }
   }
 }

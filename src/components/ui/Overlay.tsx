@@ -1,3 +1,5 @@
+"use client";
+
 import { useEffect, useRef } from 'react';
 import { classNames } from '@/lib/classNames';
 
@@ -55,3 +57,5 @@ export function Overlay({ isOpen, onClose, className, children }: OverlayProps) 
     </div>
   );
 }
+
+

@@ -5,228 +5,163 @@ import { createMetadata } from '@/lib/metadata';
 import Image from 'next/image';
 import Link from 'next/link';
 import { FAQAccordion } from '@/components/ui/FAQAccordion';
-import { Check } from 'lucide-react';
+import { Search, Zap, ArrowRight, Sparkles, Database, Layers } from 'lucide-react';
 
 export const metadata = createMetadata({
-  title: 'Dokumente & Ordnung – PDFs verstehen, Daten extrahieren, Chaos reduzieren',
-  description: 'Upload rein, Struktur raus: Die KI liest Dokumente, fasst zusammen und ordnet sie Vorgängen zu – ohne Zettelchaos und ohne komplizierte Dashboards.',
+  title: 'Dokumente & Ordnung – PDFs verstehen, Daten extrahieren.',
+  description: 'Upload rein, Struktur raus: Die KI liest Dokumente, fasst zusammen und ordnet sie zu.',
   path: '/anwendungen/dokumente-ordnung',
 });
 
 export default function DokumenteOrdnung() {
   const documentTypes = [
     'Rechnungen & Belege',
-    'Angebote & Auftragsbestätigungen',
-    'Lieferscheine & Protokolle',
-    'Fotos von Notizen / Scans',
+    'Angebote & Aufträge',
+    'Lieferscheine',
+    'Handschriftliche Notizen',
     'PDFs aus E‑Mails',
-    'Sonstige Unterlagen',
+    'Verträge & Protokolle',
   ];
 
   const faqItems = [
     {
-      q: 'Muss ich meine Dokumente vorher „sauber" vorbereiten?',
-      a: 'Nein. Die KI liest auch unsortierte Dateien, Fotos und Scans. Du kannst einfach hochladen – das System macht den Rest.',
+      q: 'Muss ich meine Dokumente vorher sortieren?',
+      a: 'Nein. Du kannst unsortierte Dateien, Scans oder Handyfotos einfach hochladen. Die KI erkennt den Typ und den Inhalt automatisch.',
     },
     {
-      q: 'Kann ich Felder/Informationen definieren, die wichtig sind?',
-      a: 'Ja. Du bestimmst, welche Daten extrahiert werden sollen (z. B. Betrag, Datum, Referenznummer). Das System lernt, was für dich wichtig ist.',
+      q: 'Welche Daten werden extrahiert?',
+      a: 'Standardmäßig Beträge, Daten, Namen und Referenznummern. Wir können das System aber auf deine spezifischen Anforderungen trainieren.',
     },
     {
-      q: 'Wo liegen die Dateien am Ende – und kann ich exportieren?',
-      a: 'Die Dateien bleiben dort, wo sie sind. Die KI erstellt zusätzlich strukturierte Informationen, die du durchsuchen und exportieren kannst.',
-    },
-    {
-      q: 'Was passiert, wenn die KI etwas nicht eindeutig erkennt?',
-      a: 'Unklare Stellen werden markiert und dir zur Prüfung vorgelegt. Du bestimmst, was korrekt ist – das System lernt daraus.',
+      q: 'Ist die Texterkennung zuverlässig?',
+      a: 'Dank moderner OCR-Technologie ist die Erkennungsrate extrem hoch, auch bei schlechten Scans oder schrägen Fotos von Dokumenten.',
     },
   ];
 
   return (
-    <>
-      {/* Hero - Split Layout */}
-      <Section variant="hero" className="pt-32 pb-20">
+    <div className="bg-white min-h-screen">
+      {/* Hero */}
+      <Section variant="hero" className="pt-40 pb-24 relative overflow-hidden">
+        <div className="absolute top-0 left-0 w-[600px] h-[600px] bg-blue-50/50 rounded-full blur-3xl -z-10 -translate-x-1/2 -translate-y-1/2" />
+        
         <Container size="lg">
-          <div className="grid md:grid-cols-2 gap-16 items-center">
-            <div>
-              <div className="inline-block px-4 py-2 rounded-full bg-action-soft text-action text-sm font-semibold mb-6">
-                Nie wieder Zettelchaos.
+          <div className="grid lg:grid-cols-2 gap-16 items-center">
+            <div className="relative z-10">
+              <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-stone-100 text-stone-600 text-xs font-bold uppercase tracking-[0.2em] mb-8">
+                <Database className="w-4 h-4 text-blue-500" />
+                Data Extraction Hub
               </div>
-              <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight mb-6">
-                Dokumente & Ordnung
+              <h1 className="text-6xl md:text-8xl font-bold tracking-tighter mb-8 leading-[0.9] text-stone-900">
+                Wissen <br />
+                <span className="text-blue-600 underline decoration-blue-100 decoration-8 underline-offset-8">strukturieren.</span>
               </h1>
-              <p className="text-lg md:text-xl text-foreground-muted leading-relaxed">
-                PDFs, Fotos, Scans, Notizen – rein damit.
-                Die KI liest mit, erkennt Inhalte und macht daraus Ordnung, die du wiederfindest.
-                So wird aus Dateien endlich Information.
+              <p className="text-xl md:text-2xl text-stone-500 leading-relaxed max-w-xl font-medium mb-10">
+                PDFs, Scans, Fotos – rein damit. Die KI liest mit, erkennt Inhalte und macht daraus Ordnung, die du wirklich wiederfindest.
               </p>
+              <div className="flex flex-col sm:flex-row gap-4">
+                <Button variant="primary" size="lg" className="h-16 px-10 rounded-2xl text-xl font-bold bg-blue-600 hover:bg-blue-700 shadow-blue-200/50" asChild href="/check">
+                  <span>Jetzt Check starten</span>
+                </Button>
+              </div>
             </div>
-            <div className="relative aspect-[4/3] rounded-2xl overflow-hidden bg-muted/30 border border-border/50">
-              <Image
-                src="/media/previews/dokumente-ordnung.jpg"
-                alt="Dokumente & Ordnung"
-                fill
-                className="object-cover"
-                sizes="(max-width: 768px) 100vw, 50vw"
-              />
-              <div className="absolute inset-0 bg-gradient-to-br from-[#1F2937]/20 to-[#111827]/40" />
+            <div className="relative group">
+              <div className="absolute -inset-4 bg-blue-100/50 rounded-[3rem] blur-2xl group-hover:bg-blue-200/50 transition-colors duration-700" />
+              <div className="relative aspect-square rounded-[3rem] overflow-hidden border-8 border-white shadow-2xl">
+                <Image
+                  src="/media/previews/dokumente-ordnung.jpg"
+                  alt="Dokumente & Ordnung"
+                  fill
+                  className="object-cover transition-transform duration-700 group-hover:scale-105"
+                  sizes="(max-width: 768px) 100vw, 50vw"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-blue-900/40 via-transparent to-transparent" />
+              </div>
             </div>
           </div>
         </Container>
       </Section>
 
-      {/* Was du einfach hochladen kannst - Chips Grid */}
-      <Section variant="normal">
+      <Section variant="normal" className="py-24 bg-stone-50">
         <Container size="lg">
-          <div className="mb-16">
-            <h2 className="text-3xl md:text-4xl font-bold tracking-tight mb-6">
-              Was du einfach hochladen kannst
-            </h2>
-            <div className="grid grid-cols-2 md:grid-cols-3 gap-3">
+          <div className="mb-20 text-center">
+            <h2 className="text-3xl md:text-5xl font-bold tracking-tight mb-6">Was du einfach hochladen kannst</h2>
+            <div className="flex flex-wrap justify-center gap-4">
               {documentTypes.map((type) => (
-                <div
-                  key={type}
-                  className="px-4 py-3 rounded-lg bg-surface border border-border/50 text-center text-sm font-medium text-foreground hover:border-action/50 transition-colors"
-                >
+                <div key={type} className="px-6 py-3 rounded-2xl bg-white border-2 border-stone-100 font-bold text-stone-600 shadow-sm hover:border-blue-200 transition-colors">
                   {type}
                 </div>
               ))}
             </div>
           </div>
 
-          {/* Was du danach bekommst */}
-          <div className="mb-16">
-            <h2 className="text-3xl md:text-4xl font-bold tracking-tight mb-6">
-              Was du danach bekommst
-            </h2>
-            <ul className="space-y-3">
-              <li className="flex items-start gap-3 text-foreground-muted">
-                <span className="text-action mr-2 mt-1">•</span>
-                <span>automatische Kurzfassung (worum geht's?)</span>
-              </li>
-              <li className="flex items-start gap-3 text-foreground-muted">
-                <span className="text-action mr-2 mt-1">•</span>
-                <span>wichtige Daten auslesen (z. B. Datum, Betrag, Absender, Referenzen)</span>
-              </li>
-              <li className="flex items-start gap-3 text-foreground-muted">
-                <span className="text-action mr-2 mt-1">•</span>
-                <span>Zuordnung zum richtigen Kunden/Vorgang</span>
-              </li>
-              <li className="flex items-start gap-3 text-foreground-muted">
-                <span className="text-action mr-2 mt-1">•</span>
-                <span>saubere Ablage + Wiederfinden über Suche</span>
-              </li>
-              <li className="flex items-start gap-3 text-foreground-muted">
-                <span className="text-action mr-2 mt-1">•</span>
-                <span>Hinweise, wenn etwas fehlt oder unklar ist</span>
-              </li>
-            </ul>
-          </div>
-
-          {/* Upload → Verstehen → Struktur - 3-Step Row */}
-          <div className="mb-16">
-            <h2 className="text-3xl md:text-4xl font-bold tracking-tight mb-8">
-              Upload → Verstehen → Struktur
-            </h2>
-            <div className="grid md:grid-cols-3 gap-6">
-              <div className="text-center">
-                <div className="w-16 h-16 rounded-full bg-action text-action-foreground flex items-center justify-center mx-auto mb-4 font-bold text-2xl">1</div>
-                <h3 className="text-xl font-bold mb-3">Upload</h3>
-                <p className="text-foreground-muted">
-                  Du ziehst Dateien rein oder leitest sie weiter.
-                </p>
-              </div>
-              <div className="text-center">
-                <div className="w-16 h-16 rounded-full bg-action text-action-foreground flex items-center justify-center mx-auto mb-4 font-bold text-2xl">2</div>
-                <h3 className="text-xl font-bold mb-3">Verstehen</h3>
-                <p className="text-foreground-muted">
-                  Inhalte werden gelesen, zusammengefasst und eingeordnet.
-                </p>
-              </div>
-              <div className="text-center">
-                <div className="w-16 h-16 rounded-full bg-action text-action-foreground flex items-center justify-center mx-auto mb-4 font-bold text-2xl">3</div>
-                <h3 className="text-xl font-bold mb-3">Struktur</h3>
-                <p className="text-foreground-muted">
-                  Alles landet dort, wo es hingehört – im richtigen Kontext.
-                </p>
-              </div>
-            </div>
-          </div>
-
-          {/* Beispiele aus dem Alltag */}
-          <div className="mb-16">
-            <h2 className="text-3xl md:text-4xl font-bold tracking-tight mb-8">
-              Beispiele aus dem Alltag
-            </h2>
-            <div className="space-y-6">
-              <SpotlightCard className="p-6 md:p-8" spotlightColor="rgba(var(--action-rgb), 0.05)">
-                <h3 className="text-xl font-bold mb-3">Rechnung rein, Überblick raus</h3>
-                <p className="text-foreground-muted leading-relaxed">
-                  Du lädst eine Rechnung hoch. Die KI erkennt die wichtigsten Daten und ordnet sie dem passenden Vorgang zu.
-                </p>
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+            {[
+              { 
+                title: 'Automatischer Scan', 
+                desc: 'KI erkennt Typ, Sprache und Inhalt in Millisekunden.', 
+                icon: Search,
+                color: 'bg-blue-50 text-blue-600'
+              },
+              { 
+                title: 'Daten-Extraktion', 
+                desc: 'Beträge, Daten und Namen werden sauber ausgelesen.', 
+                icon: Zap,
+                color: 'bg-amber-50 text-amber-600'
+              },
+              { 
+                title: 'Smarte Zuordnung', 
+                desc: 'Das Dokument landet direkt im richtigen Kunden-Ordner.', 
+                icon: Layers,
+                color: 'bg-emerald-50 text-emerald-600'
+              },
+            ].map((item, i) => (
+              <SpotlightCard key={i} className="p-10 rounded-[2.5rem] bg-white border-2 border-stone-100 hover:border-blue-200 transition-all duration-500">
+                <div className={`w-16 h-16 rounded-2xl ${item.color} flex items-center justify-center mb-8 shadow-sm`}>
+                  <item.icon className="w-8 h-8" />
+                </div>
+                <h3 className="text-2xl font-bold mb-4 tracking-tight">{item.title}</h3>
+                <p className="text-stone-500 leading-relaxed">{item.desc}</p>
               </SpotlightCard>
-              <SpotlightCard className="p-6 md:p-8" spotlightColor="rgba(var(--action-rgb), 0.05)">
-                <h3 className="text-xl font-bold mb-3">Angebot wiederfinden, ohne Ordner-Suche</h3>
-                <p className="text-foreground-muted leading-relaxed">
-                  Du suchst „Angebot vom März, Kunde X". Du findest es über Inhalt – nicht über Dateiname.
-                </p>
-              </SpotlightCard>
-              <SpotlightCard className="p-6 md:p-8" spotlightColor="rgba(var(--action-rgb), 0.05)">
-                <h3 className="text-xl font-bold mb-3">Foto vom Zettel</h3>
-                <p className="text-foreground-muted leading-relaxed">
-                  Ein Foto wird nicht „Bild_3847", sondern nutzbar: Inhalt erkannt, Kontext gesetzt.
-                </p>
-              </SpotlightCard>
-            </div>
+            ))}
           </div>
+        </Container>
+      </Section>
 
-          {/* Kontrolle & Nachvollziehbarkeit */}
-          <div className="mb-16">
-            <h2 className="text-3xl md:text-4xl font-bold tracking-tight mb-6">
-              Kontrolle & Nachvollziehbarkeit
-            </h2>
-            <p className="text-lg text-foreground-muted leading-relaxed">
-              Dokumente sind oft sensibel. Darum bleibt alles nachvollziehbar.
-              Du siehst, was erkannt wurde, was vorgeschlagen wird – und was freigegeben werden muss.
-            </p>
-          </div>
-
-          {/* CTA */}
-          <div className="bg-background-muted rounded-2xl p-8 md:p-12 mb-16 text-center">
-            <h2 className="text-2xl md:text-3xl font-bold mb-4">
-              Willst du sehen, was deine Dokumente schon heute hergeben?
-            </h2>
-            <p className="text-lg text-foreground-muted mb-8 max-w-2xl mx-auto">
-              Wir testen das mit echten Beispielen aus deinem Alltag und zeigen dir, wie viel Struktur möglich ist.
-            </p>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center mb-8">
-              <Button variant="primary" size="lg" asChild href="/check">
-                10-Minuten-Check
-              </Button>
-              <Button variant="secondary" size="lg" asChild href="/kontakt">
-                Kontakt
-              </Button>
-            </div>
-            <div className="flex flex-wrap justify-center gap-4 text-sm text-foreground-muted">
-              <Link href="/anwendungen" className="hover:text-action transition-colors">
-                Zurück zu Anwendungen
-              </Link>
-              <span>•</span>
-              <Link href="/fundament" className="hover:text-action transition-colors">
-                Zum Fundament
-              </Link>
-            </div>
-          </div>
-
-          {/* FAQ */}
-          <div className="mb-16">
-            <h2 className="text-3xl md:text-4xl font-bold tracking-tight mb-8">
+      <Section variant="normal" className="py-32">
+        <Container size="lg">
+          <div className="max-w-4xl mx-auto">
+            <h2 className="text-4xl md:text-6xl font-bold tracking-tighter mb-16 text-center">
               Häufige Fragen
             </h2>
             <FAQAccordion items={faqItems} />
           </div>
         </Container>
       </Section>
-    </>
+
+      <Section variant="normal" className="pb-32">
+        <Container size="lg">
+          <div className="p-12 md:p-20 rounded-[4rem] bg-stone-900 text-white relative overflow-hidden text-center group">
+            <div className="absolute top-0 right-0 w-96 h-96 bg-blue-500 opacity-10 blur-[120px] group-hover:opacity-20 transition-opacity duration-700" />
+            <div className="relative z-10">
+              <Sparkles className="w-16 h-16 text-blue-400 mx-auto mb-10" />
+              <h2 className="text-4xl md:text-7xl font-bold tracking-tighter mb-8 leading-none">
+                Papierkram <br className="hidden md:block" /> adé.
+              </h2>
+              <p className="text-xl md:text-2xl text-stone-400 max-w-2xl mx-auto mb-12 font-medium">
+                Lass uns schauen, wie wir deine Dokumentenablage revolutionieren. In 3 Minuten wissen wir mehr.
+              </p>
+              <div className="flex flex-col sm:flex-row justify-center gap-6">
+                <Button variant="primary" size="lg" className="h-16 px-12 rounded-2xl text-xl font-bold bg-blue-600 hover:bg-blue-700 shadow-xl shadow-blue-900/20 hover:scale-105 transition-transform" asChild href="/check">
+                  <span>Check starten</span>
+                </Button>
+                <Link href="/anwendungen" className="inline-flex items-center gap-2 text-white/60 hover:text-white font-bold transition-colors">
+                  Alle Anwendungen sehen <ArrowRight className="w-5 h-5" />
+                </Link>
+              </div>
+            </div>
+          </div>
+        </Container>
+      </Section>
+    </div>
   );
 }

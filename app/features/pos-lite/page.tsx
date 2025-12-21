@@ -9,9 +9,10 @@ import type { Metadata } from 'next';
 export async function generateMetadata(): Promise<Metadata> {
   const locale = await getLocale();
   return createMetadata({
-    title: t(locale, 'pages.feature_poslite.meta.title'),
-    description: t(locale, 'pages.feature_poslite.meta.description'),
+    title: t(locale, 'pages.feature_poslite.meta.title') as string,
+    description: t(locale, 'pages.feature_poslite.meta.description') as string,
     path: '/features/pos-lite',
+    locale,
   });
 }
 
@@ -22,13 +23,13 @@ export default async function POSLite() {
     p: string; 
     bullets?: string[];
   }>;
-  const intro = t(locale, 'pages.feature_poslite.intro');
+  const intro = t(locale, 'pages.feature_poslite.intro') as string | undefined;
 
   return (
     <>
       <Section variant="normal">
         <Container size="lg">
-          <h1 className="mb-6">{t(locale, 'pages.feature_poslite.h1')}</h1>
+          <h1 className="mb-6">{t(locale, 'pages.feature_poslite.h1') as string}</h1>
           {intro && (
             <p className="text-lg text-foreground-muted mb-12 prose max-w-3xl">
               {intro}
@@ -50,14 +51,14 @@ export default async function POSLite() {
           ))}
 
           <div className="mt-16 text-center">
-            <h2 className="mb-6">{t(locale, 'pages.feature_poslite.cta.title')}</h2>
+            <h2 className="mb-6">{t(locale, 'pages.feature_poslite.cta.title') as string}</h2>
             <Button variant="primary" size="lg" asChild href="/demo#form">
-              {t(locale, 'pages.feature_poslite.cta.button')}
+              {t(locale, 'pages.feature_poslite.cta.button') as string}
             </Button>
           </div>
         </Container>
       </Section>
-      <CTASection />
+      <CTASection locale={locale} />
     </>
   );
 }

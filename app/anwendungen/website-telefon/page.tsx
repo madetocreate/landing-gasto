@@ -5,249 +5,143 @@ import { createMetadata } from '@/lib/metadata';
 import Image from 'next/image';
 import Link from 'next/link';
 import { FAQAccordion } from '@/components/ui/FAQAccordion';
-import { Check } from 'lucide-react';
+import { Phone, Globe, Zap, ArrowRight, Sparkles, Headphones } from 'lucide-react';
 
 export const metadata = createMetadata({
-  title: 'Website & Telefon Assistent – Keine Anfrage mehr verpassen',
-  description: 'Beantwortet Fragen, nimmt Anliegen auf und leitet sauber weiter – auf Website und am Telefon. Mit Kontext und Kontrolle, ohne neue Oberfläche.',
+  title: 'Website & Telefon – Rund um die Uhr für Kunden da.',
+  description: 'Anliegen verstehen, Infos sammeln, Termine koordinieren – KI als dein erster Ansprechpartner.',
   path: '/anwendungen/website-telefon',
 });
 
 export default function WebsiteTelefon() {
   const faqItems = [
     {
-      q: 'Klingt das nach „Bot" oder nach normaler Kommunikation?',
-      a: 'Es klingt nach deinem Betrieb – nicht nach Maschine. Du bestimmst Tonfall, Formulierungen und Stil. Die KI passt sich an, damit es natürlich wirkt.',
+      q: 'Klingt das nach einem Roboter?',
+      a: 'Nein. Wir nutzen modernste Sprachtechnologie, die natürlich klingt und empathisch auf Kundenwünsche eingeht.',
     },
     {
-      q: 'Was passiert, wenn etwas unklar ist?',
-      a: 'Wenn das System unsicher ist oder das Anliegen komplex wird, wird automatisch an dich übergeben – mit einer kurzen Zusammenfassung, damit du sofort einsteigen kannst.',
+      q: 'Was passiert bei komplexen Fragen?',
+      a: 'Die KI erkennt ihre Grenzen und übergibt das Gespräch sauber an einen menschlichen Kollegen – inklusive Zusammenfassung des bisherigen Gesprächs.',
     },
     {
-      q: 'Kann ich bestimmte Zeiten/Regeln festlegen?',
-      a: 'Ja. Du bestimmst, wann der Assistent aktiv ist, welche Fragen er selbst beantworten darf und wann er dich dazuholt. Alles nachvollziehbar und steuerbar.',
-    },
-    {
-      q: 'Muss ich dafür meine Website komplett umbauen?',
-      a: 'Nein. Der Assistent lässt sich in bestehende Kontaktformulare oder Chat-Widgets integrieren. Keine große Umstellung, keine neue Oberfläche.',
+      q: 'Kann ich die Erreichbarkeit steuern?',
+      a: 'Ja. Du bestimmst, wann die KI übernimmt (z.B. nach Feierabend oder bei Überlastung) und welche Themen sie direkt klären darf.',
     },
   ];
 
   return (
-    <>
-      {/* Hero - Zentriert */}
-      <Section variant="hero" className="pt-32 pb-20">
-        <Container size="lg" className="text-center">
-          <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight mb-6">
-            Website & Telefon Assistent
-          </h1>
-          <p className="text-lg md:text-xl text-foreground-muted leading-relaxed max-w-3xl mx-auto mb-12">
-            Du verpasst keine Anfrage mehr – auch wenn du gerade auf dem Hof, in einem Termin oder mitten in der Arbeit bist.
-            Der Assistent beantwortet Standardfragen, nimmt Anliegen sauber auf und gibt dir eine kurze Zusammenfassung, wenn du übernehmen sollst.
-            Und wenn ein Kunde schon mal Kontakt hatte: Kontext ist da – ohne dass man alles nochmal erzählen muss.
-          </p>
-          
-          {/* 2 kleine Panels unter dem Hero */}
-          <div className="grid md:grid-cols-2 gap-6 max-w-2xl mx-auto mb-12">
-            <SpotlightCard className="p-6" spotlightColor="rgba(var(--action-rgb), 0.1)">
-              <h3 className="text-xl font-bold mb-3">Auf der Website</h3>
-              <p className="text-foreground-muted">
-                Fragen klären, Anliegen aufnehmen, Infos sammeln – ohne Hin und Her.
+    <div className="bg-white min-h-screen">
+      {/* Hero */}
+      <Section variant="hero" className="pt-40 pb-24 relative overflow-hidden">
+        <div className="absolute top-0 left-0 w-[600px] h-[600px] bg-stone-100 rounded-full blur-3xl -z-10 -translate-x-1/2 -translate-y-1/2" />
+        
+        <Container size="lg">
+          <div className="grid lg:grid-cols-2 gap-16 items-center">
+            <div className="relative z-10">
+              <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-stone-100 text-stone-600 text-xs font-bold uppercase tracking-[0.2em] mb-8">
+                <Headphones className="w-4 h-4 text-stone-900" />
+                Always-On Concierge
+              </div>
+              <h1 className="text-6xl md:text-8xl font-bold tracking-tighter mb-8 leading-[0.9] text-stone-900">
+                Immer <br />
+                <span className="text-action underline decoration-emerald-200 decoration-8 underline-offset-8">erreichbar.</span>
+              </h1>
+              <p className="text-xl md:text-2xl text-stone-500 leading-relaxed max-w-xl font-medium mb-10">
+                Anliegen verstehen, Infos sammeln, Termine koordinieren. Deine KI-Assistenten sind rund um die Uhr für deine Kunden da – per Website-Chat oder Telefon.
               </p>
-            </SpotlightCard>
-            <SpotlightCard className="p-6" spotlightColor="rgba(var(--action-rgb), 0.1)">
-              <h3 className="text-xl font-bold mb-3">Am Telefon</h3>
-              <p className="text-foreground-muted">
-                Anrufe annehmen, sortieren, weiterleiten – ohne Warteschleife.
-              </p>
-            </SpotlightCard>
-          </div>
-
-          {/* Hero Visual */}
-          <div className="relative aspect-[16/9] max-w-4xl mx-auto rounded-2xl overflow-hidden bg-muted/30 border border-border/50">
-              <Image
-                src="/media/previews/website-telefon.jpg"
-                alt="Website & Telefon Assistent"
-                fill
-                className="object-cover"
-                sizes="(max-width: 768px) 100vw, 80vw"
-              />
-            <div className="absolute inset-0 bg-gradient-to-br from-[#1F2937]/20 to-[#111827]/40" />
+              <div className="flex flex-col sm:flex-row gap-4">
+                <Button variant="primary" size="lg" className="h-16 px-10 rounded-2xl text-xl font-bold shadow-emerald-200/50" asChild href="/check">
+                  <span>Jetzt Check starten</span>
+                </Button>
+              </div>
+            </div>
+            <div className="relative group">
+              <div className="absolute -inset-4 bg-stone-100/50 rounded-[3rem] blur-2xl group-hover:bg-stone-200/50 transition-colors duration-700" />
+              <div className="relative aspect-square rounded-[3rem] overflow-hidden border-8 border-white shadow-2xl">
+                <Image
+                  src="/media/previews/website-telefon.jpg"
+                  alt="Website & Telefon"
+                  fill
+                  className="object-cover transition-transform duration-700 group-hover:scale-105"
+                  sizes="(max-width: 768px) 100vw, 50vw"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-stone-900/40 via-transparent to-transparent" />
+              </div>
+            </div>
           </div>
         </Container>
       </Section>
 
-      {/* Was sich im Alltag sofort ändert */}
-      <Section variant="normal">
+      <Section variant="normal" className="py-24 bg-stone-50">
         <Container size="lg">
-          <div className="max-w-3xl mb-16">
-            <h2 className="text-3xl md:text-4xl font-bold tracking-tight mb-6">
-              Was sich im Alltag sofort ändert
-            </h2>
-            <ul className="space-y-3">
-              <li className="flex items-start gap-3 text-foreground-muted">
-                <span className="text-action mr-2 mt-1">•</span>
-                <span>Weniger verpasste Anfragen</span>
-              </li>
-              <li className="flex items-start gap-3 text-foreground-muted">
-                <span className="text-action mr-2 mt-1">•</span>
-                <span>Weniger Rückfragen, weil Infos schon da sind</span>
-              </li>
-              <li className="flex items-start gap-3 text-foreground-muted">
-                <span className="text-action mr-2 mt-1">•</span>
-                <span>Schnellere Reaktionen – auch außerhalb deiner Arbeitszeiten</span>
-              </li>
-              <li className="flex items-start gap-3 text-foreground-muted">
-                <span className="text-action mr-2 mt-1">•</span>
-                <span>Klarere Übergaben, wenn du übernehmen musst</span>
-              </li>
-            </ul>
-          </div>
-
-          {/* So läuft ein Gespräch ab - Timeline */}
-          <div className="mb-16">
-            <h2 className="text-3xl md:text-4xl font-bold tracking-tight mb-8">
-              So läuft ein Gespräch ab
-            </h2>
-            <div className="space-y-8 max-w-3xl">
-              <div className="flex gap-6">
-                <div className="flex flex-col items-center">
-                  <div className="w-12 h-12 rounded-full bg-action text-action-foreground flex items-center justify-center shrink-0 font-bold text-lg">1</div>
-                  <div className="w-0.5 h-full bg-border mt-2" />
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+            {[
+              { 
+                title: 'Website-Chatbot', 
+                desc: 'Beantwortet Fragen, qualifiziert Leads und bucht Termine direkt auf deiner Seite.', 
+                icon: Globe,
+                color: 'bg-blue-50 text-blue-600'
+              },
+              { 
+                title: 'Telefon-Assistent', 
+                desc: 'Nimmt Anrufe entgegen, notiert Anliegen und leitet dringende Infos sofort weiter.', 
+                icon: Phone,
+                color: 'bg-emerald-50 text-emerald-600'
+              },
+              { 
+                title: 'Smarte Übergabe', 
+                desc: 'Nahtloser Wechsel zum Menschen, wenn es persönlich werden muss.', 
+                icon: Zap,
+                color: 'bg-amber-50 text-amber-600'
+              },
+            ].map((item, i) => (
+              <SpotlightCard key={i} className="p-10 rounded-[2.5rem] bg-white border-2 border-stone-100 hover:border-action/20 transition-all duration-500">
+                <div className={`w-16 h-16 rounded-2xl ${item.color} flex items-center justify-center mb-8 shadow-sm`}>
+                  <item.icon className="w-8 h-8" />
                 </div>
-                <div className="flex-1 pb-8">
-                  <h3 className="text-xl font-bold mb-2">Begrüßung & Anliegen</h3>
-                  <p className="text-foreground-muted leading-relaxed">
-                    Der Kunde sagt, worum es geht. Das System erkennt Thema und Dringlichkeit.
-                  </p>
-                </div>
-              </div>
-              <div className="flex gap-6">
-                <div className="flex flex-col items-center">
-                  <div className="w-12 h-12 rounded-full bg-action text-action-foreground flex items-center justify-center shrink-0 font-bold text-lg">2</div>
-                  <div className="w-0.5 h-full bg-border mt-2" />
-                </div>
-                <div className="flex-1 pb-8">
-                  <h3 className="text-xl font-bold mb-2">Klären & Sammeln</h3>
-                  <p className="text-foreground-muted leading-relaxed">
-                    Es werden die Infos abgefragt, die du später wirklich brauchst (z. B. Name, Kontakt, Wunschtermin, kurze Beschreibung).
-                  </p>
-                </div>
-              </div>
-              <div className="flex gap-6">
-                <div className="flex flex-col items-center">
-                  <div className="w-12 h-12 rounded-full bg-action text-action-foreground flex items-center justify-center shrink-0 font-bold text-lg">3</div>
-                  <div className="w-0.5 h-full bg-border mt-2" />
-                </div>
-                <div className="flex-1 pb-8">
-                  <h3 className="text-xl font-bold mb-2">Lösen oder übergeben</h3>
-                  <p className="text-foreground-muted leading-relaxed">
-                    Standardfragen werden beantwortet. Wenn es komplex wird, wird an dich übergeben.
-                  </p>
-                </div>
-              </div>
-              <div className="flex gap-6">
-                <div className="flex flex-col items-center">
-                  <div className="w-12 h-12 rounded-full bg-action text-action-foreground flex items-center justify-center shrink-0 font-bold text-lg">4</div>
-                </div>
-                <div className="flex-1">
-                  <h3 className="text-xl font-bold mb-2">Zusammenfassung</h3>
-                  <p className="text-foreground-muted leading-relaxed">
-                    Du bekommst eine kurze, saubere Zusammenfassung statt „Kannst du mal zurückrufen?".
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          {/* Beispiele */}
-          <div className="mb-16">
-            <h2 className="text-3xl md:text-4xl font-bold tracking-tight mb-8">
-              Beispiele, die du sofort kennst
-            </h2>
-            <div className="grid md:grid-cols-3 gap-6">
-              <SpotlightCard className="p-6" spotlightColor="rgba(var(--action-rgb), 0.05)">
-                <h3 className="text-xl font-bold mb-3">Termin & Rückruf</h3>
-                <p className="text-foreground-muted">
-                  Der Kunde will einen Termin. Die wichtigsten Infos werden aufgenommen – du entscheidest über die Bestätigung.
-                </p>
+                <h3 className="text-2xl font-bold mb-4 tracking-tight">{item.title}</h3>
+                <p className="text-stone-500 leading-relaxed">{item.desc}</p>
               </SpotlightCard>
-              <SpotlightCard className="p-6" spotlightColor="rgba(var(--action-rgb), 0.05)">
-                <h3 className="text-xl font-bold mb-3">Preisanfrage</h3>
-                <p className="text-foreground-muted">
-                  Der Kunde fragt an. Es kommt nicht nur „Bitte Angebot", sondern die nötigen Details sind direkt dabei.
-                </p>
-              </SpotlightCard>
-              <SpotlightCard className="p-6" spotlightColor="rgba(var(--action-rgb), 0.05)">
-                <h3 className="text-xl font-bold mb-3">Servicefrage</h3>
-                <p className="text-foreground-muted">
-                  Standardfragen werden schnell beantwortet. Komplexe Fälle landen mit Kontext bei dir.
-                </p>
-              </SpotlightCard>
-            </div>
+            ))}
           </div>
+        </Container>
+      </Section>
 
-          {/* Du bestimmst Ton, Grenzen und Freigaben */}
-          <div className="mb-16">
-            <h2 className="text-3xl md:text-4xl font-bold tracking-tight mb-6">
-              Du bestimmst Ton, Grenzen und Freigaben
-            </h2>
-            <p className="text-lg text-foreground-muted leading-relaxed mb-6">
-              Der Assistent soll klingen wie dein Betrieb – nicht wie eine Maschine.
-              Du legst fest, was er selbst beantworten darf, wann er dich dazuholt und welche Dinge immer geprüft werden müssen.
-            </p>
-            <ul className="space-y-3">
-              <li className="flex items-start gap-3 text-foreground-muted">
-                <span className="text-action mr-2 mt-1">•</span>
-                <span>Dein Tonfall (locker, kurz, klar)</span>
-              </li>
-              <li className="flex items-start gap-3 text-foreground-muted">
-                <span className="text-action mr-2 mt-1">•</span>
-                <span>Handover-Regeln (wann übernimmt ein Mensch)</span>
-              </li>
-              <li className="flex items-start gap-3 text-foreground-muted">
-                <span className="text-action mr-2 mt-1">•</span>
-                <span>Freigaben (was darf automatisch raus)</span>
-              </li>
-            </ul>
-          </div>
-
-          {/* CTA */}
-          <div className="bg-background-muted rounded-2xl p-8 md:p-12 mb-16 text-center">
-            <h2 className="text-2xl md:text-3xl font-bold mb-4">
-              Willst du testen, wie deine Anfragen heute ankommen?
-            </h2>
-            <p className="text-lg text-foreground-muted mb-8 max-w-2xl mx-auto">
-              Wir schauen kurz auf Website & Telefon und bauen einen ersten Ablauf, der wirklich passt.
-            </p>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center mb-8">
-              <Button variant="primary" size="lg" asChild href="/check">
-                10-Minuten-Check
-              </Button>
-              <Button variant="secondary" size="lg" asChild href="/kontakt">
-                Kontakt
-              </Button>
-            </div>
-            <div className="flex flex-wrap justify-center gap-4 text-sm text-foreground-muted">
-              <Link href="/anwendungen" className="hover:text-action transition-colors">
-                Zurück zu Anwendungen
-              </Link>
-              <span>•</span>
-              <Link href="/fundament" className="hover:text-action transition-colors">
-                Zum Fundament
-              </Link>
-            </div>
-          </div>
-
-          {/* FAQ */}
-          <div className="mb-16">
-            <h2 className="text-3xl md:text-4xl font-bold tracking-tight mb-8">
+      <Section variant="normal" className="py-32">
+        <Container size="lg">
+          <div className="max-w-4xl mx-auto">
+            <h2 className="text-4xl md:text-6xl font-bold tracking-tighter mb-16 text-center">
               Häufige Fragen
             </h2>
             <FAQAccordion items={faqItems} />
           </div>
         </Container>
       </Section>
-    </>
+
+      <Section variant="normal" className="pb-32">
+        <Container size="lg">
+          <div className="p-12 md:p-20 rounded-[4rem] bg-stone-900 text-white relative overflow-hidden text-center group">
+            <div className="absolute top-0 right-0 w-96 h-96 bg-action opacity-10 blur-[120px] group-hover:opacity-20 transition-opacity duration-700" />
+            <div className="relative z-10">
+              <Sparkles className="w-16 h-16 text-action mx-auto mb-10" />
+              <h2 className="text-4xl md:text-7xl font-bold tracking-tighter mb-8 leading-none">
+                Kein Anruf <br className="hidden md:block" /> mehr verloren.
+              </h2>
+              <p className="text-xl md:text-2xl text-stone-400 max-w-2xl mx-auto mb-12 font-medium">
+                Sei für deine Kunden da, auch wenn du gerade im Termin oder im Feierabend bist. In 3 Minuten zeigen wir dir wie.
+              </p>
+              <div className="flex flex-col sm:flex-row justify-center gap-6">
+                <Button variant="primary" size="lg" className="h-16 px-12 rounded-2xl text-xl font-bold shadow-xl shadow-action/20 hover:scale-105 transition-transform" asChild href="/check">
+                  <span>Check starten</span>
+                </Button>
+                <Link href="/anwendungen" className="inline-flex items-center gap-2 text-white/60 hover:text-white font-bold transition-colors">
+                  Alle Anwendungen sehen <ArrowRight className="w-5 h-5" />
+                </Link>
+              </div>
+            </div>
+          </div>
+        </Container>
+      </Section>
+    </div>
   );
 }

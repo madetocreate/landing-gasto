@@ -1,34 +1,27 @@
 'use client';
 
-import { useState, useEffect } from 'react';
+import { useState } from 'react';
 import { ConciergeMode, ModeSwitcher } from './ModeSwitcher';
 import { ConciergeChat } from './ConciergeChat';
 import { classNames } from '@/lib/classNames';
 import { FocusTrap } from '@/components/ui/FocusTrap';
 import { motion, AnimatePresence } from 'framer-motion';
-import { X, Maximize2, Minimize2 } from 'lucide-react';
+import { X } from 'lucide-react';
 import { usePathname } from 'next/navigation';
+import { Locale } from '@/lib/i18n';
 
 interface ConciergePanelProps {
   isOpen: boolean;
   onClose: () => void;
+  locale: Locale;
   initialMode?: ConciergeMode;
 }
 
-export function ConciergePanel({ isOpen, onClose, initialMode = 'concierge' }: ConciergePanelProps) {
+export function ConciergePanel({ isOpen, onClose, locale, initialMode = 'concierge' }: ConciergePanelProps) {
   const [mode, setMode] = useState<ConciergeMode>(initialMode);
   const pathname = usePathname();
 
-  // Lock body scroll on mobile only, or handled by FocusTrap logic?
-  // Usually dialogs lock scroll.
-  useEffect(() => {
-    if (isOpen) {
-      document.body.style.overflow = 'hidden';
-    } else {
-      document.body.style.overflow = '';
-    }
-    return () => { document.body.style.overflow = ''; };
-  }, [isOpen]);
+  // Body scroll is NOT locked - page scrolling should continue to work when chatbot is open
 
   // Overlay click logic is handled by the backdrop div
 
@@ -73,7 +66,7 @@ export function ConciergePanel({ isOpen, onClose, initialMode = 'concierge' }: C
               <div className="flex-none p-4 border-b border-border/20 bg-glass-surface/70 backdrop-blur-sm flex items-center justify-between">
                 <div>
                   <h2 className="text-lg font-bold text-foreground flex items-center gap-2">
-                    <span className="w-2 h-2 rounded-full bg-accent animate-pulse" />
+                    <span className="w-2 h-2 rounded-full bg-accent" />
                     KI Concierge
                   </h2>
                   <p className="text-xs text-foreground-muted">
@@ -98,7 +91,7 @@ export function ConciergePanel({ isOpen, onClose, initialMode = 'concierge' }: C
 
               {/* Chat Content */}
               <div className="flex-1 overflow-hidden relative">
-                <ConciergeChat mode={mode} pathname={pathname} />
+                <ConciergeChat mode={mode} pathname={pathname} locale={locale} />
               </div>
 
               {/* Footer / Input placeholder (if needed, otherwise handled in Chat) */}

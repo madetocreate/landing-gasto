@@ -1,9 +1,11 @@
+import type { Locale } from '@/lib/i18n';
+
 export type ConciergeMode = 'concierge' | 'support' | 'onboarding';
 
 export interface ChatContext {
   currentPage: string;
   scrollDepth: number;
-  language: 'de' | 'en' | 'es';
+  language: Locale;
   userActions?: string[]; // e.g., ['cta_clicked', 'demo_viewed']
 }
 

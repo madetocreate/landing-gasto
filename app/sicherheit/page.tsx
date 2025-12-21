@@ -4,15 +4,21 @@ import { SpotlightCard } from '@/components/ui/SpotlightCard';
 import { Button } from '@/components/ui/Button';
 import { createMetadata } from '@/lib/metadata';
 import { FAQAccordion } from '@/components/ui/FAQAccordion';
-import { Shield, Lock, Eye, CheckCircle2, Settings } from 'lucide-react';
+import { Shield, Lock, Eye, CheckCircle2 } from 'lucide-react';
+import { getLocale } from '@/lib/getLocale';
 
-export const metadata = createMetadata({
-  title: 'Sicherheit & Vertrauen – KI mit Kontrolle',
-  description: 'Verständlich erklärt: wie KI im Alltag hilft, ohne Risiken. Klare Regeln, Freigaben und Nachvollziehbarkeit – ohne komplizierte Dashboards.',
-  path: '/sicherheit',
-});
+export async function generateMetadata() {
+  const locale = await getLocale();
+  return createMetadata({
+    title: 'Sicherheit & Vertrauen – KI mit Kontrolle',
+    description: 'Verständlich erklärt: wie KI im Alltag hilft, ohne Risiken. Klare Regeln, Freigaben und Nachvollziehbarkeit – ohne komplizierte Dashboards.',
+    path: '/sicherheit',
+    locale,
+  });
+}
 
-export default function Sicherheit() {
+export default async function Sicherheit() {
+  const locale = await getLocale();
   const principles = [
     {
       icon: Shield,
@@ -103,7 +109,7 @@ export default function Sicherheit() {
               Kontrolle statt Blackbox
             </h2>
             <p className="text-lg text-foreground-muted leading-relaxed mb-6">
-              Das System arbeitet nicht „irgendwie im Hintergrund".
+              Das System arbeitet nicht &bdquo;irgendwie im Hintergrund&quot;.
               Jeder Schritt ist erklärbar und prüfbar.
             </p>
             <ul className="space-y-3">
@@ -125,7 +131,7 @@ export default function Sicherheit() {
               </li>
               <li className="flex items-start gap-3 text-foreground-muted">
                 <span className="text-action mr-2 mt-1">•</span>
-                <span>Nichts passiert „einfach so"</span>
+                <span>Nichts passiert &bdquo;einfach so&quot;</span>
               </li>
             </ul>
           </div>
@@ -184,7 +190,7 @@ export default function Sicherheit() {
           {/* So läuft's in der Praxis - 3 Steps */}
           <div className="max-w-4xl mx-auto mb-16">
             <h2 className="text-3xl md:text-4xl font-bold tracking-tight mb-8 text-center">
-              So läuft's in der Praxis
+              So läuft&apos;s in der Praxis
             </h2>
             <div className="grid md:grid-cols-3 gap-6">
               <div className="text-center">
@@ -245,7 +251,7 @@ export default function Sicherheit() {
               Vertrauen entsteht durch Transparenz
             </h2>
             <p className="text-lg text-foreground-muted leading-relaxed">
-              Du musst uns nichts „glauben".
+              Du musst uns nichts &bdquo;glauben&quot;.
               Du kannst sehen, wie das System arbeitet: nachvollziehbare Abläufe, klare Regeln, prüfbare Entscheidungen.
               So entsteht Vertrauen Schritt für Schritt.
             </p>
@@ -275,7 +281,7 @@ export default function Sicherheit() {
                 Kontakt
               </Button>
               <Button variant="secondary" size="lg" asChild href="/check">
-                10-Minuten-Check
+                3-Minuten-Check
               </Button>
             </div>
           </div>
@@ -290,7 +296,7 @@ export default function Sicherheit() {
         </Container>
       </Section>
 
-      <CTASection />
+      <CTASection locale={locale} />
     </>
   );
 }

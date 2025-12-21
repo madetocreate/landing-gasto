@@ -26,7 +26,7 @@ export function DemoTabs() {
               : 'text-foreground-muted border-transparent hover:text-foreground'
           )}
         >
-          {t(locale, 'pages.demo.tabs.guest')}
+          {t(locale, 'pages.demo.tabs.guest') as string}
         </button>
         <button
           onClick={() => setActiveTab('admin')}
@@ -37,7 +37,7 @@ export function DemoTabs() {
               : 'text-foreground-muted border-transparent hover:text-foreground'
           )}
         >
-          {t(locale, 'pages.demo.tabs.admin')}
+          {t(locale, 'pages.demo.tabs.admin') as string}
         </button>
       </div>
 
@@ -47,10 +47,10 @@ export function DemoTabs() {
           <div>
             <div className="mb-6">
               <h3 className="text-xl font-semibold text-foreground mb-2">
-                {t(locale, 'pages.demo.guest.title')}
+                {t(locale, 'pages.demo.guest.title') as string}
               </h3>
               <p className="text-foreground-muted">
-                {t(locale, 'pages.demo.guest.subtitle')}
+                {t(locale, 'pages.demo.guest.subtitle') as string}
               </p>
             </div>
             <div className="flex justify-center">

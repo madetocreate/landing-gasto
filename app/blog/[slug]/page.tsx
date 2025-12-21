@@ -1,7 +1,10 @@
 import { CTASection } from '@/components/ui/CTASection';
 import Link from 'next/link';
+import { getLocale } from '@/lib/getLocale';
 
-export default function BlogPost({ params }: { params: { slug: string } }) {
+export default async function BlogPost({ params }: { params: { slug: string } }) {
+  const locale = await getLocale();
+  
   return (
     <>
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
@@ -37,7 +40,7 @@ export default function BlogPost({ params }: { params: { slug: string } }) {
           </p>
         </section>
       </div>
-      <CTASection />
+      <CTASection locale={locale} />
     </>
   );
 }

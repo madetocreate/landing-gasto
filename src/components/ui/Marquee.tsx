@@ -23,16 +23,19 @@ export function Marquee({ children, direction = 'left', speed = 30, className }:
       <style>{`
         @keyframes ${animationId} {
           0% {
-            transform: translateX(${startValue});
+            transform: translate3d(${startValue}, 0, 0);
           }
           100% {
-            transform: translateX(${endValue});
+            transform: translate3d(${endValue}, 0, 0);
           }
         }
         .${animationId} {
           display: flex;
           width: fit-content;
           animation: ${animationId} ${speed}s linear infinite;
+          will-change: transform;
+          backface-visibility: hidden;
+          perspective: 1000px;
         }
         @media (prefers-reduced-motion: reduce) {
           .${animationId} {
@@ -45,13 +48,13 @@ export function Marquee({ children, direction = 'left', speed = 30, className }:
           animation-play-state: paused;
         }
       `}</style>
-      <div className={classNames('overflow-hidden', className)}>
+      <div className={classNames('overflow-hidden', className)} style={{ willChange: 'transform' }}>
         <div className={animationId}>
           {/* Duplicate content for seamless loop */}
-          <div className="flex">
+          <div className="flex" style={{ willChange: 'transform' }}>
             {children}
           </div>
-          <div className="flex">
+          <div className="flex" style={{ willChange: 'transform' }}>
             {children}
           </div>
         </div>

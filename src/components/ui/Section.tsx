@@ -10,9 +10,9 @@ interface SectionProps {
 }
 
 const variantStyles = {
-  tight: 'py-12 md:py-16',
-  normal: 'py-16 md:py-24',
-  hero: 'py-20 md:py-32',
+  tight: 'py-8 sm:py-12 md:py-16',
+  normal: 'py-12 sm:py-16 md:py-24',
+  hero: 'py-16 sm:py-20 md:py-32',
 };
 
 const surfaceStyles: Record<NonNullable<SectionProps['surface']>, string> = {

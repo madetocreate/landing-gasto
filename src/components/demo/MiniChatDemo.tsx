@@ -3,8 +3,6 @@
 import { useState } from 'react';
 import { useLocale } from '@/hooks/useLocale';
 import { t } from '@/lib/i18n';
-import { classNames } from '@/lib/classNames';
-import { Button } from '@/components/ui/Button';
 
 type ChatState = 'welcome' | 'recommendation' | 'upsell' | 'confirmation' | 'bill';
 
@@ -56,7 +54,7 @@ export function MiniChatDemo() {
               </div>
               <div className="flex-1">
                 <p className="text-sm text-foreground bg-background-muted rounded-lg px-4 py-2">
-                  {t(locale, 'pages.home.miniChat.welcome')}
+                  {t(locale, 'pages.home.miniChat.welcome') as string}
                 </p>
               </div>
             </div>
@@ -67,7 +65,7 @@ export function MiniChatDemo() {
                   onClick={() => handleAction(action)}
                   className="px-4 py-2.5 text-sm font-medium text-foreground bg-background-muted hover:bg-background-muted/80 rounded-xl transition-all duration-[var(--motion-fast)]"
                 >
-                  {t(locale, `pages.home.miniChat.actions.${action}`)}
+                  {t(locale, `pages.home.miniChat.actions.${action}`) as string}
                 </button>
               ))}
             </div>
@@ -82,7 +80,7 @@ export function MiniChatDemo() {
               </div>
               <div className="flex-1">
                 <p className="text-sm text-foreground-muted mb-3">
-                  {t(locale, 'pages.home.miniChat.recommendation.title')}
+                  {t(locale, 'pages.home.miniChat.recommendation.title') as string}
                 </p>
                 <div className="space-y-2">
                   {(t(locale, 'pages.home.miniChat.recommendation.items') as Array<{ name: string; price: string; add: string }>).map((item, i) => (
@@ -116,7 +114,7 @@ export function MiniChatDemo() {
               </div>
               <div className="flex-1">
                 <p className="text-sm text-foreground-muted mb-3">
-                  {t(locale, 'pages.home.miniChat.upsell.question')}
+                  {t(locale, 'pages.home.miniChat.upsell.question') as string}
                 </p>
                 <div className="flex flex-wrap gap-2">
                   {(t(locale, 'pages.home.miniChat.upsell.options') as string[]).map((option, i) => (
@@ -142,13 +140,13 @@ export function MiniChatDemo() {
               </div>
               <div className="flex-1">
                 <p className="text-sm text-foreground bg-background-muted rounded-lg px-4 py-2 mb-3">
-                  {t(locale, 'pages.home.miniChat.confirmation.text')}
+                  {t(locale, 'pages.home.miniChat.confirmation.text') as string}
                 </p>
                 <button
                   onClick={handleReset}
                   className="text-sm text-accent hover:text-accent-hover font-medium"
                 >
-                  {t(locale, 'pages.home.miniChat.confirmation.viewOrders')}
+                  {t(locale, 'pages.home.miniChat.confirmation.viewOrders') as string}
                 </button>
               </div>
             </div>
@@ -163,7 +161,7 @@ export function MiniChatDemo() {
               </div>
               <div className="flex-1">
                 <p className="text-sm text-foreground bg-background-muted rounded-lg px-4 py-2">
-                  {t(locale, 'pages.home.miniChat.bill.text')}
+                  {t(locale, 'pages.home.miniChat.bill.text') as string}
                 </p>
               </div>
             </div>

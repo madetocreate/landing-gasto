@@ -65,7 +65,7 @@ export function RightDrawerNav({ isOpen, onClose }: RightDrawerNavProps) {
       ],
     },
     {
-      title: t(locale, 'nav.drawer.groups.legal'),
+      title: t(locale, 'nav.drawer.groups.legal') as string,
       items: [
         { href: '/impressum', label: t(locale, 'nav.drawer.links.imprint') },
         { href: '/datenschutz', label: t(locale, 'nav.drawer.links.privacy') },
@@ -91,12 +91,12 @@ export function RightDrawerNav({ isOpen, onClose }: RightDrawerNavProps) {
         {/* Header */}
         <div className="flex items-center justify-between px-6 py-5">
           <h2 id="drawer-title" className="text-lg font-semibold text-foreground">
-            {t(locale, 'nav.drawer.title')}
+            {t(locale, 'nav.drawer.title') as string}
           </h2>
           <button
             onClick={onClose}
             className="p-2 -mr-2 rounded-md text-foreground-muted hover:text-foreground hover:bg-background-muted transition-all duration-[var(--motion-fast)] focus:outline-none focus:ring-2 focus:ring-accent focus:ring-offset-2"
-            aria-label={t(locale, 'common.cta_close')}
+            aria-label={t(locale, 'common.cta_close') as string}
           >
             <svg
               className="w-5 h-5"
@@ -118,15 +118,15 @@ export function RightDrawerNav({ isOpen, onClose }: RightDrawerNavProps) {
         {/* Navigation Groups */}
         <nav className="flex-1 overflow-y-auto px-2" aria-label="Hauptnavigation">
           {navGroups.map((group, groupIndex) => (
-            <div key={group.title} className={classNames(groupIndex > 0 && 'mt-8')}>
+            <div key={group.title as string} className={classNames(groupIndex > 0 && 'mt-8')}>
               <h3 className="px-4 py-2 text-xs font-semibold text-foreground-muted uppercase tracking-wider">
-                {group.title}
+                {group.title as string}
               </h3>
               <ul className="space-y-0.5">
                 {group.items.map((item) => (
                   <li key={item.href}>
                     <NavLink href={item.href} onClick={onClose}>
-                      {item.label}
+                      {item.label as string}
                     </NavLink>
                   </li>
                 ))}
@@ -138,10 +138,10 @@ export function RightDrawerNav({ isOpen, onClose }: RightDrawerNavProps) {
         {/* Footer Actions */}
         <div className="px-6 py-5 space-y-3 border-t border-border/50">
           <Button variant="primary" size="lg" className="w-full" asChild href="/demo#form" onClick={onClose}>
-            {t(locale, 'nav.drawer.links.demo')}
+            {t(locale, 'nav.drawer.links.demo') as string}
           </Button>
           <Button variant="ghost" size="md" className="w-full" asChild href="/demo" onClick={onClose}>
-            {t(locale, 'nav.drawer.links.demo_view')}
+            {t(locale, 'nav.drawer.links.demo_view') as string}
           </Button>
         </div>
       </div>

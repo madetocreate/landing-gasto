@@ -4,8 +4,13 @@ import { Section, Container } from "@/components/ui/Section"
 import Image from "next/image"
 import { useReducedMotion } from "framer-motion"
 import { classNames } from "@/lib/classNames"
+import { Locale, t } from "@/lib/i18n"
 
-export function SystemsNarrativeSection() {
+interface SystemsNarrativeSectionProps {
+  locale: Locale;
+}
+
+export function SystemsNarrativeSection({ locale }: SystemsNarrativeSectionProps) {
   const shouldReduceMotion = useReducedMotion()
 
   return (
@@ -13,18 +18,11 @@ export function SystemsNarrativeSection() {
       <Container size="lg">
         {/* Header */}
         <div className="text-center mb-24 max-w-2xl mx-auto">
-          <h2 className="text-3xl md:text-4xl font-bold tracking-tight mb-6">
-            Anschluss an Deine bestehenden Abläufe
+          <h2 className="text-3xl md:text-4xl font-bold tracking-tight mb-6" suppressHydrationWarning>
+            {t(locale, 'pages.home.systems.h2') as string || 'Anschluss an Deine bestehenden Abläufe'}
           </h2>
-          <p className="text-lg text-foreground-muted leading-relaxed whitespace-pre-line">
-            Dein Alltag besteht aus E-Mails, Anfragen, Dokumenten und Entscheidungen.
-            Genau dort setzt die KI an.
-
-            Informationen, die bisher verstreut waren,
-            werden sinnvoll zusammengeführt und bleiben im richtigen Zusammenhang verfügbar.
-
-            Statt ständig nachzuschauen oder Dinge weiterzuleiten,
-            entsteht ein ruhiger, durchgängiger Arbeitsfluss.
+          <p className="text-lg text-foreground-muted leading-relaxed whitespace-pre-line" suppressHydrationWarning>
+            {t(locale, 'pages.home.systems.p') as string || 'Dein Alltag besteht aus E-Mails, Anfragen, Dokumenten und Entscheidungen.\nGenau dort setzt die KI an.\n\nInformationen, die bisher verstreut waren,\nwerden sinnvoll zusammengeführt und bleiben im richtigen Zusammenhang verfügbar.\n\nStatt ständig nachzuschauen oder Dinge weiterzuleiten,\nentsteht ein ruhiger, durchgängiger Arbeitsfluss.'}
           </p>
         </div>
 

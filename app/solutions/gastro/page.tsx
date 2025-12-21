@@ -3,15 +3,21 @@ import { Section, Container } from "@/components/ui/Section"
 import { createMetadata } from "@/lib/metadata"
 import { Button } from "@/components/ui/Button"
 import { SpotlightCard } from "@/components/ui/SpotlightCard"
-import { ArrowRight, MessageSquare, ChefHat, LayoutDashboard, Clock } from "lucide-react"
+import { MessageSquare, ChefHat, LayoutDashboard, Clock } from "lucide-react"
+import { getLocale } from "@/lib/getLocale"
+import type { Metadata } from "next"
 
-export const metadata = createMetadata({
-  title: "Gastro Starter",
-  description: "Die Komplettlösung für moderne Gastronomie. Bestellen, KDS, POS und Service.",
-  path: "/solutions/gastro",
-})
+export async function generateMetadata(): Promise<Metadata> {
+  const locale = await getLocale();
+  return createMetadata({
+    title: "Gastro Starter – Komplettlösung für Gastronomie",
+    description: "Die Komplettlösung für moderne Gastronomie. Bestellen, KDS, POS und Service. Alles in einem Flow.",
+    path: "/solutions/gastro",
+    locale,
+  });
+}
 
-export default function GastroPage() {
+export default async function GastroPage() {
   return (
     <AppShell>
        <Section variant="hero" className="pt-32 pb-24">

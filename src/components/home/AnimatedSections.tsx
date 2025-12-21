@@ -13,7 +13,11 @@ export interface ProblemSolutionBlock {
   align: "left" | "right"
 }
 
-export function AnimatedAlternatingSection({ blocks }: { blocks: ProblemSolutionBlock[] }) {
+interface AnimatedAlternatingSectionProps {
+  blocks: ProblemSolutionBlock[]
+}
+
+export function AnimatedAlternatingSection({ blocks }: AnimatedAlternatingSectionProps) {
   const shouldReduceMotion = useReducedMotion()
   const containerRef = useRef<HTMLDivElement>(null)
   
@@ -26,9 +30,9 @@ export function AnimatedAlternatingSection({ blocks }: { blocks: ProblemSolution
   const lineHeight = useTransform(scrollYProgress, [0, 1], ["0%", "100%"])
 
   return (
-    <Section variant="normal" className="space-y-12 md:space-y-32 bg-surface dark:bg-background relative overflow-hidden">
+    <Section variant="normal" className="py-16 sm:py-24 md:py-32 bg-surface dark:bg-background relative overflow-hidden">
       <Container size="lg">
-        <div ref={containerRef} className="relative flex flex-col gap-24 md:gap-40">
+        <div ref={containerRef} className="relative flex flex-col gap-16 sm:gap-24 md:gap-40">
           
           {/* Central Connecting Line (Desktop) */}
           <div className="absolute left-1/2 top-0 bottom-0 w-px bg-border hidden md:block -translate-x-1/2">
@@ -43,10 +47,10 @@ export function AnimatedAlternatingSection({ blocks }: { blocks: ProblemSolution
               key={i} 
               className={`relative flex flex-col ${block.align === "left" ? "md:items-start" : "md:items-end"}`}
             >
-              {/* Connector Dot */}
-              <div className="absolute top-12 left-1/2 -translate-x-1/2 w-4 h-4 rounded-full bg-background border-2 border-action hidden md:block z-10 shadow-sm">
-                <div className="absolute inset-1 rounded-full bg-action animate-pulse" />
-              </div>
+                      {/* Connector Dot */}
+                      <div className="absolute top-12 left-1/2 -translate-x-1/2 w-4 h-4 rounded-full bg-background border-2 border-action hidden md:block z-10 shadow-sm">
+                        <div className="absolute inset-1 rounded-full bg-action" />
+                      </div>
 
               {/* Connecting Horizontal Line */}
               <div 
@@ -65,9 +69,10 @@ export function AnimatedAlternatingSection({ blocks }: { blocks: ProblemSolution
 
               <motion.div
                 initial={shouldReduceMotion ? { opacity: 1 } : { opacity: 0, x: block.align === "left" ? -40 : 40, y: 8 }}
-                whileInView={{ opacity: 1, x: 0 }}
+                whileInView={{ opacity: 1, x: 0, y: 0 }}
                 viewport={{ once: true, margin: "-100px" }}
                 transition={shouldReduceMotion ? { duration: 0 } : { duration: motionPolicy.reveal.duration, ease: motionPolicy.reveal.ease }}
+                style={{ willChange: 'transform, opacity' }}
                 className={`max-w-xl w-full relative z-20 ${block.align === "left" ? "md:mr-auto" : "md:ml-auto"}`}
               >
                 <GlassCard className="p-8 md:p-10 relative overflow-hidden group border-l-4 border-l-transparent hover:border-l-action transition-all duration-300">

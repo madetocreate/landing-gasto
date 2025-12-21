@@ -24,7 +24,7 @@ export interface RoiOutputs {
  * - Time saved: 2 minutes per guest interaction
  */
 export function calculateRoi(inputs: RoiInputs): RoiOutputs {
-  const { tables, guestsPerDay, avgBill, internationalGuests = 0 } = inputs;
+  const { guestsPerDay, avgBill } = inputs;
 
   // Conservative: 15% of guests make additional orders
   const guestsWithAdditionalOrders = Math.floor(guestsPerDay * 0.15);

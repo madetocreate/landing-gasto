@@ -1,25 +1,24 @@
 "use client"
 
-import { useEffect, useState } from "react"
+import { useEffect } from "react"
 import { usePathname, useRouter } from "next/navigation"
 import { AnimatePresence, motion, useReducedMotion } from "framer-motion"
 import { X } from "lucide-react"
 import { FocusTrap } from "@/components/ui/FocusTrap"
-import { useLocale } from "@/hooks/useLocale"
-import { t } from "@/lib/i18n"
+import { Locale, t } from "@/lib/i18n"
 import { classNames } from "@/lib/classNames"
 import { motion as motionPolicy } from "@/lib/motion"
 
 interface NavigationDrawerProps {
   isOpen: boolean
   onClose: () => void
+  locale: Locale
 }
 
-export function NavigationDrawer({ isOpen, onClose }: NavigationDrawerProps) {
-  const locale = useLocale()
+export function NavigationDrawer({ isOpen, onClose, locale }: NavigationDrawerProps) {
   const pathname = usePathname()
+  const currentYear = new Date().getFullYear()
   const router = useRouter()
-  const [clickedLink, setClickedLink] = useState<string | null>(null)
   const shouldReduceMotion = useReducedMotion()
 
   // Lock body scroll
@@ -57,15 +56,14 @@ export function NavigationDrawer({ isOpen, onClose }: NavigationDrawerProps) {
   }, [isOpen, onClose])
 
   const links = [
-    { href: "/", label: t(locale, "nav.top.home") },
-    { href: "/anwendungen", label: t(locale, "nav.top.applications") },
-    { href: "/fundament", label: t(locale, "nav.top.fundament") },
-    { href: "/preise", label: t(locale, "nav.top.pricing") },
-    { href: "/kontakt", label: t(locale, "nav.top.contact") },
+    { href: "/", label: t(locale, "nav.top.home") as string },
+    { href: "/anwendungen", label: t(locale, "nav.top.applications") as string },
+    { href: "/fundament", label: t(locale, "nav.top.fundament") as string },
+    { href: "/preise", label: t(locale, "nav.top.pricing") as string },
+    { href: "/kontakt", label: t(locale, "nav.top.contact") as string },
   ]
 
   const handleLinkClick = (href: string) => {
-    setClickedLink(href)
     // Delay close slightly to show "flash" effect
     setTimeout(() => {
       onClose()
@@ -74,7 +72,6 @@ export function NavigationDrawer({ isOpen, onClose }: NavigationDrawerProps) {
   }
 
   const handleClose = () => {
-    setClickedLink(null)
     onClose()
   }
 
@@ -112,30 +109,28 @@ export function NavigationDrawer({ isOpen, onClose }: NavigationDrawerProps) {
                 <div className="flex justify-end mb-12">
                   <button
                     onClick={handleClose}
-                    className="p-4 -mr-4 rounded-full hover:bg-black/5 transition-colors text-foreground-muted hover:text-foreground"
+                    className="p-3 -mr-3 rounded-full hover:bg-black/5 transition-colors text-foreground-muted hover:text-foreground touch-manipulation min-w-[44px] min-h-[44px] flex items-center justify-center"
                     aria-label="Menü schließen"
                   >
-                    <X className="w-8 h-8" strokeWidth={1.5} />
+                    <X className="w-6 h-6 sm:w-8 sm:h-8" strokeWidth={1.5} />
                   </button>
                 </div>
 
                 <nav className="flex-1 flex flex-col gap-6">
                   {links.map((link) => {
                     const isActive = pathname === link.href
-                    const isClicked = clickedLink === link.href
                     return (
                       <motion.button
                         key={link.href}
                         onClick={() => handleLinkClick(link.href)}
                         className={classNames(
-                          "text-left text-4xl md:text-5xl font-bold tracking-tighter outline-none w-fit relative",
-                          "px-6 py-4 -mx-6 -my-4 rounded-xl",
+                          "text-left text-3xl sm:text-4xl md:text-5xl font-bold tracking-tighter outline-none w-full relative",
+                          "px-4 sm:px-6 py-3 sm:py-4 rounded-xl touch-manipulation min-h-[44px]",
                           "transition-all duration-300 ease-out",
-                          isActive 
-                            ? "text-action" 
-                            : "text-[#111827] hover:text-action",
-                          isClicked ? "text-action animate-pulse" : ""
-                        )}
+                                  isActive
+                                    ? "text-action"
+                                    : "text-[#111827] hover:text-action"
+                                )}
                         whileHover={shouldReduceMotion ? {} : { 
                           scale: 1.065,
                           transition: { type: "spring", stiffness: 400, damping: 25 }
@@ -157,7 +152,7 @@ export function NavigationDrawer({ isOpen, onClose }: NavigationDrawerProps) {
                 </nav>
 
                 <div className="mt-auto pt-12 text-sm text-[#111827]/40">
-                  © {new Date().getFullYear()} {t(locale, "brand.name")}
+                  © {currentYear} {t(locale, "brand.name") as string}
                 </div>
               </div>
             </FocusTrap>

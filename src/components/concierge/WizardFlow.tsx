@@ -1,7 +1,6 @@
 'use client';
 
 import { useState, useMemo } from 'react';
-import { StaticWizardProvider } from './providers/StaticWizardProvider';
 import { classNames } from '@/lib/classNames';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
@@ -11,7 +10,18 @@ interface WizardFlowProps {
   onComplete: (result: { solved: boolean; category: string }) => void;
 }
 
-const supportCategoriesGastro = {
+interface Step {
+  id: string;
+  question: string;
+  options: string[];
+}
+
+interface CategoryData {
+  title: string;
+  steps: Step[];
+}
+
+const supportCategoriesGastro: Record<string, CategoryData> = {
   qr_guest: {
     title: 'QR / Gast',
     steps: [
@@ -49,7 +59,7 @@ const supportCategoriesGastro = {
   },
 };
 
-const supportCategoriesAklow = {
+const supportCategoriesAklow: Record<string, CategoryData> = {
   aklow_general: {
     title: 'Allgemein',
     steps: [
@@ -88,7 +98,7 @@ export function WizardFlow({ initialCategory, onComplete }: WizardFlowProps) {
   }, [pathname]);
 
   const supportCategories = isGastro ? supportCategoriesGastro : supportCategoriesAklow;
-  const categoryData = category ? supportCategories[category as keyof typeof supportCategories] : null;
+  const categoryData = category ? (supportCategories[category] || null) : null;
 
   const handleCategorySelect = (cat: string) => {
     setCategory(cat);
@@ -105,7 +115,7 @@ export function WizardFlow({ initialCategory, onComplete }: WizardFlowProps) {
         onComplete({ solved: false, category });
       }, 500);
     } else {
-      if (categoryData && currentStep < categoryData.steps.length - 1) {
+      if (categoryData && categoryData.steps && currentStep < categoryData.steps.length - 1) {
         setCurrentStep(currentStep + 1);
       } else {
         setTimeout(() => {
@@ -166,7 +176,7 @@ export function WizardFlow({ initialCategory, onComplete }: WizardFlowProps) {
       <div className="mb-6">
         <p className="text-foreground mb-4">{currentStepData.question}</p>
         <div className="space-y-2">
-          {currentStepData.options.map((option) => (
+          {currentStepData.options.map((option: string) => (
             <button
               key={option}
               onClick={() => handleStepAnswer(currentStepData.id, option)}
